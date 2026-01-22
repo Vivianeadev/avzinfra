@@ -1,34 +1,815 @@
 <!DOCTYPE html>
-<!-- saved from url=(0039)https://vivianeadev.github.io/avzinfra/ -->
-<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AVZ Infra | Tecnologia Blockchain e Sistemas de Identidade</title>
-    <link href="./AVZ Infra _ Tecnologia Blockchain Descentralizada 2026_files/css2" rel="stylesheet">
-    <link rel="stylesheet" href="./AVZ Infra _ Tecnologia Blockchain Descentralizada 2026_files/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Inter:wght@300;400;500;600;700&family=Marcellus&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-       :root{--gold-primary:#D4AF37;--gold-secondary:#F4E4B8;--gold-accent:#B8860B;--gold-light:#FFE87C;--carbon:#1A1A1A;--obsidian:#0A0A0A;--emerald:#046307;--sapphire:#0F52BA;--platinum:#E5E4E2;--transition:all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);--shadow-luxury:0 25px 50px rgba(0, 0, 0, 0.25);--shadow-gold:0 8px 32px rgba(212, 175, 55, 0.4);--shadow-gold-strong:0 0 30px rgba(212, 175, 55, 0.6);--gradient-gold:linear-gradient(135deg, #D4AF37 0%, #F4E4B8 50%, #B8860B 100%);--gradient-gold-hover:linear-gradient(135deg, #E5BF40 0%, #F9EBC8 50%, #C89610 100%);--gradient-dark:linear-gradient(135deg, #1A1A1A 0%, #0A0A0A 100%);--gradient-gold-text:linear-gradient(135deg, #D4AF37 0%, #F4E4B8 50%, #FFD700 100%)}*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Inter',sans-serif;background:var(--gradient-dark);color:#fff;line-height:1.6;overflow-x:hidden}.gold-particles{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:-1}.particle{position:absolute;background:radial-gradient(circle,var(--gold-primary) 0%,transparent 70%);border-radius:50%;opacity:0;animation:floatParticle 15s infinite linear}@keyframes floatParticle{0%{transform:translateY(100vh) rotate(0deg);opacity:0}10%{opacity:.3}90%{opacity:.3}100%{transform:translateY(-100px) rotate(360deg);opacity:0}}.header{position:fixed;top:0;width:100%;background:rgb(10 10 10 / .95);backdrop-filter:blur(15px);z-index:1000;padding:1rem 0;transition:all 0.4s ease;border-bottom:1px solid rgb(212 175 55 / .3);box-shadow:0 5px 20px rgb(0 0 0 / .2)}.nav-container{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 2rem}.logo{font-family:'Cinzel',serif;font-size:1.8rem;font-weight:700;background:var(--gradient-gold-text);-webkit-background-clip:text;-webkit-text-fill-color:#fff0;background-clip:text;letter-spacing:2px;position:relative;text-shadow:0 0 10px rgb(212 175 55 / .3)}.logo::after{content:'';position:absolute;bottom:-8px;left:0;width:50px;height:2px;background:var(--gradient-gold);box-shadow:0 0 8px rgb(212 175 55 / .5)}.logo-tagline{font-size:.7rem;letter-spacing:3px;color:var(--gold-secondary);margin-top:3px;font-weight:300;font-family:'Marcellus',serif}.nav-menu{display:flex;list-style:none;gap:2.5rem}.nav-menu a{color:var(--platinum);text-decoration:none;font-weight:500;transition:var(--transition);font-size:.95rem;letter-spacing:1px;position:relative;font-family:'Marcellus',serif;padding:5px 0}.nav-menu a::before{content:'';position:absolute;width:0;height:1px;bottom:0;left:0;background:var(--gradient-gold);transition:width 0.4s ease;box-shadow:0 0 5px rgb(212 175 55 / .5)}.nav-menu a:hover{color:var(--gold-light)}.nav-menu a:hover::before{width:100%}.mobile-menu-toggle{display:none;background:none;border:none;color:var(--gold-primary);font-size:1.5rem;cursor:pointer;padding:.5rem}.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:0 2rem;position:relative;background:radial-gradient(circle at 20% 80%,rgb(212 175 55 / .15) 0%,transparent 50%),radial-gradient(circle at 80% 20%,rgb(244 228 184 / .15) 0%,transparent 50%),radial-gradient(circle at 40% 40%,rgb(184 134 11 / .1) 0%,transparent 50%),var(--gradient-dark);overflow:hidden;padding-top:80px}.hero::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M 50 0 L 0 0 0 50" fill="none" stroke="%23D4AF37" stroke-width="0.5" opacity="0.1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/></svg>');opacity:.3}.hero-content{max-width:900px;z-index:2;position:relative}.hero h1{font-family:'Cinzel',serif;font-size:clamp(2.8rem, 6vw, 4.5rem);margin-bottom:1.8rem;background:var(--gradient-gold-text);-webkit-background-clip:text;-webkit-text-fill-color:#fff0;background-clip:text;line-height:1.2;letter-spacing:1px;text-shadow:0 0 20px rgb(212 175 55 / .3);animation:titleGlow 3s ease-in-out infinite alternate}@keyframes titleGlow{0%{text-shadow:0 0 20px rgb(212 175 55 / .3)}100%{text-shadow:0 0 30px rgb(212 175 55 / .6),0 0 40px rgb(212 175 55 / .4)}}.hero p{font-size:1.3rem;margin-bottom:3rem;color:var(--platinum);max-width:700px;margin-left:auto;margin-right:auto;font-weight:300;font-family:'Marcellus',serif;letter-spacing:.5px}.cta-buttons{display:flex;gap:2rem;justify-content:center;flex-wrap:wrap}.btn{padding:1.2rem 2.5rem;border:none;border-radius:4px;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:.8rem;transition:var(--transition);cursor:pointer;font-size:1rem;position:relative;overflow:hidden;letter-spacing:1px;font-family:'Cinzel',serif;text-transform:uppercase}.btn::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgb(255 255 255 / .4),transparent);transition:all 0.8s ease}.btn:hover::before{left:100%}.btn-primary{background:var(--gradient-gold);color:#000;box-shadow:var(--shadow-gold)}.btn-primary:hover{transform:translateY(-5px);box-shadow:var(--shadow-gold-strong);background:var(--gradient-gold-hover)}.btn-secondary{background:#fff0;color:var(--platinum);border:1px solid rgb(212 175 55 / .5);position:relative;overflow:hidden}.btn-secondary::after{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgb(212 175 55 / .2),transparent);transition:all 0.6s ease}.btn-secondary:hover{background:rgb(212 175 55 / .1);border-color:var(--gold-primary);color:var(--gold-light);transform:translateY(-5px);box-shadow:var(--shadow-gold)}.btn-secondary:hover::after{left:100%}.section{padding:6rem 2rem;position:relative}.container{max-width:1200px;margin:0 auto}.section-title{font-family:'Cinzel',serif;font-size:3rem;text-align:center;margin-bottom:4rem;background:var(--gradient-gold-text);-webkit-background-clip:text;-webkit-text-fill-color:#fff0;background-clip:text;position:relative;letter-spacing:2px}.section-title::after{content:'';position:absolute;bottom:-20px;left:50%;transform:translateX(-50%);width:80px;height:3px;background:var(--gradient-gold);box-shadow:0 0 10px rgb(212 175 55 / .5)}.cards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:2.5rem}.card{background:rgb(255 255 255 / .05);border-radius:12px;padding:3rem 2.5rem;text-align:center;border:1px solid rgb(212 175 55 / .2);transition:var(--transition);position:relative;overflow:hidden;backdrop-filter:blur(10px)}.card::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(135deg,rgb(212 175 55 / .1) 0%,transparent 50%);opacity:0;transition:var(--transition)}.card:hover{transform:translateY(-10px);border-color:var(--gold-primary);box-shadow:var(--shadow-luxury)}.card:hover::before{opacity:1}.card-icon{font-size:3.5rem;margin-bottom:2rem;color:var(--gold-primary);text-shadow:0 0 10px rgb(212 175 55 / .3);transition:var(--transition)}.card:hover .card-icon{transform:scale(1.1);text-shadow:0 0 15px rgb(212 175 55 / .5)}.card h3{font-family:'Cinzel',serif;font-size:1.8rem;margin-bottom:1.5rem;color:var(--gold-primary);letter-spacing:1px}.card p{color:var(--platinum);margin-bottom:2rem;font-size:1rem;line-height:1.7;font-family:'Marcellus',serif}.countries-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem;margin-top:3rem}.country-item{background:rgb(255 255 255 / .05);border-radius:8px;padding:1.5rem;text-align:center;border:1px solid rgb(212 175 55 / .2);transition:var(--transition);backdrop-filter:blur(5px)}.country-item:hover{transform:translateY(-5px);border-color:var(--gold-primary);box-shadow:var(--shadow-gold)}.country-flag{font-size:2.5rem;margin-bottom:1rem}.country-name{font-family:'Cinzel',serif;color:var(--gold-primary);font-size:1.2rem}.benefits-list{display:flex;flex-direction:column;gap:1.5rem;margin-top:2rem}.benefit-item{display:flex;align-items:center;gap:1.5rem;padding:1.5rem;background:rgb(255 255 255 / .05);border-radius:12px;border-left:4px solid var(--gold-primary);transition:var(--transition);backdrop-filter:blur(5px)}.benefit-item:hover{transform:translateX(10px);border-left:4px solid var(--gold-light);box-shadow:var(--shadow-gold)}.benefit-icon{color:var(--gold-primary);font-size:1.8rem;width:50px;display:flex;justify-content:center;text-shadow:0 0 5px rgb(212 175 55 / .3)}.benefit-text{flex:1}.benefit-text h4{font-family:'Cinzel',serif;color:var(--gold-primary);margin-bottom:.5rem;font-size:1.2rem}.benefit-text p{color:var(--platinum);font-size:1rem;line-height:1.6;font-family:'Marcellus',serif}.contact-form{background:rgb(255 255 255 / .05);border-radius:12px;padding:3rem;border:1px solid rgb(212 175 55 / .2);backdrop-filter:blur(10px);max-width:600px;margin:0 auto}.form-group{margin-bottom:1.8rem}.form-group label{display:block;margin-bottom:.8rem;color:var(--platinum);font-weight:500;letter-spacing:.5px;font-family:'Marcellus',serif}.form-control{width:100%;padding:1.2rem;background:rgb(255 255 255 / .1);border:1px solid rgb(255 255 255 / .2);border-radius:6px;color:#fff;font-family:'Inter',sans-serif;transition:var(--transition);font-size:1rem}.form-control:focus{outline:none;border-color:var(--gold-primary);box-shadow:0 0 0 3px rgb(212 175 55 / .2);background:rgb(255 255 255 / .15)}textarea.form-control{min-height:150px;resize:vertical}.footer{background:#000;padding:4rem 2rem 2rem;text-align:center;border-top:1px solid rgb(212 175 55 / .3);position:relative}.footer::before{content:'';position:absolute;top:0;left:0;width:100%;height:6px;background:var(--gradient-gold)}.footer-content{max-width:1200px;margin:0 auto}.footer p{color:#888;margin-bottom:1rem;font-size:.9rem;font-family:'Marcellus',serif}.social-links{display:flex;justify-content:center;gap:2rem;margin:2.5rem 0}.social-links a{color:var(--gold-primary);font-size:1.5rem;transition:var(--transition);width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgb(212 175 55 / .1);border:1px solid rgb(212 175 55 / .2)}.social-links a:hover{color:var(--gold-light);transform:translateY(-5px);background:rgb(212 175 55 / .2);box-shadow:var(--shadow-gold)}/* Nova seção Quem Somos */.founder-section{display:flex;flex-wrap:wrap;gap:4rem;align-items:center;margin-top:3rem}.founder-image-container{flex:1;min-width:300px;display:flex;flex-direction:column;align-items:center}.founder-image{width:350px;height:350px;border-radius:50%;object-fit:cover;border:4px solid var(--gold-primary);box-shadow:var(--shadow-gold-strong);margin-bottom:2rem;transition:var(--transition)}.founder-image:hover{transform:scale(1.02);box-shadow:0 0 40px rgba(212, 175, 55, 0.7)}.founder-info{flex:2;min-width:300px}.founder-quote{border-left:4px solid var(--gold-primary);padding-left:2rem;margin:2rem 0}.founder-quote p{font-style:italic;color:var(--gold-secondary);font-size:1.2rem;line-height:1.8;font-family:'Marcellus',serif}.founder-name{color:var(--gold-primary);font-family:'Cinzel',serif;font-size:1.5rem;margin-top:1rem;letter-spacing:1px}.founder-position{color:var(--platinum);font-family:'Marcellus',serif;font-size:1.1rem;margin-top:0.5rem}.manifesto-content{background:rgb(255 255 255 / .05);border-radius:12px;padding:3rem;border:1px solid rgb(212 175 55 / .2);backdrop-filter:blur(10px);margin-top:3rem}.manifesto-text{color:var(--platinum);line-height:1.8;font-size:1.1rem;font-family:'Marcellus',serif}.manifesto-text p{margin-bottom:1.5rem}.manifesto-text strong{color:var(--gold-primary);font-family:'Cinzel',serif}@media (max-width:768px){.nav-menu{display:none;position:absolute;top:100%;left:0;width:100%;background:rgb(10 10 10 / .98);backdrop-filter:blur(20px);flex-direction:column;padding:2rem;text-align:center;border-top:1px solid rgb(212 175 55 / .3)}.nav-menu.active{display:flex}.mobile-menu-toggle{display:block}.cta-buttons{flex-direction:column;align-items:center}.btn{padding:1rem 2rem;width:100%;justify-content:center}.section-title{font-size:2.5rem}.hero{padding-top:100px}.hero h1{font-size:clamp(2.2rem, 8vw, 3.5rem)}.hero p{font-size:1.1rem}.cards-grid{grid-template-columns:1fr}.card{padding:2rem 1.5rem}.countries-grid{grid-template-columns:repeat(2,1fr)}.benefit-item{flex-direction:column;text-align:center;gap:1rem}.contact-form{padding:2rem 1.5rem}.founder-section{flex-direction:column;gap:2.5rem}.founder-image{width:280px;height:280px}.manifesto-content{padding:2rem 1.5rem}}@media (max-width:480px){.nav-container{padding:0 1rem}.logo{font-size:1.5rem}.logo-tagline{font-size:.6rem}.hero{padding:120px 1rem 0}.section{padding:4rem 1rem}.btn{padding:.8rem 1.5rem;font-size:.9rem}.countries-grid{grid-template-columns:1fr}.founder-image{width:220px;height:220px}}
+        :root {
+            --gold-primary: #D4AF37;
+            --gold-secondary: #F4E4B8;
+            --gold-accent: #B8860B;
+            --gold-light: #FFE87C;
+            --carbon: #1A1A1A;
+            --obsidian: #0A0A0A;
+            --emerald: #046307;
+            --sapphire: #0F52BA;
+            --platinum: #E5E4E2;
+            --transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --shadow-luxury: 0 25px 50px rgba(0, 0, 0, 0.25);
+            --shadow-gold: 0 8px 32px rgba(212, 175, 55, 0.4);
+            --shadow-gold-strong: 0 0 30px rgba(212, 175, 55, 0.6);
+            --gradient-gold: linear-gradient(135deg, #D4AF37 0%, #F4E4B8 50%, #B8860B 100%);
+            --gradient-gold-hover: linear-gradient(135deg, #E5BF40 0%, #F9EBC8 50%, #C89610 100%);
+            --gradient-dark: linear-gradient(135deg, #1A1A1A 0%, #0A0A0A 100%);
+            --gradient-gold-text: linear-gradient(135deg, #D4AF37 0%, #F4E4B8 50%, #FFD700 100%);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--gradient-dark);
+            color: #fff;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        /* Language Switcher Minimalista */
+        .language-switcher {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1001;
+            display: flex;
+            gap: 5px;
+            background: rgba(10, 10, 10, 0.7);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 8px;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+        
+        .lang-btn {
+            background: transparent;
+            border: none;
+            color: var(--platinum);
+            padding: 6px 12px;
+            border-radius: 16px;
+            cursor: pointer;
+            transition: var(--transition);
+            font-family: 'Marcellus', serif;
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .lang-btn:hover, .lang-btn.active {
+            background: rgba(212, 175, 55, 0.1);
+            color: var(--gold-light);
+        }
+        
+        .lang-flag {
+            font-size: 1rem;
+        }
+        
+        /* Particles */
+        .gold-particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        .particle {
+            position: absolute;
+            background: radial-gradient(circle, var(--gold-primary) 0%, transparent 70%);
+            border-radius: 50%;
+            opacity: 0;
+            animation: floatParticle 15s infinite linear;
+        }
+        
+        @keyframes floatParticle {
+            0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+            10% { opacity: .3; }
+            90% { opacity: .3; }
+            100% { transform: translateY(-100px) rotate(360deg); opacity: 0; }
+        }
+        
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(15px);
+            z-index: 1000;
+            padding: 1rem 0;
+            transition: var(--transition);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+        
+        .logo {
+            font-family: 'Cinzel', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            background: var(--gradient-gold-text);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: 2px;
+            position: relative;
+            text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+        }
+        
+        .logo::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: var(--gradient-gold);
+            box-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
+        }
+        
+        .logo-tagline {
+            font-size: .7rem;
+            letter-spacing: 3px;
+            color: var(--gold-secondary);
+            margin-top: 3px;
+            font-weight: 300;
+            font-family: 'Marcellus', serif;
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+        }
+        
+        .nav-menu a {
+            color: var(--platinum);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+            font-size: .95rem;
+            letter-spacing: 1px;
+            position: relative;
+            font-family: 'Marcellus', serif;
+            padding: 5px 0;
+        }
+        
+        .nav-menu a::before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: 0;
+            left: 0;
+            background: var(--gradient-gold);
+            transition: width 0.4s ease;
+            box-shadow: 0 0 5px rgba(212, 175, 55, 0.5);
+        }
+        
+        .nav-menu a:hover {
+            color: var(--gold-light);
+        }
+        
+        .nav-menu a:hover::before {
+            width: 100%;
+        }
+        
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--gold-primary);
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: .5rem;
+        }
+        
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 2rem;
+            position: relative;
+            background: radial-gradient(circle at 20% 80%, rgba(212, 175, 55, 0.15) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 20%, rgba(244, 228, 184, 0.15) 0%, transparent 50%),
+                        radial-gradient(circle at 40% 40%, rgba(184, 134, 11, 0.1) 0%, transparent 50%),
+                        var(--gradient-dark);
+            overflow: hidden;
+            padding-top: 80px;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M 50 0 L 0 0 0 50" fill="none" stroke="%23D4AF37" stroke-width="0.5" opacity="0.1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/></svg>');
+            opacity: .3;
+        }
+        
+        .hero-content {
+            max-width: 900px;
+            z-index: 2;
+            position: relative;
+        }
+        
+        .hero h1 {
+            font-family: 'Cinzel', serif;
+            font-size: clamp(2.8rem, 6vw, 4.5rem);
+            margin-bottom: 1.8rem;
+            background: var(--gradient-gold-text);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.2;
+            letter-spacing: 1px;
+            text-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+            animation: titleGlow 3s ease-in-out infinite alternate;
+        }
+        
+        @keyframes titleGlow {
+            0% { text-shadow: 0 0 20px rgba(212, 175, 55, 0.3); }
+            100% { text-shadow: 0 0 30px rgba(212, 175, 55, 0.6), 0 0 40px rgba(212, 175, 55, 0.4); }
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 3rem;
+            color: var(--platinum);
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 300;
+            font-family: 'Marcellus', serif;
+            letter-spacing: .5px;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 1.2rem 2.5rem;
+            border: none;
+            border-radius: 4px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: .8rem;
+            transition: var(--transition);
+            cursor: pointer;
+            font-size: 1rem;
+            position: relative;
+            overflow: hidden;
+            letter-spacing: 1px;
+            font-family: 'Cinzel', serif;
+            text-transform: uppercase;
+        }
+        
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            transition: all 0.8s ease;
+        }
+        
+        .btn:hover::before {
+            left: 100%;
+        }
+        
+        .btn-primary {
+            background: var(--gradient-gold);
+            color: #000;
+            box-shadow: var(--shadow-gold);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-gold-strong);
+            background: var(--gradient-gold-hover);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: var(--platinum);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn-secondary::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.2), transparent);
+            transition: all 0.6s ease;
+        }
+        
+        .btn-secondary:hover {
+            background: rgba(212, 175, 55, 0.1);
+            border-color: var(--gold-primary);
+            color: var(--gold-light);
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-gold);
+        }
+        
+        .btn-secondary:hover::after {
+            left: 100%;
+        }
+        
+        /* Sections */
+        .section {
+            padding: 5rem 2rem;
+            position: relative;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            font-family: 'Cinzel', serif;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            background: var(--gradient-gold-text);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            position: relative;
+            letter-spacing: 1px;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 2px;
+            background: var(--gradient-gold);
+            box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+        }
+        
+        /* Cards */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 2.5rem 2rem;
+            text-align: center;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, transparent 50%);
+            opacity: 0;
+            transition: var(--transition);
+        }
+        
+        .card:hover {
+            transform: translateY(-8px);
+            border-color: var(--gold-primary);
+            box-shadow: var(--shadow-luxury);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            color: var(--gold-primary);
+            text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+            transition: var(--transition);
+        }
+        
+        .card:hover .card-icon {
+            transform: scale(1.1);
+            text-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+        }
+        
+        .card h3 {
+            font-family: 'Cinzel', serif;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--gold-primary);
+            letter-spacing: 1px;
+        }
+        
+        .card p {
+            color: var(--platinum);
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            font-family: 'Marcellus', serif;
+        }
+        
+        /* Countries */
+        .countries-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1.2rem;
+            margin-top: 2rem;
+        }
+        
+        .country-item {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            padding: 1.2rem;
+            text-align: center;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            transition: var(--transition);
+            backdrop-filter: blur(5px);
+        }
+        
+        .country-item:hover {
+            transform: translateY(-5px);
+            border-color: var(--gold-primary);
+            box-shadow: var(--shadow-gold);
+        }
+        
+        .country-flag {
+            font-size: 2rem;
+            margin-bottom: 0.8rem;
+        }
+        
+        .country-name {
+            font-family: 'Cinzel', serif;
+            color: var(--gold-primary);
+            font-size: 1.1rem;
+        }
+        
+        /* Filosofia Section - Minimalista */
+        .philosophy-content {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 3rem;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            backdrop-filter: blur(10px);
+            margin-top: 2rem;
+        }
+        
+        .philosophy-text {
+            color: var(--platinum);
+            line-height: 1.7;
+            font-size: 1.05rem;
+            font-family: 'Marcellus', serif;
+        }
+        
+        .philosophy-text p {
+            margin-bottom: 1.5rem;
+        }
+        
+        .philosophy-text strong {
+            color: var(--gold-primary);
+            font-family: 'Cinzel', serif;
+        }
+        
+        .philosophy-quote {
+            margin-top: 2.5rem;
+            padding: 1.5rem;
+            border-left: 3px solid var(--gold-primary);
+            background: rgba(212, 175, 55, 0.05);
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .philosophy-quote p {
+            font-style: italic;
+            color: var(--gold-secondary);
+            font-size: 1.1rem;
+            line-height: 1.7;
+            font-family: 'Marcellus', serif;
+        }
+        
+        .quote-author {
+            color: var(--gold-primary);
+            font-family: 'Cinzel', serif;
+            font-size: 1rem;
+            margin-top: 1rem;
+            text-align: right;
+        }
+        
+        /* Footer */
+        .footer {
+            background: #000;
+            padding: 3rem 2rem 2rem;
+            text-align: center;
+            border-top: 1px solid rgba(212, 175, 55, 0.3);
+            position: relative;
+        }
+        
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--gradient-gold);
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .footer p {
+            color: #888;
+            margin-bottom: 1rem;
+            font-size: .9rem;
+            font-family: 'Marcellus', serif;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .social-links a {
+            color: var(--gold-primary);
+            font-size: 1.3rem;
+            transition: var(--transition);
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(212, 175, 55, 0.1);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        
+        .social-links a:hover {
+            color: var(--gold-light);
+            transform: translateY(-5px);
+            background: rgba(212, 175, 55, 0.2);
+            box-shadow: var(--shadow-gold);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .language-switcher {
+                top: 15px;
+                right: 15px;
+                padding: 6px;
+            }
+            
+            .lang-btn {
+                padding: 5px 10px;
+                font-size: 0.8rem;
+            }
+            
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: rgba(10, 10, 10, 0.98);
+                backdrop-filter: blur(20px);
+                flex-direction: column;
+                padding: 1.5rem;
+                text-align: center;
+                border-top: 1px solid rgba(212, 175, 55, 0.3);
+            }
+            
+            .nav-menu.active {
+                display: flex;
+            }
+            
+            .mobile-menu-toggle {
+                display: block;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                padding: 1rem 2rem;
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .hero {
+                padding-top: 90px;
+            }
+            
+            .hero h1 {
+                font-size: clamp(2.2rem, 8vw, 3.2rem);
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .card {
+                padding: 2rem 1.5rem;
+            }
+            
+            .countries-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .philosophy-content {
+                padding: 2rem 1.5rem;
+            }
+            
+            .philosophy-quote {
+                padding: 1.2rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .nav-container {
+                padding: 0 1rem;
+            }
+            
+            .logo {
+                font-size: 1.5rem;
+            }
+            
+            .logo-tagline {
+                font-size: .6rem;
+            }
+            
+            .hero {
+                padding: 100px 1rem 0;
+            }
+            
+            .section {
+                padding: 3.5rem 1rem;
+            }
+            
+            .btn {
+                padding: .9rem 1.5rem;
+                font-size: .9rem;
+            }
+            
+            .countries-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .philosophy-content {
+                padding: 1.5rem 1rem;
+            }
+        }
+        
+        /* RTL Support for Arabic */
+        [dir="rtl"] .philosophy-quote {
+            border-left: none;
+            border-right: 3px solid var(--gold-primary);
+            border-radius: 8px 0 0 8px;
+        }
+        
+        [dir="rtl"] .nav-menu a::before {
+            left: auto;
+            right: 0;
+        }
+        
+        [dir="rtl"] .logo::after {
+            left: auto;
+            right: 0;
+        }
+        
+        [dir="rtl"] .section-title::after {
+            left: auto;
+            right: 50%;
+            transform: translateX(50%);
+        }
+        
+        [dir="rtl"] .quote-author {
+            text-align: left;
+        }
+        
+        /* Content initially hidden */
+        .lang-content {
+            display: none;
+        }
+        
+        .lang-content.active {
+            display: block;
+        }
     </style>
 </head>
 <body>
-    <!-- Efeito de partículas douradas -->
-    <div class="gold-particles" id="particles"><div class="particle" style="width: 3.28235px; height: 3.28235px; left: 10.5807vw; animation-delay: 14.7455s; animation-duration: 23.8274s;"></div><div class="particle" style="width: 2.35135px; height: 2.35135px; left: 75.4637vw; animation-delay: 7.46573s; animation-duration: 18.0197s;"></div><div class="particle" style="width: 2.50006px; height: 2.50006px; left: 38.3769vw; animation-delay: 2.86716s; animation-duration: 16.7748s;"></div><div class="particle" style="width: 4.64462px; height: 4.64462px; left: 18.7586vw; animation-delay: 14.6268s; animation-duration: 15.4519s;"></div><div class="particle" style="width: 2.27958px; height: 2.27958px; left: 74.2099vw; animation-delay: 8.21088s; animation-duration: 24.1095s;"></div><div class="particle" style="width: 4.26806px; height: 4.26806px; left: 43.9041vw; animation-delay: 5.6401s; animation-duration: 16.968s;"></div><div class="particle" style="width: 4.78434px; height: 4.78434px; left: 43.2096vw; animation-delay: 8.9317s; animation-duration: 20.6395s;"></div><div class="particle" style="width: 4.13666px; height: 4.13666px; left: 68.5296vw; animation-delay: 2.70207s; animation-duration: 16.4138s;"></div><div class="particle" style="width: 4.72277px; height: 4.72277px; left: 27.9594vw; animation-delay: 12.5151s; animation-duration: 20.6838s;"></div><div class="particle" style="width: 2.99411px; height: 2.99411px; left: 83.7056vw; animation-delay: 3.39134s; animation-duration: 15.2944s;"></div><div class="particle" style="width: 5.75677px; height: 5.75677px; left: 85.8426vw; animation-delay: 5.20553s; animation-duration: 17.9798s;"></div><div class="particle" style="width: 3.40356px; height: 3.40356px; left: 75.3471vw; animation-delay: 2.64156s; animation-duration: 18.6388s;"></div><div class="particle" style="width: 2.64319px; height: 2.64319px; left: 48.8213vw; animation-delay: 5.30253s; animation-duration: 21.4809s;"></div><div class="particle" style="width: 5.11108px; height: 5.11108px; left: 97.8922vw; animation-delay: 0.544115s; animation-duration: 24.7133s;"></div><div class="particle" style="width: 5.88825px; height: 5.88825px; left: 45.4277vw; animation-delay: 7.33257s; animation-duration: 19.3385s;"></div><div class="particle" style="width: 5.66518px; height: 5.66518px; left: 82.6057vw; animation-delay: 0.572888s; animation-duration: 20.3928s;"></div><div class="particle" style="width: 4.22399px; height: 4.22399px; left: 65.1734vw; animation-delay: 8.59584s; animation-duration: 23.3883s;"></div><div class="particle" style="width: 5.70392px; height: 5.70392px; left: 48.4631vw; animation-delay: 10.9937s; animation-duration: 17.0092s;"></div><div class="particle" style="width: 5.14654px; height: 5.14654px; left: 20.2334vw; animation-delay: 0.411222s; animation-duration: 23.4753s;"></div><div class="particle" style="width: 2.77234px; height: 2.77234px; left: 27.4791vw; animation-delay: 7.57883s; animation-duration: 15.1989s;"></div><div class="particle" style="width: 2.73172px; height: 2.73172px; left: 68.414vw; animation-delay: 5.28249s; animation-duration: 22.542s;"></div><div class="particle" style="width: 2.17883px; height: 2.17883px; left: 29.9383vw; animation-delay: 1.12566s; animation-duration: 23.1931s;"></div><div class="particle" style="width: 4.19988px; height: 4.19988px; left: 49.8826vw; animation-delay: 8.24935s; animation-duration: 21.8925s;"></div><div class="particle" style="width: 2.87662px; height: 2.87662px; left: 29.9943vw; animation-delay: 8.61954s; animation-duration: 22.642s;"></div><div class="particle" style="width: 3.7534px; height: 3.7534px; left: 97.8368vw; animation-delay: 11.4826s; animation-duration: 17.1468s;"></div><div class="particle" style="width: 2.47544px; height: 2.47544px; left: 71.2666vw; animation-delay: 12.2512s; animation-duration: 15.6175s;"></div><div class="particle" style="width: 2.99483px; height: 2.99483px; left: 76.8692vw; animation-delay: 13.0427s; animation-duration: 17.1767s;"></div><div class="particle" style="width: 4.22591px; height: 4.22591px; left: 18.7753vw; animation-delay: 2.18797s; animation-duration: 20.1568s;"></div><div class="particle" style="width: 3.37823px; height: 3.37823px; left: 10.5441vw; animation-delay: 14.5716s; animation-duration: 18.1694s;"></div><div class="particle" style="width: 3.84635px; height: 3.84635px; left: 23.6948vw; animation-delay: 4.4313s; animation-duration: 20.0912s;"></div></div>
+    <!-- Language Switcher Minimalista -->
+    <div class="language-switcher">
+        <button class="lang-btn active" data-lang="pt">
+            <span class="lang-flag">🇧🇷</span>
+            <span>PT</span>
+        </button>
+        <button class="lang-btn" data-lang="en">
+            <span class="lang-flag">🇺🇸</span>
+            <span>EN</span>
+        </button>
+        <button class="lang-btn" data-lang="ar">
+            <span class="lang-flag">🇸🇦</span>
+            <span>AR</span>
+        </button>
+    </div>
+
+    <!-- Gold Particles -->
+    <div class="gold-particles" id="particles"></div>
 
     <!-- Header -->
-    <header class="header" style="background: rgba(10, 10, 10, 0.98); backdrop-filter: blur(20px);">
+    <header class="header">
         <nav class="nav-container">
             <div>
                 <div class="logo">AVZ INFRA</div>
-                <div class="logo-tagline">TECHNOLOGY INFRASTRUCTURE</div>
+                <div class="logo-tagline lang-content active" data-lang="pt">INFRAESTRUTURA TECNOLÓGICA</div>
+                <div class="logo-tagline lang-content" data-lang="en">TECHNOLOGY INFRASTRUCTURE</div>
+                <div class="logo-tagline lang-content" data-lang="ar">البنية التحتية التكنولوجية</div>
             </div>
             <button class="mobile-menu-toggle" id="mobileMenuToggle">
                 <i class="fas fa-bars"></i>
             </button>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="#home">Início</a></li>
-                <li><a href="#quem-somos">Quem Somos</a></li>
-                <li><a href="#infraestrutura">Infraestrutura</a></li>
-                <li><a href="#presenca">Presença Global</a></li>
+                <li><a href="#home" class="lang-content active" data-lang="pt">Início</a>
+                    <a href="#home" class="lang-content" data-lang="en">Home</a>
+                    <a href="#home" class="lang-content" data-lang="ar">الرئيسية</a></li>
+                <li><a href="#filosofia" class="lang-content active" data-lang="pt">Filosofia</a>
+                    <a href="#filosofia" class="lang-content" data-lang="en">Philosophy</a>
+                    <a href="#filosofia" class="lang-content" data-lang="ar">الفلسفة</a></li>
+                <li><a href="#infraestrutura" class="lang-content active" data-lang="pt">Infraestrutura</a>
+                    <a href="#infraestrutura" class="lang-content" data-lang="en">Infrastructure</a>
+                    <a href="#infraestrutura" class="lang-content" data-lang="ar">البنية التحتية</a></li>
+                <li><a href="#presenca" class="lang-content active" data-lang="pt">Presença Global</a>
+                    <a href="#presenca" class="lang-content" data-lang="en">Global Presence</a>
+                    <a href="#presenca" class="lang-content" data-lang="ar">الوجود العالمي</a></li>
             </ul>
         </nav>
     </header>
@@ -36,131 +817,222 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>AVZ Infra Technology</h1>
-            <p>Infraestrutura blockchain descentralizada de última geração para o futuro digital.</p>
+            <h1 class="lang-content active" data-lang="pt">AVZ Infra Technology</h1>
+            <h1 class="lang-content" data-lang="en">AVZ Infra Technology</h1>
+            <h1 class="lang-content" data-lang="ar">AVZ Infra Technology</h1>
+            
+            <p class="lang-content active" data-lang="pt">Desde 2019, construindo infraestrutura blockchain descentralizada para um futuro digital soberano e livre.</p>
+            <p class="lang-content" data-lang="en">Since 2019, building decentralized blockchain infrastructure for a sovereign and free digital future.</p>
+            <p class="lang-content" data-lang="ar">منذ عام 2019، نبني بنية تحتية بلوكشين لامركزية لمستقبل رقمي سيادي وحُر.</p>
+            
             <div class="cta-buttons">
                 <a href="#infraestrutura" class="btn btn-primary">
                     <i class="fas fa-network-wired"></i>
-                    Infraestrutura
+                    <span class="lang-content active" data-lang="pt">Infraestrutura</span>
+                    <span class="lang-content" data-lang="en">Infrastructure</span>
+                    <span class="lang-content" data-lang="ar">البنية التحتية</span>
                 </a>
-                <a href="#quem-somos" class="btn btn-secondary">
-                    <i class="fas fa-users"></i>
-                    Conheça a Fundadora
+                <a href="#filosofia" class="btn btn-secondary">
+                    <i class="fas fa-lightbulb"></i>
+                    <span class="lang-content active" data-lang="pt">Nossa Filosofia</span>
+                    <span class="lang-content" data-lang="en">Our Philosophy</span>
+                    <span class="lang-content" data-lang="ar">فلسفتنا</span>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Quem Somos -->
-    <section id="quem-somos" class="section">
+    <!-- Filosofia / Philosophy -->
+    <section id="filosofia" class="section">
         <div class="container">
-            <h2 class="section-title">Quem Somos</h2>
+            <h2 class="section-title">
+                <span class="lang-content active" data-lang="pt">Nossa Filosofia</span>
+                <span class="lang-content" data-lang="en">Our Philosophy</span>
+                <span class="lang-content" data-lang="ar">فلسفتنا</span>
+            </h2>
             
-            <div class="founder-section">
-                <div class="founder-image-container">
-                    <!-- Substitua "foto-fundadora.jpg" pelo caminho da sua foto -->
-                    <img src="photo.jpg" alt="Foto da Fundadora" class="founder-image">
-                    <div class="founder-quote">
-                        <p>"A tecnologia deve servir, e não controlar. A descentralização é a chave para um futuro verdadeiramente livre e soberano."</p>
-                        <div class="founder-name">Viviane Baz</div>
-                        <div class="founder-position">Fundadora & CEO</div>
+            <div class="philosophy-content">
+                <div class="philosophy-text">
+                    <!-- Portuguese Content -->
+                    <div class="lang-content active" data-lang="pt">
+                        <p>Desde 2019, nossa missão tem sido redefinir o conceito de infraestrutura tecnológica. Acreditamos que a verdadeira inovação não está em criar sistemas mais complexos, mas em construir alicerces mais simples, seguros e soberanos para o futuro digital.</p>
+                        
+                        <p>A <strong>AVZ Infra</strong> nasceu da convicção de que a tecnologia deve servir como um facilitador da liberdade, não como um instrumento de controle. Enquanto o mundo avançava tecnologicamente, observamos um paradoxo preocupante: quanto mais nos conectávamos, mais dependentes nos tornávamos de estruturas centralizadas.</p>
+                        
+                        <p>Nossa filosofia é baseada em três pilares fundamentais: <strong>soberania digital</strong>, <strong>descentralização</strong> e <strong>transparência radical</strong>. Não construímos apenas sistemas técnicos; construímos ecossistemas onde cada participante mantém controle total sobre sua identidade, dados e interações.</p>
+                        
+                        <p>A tecnologia blockchain, para nós, representa muito mais do que um ledger distribuído. É a materialização de um princípio filosófico: a possibilidade de sistemas que não podem ser corrompidos, desligados ou controlados por qualquer entidade única. É a promessa de uma internet que verdadeiramente serve às pessoas.</p>
+                        
+                        <p>Rejeitamos a ideia de que segurança e liberdade são trade-offs. Nossas soluções demonstram que é possível ter ambos: sistemas extremamente seguros que, simultaneamente, empoderam os usuários com controle absoluto sobre seus ativos digitais.</p>
+                    </div>
+                    
+                    <!-- English Content -->
+                    <div class="lang-content" data-lang="en">
+                        <p>Since 2019, our mission has been to redefine the concept of technological infrastructure. We believe that true innovation is not about creating more complex systems, but about building simpler, safer, and more sovereign foundations for the digital future.</p>
+                        
+                        <p><strong>AVZ Infra</strong> was born from the conviction that technology should serve as an enabler of freedom, not as an instrument of control. While the world advanced technologically, we observed a concerning paradox: the more we connected, the more dependent we became on centralized structures.</p>
+                        
+                        <p>Our philosophy is based on three fundamental pillars: <strong>digital sovereignty</strong>, <strong>decentralization</strong>, and <strong>radical transparency</strong>. We don't just build technical systems; we build ecosystems where every participant maintains total control over their identity, data, and interactions.</p>
+                        
+                        <p>Blockchain technology, for us, represents much more than a distributed ledger. It is the materialization of a philosophical principle: the possibility of systems that cannot be corrupted, shut down, or controlled by any single entity. It is the promise of an internet that truly serves people.</p>
+                        
+                        <p>We reject the idea that security and freedom are trade-offs. Our solutions demonstrate that it is possible to have both: extremely secure systems that simultaneously empower users with absolute control over their digital assets.</p>
+                    </div>
+                    
+                    <!-- Arabic Content -->
+                    <div class="lang-content" data-lang="ar">
+                        <p>منذ عام 2019، كانت مهمتنا إعادة تعريف مفهوم البنية التحتية التكنولوجية. نؤمن أن الابتكار الحقيقي لا يكمن في إنشاء أنظمة أكثر تعقيدًا، بل في بناء أسس أبسط وأكثر أمانًا وسيادة للمستقبل الرقمي.</p>
+                        
+                        <p>ولدت <strong>AVZ Infra</strong> من قناعة مفادها أن التكنولوجيا يجب أن تكون ميسرة للحرية، وليس أداة للسيطرة. بينما تقدم العالم تكنولوجيًا، لاحظنا مفارقة مقلقة: كلما ازداد اتصالنا، أصبحنا أكثر اعتمادًا على الهياكل المركزية.</p>
+                        
+                        <p>تقوم فلسفتنا على ثلاثة أركان أساسية: <strong>السيادة الرقمية</strong>، <strong>اللامركزية</strong>، و<strong>الشفافية الجذرية</strong>. نحن لا نبني أنظمة تقنية فحسب؛ بل نبني أنظمة بيئية حيث يحتفظ كل مشارك بالسيطرة الكاملة على هويته وبياناته وتفاعلاته.</p>
+                        
+                        <p>تكنولوجيا البلوكشين، بالنسبة لنا، تمثل أكثر بكثير من سجل موزع. إنها تجسيد لمبدأ فلسفي: إمكانية أنظمة لا يمكن إفسادها أو إيقافها أو التحكم فيها من قبل أي كيان واحد. إنها وعد بإنترنت يخدم الناس حقًا.</p>
+                        
+                        <p>نرفض فكرة أن الأمان والحرية ينطويان على مقايضة. تظهر حلولنا أنه من الممكن الحصول على كليهما: أنظمة آمنة للغاية تمكن المستخدمين في نفس الوقت من السيطرة المطلقة على أصولهم الرقمية.</p>
                     </div>
                 </div>
                 
-                <div class="founder-info">
-                    <h3 style="color: var(--gold-primary); font-family: 'Cinzel', serif; margin-bottom: 1.5rem; font-size: 2rem;">Manifesto da Fundadora</h3>
-                    
-                    <div class="manifesto-content">
-                        <div class="manifesto-text">
-                            <p>Em um mundo cada vez mais digitalizado, percebi uma contradição fundamental: enquanto a tecnologia prometia liberdade e conexão, as arquiteturas centralizadas estavam criando novos tipos de dependência e controle.</p>
-                            
-                            <p>A ideia da <strong>AVZ Infra</strong> nasceu da convicção de que a infraestrutura tecnológica deveria ser tão livre e acessível quanto o ar que respiramos. Não como um serviço pago, controlado por poucos, mas como um bem comum, distribuído e resistente à censura.</p>
-                            
-                            <p>Nossa missão é construir a base tecnológica para uma nova era digital – uma era onde a soberania individual não é apenas um conceito filosófico, mas uma realidade técnica. Onde cada pessoa, empresa ou nação pode operar com autonomia completa, sem depender de intermediários ou enfrentar barreiras geopolíticas arbitrárias.</p>
-                            
-                            <p><strong>Blockchain</strong> não é apenas uma tecnologia para nós; é uma filosofia operacional. Representa a possibilidade de sistemas que não podem ser desligados, corrompidos ou controlados por qualquer entidade única. Representa a promessa de uma internet que serve às pessoas, não a corporações ou governos.</p>
-                            
-                            <p>Na AVZ Infra, estamos construindo mais do que infraestrutura técnica. Estamos criando as fundações para um mundo digital verdadeiramente descentralizado – onde a identidade, a comunicação e a transação são direitos inalienáveis, protegidos por criptografia e distribuídos por redes peer-to-peer.</p>
-                            
-                            <p>Esta jornada é sobre <strong>restaurar o equilíbrio de poder</strong> na era digital. É sobre garantir que a tecnologia sirva à humanidade, não o contrário. Convidamos você a fazer parte desta visão – não como um usuário passivo, mas como um participante ativo na construção do futuro.</p>
-                        </div>
-                    </div>
-                    
-                    <div style="margin-top: 2.5rem; text-align: center;">
-                        <p style="color: var(--gold-secondary); font-family: 'Marcellus', serif; font-size: 1.1rem;">
-                            <i class="fas fa-quote-left" style="color: var(--gold-primary); margin-right: 10px;"></i>
-                            A verdadeira inovação não está em criar mais dependência, mas em construir mais liberdade.
-                            <i class="fas fa-quote-right" style="color: var(--gold-primary); margin-left: 10px;"></i>
-                        </p>
-                    </div>
+                <div class="philosophy-quote">
+                    <p class="lang-content active" data-lang="pt">"A verdadeira inovação não está em criar mais dependência, mas em construir mais liberdade."</p>
+                    <p class="lang-content" data-lang="en">"True innovation is not about creating more dependency, but about building more freedom."</p>
+                    <p class="lang-content" data-lang="ar">"الابتكار الحقيقي لا يكمن في خلق المزيد من الاعتماد، بل في بناء المزيد من الحرية."</p>
+                    <div class="quote-author lang-content active" data-lang="pt">— Filosofia AVZ Infra</div>
+                    <div class="quote-author lang-content" data-lang="en">— AVZ Infra Philosophy</div>
+                    <div class="quote-author lang-content" data-lang="ar">— فلسفة AVZ Infra</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Infraestrutura -->
+    <!-- Infraestrutura / Infrastructure -->
     <section id="infraestrutura" class="section">
         <div class="container">
-            <h2 class="section-title">Infraestrutura Descentralizada</h2>
+            <h2 class="section-title">
+                <span class="lang-content active" data-lang="pt">Infraestrutura Descentralizada</span>
+                <span class="lang-content" data-lang="en">Decentralized Infrastructure</span>
+                <span class="lang-content" data-lang="ar">البنية التحتية اللامركزية</span>
+            </h2>
             
             <div class="cards-grid">
+                <!-- Card 1 -->
                 <div class="card">
                     <div class="card-icon">
                         <i class="fas fa-network-wired"></i>
                     </div>
-                    <h3>Arquitetura Distribuída</h3>
-                    <p>Infraestrutura descentralizada que elimina pontos únicos de falha e garante alta disponibilidade.</p>
+                    <h3>
+                        <span class="lang-content active" data-lang="pt">Arquitetura Distribuída</span>
+                        <span class="lang-content" data-lang="en">Distributed Architecture</span>
+                        <span class="lang-content" data-lang="ar">هندسة موزعة</span>
+                    </h3>
+                    <p>
+                        <span class="lang-content active" data-lang="pt">Infraestrutura descentralizada que elimina pontos únicos de falha e garante alta disponibilidade.</span>
+                        <span class="lang-content" data-lang="en">Decentralized infrastructure that eliminates single points of failure and ensures high availability.</span>
+                        <span class="lang-content" data-lang="ar">بنية تحتية لامركزية تزيل نقاط الفشل الفردية وتضمن توافرًا عاليًا.</span>
+                    </p>
                 </div>
 
+                <!-- Card 2 -->
                 <div class="card">
                     <div class="card-icon">
                         <i class="fas fa-bolt"></i>
                     </div>
-                    <h3>Performance Otimizada</h3>
-                    <p>Rede distribuída globalmente com latência mínima e throughput máximo para operações em tempo real.</p>
+                    <h3>
+                        <span class="lang-content active" data-lang="pt">Performance Otimizada</span>
+                        <span class="lang-content" data-lang="en">Optimized Performance</span>
+                        <span class="lang-content" data-lang="ar">أداء مُحسَّن</span>
+                    </h3>
+                    <p>
+                        <span class="lang-content active" data-lang="pt">Rede distribuída globalmente com latência mínima e throughput máximo para operações em tempo real.</span>
+                        <span class="lang-content" data-lang="en">Globally distributed network with minimal latency and maximum throughput for real-time operations.</span>
+                        <span class="lang-content" data-lang="ar">شبكة موزعة عالميًا بأقل زمن انتقال وأقصى معدل نقل للعمليات في الوقت الفعلي.</span>
+                    </p>
                 </div>
 
+                <!-- Card 3 -->
                 <div class="card">
                     <div class="card-icon">
                         <i class="fas fa-lock"></i>
                     </div>
-                    <h3>Segurança Enterprise</h3>
-                    <p>Protocolos de segurança de nível institucional com criptografia de ponta a ponta.</p>
+                    <h3>
+                        <span class="lang-content active" data-lang="pt">Segurança Enterprise</span>
+                        <span class="lang-content" data-lang="en">Enterprise Security</span>
+                        <span class="lang-content" data-lang="ar">أمان المؤسسات</span>
+                    </h3>
+                    <p>
+                        <span class="lang-content active" data-lang="pt">Protocolos de segurança de nível institucional com criptografia de ponta a ponta.</span>
+                        <span class="lang-content" data-lang="en">Institutional-level security protocols with end-to-end encryption.</span>
+                        <span class="lang-content" data-lang="ar">بروتوكولات أمان على مستوى المؤسسات مع تشفير من طرف إلى طرف.</span>
+                    </p>
                 </div>
 
+                <!-- Card 4 -->
                 <div class="card">
                     <div class="card-icon">
                         <i class="fas fa-expand-arrows-alt"></i>
                     </div>
-                    <h3>Escalabilidade Ilimitada</h3>
-                    <p>Arquitetura projetada para escalar horizontalmente conforme a demanda cresce.</p>
+                    <h3>
+                        <span class="lang-content active" data-lang="pt">Escalabilidade Ilimitada</span>
+                        <span class="lang-content" data-lang="en">Unlimited Scalability</span>
+                        <span class="lang-content" data-lang="ar">قابلية توسع غير محدودة</span>
+                    </h3>
+                    <p>
+                        <span class="lang-content active" data-lang="pt">Arquitetura projetada para escalar horizontalmente conforme a demanda cresce.</span>
+                        <span class="lang-content" data-lang="en">Architecture designed to scale horizontally as demand grows.</span>
+                        <span class="lang-content" data-lang="ar">هندسة مصممة للتوسع أفقيًا مع نمو الطلب.</span>
+                    </p>
                 </div>
 
+                <!-- Card 5 -->
                 <div class="card">
                     <div class="card-icon">
                         <i class="fas fa-sync-alt"></i>
                     </div>
-                    <h3>Resiliência Operacional</h3>
-                    <p>Sistema tolerante a falhas com recuperação automática e redundância distribuída.</p>
+                    <h3>
+                        <span class="lang-content active" data-lang="pt">Resiliência Operacional</span>
+                        <span class="lang-content" data-lang="en">Operational Resilience</span>
+                        <span class="lang-content" data-lang="ar">المرونة التشغيلية</span>
+                    </h3>
+                    <p>
+                        <span class="lang-content active" data-lang="pt">Sistema tolerante a falhas com recuperação automática e redundância distribuída.</span>
+                        <span class="lang-content" data-lang="en">Fault-tolerant system with automatic recovery and distributed redundancy.</span>
+                        <span class="lang-content" data-lang="ar">نظام متحمل للأعطال مع استعادة تلقائية وتكرار موزع.</span>
+                    </p>
                 </div>
 
+                <!-- Card 6 -->
                 <div class="card">
                     <div class="card-icon">
                         <i class="fas fa-tachometer-alt"></i>
                     </div>
-                    <h3>Soberania Absoluta</h3>
-                    <p>Sistemas de Identidade Digital projetados para soberania absoluta em qualquer funcionalidade necessária.</p>
+                    <h3>
+                        <span class="lang-content active" data-lang="pt">Soberania Absoluta</span>
+                        <span class="lang-content" data-lang="en">Absolute Sovereignty</span>
+                        <span class="lang-content" data-lang="ar">سيادة مطلقة</span>
+                    </h3>
+                    <p>
+                        <span class="lang-content active" data-lang="pt">Sistemas de Identidade Digital projetados para soberania absoluta em qualquer funcionalidade necessária.</span>
+                        <span class="lang-content" data-lang="en">Digital Identity Systems designed for absolute sovereignty in any required functionality.</span>
+                        <span class="lang-content" data-lang="ar">أنظمة الهوية الرقمية المصممة للسيادة المطلقة في أي وظيفة مطلوبة.</span>
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Presença Global -->
+    <!-- Presença Global / Global Presence -->
     <section id="presenca" class="section">
         <div class="container">
-            <h2 class="section-title">Presença Global</h2>
-            <p style="text-align: center; color: var(--platinum); margin-bottom: 3rem; font-size: 1.2rem; font-family: 'Marcellus', serif;">
-                Infraestrutura distribuída em múltiplas regiões para máxima resiliência
+            <h2 class="section-title">
+                <span class="lang-content active" data-lang="pt">Presença Global</span>
+                <span class="lang-content" data-lang="en">Global Presence</span>
+                <span class="lang-content" data-lang="ar">الوجود العالمي</span>
+            </h2>
+            
+            <p style="text-align: center; color: var(--platinum); margin-bottom: 2.5rem; font-size: 1.1rem; font-family: 'Marcellus', serif;">
+                <span class="lang-content active" data-lang="pt">Infraestrutura distribuída em múltiplas regiões para máxima resiliência</span>
+                <span class="lang-content" data-lang="en">Infrastructure distributed across multiple regions for maximum resilience</span>
+                <span class="lang-content" data-lang="ar">بنية تحتية موزعة عبر مناطق متعددة لأقصى قدر من المرونة</span>
             </p>
             
             <div class="countries-grid">
@@ -170,31 +1042,31 @@
                 </div>
                 <div class="country-item">
                     <div class="country-flag">🇺🇸</div>
-                    <div class="country-name">Estados Unidos</div>
+                    <div class="country-name">United States</div>
                 </div>
                 <div class="country-item">
                     <div class="country-flag">🇪🇺</div>
-                    <div class="country-name">União Europeia</div>
+                    <div class="country-name">European Union</div>
                 </div>
                 <div class="country-item">
                     <div class="country-flag">🇸🇬</div>
-                    <div class="country-name">Singapura</div>
+                    <div class="country-name">Singapore</div>
                 </div>
                 <div class="country-item">
                     <div class="country-flag">🇯🇵</div>
-                    <div class="country-name">Japão</div>
+                    <div class="country-name">Japan</div>
                 </div>
                 <div class="country-item">
                     <div class="country-flag">🇦🇪</div>
-                    <div class="country-name">Emirados Árabes</div>
+                    <div class="country-name">UAE</div>
                 </div>
                 <div class="country-item">
                     <div class="country-flag">🇨🇦</div>
-                    <div class="country-name">Canadá</div>
+                    <div class="country-name">Canada</div>
                 </div>
                 <div class="country-item">
                     <div class="country-flag">🇦🇺</div>
-                    <div class="country-name">Austrália</div>
+                    <div class="country-name">Australia</div>
                 </div>
             </div>
         </div>
@@ -204,97 +1076,145 @@
     <footer class="footer">
         <div class="footer-content">
             <div class="social-links">
-                <a href="https://vivianeadev.github.io/avzinfra/#"><i class="fab fa-linkedin"></i></a>
-                <a href="https://vivianeadev.github.io/avzinfra/#"><i class="fab fa-twitter"></i></a>
-                <a href="https://vivianeadev.github.io/avzinfra/#"><i class="fab fa-github"></i></a>
-                <a href="https://vivianeadev.github.io/avzinfra/#"><i class="fab fa-medium"></i></a>
+                <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://medium.com/" target="_blank"><i class="fab fa-medium"></i></a>
             </div>
-            <p>© 2026 AVZ Infra. Todos os direitos reservados.</p>
+            
+            <p>
+                <span class="lang-content active" data-lang="pt">© 2026 AVZ Infra. Todos os direitos reservados.</span>
+                <span class="lang-content" data-lang="en">© 2026 AVZ Infra. All rights reserved.</span>
+                <span class="lang-content" data-lang="ar">© 2026 AVZ Infra. جميع الحقوق محفوظة.</span>
+            </p>
+            
             <p style="color: var(--gold-primary); font-size: 0.9rem; font-family: 'Cinzel', serif;">
-                "Construindo a infraestrutura que conecta o presente ao futuro."
+                <span class="lang-content active" data-lang="pt">"Construindo a infraestrutura que conecta o presente ao futuro."</span>
+                <span class="lang-content" data-lang="en">"Building the infrastructure that connects the present to the future."</span>
+                <span class="lang-content" data-lang="ar">"نبني البنية التحتية التي تربط الحاضر بالمستقبل."</span>
             </p>
         </div>
     </footer>
 
     <script>
-        // Efeito de partículas douradas
-        function createParticles() {
-            const particlesContainer = document.getElementById('particles');
-            const particlesCount = 30;
+        // Language Switching
+        document.addEventListener('DOMContentLoaded', function() {
+            const langButtons = document.querySelectorAll('.lang-btn');
+            const langContents = document.querySelectorAll('.lang-content');
             
-            for (let i = 0; i < particlesCount; i++) {
-                const particle = document.createElement('div');
-                particle.classList.add('particle');
-                
-                // Tamanho aleatório entre 2px e 6px
-                const size = Math.random() * 4 + 2;
-                particle.style.width = `${size}px`;
-                particle.style.height = `${size}px`;
-                
-                // Posição inicial aleatória
-                particle.style.left = `${Math.random() * 100}vw`;
-                
-                // Atraso de animação aleatório
-                particle.style.animationDelay = `${Math.random() * 15}s`;
-                
-                // Duração de animação aleatória
-                const duration = Math.random() * 10 + 15;
-                particle.style.animationDuration = `${duration}s`;
-                
-                particlesContainer.appendChild(particle);
-            }
-        }
-        
-        createParticles();
-
-        // Menu mobile toggle
-        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
-        const navMenu = document.getElementById('navMenu');
-        
-        mobileMenuToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-            const icon = mobileMenuToggle.querySelector('i');
-            if (navMenu.classList.contains('active')) {
-                icon.classList.remove('fa-bars');
-                icon.classList.add('fa-times');
-            } else {
-                icon.classList.remove('fa-times');
-                icon.classList.add('fa-bars');
-            }
-        });
-
-        // Fechar menu ao clicar em um link
-        document.querySelectorAll('.nav-menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                navMenu.classList.remove('active');
-                const icon = mobileMenuToggle.querySelector('i');
-                icon.classList.remove('fa-times');
-                icon.classList.add('fa-bars');
-            });
-        });
-
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
+            // Set initial language to Portuguese
+            setLanguage('pt');
+            
+            // Add click event to language buttons
+            langButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const lang = this.getAttribute('data-lang');
+                    setLanguage(lang);
+                    
+                    // Update active button
+                    langButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Update RTL for Arabic
+                    if (lang === 'ar') {
+                        document.body.setAttribute('dir', 'rtl');
+                    } else {
+                        document.body.removeAttribute('dir');
+                    }
                 });
             });
-        });
-
-        // Header scroll effect
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('.header');
-            if (window.scrollY > 100) {
-                header.style.background = 'rgba(10, 10, 10, 0.98)';
-                header.style.backdropFilter = 'blur(20px)';
-            } else {
-                header.style.background = 'rgba(10, 10, 10, 0.95)';
-                header.style.backdropFilter = 'blur(15px)';
+            
+            function setLanguage(lang) {
+                // Hide all language content
+                langContents.forEach(content => {
+                    content.classList.remove('active');
+                });
+                
+                // Show content for selected language
+                const activeContents = document.querySelectorAll(`.lang-content[data-lang="${lang}"]`);
+                activeContents.forEach(content => {
+                    content.classList.add('active');
+                });
             }
+            
+            // Create particles
+            function createParticles() {
+                const particlesContainer = document.getElementById('particles');
+                const particlesCount = 30;
+                
+                for (let i = 0; i < particlesCount; i++) {
+                    const particle = document.createElement('div');
+                    particle.classList.add('particle');
+                    
+                    // Random size between 2px and 6px
+                    const size = Math.random() * 4 + 2;
+                    particle.style.width = `${size}px`;
+                    particle.style.height = `${size}px`;
+                    
+                    // Random starting position
+                    particle.style.left = `${Math.random() * 100}vw`;
+                    
+                    // Random animation delay
+                    particle.style.animationDelay = `${Math.random() * 15}s`;
+                    
+                    // Random animation duration
+                    const duration = Math.random() * 10 + 15;
+                    particle.style.animationDuration = `${duration}s`;
+                    
+                    particlesContainer.appendChild(particle);
+                }
+            }
+            
+            createParticles();
+            
+            // Mobile menu toggle
+            const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+            const navMenu = document.getElementById('navMenu');
+            
+            mobileMenuToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                const icon = mobileMenuToggle.querySelector('i');
+                if (navMenu.classList.contains('active')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                } else {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
+            
+            // Close menu when clicking a link
+            document.querySelectorAll('.nav-menu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navMenu.classList.remove('active');
+                    const icon = mobileMenuToggle.querySelector('i');
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                });
+            });
+            
+            // Smooth scrolling
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+            
+            // Header scroll effect
+            window.addEventListener('scroll', () => {
+                const header = document.querySelector('.header');
+                if (window.scrollY > 100) {
+                    header.style.background = 'rgba(10, 10, 10, 0.98)';
+                    header.style.backdropFilter = 'blur(20px)';
+                } else {
+                    header.style.background = 'rgba(10, 10, 10, 0.95)';
+                    header.style.backdropFilter = 'blur(15px)';
+                }
+            });
         });
     </script>
-
-
-</body></html>
+</body>
+</html>
