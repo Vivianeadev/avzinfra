@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viviane Baz | Sobre a Fundadora</title>
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f9f5f0 0%, #faf0f4 100%);
+            color: #3a3a3a;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgb(255 255 255 / .95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1rem 0;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid rgb(212 175 55 / .1);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+            color: #2b2b2b;
+            text-transform: uppercase;
+        }
+        
+        .logo span {
+            display: block;
+            font-size: 11px;
+            letter-spacing: 8px;
+            margin-top: 2px;
+            color: #888;
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-menu a {
+            color: #3a3a3a;
+            text-decoration: none;
+            font-weight: 400;
+            transition: all 0.3s ease;
+            position: relative;
+            font-size: 14px;
+            letter-spacing: .5px;
+        }
+        
+        .nav-menu a:hover {
+            color: #d4af37;
+        }
+        
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: linear-gradient(135deg, #d4af37, #f4e4b8);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-menu a:hover::after {
+            width: 100%;
+        }
+        
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 2rem;
+            position: relative;
+            background: linear-gradient(135deg, rgb(249 245 240 / .9), rgb(250 240 244 / .9));
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            z-index: 2;
+        }
+        
+        .profile-container {
+            margin-bottom: 2rem;
+        }
+        
+        .profile-frame {
+            width: 180px;
+            height: 180px;
+            margin: 0 auto;
+            border-radius: 50%;
+            border: 2px solid #d4af37;
+            padding: 4px;
+            background: white;
+            box-shadow: 0 4px 15px rgb(212 175 55 / .15);
+            overflow: hidden;
+        }
+        
+        .profile-photo {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        .profile-placeholder {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #f4e4b8, #d4af37);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #2a2a2a;
+            font-size: 1rem;
+            font-weight: 400;
+        }
+        
+        .hero h1 {
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            margin-bottom: 0.8rem;
+            font-weight: 400;
+            letter-spacing: 1px;
+            color: #2b2b2b;
+        }
+        
+        .hero-subtitle {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 1.5rem;
+            font-weight: 300;
+            letter-spacing: 0.5px;
+        }
+        
+        .hero-intro {
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            padding: 1.5rem;
+            background: rgb(255 255 255 / .8);
+            border-radius: 4px;
+            box-shadow: 0 2px 10px rgb(0 0 0 / .05);
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.7;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 2px;
+            font-weight: 400;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            font-size: 13px;
+            letter-spacing: 0.5px;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(to right, #d4af37, #f4e4b8);
+            color: #2a2a2a;
+            box-shadow: 0 3px 10px rgb(212 175 55 / .2);
+        }
+        
+        .btn-primary:hover {
+            box-shadow: 0 5px 15px rgb(212 175 55 / .25);
+            transform: translateY(-1px);
+        }
+        
+        .btn-secondary {
+            background: #fff0;
+            color: #666;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 6px rgb(0 0 0 / .05);
+        }
+        
+        .btn-secondary:hover {
+            border-color: #d4af37;
+            color: #d4af37;
+        }
+        
+        /* Sections */
+        .section {
+            padding: 4rem 2rem;
+            background: rgb(255 255 255 / .7);
+            position: relative;
+        }
+        
+        .section-light {
+            background: linear-gradient(135deg, #f5f1ec 0%, #f7ecec 100%);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .section-title {
+            font-size: clamp(1.4rem, 3vw, 1.8rem);
+            text-align: center;
+            margin-bottom: 2rem;
+            font-weight: 400;
+            letter-spacing: 1px;
+            color: #2b2b2b;
+            position: relative;
+            padding-bottom: 12px;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 1px;
+            background: linear-gradient(to right, #d4af37, #f4e4b8);
+        }
+        
+        /* Journey */
+        .journey-timeline {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .journey-item {
+            background: rgb(255 255 255 / .9);
+            border: 1px solid rgb(212 175 55 / .08);
+            border-radius: 4px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgb(0 0 0 / .05);
+        }
+        
+        .journey-item:hover {
+            border-color: rgb(212 175 55 / .2);
+            box-shadow: 0 4px 15px rgb(212 175 55 / .1);
+        }
+        
+        .journey-year {
+            display: inline-block;
+            background: rgb(212 175 55 / .1);
+            color: #d4af37;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            font-weight: 400;
+        }
+        
+        .journey-content h4 {
+            font-size: 1.1rem;
+            color: #2b2b2b;
+            margin-bottom: 0.8rem;
+            font-weight: 500;
+        }
+        
+        .journey-content p {
+            color: #666;
+            line-height: 1.6;
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .study-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: .4rem;
+            margin-top: 1rem;
+        }
+        
+        .study-tag {
+            background: rgb(212 175 55 / .05);
+            color: #888;
+            padding: .2rem .6rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            border: 1px solid rgb(212 175 55 / .1);
+        }
+        
+        /* Values */
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        
+        .value-card {
+            background: rgb(255 255 255 / .9);
+            border: 1px solid rgb(212 175 55 / .08);
+            border-radius: 4px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgb(0 0 0 / .05);
+        }
+        
+        .value-card:hover {
+            border-color: rgb(212 175 55 / .2);
+            box-shadow: 0 4px 15px rgb(212 175 55 / .1);
+        }
+        
+        .value-icon {
+            font-size: 1.8rem;
+            color: #d4af37;
+            margin-bottom: 1rem;
+        }
+        
+        .value-card h3 {
+            font-size: 1.1rem;
+            margin-bottom: .8rem;
+            color: #2b2b2b;
+            font-weight: 500;
+        }
+        
+        .value-card p {
+            color: #666;
+            line-height: 1.6;
+            font-size: .9rem;
+        }
+        
+        /* Simple Statement */
+        .simple-statement {
+            background: rgb(255 255 255 / .9);
+            border: 1px solid rgb(212 175 55 / .08);
+            border-radius: 4px;
+            padding: 2rem;
+            margin-top: 2rem;
+            text-align: center;
+            box-shadow: 0 2px 8px rgb(0 0 0 / .05);
+        }
+        
+        .simple-statement p {
+            color: #666;
+            font-size: 1rem;
+            line-height: 1.7;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        /* Footer */
+        .footer {
+            background: rgb(255 255 255 / .9);
+            padding: 2rem 2rem 1rem;
+            text-align: center;
+            border-top: 1px solid rgb(212 175 55 / .1);
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .footer p {
+            color: #888;
+            margin-bottom: .8rem;
+            font-size: .85rem;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        
+        .social-links a {
+            color: #888;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            color: #d4af37;
+        }
+        
+        /* Back to Main */
+        .back-to-main {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 999;
+        }
+        
+        .back-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: rgb(212 175 55 / .1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgb(212 175 55 / .2);
+            color: #d4af37;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 10px rgb(0 0 0 / .1);
+            text-decoration: none;
+        }
+        
+        .back-button:hover {
+            background: rgb(212 175 55 / .15);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgb(212 175 55 / .2);
+        }
+        
+        .back-button i {
+            font-size: 18px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+            
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .profile-frame {
+                width: 160px;
+                height: 160px;
+            }
+            
+            .simple-statement {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Back to Main Button -->
+    <div class="back-to-main">
+        <a href="index.html" class="back-button">
+            <i class="fas fa-arrow-left"></i>
+        </a>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">Sobre Mim <span>Viviane Baz</span></div>
+            <ul class="nav-menu">
+                <li><a href="#estudos">Estudos</a></li>
+                <li><a href="#caminhos">Caminhos</a></li>
+                <li><a href="#valores">Valores</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="profile-container">
+                <div class="profile-frame">
+                    <!-- Substitua pelo caminho da sua foto -->
+                    <img src="viviane-baz.jpg" alt="Viviane Baz" class="profile-photo" id="profilePhoto">
+                    <div class="profile-placeholder" id="photoPlaceholder">
+                        VB
+                    </div>
+                </div>
+            </div>
+            
+            <h1>Viviane Baz</h1>
+            <div class="hero-subtitle">Estudiosa de tecnologia e observadora dos caminhos humanos</div>
+            
+            <div class="hero-intro">
+                Sou uma pessoa comum que sempre se interessou por entender como a tecnologia pode servir melhor às pessoas. Minha jornada tem sido basicamente estudar, observar e tentar criar soluções que façam sentido para o futuro que queremos construir.
+            </div>
+            
+            <div class="cta-buttons">
+                <a href="#estudos" class="btn btn-primary">
+                    <i class="fas fa-book"></i>
+                    Meus Estudos
+                </a>
+                <a href="#projetos" class="btn btn-secondary">
+                    <i class="fas fa-code"></i>
+                    Projetos
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Studies Section -->
+    <section id="estudos" class="section">
+        <div class="container">
+            <h2 class="section-title">Anos de Estudo e Observação</h2>
+            
+            <div class="journey-timeline">
+                <!-- 2019 -->
+                <div class="journey-item">
+                    <div class="journey-year">2019</div>
+                    <div class="journey-content">
+                        <h4>Início dos Estudos Aprofundados</h4>
+                        <p>Comecei a estudar seriamente as tecnologias emergentes e seus impactos na sociedade. Não era sobre criar algo, mas sobre entender o que já existia e para onde estávamos indo.</p>
+                        <p>Passava horas lendo papers técnicos, analisando sistemas e tentando compreender os reais desafios que a humanidade enfrentaria no mundo digital.</p>
+                        <div class="study-tags">
+                            <span class="study-tag">Blockchain</span>
+                            <span class="study-tag">Criptografia</span>
+                            <span class="study-tag">Sistemas Distribuídos</span>
+                            <span class="study-tag">Identidade Digital</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2023 -->
+                <div class="journey-item">
+                    <div class="journey-year">2023</div>
+                    <div class="journey-content">
+                        <h4>Primeiras Experimentações Práticas</h4>
+                        <p>Depois de anos estudando, comecei a experimentar na prática. Criei protótipos simples para testar ideias que surgiam durante meus estudos.</p>
+                        <p>Percebi que entender teoria é uma coisa, mas ver algo funcionando é completamente diferente. Foi um período de muita aprendizagem prática.</p>
+                        <div class="study-tags">
+                            <span class="study-tag">Protótipos</span>
+                            <span class="study-tag">Testes Práticos</span>
+                            <span class="study-tag">Aprendizado</span>
+                            <span class="study-tag">Experimentos</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2026 -->
+                <div class="journey-item">
+                    <div class="journey-year">2026</div>
+                    <div class="journey-content">
+                        <h4>Consolidação do Conhecimento</h4>
+                        <p>Anos de estudo começaram a fazer sentido. As peças do quebra-cabeça tecnológico que vinha estudando desde 2019 começaram a se encaixar.</p>
+                        <p>O que começou como curiosidade e estudo se transformou em compreensão mais profunda dos caminhos que a tecnologia poderia seguir para realmente servir às pessoas.</p>
+                        <div class="study-tags">
+                            <span class="study-tag">Compreensão</span>
+                            <span class="study-tag">Consolidação</span>
+                            <span class="study-tag">Visão Clara</span>
+                            <span class="study-tag">Caminhos Definidos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section id="valores" class="section section-light">
+        <div class="container">
+            <h2 class="section-title">O Que Guia Meus Estudos</h2>
+            
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h3>Tecnologia para Pessoas</h3>
+                    <p>Acredito que a tecnologia deve ser simples, útil e acessível. Se não serve às pessoas comuns, então não está cumprindo seu propósito.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Segurança e Privacidade</h3>
+                    <p>Estudo formas de proteger dados e identidades porque acredito que privacidade é um direito básico, não um privilégio.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3>Sistemas Distribuídos</h3>
+                    <p>Interesso-me por sistemas que não dependem de um ponto único. Acredito na força das redes descentralizadas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projetos" class="section">
+        <div class="container">
+            <h2 class="section-title">Projetos que Surgiram dos Estudos</h2>
+            
+            <div class="simple-statement">
+                <p>Os projetos que ajudo a criar na AVZ são simplesmente a aplicação prática de anos de estudo. Não são "invenções revolucionárias", mas sim soluções cuidadosamente pensadas baseadas em muito estudo e observação do que realmente funciona e do que as pessoas realmente precisam.</p>
+                <p style="margin-top: 1rem; font-style: italic; color: #888;">
+                    É sobre fazer o trabalho necessário, estudar bastante, e tentar criar coisas que façam sentido.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2026 Viviane Baz</p>
+            <p>Apenas uma estudiosa tentando entender tecnologia</p>
+            <div class="social-links">
+                <a href="https://github.com/vivianeadev" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:contato@avz.infra" target="_blank"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>Estudando desde 2019, aprendendo sempre</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Handle profile photo loading
+            const profilePhoto = document.getElementById('profilePhoto');
+            const photoPlaceholder = document.getElementById('photoPlaceholder');
+            
+            if (profilePhoto) {
+                profilePhoto.onload = function() {
+                    photoPlaceholder.style.display = 'none';
+                    profilePhoto.style.display = 'block';
+                };
+                
+                profilePhoto.onerror = function() {
+                    photoPlaceholder.style.display = 'flex';
+                    profilePhoto.style.display = 'none';
+                };
+                
+                // Check if image loads
+                if (profilePhoto.complete) {
+                    if (profilePhoto.naturalWidth === 0) {
+                        photoPlaceholder.style.display = 'flex';
+                        profilePhoto.style.display = 'none';
+                    } else {
+                        photoPlaceholder.style.display = 'none';
+                        profilePhoto.style.display = 'block';
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
