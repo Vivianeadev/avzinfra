@@ -7,7 +7,741 @@
     <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        *{margin:0;padding:0;box-sizing:border-box;font-family:'Helvetica Neue',Arial,sans-serif}body{background:linear-gradient(135deg,#f9f5f0 0%,#faf0f4 100%);color:#3a3a3a;line-height:1.6;overflow-x:hidden;position:relative}body::before,body::after{content:'';position:fixed;width:500px;height:500px;border-radius:50%;pointer-events:none;z-index:0;opacity:.03}body::before{top:-200px;right:-200px;background:radial-gradient(circle,#7B3F00 0%,transparent 70%);box-shadow:0 0 150px 150px rgb(123 63 0 / .1)}body::after{bottom:-200px;left:-200px;background:radial-gradient(circle,#8B4513 0%,transparent 70%);box-shadow:0 0 150px 150px rgb(139 69 19 / .1)}.header{position:fixed;top:0;width:100%;background:rgb(255 255 255 / .95);backdrop-filter:blur(10px);z-index:1000;padding:1rem 0;transition:all 0.3s ease;border-bottom:1px solid rgb(212 175 55 / .1);box-shadow:0 2px 20px rgb(123 63 0 / .05)}.nav-container{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 2rem}.logo{font-size:1.8rem;font-weight:300;letter-spacing:2px;color:#2b2b2b;text-transform:uppercase;position:relative}.logo::after{content:'';position:absolute;bottom:-5px;left:0;width:60%;height:1px;background:linear-gradient(to right,transparent,#7B3F00,transparent)}.logo span{display:block;font-size:11px;letter-spacing:8px;margin-top:2px;color:#888}.nav-menu{display:flex;list-style:none;gap:2rem}.nav-menu a{color:#3a3a3a;text-decoration:none;font-weight:400;transition:all 0.3s ease;position:relative;font-size:14px;letter-spacing:.5px}.nav-menu a:hover{color:#d4af37}.nav-menu a::after{content:'';position:absolute;bottom:-5px;left:0;width:0;height:1px;background:linear-gradient(135deg,#d4af37,#7B3F00);transition:width 0.3s ease}.nav-menu a:hover::after{width:100%}.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:0 2rem;position:relative;background:linear-gradient(135deg,rgb(249 245 240 / .9),rgb(250 240 244 / .9));overflow:hidden}.hero::before{content:'';position:absolute;top:10%;right:10%;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgb(123 63 0 / .03) 0%,transparent 70%);filter:blur(40px);z-index:1}.hero-content{max-width:900px;z-index:2}.hero h1{font-size:clamp(2rem, 5vw, 3.2rem);margin-bottom:1rem;font-weight:400;letter-spacing:1px;color:#2b2b2b;line-height:1.2}.hero h1 span{color:#d4af37;font-weight:500;text-shadow:0 0 30px rgb(212 175 55 / .2)}.hero-subtitle{font-size:1.2rem;color:#666;margin-bottom:2.5rem;font-weight:300;letter-spacing:.5px;max-width:700px;margin-left:auto;margin-right:auto;line-height:1.7}.cta-buttons{display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap}.btn{padding:14px 28px;border:none;border-radius:2px;font-weight:400;text-decoration:none;display:inline-flex;align-items:center;gap:.8rem;transition:all 0.3s ease;cursor:pointer;font-size:14px;letter-spacing:.5px;position:relative;overflow:hidden}.btn::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgb(255 255 255 / .2),transparent);transition:left 0.7s ease}.btn:hover::before{left:100%}.btn-primary{background:linear-gradient(to right,#d4af37,#f4e4b8);color:#2a2a2a;box-shadow:0 3px 15px rgb(212 175 55 / .3)}.btn-primary:hover{box-shadow:0 5px 20px rgb(212 175 55 / .4);transform:translateY(-2px)}.btn-secondary{background:#fff0;color:#666;border:1px solid #ddd;box-shadow:0 2px 8px rgb(0 0 0 / .05)}.btn-secondary:hover{border-color:#d4af37;color:#d4af37;box-shadow:0 4px 12px rgb(212 175 55 / .15)}.section{padding:5rem 2rem;background:rgb(255 255 255 / .7);position:relative}.section-light{background:linear-gradient(135deg,#f5f1ec 0%,#f7ecec 100%)}.container{max-width:1200px;margin:0 auto;position:relative;z-index:2}.section-title{font-size:clamp(1.6rem, 3vw, 2.2rem);text-align:center;margin-bottom:3rem;font-weight:400;letter-spacing:1px;color:#2b2b2b;position:relative;padding-bottom:15px}.section-title::after{content:'';position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:60px;height:2px;background:linear-gradient(to right,#d4af37,#7B3F00,#f4e4b8)}.cards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem}.card{background:rgb(255 255 255 / .9);border:1px solid rgb(212 175 55 / .08);border-radius:4px;padding:2.5rem 2rem;transition:all 0.3s ease;box-shadow:0 2px 10px rgb(0 0 0 / .05);position:relative}.card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(to right,transparent,#7B3F00,transparent);opacity:0;transition:opacity 0.3s ease}.card:hover{border-color:rgb(123 63 0 / .15);box-shadow:0 8px 25px rgb(123 63 0 / .08);transform:translateY(-5px)}.card:hover::before{opacity:1}.card-icon{font-size:2.2rem;color:#d4af37;margin-bottom:1.5rem;text-shadow:0 0 10px rgb(212 175 55 / .2)}.card h3{font-size:1.3rem;margin-bottom:1rem;color:#2b2b2b;font-weight:500}.card p{color:#666;line-height:1.7;font-size:.95rem}.products-section{background:linear-gradient(135deg,#f8f3e8 0%,#f5efe8 100%);position:relative;overflow:hidden}.products-section::before{content:'';position:absolute;top:0;right:0;width:200px;height:200px;background:radial-gradient(circle,rgb(123 63 0 / .03) 0%,transparent 70%);filter:blur(30px)}.products-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem}.product-card{background:rgb(255 255 255 / .95);border:1px solid rgb(123 63 0 / .08);border-radius:8px;padding:2.5rem 2rem;transition:all 0.4s ease;box-shadow:0 4px 15px rgb(0 0 0 / .03);position:relative;overflow:hidden}.product-card::before{content:'';position:absolute;top:0;left:0;width:100%;height:3px;background:linear-gradient(to right,#d4af37,#7B3F00,#f4e4b8);transform:translateX(-100%);transition:transform 0.5s ease}.product-card:hover{transform:translateY(-8px);box-shadow:0 12px 30px rgb(123 63 0 / .1);border-color:rgb(123 63 0 / .15)}.product-card:hover::before{transform:translateX(0)}.product-icon{font-size:2.5rem;color:#7B3F00;margin-bottom:1.5rem;transition:all 0.3s ease}.product-card:hover .product-icon{color:#d4af37;transform:scale(1.1)}.product-badge{position:absolute;top:15px;right:15px;background:linear-gradient(135deg,#d4af37,#7B3F00);color:#fff;padding:4px 12px;border-radius:20px;font-size:.75rem;font-weight:600;letter-spacing:.5px}.product-features{margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid rgb(123 63 0 / .08);list-style:none}.product-features li{margin-bottom:.5rem;color:#666;font-size:.9rem;display:flex;align-items:center;gap:.5rem}.product-features li i{color:#7B3F00;font-size:.8rem}.philosophy-content{background:rgb(255 255 255 / .9);border:1px solid rgb(212 175 55 / .08);border-radius:4px;padding:3rem;margin-top:2rem;box-shadow:0 4px 20px rgb(0 0 0 / .03);position:relative}.philosophy-content::before{content:'';position:absolute;top:-1px;left:50%;transform:translateX(-50%);width:100px;height:1px;background:linear-gradient(to right,#d4af37,#7B3F00,#f4e4b8)}.philosophy-text{color:#666;line-height:1.8;font-size:1.05rem}.philosophy-text p{margin-bottom:1.5rem}.philosophy-text strong{color:#2b2b2b;font-weight:600}.philosophy-quote{margin-top:2.5rem;padding:2rem;border-left:3px solid #7B3F00;background:linear-gradient(90deg,rgb(123 63 0 / .03),transparent);border-radius:0 4px 4px 0;position:relative}.philosophy-quote::before{content:'"';position:absolute;top:-10px;left:-15px;font-size:4rem;color:rgb(123 63 0 / .1);font-family:serif;font-weight:700}.philosophy-quote p{font-style:italic;color:#555;font-size:1.2rem;line-height:1.7}.quote-author{color:#7B3F00;font-size:1rem;margin-top:1rem;text-align:right;font-weight:600}.countries-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1.5rem;margin-top:2rem}.country-item{background:rgb(255 255 255 / .9);border-radius:4px;padding:1.5rem;text-align:center;border:1px solid rgb(212 175 55 / .08);transition:all 0.3s ease;box-shadow:0 2px 8px rgb(0 0 0 / .05)}.country-item:hover{transform:translateY(-5px);border-color:rgb(123 63 0 / .2);box-shadow:0 8px 20px rgb(123 63 0 / .08)}.country-flag{font-size:2.5rem;margin-bottom:.8rem;filter:drop-shadow(0 2px 4px rgb(0 0 0 / .1))}.country-name{color:#2b2b2b;font-size:1.1rem;font-weight:500}.footer{background:rgb(255 255 255 / .9);padding:3rem 2rem 2rem;text-align:center;border-top:1px solid rgb(123 63 0 / .1);position:relative}.footer::before{content:'';position:absolute;top:0;left:0;width:100%;height:1px;background:linear-gradient(to right,transparent,#7B3F00,transparent)}.footer-content{max-width:1200px;margin:0 auto}.footer p{color:#888;margin-bottom:.8rem;font-size:.9rem}.social-links{display:flex;justify-content:center;gap:1.5rem;margin:2rem 0}.social-links a{color:#888;font-size:1.2rem;transition:all 0.3s ease;width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgb(255 255 255 / .9);border:1px solid rgb(123 63 0 / .1)}.social-links a:hover{color:#7B3F00;transform:translateY(-3px);box-shadow:0 6px 15px rgb(123 63 0 / .15);border-color:rgb(123 63 0 / .2)}.language-switcher{position:fixed;top:20px;right:20px;z-index:1001;display:flex;gap:5px;background:rgb(255 255 255 / .9);border-radius:4px;padding:5px;border:1px solid rgb(123 63 0 / .1);box-shadow:0 4px 15px rgb(0 0 0 / .05);backdrop-filter:blur(10px)}.lang-btn{background:#fff0;border:none;color:#888;padding:6px 12px;border-radius:3px;cursor:pointer;transition:all 0.3s ease;font-size:.85rem;font-weight:400;display:flex;align-items:center;gap:5px}.lang-btn:hover{background:rgb(123 63 0 / .08);color:#666}.lang-btn.active{background:rgb(123 63 0 / .15);color:#7B3F00}.lang-flag{font-size:1rem}.lang-content{display:none}.lang-content.active{display:block}@media (max-width:768px){.nav-menu{display:none}.cards-grid,.products-grid{grid-template-columns:1fr}.cta-buttons{flex-direction:column;align-items:center}.btn{padding:12px 24px;width:100%;max-width:300px;justify-content:center}.philosophy-content{padding:2rem 1.5rem}.philosophy-quote{padding:1.5rem}.countries-grid{grid-template-columns:repeat(2,1fr)}.language-switcher{top:15px;right:15px}}@media (max-width:480px){.section{padding:4rem 1rem}.countries-grid{grid-template-columns:1fr}.philosophy-content{padding:1.5rem 1rem}}.text-center{text-align:center}.mb-2{margin-bottom:2rem}.mb-3{margin-bottom:3rem}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f9f5f0 0%, #faf0f4 100%);
+            color: #3a3a3a;
+            line-height: 1.6;
+            overflow-x: hidden;
+            position: relative;
+        }
+        
+        /* Efeitos de chocolate brilhante nas pontas da tela */
+        body::before, body::after {
+            content: '';
+            position: fixed;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 0;
+            opacity: 0.03;
+        }
+        
+        body::before {
+            top: -200px;
+            right: -200px;
+            background: radial-gradient(circle, #7B3F00 0%, transparent 70%);
+            box-shadow: 0 0 150px 150px rgba(123, 63, 0, 0.1);
+        }
+        
+        body::after {
+            bottom: -200px;
+            left: -200px;
+            background: radial-gradient(circle, #8B4513 0%, transparent 70%);
+            box-shadow: 0 0 150px 150px rgba(139, 69, 19, 0.1);
+        }
+        
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgb(255 255 255 / .95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1rem 0;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid rgb(212 175 55 / .1);
+            box-shadow: 0 2px 20px rgba(123, 63, 0, 0.05);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+            color: #2b2b2b;
+            text-transform: uppercase;
+            position: relative;
+        }
+        
+        .logo::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 60%;
+            height: 1px;
+            background: linear-gradient(to right, transparent, #7B3F00, transparent);
+        }
+        
+        .logo span {
+            display: block;
+            font-size: 11px;
+            letter-spacing: 8px;
+            margin-top: 2px;
+            color: #888;
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-menu a {
+            color: #3a3a3a;
+            text-decoration: none;
+            font-weight: 400;
+            transition: all 0.3s ease;
+            position: relative;
+            font-size: 14px;
+            letter-spacing: .5px;
+        }
+        
+        .nav-menu a:hover {
+            color: #d4af37;
+        }
+        
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: linear-gradient(135deg, #d4af37, #7B3F00);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-menu a:hover::after {
+            width: 100%;
+        }
+        
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 2rem;
+            position: relative;
+            background: linear-gradient(135deg, rgb(249 245 240 / .9), rgb(250 240 244 / .9));
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 10%;
+            right: 10%;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(123, 63, 0, 0.03) 0%, transparent 70%);
+            filter: blur(40px);
+            z-index: 1;
+        }
+        
+        .hero-content {
+            max-width: 900px;
+            z-index: 2;
+        }
+        
+        .hero h1 {
+            font-size: clamp(2rem, 5vw, 3.2rem);
+            margin-bottom: 1rem;
+            font-weight: 400;
+            letter-spacing: 1px;
+            color: #2b2b2b;
+            line-height: 1.2;
+        }
+        
+        .hero h1 span {
+            color: #d4af37;
+            font-weight: 500;
+            text-shadow: 0 0 30px rgba(212, 175, 55, 0.2);
+        }
+        
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 2.5rem;
+            font-weight: 300;
+            letter-spacing: 0.5px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.7;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 14px 28px;
+            border: none;
+            border-radius: 2px;
+            font-weight: 400;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: .8rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.7s ease;
+        }
+        
+        .btn:hover::before {
+            left: 100%;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(to right, #d4af37, #f4e4b8);
+            color: #2a2a2a;
+            box-shadow: 0 3px 15px rgba(212, 175, 55, 0.3);
+        }
+        
+        .btn-primary:hover {
+            box-shadow: 0 5px 20px rgba(212, 175, 55, 0.4);
+            transform: translateY(-2px);
+        }
+        
+        .btn-secondary {
+            background: #fff0;
+            color: #666;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+        
+        .btn-secondary:hover {
+            border-color: #d4af37;
+            color: #d4af37;
+            box-shadow: 0 4px 12px rgba(212, 175, 55, 0.15);
+        }
+        
+        /* Sections */
+        .section {
+            padding: 5rem 2rem;
+            background: rgb(255 255 255 / .7);
+            position: relative;
+        }
+        
+        .section-light {
+            background: linear-gradient(135deg, #f5f1ec 0%, #f7ecec 100%);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .section-title {
+            font-size: clamp(1.6rem, 3vw, 2.2rem);
+            text-align: center;
+            margin-bottom: 3rem;
+            font-weight: 400;
+            letter-spacing: 1px;
+            color: #2b2b2b;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 2px;
+            background: linear-gradient(to right, #d4af37, #7B3F00, #f4e4b8);
+        }
+        
+        /* Cards */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .card {
+            background: rgb(255 255 255 / .9);
+            border: 1px solid rgb(212 175 55 / .08);
+            border-radius: 4px;
+            padding: 2.5rem 2rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            position: relative;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(to right, transparent, #7B3F00, transparent);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            border-color: rgba(123, 63, 0, 0.15);
+            box-shadow: 0 8px 25px rgba(123, 63, 0, 0.08);
+            transform: translateY(-5px);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-icon {
+            font-size: 2.2rem;
+            color: #d4af37;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
+        }
+        
+        .card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: #2b2b2b;
+            font-weight: 500;
+        }
+        
+        .card p {
+            color: #666;
+            line-height: 1.7;
+            font-size: .95rem;
+        }
+        
+        /* Produtos Section */
+        .products-section {
+            background: linear-gradient(135deg, #f8f3e8 0%, #f5efe8 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .products-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, rgba(123, 63, 0, 0.03) 0%, transparent 70%);
+            filter: blur(30px);
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        
+        .product-card {
+            background: rgb(255 255 255 / .95);
+            border: 1px solid rgba(123, 63, 0, 0.08);
+            border-radius: 8px;
+            padding: 2.5rem 2rem;
+            transition: all 0.4s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .product-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(to right, #d4af37, #7B3F00, #f4e4b8);
+            transform: translateX(-100%);
+            transition: transform 0.5s ease;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(123, 63, 0, 0.1);
+            border-color: rgba(123, 63, 0, 0.15);
+        }
+        
+        .product-card:hover::before {
+            transform: translateX(0);
+        }
+        
+        .product-icon {
+            font-size: 2.5rem;
+            color: #7B3F00;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .product-card:hover .product-icon {
+            color: #d4af37;
+            transform: scale(1.1);
+        }
+        
+        .product-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: linear-gradient(135deg, #d4af37, #7B3F00);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        
+        .product-features {
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(123, 63, 0, 0.08);
+            list-style: none;
+        }
+        
+        .product-features li {
+            margin-bottom: 0.5rem;
+            color: #666;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .product-features li i {
+            color: #7B3F00;
+            font-size: 0.8rem;
+        }
+        
+        /* Filosofia */
+        .philosophy-content {
+            background: rgb(255 255 255 / .9);
+            border: 1px solid rgb(212 175 55 / .08);
+            border-radius: 4px;
+            padding: 3rem;
+            margin-top: 2rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+            position: relative;
+        }
+        
+        .philosophy-content::before {
+            content: '';
+            position: absolute;
+            top: -1px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 1px;
+            background: linear-gradient(to right, #d4af37, #7B3F00, #f4e4b8);
+        }
+        
+        .philosophy-text {
+            color: #666;
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+        
+        .philosophy-text p {
+            margin-bottom: 1.5rem;
+        }
+        
+        .philosophy-text strong {
+            color: #2b2b2b;
+            font-weight: 600;
+        }
+        
+        .philosophy-quote {
+            margin-top: 2.5rem;
+            padding: 2rem;
+            border-left: 3px solid #7B3F00;
+            background: linear-gradient(90deg, rgba(123, 63, 0, 0.03), transparent);
+            border-radius: 0 4px 4px 0;
+            position: relative;
+        }
+        
+        .philosophy-quote::before {
+            content: '"';
+            position: absolute;
+            top: -10px;
+            left: -15px;
+            font-size: 4rem;
+            color: rgba(123, 63, 0, 0.1);
+            font-family: serif;
+            font-weight: bold;
+        }
+        
+        .philosophy-quote p {
+            font-style: italic;
+            color: #555;
+            font-size: 1.2rem;
+            line-height: 1.7;
+        }
+        
+        .quote-author {
+            color: #7B3F00;
+            font-size: 1rem;
+            margin-top: 1rem;
+            text-align: right;
+            font-weight: 600;
+        }
+        
+        /* Countries */
+        .countries-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .country-item {
+            background: rgb(255 255 255 / .9);
+            border-radius: 4px;
+            padding: 1.5rem;
+            text-align: center;
+            border: 1px solid rgb(212 175 55 / .08);
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+        
+        .country-item:hover {
+            transform: translateY(-5px);
+            border-color: rgba(123, 63, 0, 0.2);
+            box-shadow: 0 8px 20px rgba(123, 63, 0, 0.08);
+        }
+        
+        .country-flag {
+            font-size: 2.5rem;
+            margin-bottom: 0.8rem;
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+        }
+        
+        .country-name {
+            color: #2b2b2b;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+        
+        /* Footer */
+        .footer {
+            background: rgb(255 255 255 / .9);
+            padding: 3rem 2rem 2rem;
+            text-align: center;
+            border-top: 1px solid rgba(123, 63, 0, 0.1);
+            position: relative;
+        }
+        
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(to right, transparent, #7B3F00, transparent);
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .footer p {
+            color: #888;
+            margin-bottom: .8rem;
+            font-size: .9rem;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .social-links a {
+            color: #888;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgb(255 255 255 / .9);
+            border: 1px solid rgba(123, 63, 0, 0.1);
+        }
+        
+        .social-links a:hover {
+            color: #7B3F00;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(123, 63, 0, 0.15);
+            border-color: rgba(123, 63, 0, 0.2);
+        }
+        
+        /* Language Switcher */
+        .language-switcher {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1001;
+            display: flex;
+            gap: 5px;
+            background: rgb(255 255 255 / .9);
+            border-radius: 4px;
+            padding: 5px;
+            border: 1px solid rgba(123, 63, 0, 0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            backdrop-filter: blur(10px);
+        }
+        
+        .lang-btn {
+            background: transparent;
+            border: none;
+            color: #888;
+            padding: 6px 12px;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.85rem;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .lang-btn:hover {
+            background: rgba(123, 63, 0, 0.08);
+            color: #666;
+        }
+        
+        .lang-btn.active {
+            background: rgba(123, 63, 0, 0.15);
+            color: #7B3F00;
+        }
+        
+        .lang-flag {
+            font-size: 1rem;
+        }
+        
+        /* Content initially hidden */
+        .lang-content {
+            display: none;
+        }
+        
+        .lang-content.active {
+            display: block;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+            
+            .cards-grid, .products-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                padding: 12px 24px;
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+            
+            .philosophy-content {
+                padding: 2rem 1.5rem;
+            }
+            
+            .philosophy-quote {
+                padding: 1.5rem;
+            }
+            
+            .countries-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .language-switcher {
+                top: 15px;
+                right: 15px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .section {
+                padding: 4rem 1rem;
+            }
+            
+            .countries-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .philosophy-content {
+                padding: 1.5rem 1rem;
+            }
+        }
+        
+        /* Utility Classes */
+        .text-center {
+            text-align: center;
+        }
+        
+        .mb-2 {
+            margin-bottom: 2rem;
+        }
+        
+        .mb-3 {
+            margin-bottom: 3rem;
+        }
     </style>
 </head>
 <body>
@@ -156,150 +890,60 @@
     <section id="produtos" class="section products-section">
         <div class="container">
             <h2 class="section-title">
-                <span class="lang-content active" data-lang="pt">Nossos Produtos</span>
-                <span class="lang-content" data-lang="en">Our Products</span>
-                <span class="lang-content" data-lang="ar">منتجاتنا</span>
+                <span class="lang-content active" data-lang="pt">Exclusive Identity</span>
+                <span class="lang-content" data-lang="en">Exclusive Identity</span>
+                <span class="lang-content" data-lang="ar">Exclusive Identity</span>
             </h2>
             
             <p class="text-center mb-3" style="color: #666; font-size: 1.05rem;">
-                <span class="lang-content active" data-lang="pt">Soluções de infraestrutura blockchain de última geração para empresas e governos</span>
-                <span class="lang-content" data-lang="en">Next-generation blockchain infrastructure solutions for enterprises and governments</span>
-                <span class="lang-content" data-lang="ar">حلول بنية تحتية بلوكشين من الجيل التالي للشركات والحكومات</span>
+                <span class="lang-content active" data-lang="pt">Sistema de identidade digital soberana com valor intrínseco protegido</span>
+                <span class="lang-content" data-lang="en">Sovereign digital identity system with protected intrinsic value</span>
+                <span class="lang-content" data-lang="ar">نظام هوية رقمية سيادية ذات قيمة جوهرية محمية</span>
             </p>
             
             <div class="products-grid">
-                <!-- Produto 1 -->
+                <!-- Produto Único: Exclusive Identity -->
                 <div class="product-card">
                     <div class="product-badge">
-                        <span class="lang-content active" data-lang="pt">Premium</span>
-                        <span class="lang-content" data-lang="en">Premium</span>
-                        <span class="lang-content" data-lang="ar">متميز</span>
+                        <span class="lang-content active" data-lang="pt">Ativo Soberano</span>
+                        <span class="lang-content" data-lang="en">Sovereign Asset</span>
+                        <span class="lang-content" data-lang="ar">أصول سيادية</span>
                     </div>
                     <div class="product-icon">
                         <i class="fas fa-fingerprint"></i>
                     </div>
-                    <h3>
-                        <span class="lang-content active" data-lang="pt">IDChain Sovereign</span>
-                        <span class="lang-content" data-lang="en">IDChain Sovereign</span>
-                        <span class="lang-content" data-lang="ar">IDChain Sovereign</span>
-                    </h3>
+                    <h3>Exclusive Identity</h3>
                     <p>
-                        <span class="lang-content active" data-lang="pt">Sistema de identidade digital auto-soberana baseado em blockchain para governos e instituições.</span>
-                        <span class="lang-content" data-lang="en">Self-sovereign blockchain-based digital identity system for governments and institutions.</span>
-                        <span class="lang-content" data-lang="ar">نظام هوية رقمية قائم على البلوكشين ذاتي السيادة للحكومات والمؤسسات.</span>
+                        <span class="lang-content active" data-lang="pt">Infraestrutura de identidade digital auto-soberana que garante controle absoluto sobre dados pessoais e ativos digitais, com valor de referência interno estabelecido.</span>
+                        <span class="lang-content" data-lang="en">Self-sovereign digital identity infrastructure ensuring absolute control over personal data and digital assets, with established internal reference value.</span>
+                        <span class="lang-content" data-lang="ar">بنية تحتية للهوية الرقمية ذاتية السيادة تضمن سيطرة مطلقة على البيانات الشخصية والأصول الرقمية، مع قيمة مرجعية داخلية محددة.</span>
                     </p>
                     <ul class="product-features">
-                        <li><i class="fas fa-check"></i> <span class="lang-content active" data-lang="pt">Verificação KYC/AML automatizada</span><span class="lang-content" data-lang="en">Automated KYC/AML verification</span><span class="lang-content" data-lang="ar">التحقق الآلي من KYC/AML</span></li>
-                        <li><i class="fas fa-check"></i> <span class="lang-content active" data-lang="pt">Criptografia quântica-resistente</span><span class="lang-content" data-lang="en">Quantum-resistant encryption</span><span class="lang-content" data-lang="ar">تشفير مقاوم للكم</span></li>
-                        <li><i class="fas fa-check"></i> <span class="lang-content active" data-lang="pt">Multi-assinatura corporativa</span><span class="lang-content" data-lang="en">Corporate multi-signature</span><span class="lang-content" data-lang="ar">توقيع متعدد للشركات</span></li>
-                    </ul>
-                </div>
-
-                <!-- Produto 2 -->
-                <div class="product-card">
-                    <div class="product-badge">
-                        <span class="lang-content active" data-lang="pt">Enterprise</span>
-                        <span class="lang-content" data-lang="en">Enterprise</span>
-                        <span class="lang-content" data-lang="ar">المؤسسات</span>
-                    </div>
-                    <div class="product-icon">
-                        <i class="fas fa-link"></i>
-                    </div>
-                    <h3>
-                        <span class="lang-content active" data-lang="pt">CrossChain Bridge</span>
-                        <span class="lang-content" data-lang="en">CrossChain Bridge</span>
-                        <span class="lang-content" data-lang="ar">CrossChain Bridge</span>
-                    </h3>
-                    <p>
-                        <span class="lang-content active" data-lang="pt">Interoperabilidade segura entre diferentes blockchains com liquidez cross-chain.</span>
-                        <span class="lang-content" data-lang="en">Secure interoperability between different blockchains with cross-chain liquidity.</span>
-                        <span class="lang-content" data-lang="ar">التشغيل البيني الآمن بين سلاسل الكتل المختلفة مع سيولة متعددة السلاسل.</span>
-                    </p>
-                    <ul class="product-features">
-                        <li><i class="fas fa-check"></i> <span class="lang-content active" data-lang="pt">Suporte a 15+ blockchains</span><span class="lang-content" data-lang="en">Support for 15+ blockchains</span><span class="lang-content" data-lang="ar">دعم 15+ سلسلة كتل</span></li>
-                        <li><i class="fas fa-check"></i> <span class="lang-content active" data-lang="pt">Finalidade em 3 segundos</span><span class="lang-content" data-lang="en">3-second finality</span><span class="lang-content" data-lang="ar">نهائية في 3 ثوان</span></li>
-                        <li><i class="fas fa-check"></i> <span class="lang-content active" data-lang="pt">Taxas de ponte otimizadas</span><span class="lang-content" data-lang="en">Optimized bridge fees</span><span class="lang-content" data-lang="ar">رسوم جسر محسنة</span></li>
-                    </ul>
-                </div>
-
-                <!-- Produto 3 -->
-                <div class="product-card">
-                    <div class="product-badge">
-                        <span class="lang-content active" data-lang="pt">Governamental</span>
-                        <span class="lang-content" data-lang="en">Governmental</span>
-                        <span class="lang-content" data-lang="ar">حكومي</span>
-                    </div>
-                    <div class="product-icon">
-                        <i class="fas fa-vote-yea"></i>
-                    </div>
-                    <h3>
-                        <span class="lang-content active" data-lang="pt">VoteChain Secure</span>
-                        <span class="lang-content" data-lang="en">VoteChain Secure</span>
-                        <span class="lang-content" data-lang="ar">VoteChain Secure</span>
-                    </h3>
-                    <p>
-                        <span class="lang-content active" data-lang="pt">Plataforma de votação digital com verificação completa e anonimato criptográfico.</span>
-                        <span class="lang-content" data-lang="en">Digital voting platform with complete verification and cryptographic anonymity.</span>
-                        <span class="lang-content" data-lang="ar">منصة التصويت الرقمية مع التحقق الكامل وإخفاء الهوية التشفيري.</span>
-                    </p>
-                    <ul class="product-features">
-                        <li><i class="fas fa-check"></i> <span class="lang-content active" data-lang="pt">Auditoria em tempo real</span><span class="lang-content" data-lang="en">Real-time auditing</span><span class="lang-content" data-lang="ar">التدقيق في الوقت الحقيقي</span></li>
-                        <li><i class="fas fa-check"></i> <span class="lang-content active" data-lang="pt">Anonimato criptográfico</span><span class="lang-content" data-lang="en">Cryptographic anonymity</span><span class="lang-content" data-lang="ar">إخفاء الهوية التشفيري</span></li>
-                        <li><i class="fas fa-check"></i> <span class="lang-content active" data-lang="pt">Escalável para milhões</span><span class="lang-content" data-lang="en">Scalable to millions</span><span class="lang-content" data-lang="ar">قابل للتوسع للملايين</span></li>
-                    </ul>
-                </div>
-
-                <!-- Produto 4 -->
-                <div class="product-card">
-                    <div class="product-badge">
-                        <span class="lang-content active" data-lang="pt">Infra</span>
-                        <span class="lang-content" data-lang="en">Infra</span>
-                        <span class="lang-content" data-lang="ar">بنية تحتية</span>
-                    </div>
-                    <div class="product-icon">
-                        <i class="fas fa-server"></i>
-                    </div>
-                    <h3>
-                        <span class="lang-content active" data-lang="pt">NodeStack Global</span>
-                        <span class="lang-content" data-lang="en">NodeStack Global</span>
-                        <span class="lang-content" data-lang="ar">NodeStack Global</span>
-                    </h3>
-                    <p>
-                        <span class="lang-content active" data-lang="pt">Rede global de nós validadores com infraestrutura física distribuída.</span>
-                        <span class="lang-content" data-lang="en">Global network of validator nodes with distributed physical infrastructure.</span>
-                        <span class="lang-content" data-lang="ar">شبكة عالمية لعقد التحقق مع بنية تحتية مادية موزعة.</span>
-                    </p>
-                    <ul class="product-features">
-                        <li><i class="fas fa-check"></i> <span class="lang-content active" data-lang="pt">99,99% uptime garantido</span><span class="lang-content" data-lang="en">99.99% guaranteed uptime</span><span class="lang-content" data-lang="ar">99.99% وقت تشغيل مضمون</span></li>
-                        <li><i class="fas fa-check"></i> <span class="lang-content active" data-lang="pt">Hardware dedicado HSM</span><span class="lang-content" data-lang="en">Dedicated HSM hardware</span><span class="lang-content" data-lang="ar">أجهزة مخصصة HSM</span></li>
-                        <li><i class="fas fa-check"></i> <span class="lang-content active" data-lang="pt">Deploy em 8 regiões</span><span class="lang-content" data-lang="en">Deploy in 8 regions</span><span class="lang-content" data-lang="ar">نشر في 8 مناطق</span></li>
-                    </ul>
-                </div>
-
-                <!-- Produto 5 -->
-                <div class="product-card">
-                    <div class="product-badge">
-                        <span class="lang-content active" data-lang="pt">Finance</span>
-                        <span class="lang-content" data-lang="en">Finance</span>
-                        <span class="lang-content" data-lang="ar">مالي</span>
-                    </div>
-                    <div class="product-icon">
-                        <i class="fas fa-coins"></i>
-                    </div>
-                    <h3>
-                        <span class="lang-content active" data-lang="pt">CBDC Framework</span>
-                        <span class="lang-content" data-lang="en">CBDC Framework</span>
-                        <span class="lang-content" data-lang="ar">CBDC Framework</span>
-                    </h3>
-                    <p>
-                        <span class="lang-content active" data-lang="pt">Framework completo para moedas digitais de bancos centrais com privacidade programável.</span>
-                        <span class="lang-content" data-lang="en">Complete framework for central bank digital currencies with programmable privacy.</span>
-                        <span class="lang-content" data-lang="ar">إطار عمل كامل للعملات الرقمية للبنوك المركزية مع خصوصية قابلة للبرمجة.</span>
-                    </p>
-                    <ul class="product-features">
-                        <li><i class="fas fa-check"></i> <span class="lang-content active" data-lang="pt">Privacidade programável</span><span class="lang-content" data-lang="en">Programmable privacy</span><span class="lang-content" data-lang="ar">خصوصية قابلة للبرمجة</span></li>
-                        <li><i class="fas fa-check"></i> <span class="lang-content active" data-lang="pt">Compliance automático</span><span class="lang-content" data-lang="en">Automatic compliance</span><span class="lang-content" data-lang="ar">الامتثال التلقائي</span></li>
-                        <li><i class="fas fa-check"></i> <span class="lang-content active" data-lang="pt">Integração bancária</span><span class="lang-content" data-lang="en">Banking integration</span><span class="lang-content" data-lang="ar">التكامل المصرفي</span></li>
+                        <li><i class="fas fa-check"></i> 
+                            <span class="lang-content active" data-lang="pt">Identidade auto-soberana com controle absoluto</span>
+                            <span class="lang-content" data-lang="en">Self-sovereign identity with absolute control</span>
+                            <span class="lang-content" data-lang="ar">هوية ذاتية السيادة مع سيطرة مطلقة</span>
+                        </li>
+                        <li><i class="fas fa-check"></i> 
+                            <span class="lang-content active" data-lang="pt">Criptografia quântica-resistente end-to-end</span>
+                            <span class="lang-content" data-lang="en">Quantum-resistant end-to-end encryption</span>
+                            <span class="lang-content" data-lang="ar">تشفير من طرف إلى طرف مقاوم للكم</span>
+                        </li>
+                        <li><i class="fas fa-check"></i> 
+                            <span class="lang-content active" data-lang="pt">Valor de referência interno: ~USD 3.6M</span>
+                            <span class="lang-content" data-lang="en">Internal reference value: ~USD 3.6M</span>
+                            <span class="lang-content" data-lang="ar">قيمة مرجعية داخلية: ~USD 3.6M</span>
+                        </li>
+                        <li><i class="fas fa-check"></i> 
+                            <span class="lang-content active" data-lang="pt">Verificação sem dependência de terceiros</span>
+                            <span class="lang-content" data-lang="en">Verification without third-party dependency</span>
+                            <span class="lang-content" data-lang="ar">التحقق بدون اعتماد على طرف ثالث</span>
+                        </li>
+                        <li><i class="fas fa-check"></i> 
+                            <span class="lang-content active" data-lang="pt">Portabilidade soberana entre sistemas</span>
+                            <span class="lang-content" data-lang="en">Sovereign portability between systems</span>
+                            <span class="lang-content" data-lang="ar">إمكانية النقل السيادية بين الأنظمة</span>
+                        </li>
                     </ul>
                 </div>
             </div>
