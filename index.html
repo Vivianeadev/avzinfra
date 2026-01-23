@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-    *{margin:0;padding:0;box-sizing:border-box;font-family:'Helvetica Neue',Arial,sans-serif}body{background:linear-gradient(135deg,#f9f5f0 0%,#faf0f4 100%);color:#3a3a3a;line-height:1.6;overflow-x:hidden;position:relative}body::before,body::after{content:'';position:fixed;width:500px;height:500px;border-radius:50%;pointer-events:none;z-index:0;opacity:.03}body::before{top:-200px;right:-200px;background:radial-gradient(circle,#7B3F00 0%,transparent 70%);box-shadow:0 0 150px 150px rgb(123 63 0 / .1)}body::after{bottom:-200px;left:-200px;background:radial-gradient(circle,#8B4513 0%,transparent 70%);box-shadow:0 0 150px 150px rgb(139 69 19 / .1)}.header{position:fixed;top:0;width:100%;background:rgb(255 255 255 / .95);backdrop-filter:blur(10px);z-index:1000;padding:1rem 0;transition:all 0.3s ease;border-bottom:1px solid rgb(212 175 55 / .1);box-shadow:0 2px 20px rgb(123 63 0 / .05)}.nav-container{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 2rem}.logo{font-size:1.8rem;font-weight:300;letter-spacing:2px;color:#2b2b2b;text-transform:uppercase;position:relative}.logo::after{content:'';position:absolute;bottom:-5px;left:0;width:60%;height:1px;background:linear-gradient(to right,transparent,#7B3F00,transparent)}.logo span{display:block;font-size:11px;letter-spacing:8px;margin-top:2px;color:#888}.nav-menu{display:flex;list-style:none;gap:2rem}.nav-menu a{color:#3a3a3a;text-decoration:none;font-weight:400;transition:all 0.3s ease;position:relative;font-size:14px;letter-spacing:.5px}.nav-menu a:hover{color:#d4af37}.nav-menu a::after{content:'';position:absolute;bottom:-5px;left:0;width:0;height:1px;background:linear-gradient(135deg,#d4af37,#7B3F00);transition:width 0.3s ease}.nav-menu a:hover::after{width:100%}.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:0 2rem;position:relative;background:linear-gradient(135deg,rgb(249 245 240 / .9),rgb(250 240 244 / .9));overflow:hidden}.hero::before{content:'';position:absolute;top:10%;right:10%;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgb(123 63 0 / .03) 0%,transparent 70%);filter:blur(40px);z-index:1}.hero-content{max-width:900px;z-index:2}.hero h1{font-size:clamp(2rem, 5vw, 3.2rem);margin-bottom:1rem;font-weight:400;letter-spacing:1px;color:#2b2b2b;line-height:1.2}.hero h1 span{color:#d4af37;font-weight:500;text-shadow:0 0 30px rgb(212 175 55 / .2)}.hero-subtitle{font-size:1.2rem;color:#666;margin-bottom:2.5rem;font-weight:300;letter-spacing:.5px;max-width:700px;margin-left:auto;margin-right:auto;line-height:1.7}.cta-buttons{display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap}.btn{padding:14px 28px;border:none;border-radius:2px;font-weight:400;text-decoration:none;display:inline-flex;align-items:center;gap:.8rem;transition:all 0.3s ease;cursor:pointer;font-size:14px;letter-spacing:.5px;position:relative;overflow:hidden}.btn::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgb(255 255 255 / .2),transparent);transition:left 0.7s ease}.btn:hover::before{left:100%}.btn-primary{background:linear-gradient(to right,#d4af37,#f4e4b8);color:#2a2a2a;box-shadow:0 3px 15px rgb(212 175 55 / .3)}.btn-primary:hover{box-shadow:0 5px 20px rgb(212 175 55 / .4);transform:translateY(-2px)}.btn-secondary{background:#fff0;color:#666;border:1px solid #ddd;box-shadow:0 2px 8px rgb(0 0 0 / .05)}.btn-secondary:hover{border-color:#d4af37;color:#d4af37;box-shadow:0 4px 12px rgb(212 175 55 / .15)}.section{padding:5rem 2rem;background:rgb(255 255 255 / .7);position:relative}.section-light{background:linear-gradient(135deg,#f5f1ec 0%,#f7ecec 100%)}.container{max-width:1200px;margin:0 auto;position:relative;z-index:2}.section-title{font-size:clamp(1.6rem, 3vw, 2.2rem);text-align:center;margin-bottom:3rem;font-weight:400;letter-spacing:1px;color:#2b2b2b;position:relative;padding-bottom:15px}.section-title::after{content:'';position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:60px;height:2px;background:linear-gradient(to right,#d4af37,#7B3F00,#f4e4b8)}.cards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem}.card{background:rgb(255 255 255 / .9);border:1px solid rgb(212 175 55 / .08);border-radius:4px;padding:2.5rem 2rem;transition:all 0.3s ease;box-shadow:0 2px 10px rgb(0 0 0 / .05);position:relative}.card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(to right,transparent,#7B3F00,transparent);opacity:0;transition:opacity 0.3s ease}.card:hover{border-color:rgb(123 63 0 / .15);box-shadow:0 8px 25px rgb(123 63 0 / .08);transform:translateY(-5px)}.card:hover::before{opacity:1}.card-icon{font-size:2.2rem;color:#d4af37;margin-bottom:1.5rem;text-shadow:0 0 10px rgb(212 175 55 / .2)}.card h3{font-size:1.3rem;margin-bottom:1rem;color:#2b2b2b;font-weight:500}.card p{color:#666;line-height:1.7;font-size:.95rem}.products-section{background:linear-gradient(135deg,#f8f3e8 0%,#f5efe8 100%);position:relative;overflow:hidden}.products-section::before{content:'';position:absolute;top:0;right:0;width:200px;height:200px;background:radial-gradient(circle,rgb(123 63 0 / .03) 0%,transparent 70%);filter:blur(30px)}.products-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem}.product-card{background:rgb(255 255 255 / .95);border:1px solid rgb(123 63 0 / .08);border-radius:8px;padding:2.5rem 2rem;transition:all 0.4s ease;box-shadow:0 4px 15px rgb(0 0 0 / .03);position:relative;overflow:hidden}.product-card::before{content:'';position:absolute;top:0;left:0;width:100%;height:3px;background:linear-gradient(to right,#d4af37,#7B3F00,#f4e4b8);transform:translateX(-100%);transition:transform 0.5s ease}.product-card:hover{transform:translateY(-8px);box-shadow:0 12px 30px rgb(123 63 0 / .1);border-color:rgb(123 63 0 / .15)}.product-card:hover::before{transform:translateX(0)}.product-icon{font-size:2.5rem;color:#7B3F00;margin-bottom:1.5rem;transition:all 0.3s ease}.product-card:hover .product-icon{color:#d4af37;transform:scale(1.1)}.product-badge{position:absolute;top:15px;right:15px;background:linear-gradient(135deg,#d4af37,#7B3F00);color:#fff;padding:4px 12px;border-radius:20px;font-size:.75rem;font-weight:600;letter-spacing:.5px}.product-features{margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid rgb(123 63 0 / .08);list-style:none}.product-features li{margin-bottom:.5rem;color:#666;font-size:.9rem;display:flex;align-items:center;gap:.5rem}.product-features li i{color:#7B3F00;font-size:.8rem}.philosophy-content{background:rgb(255 255 255 / .9);border:1px solid rgb(212 175 55 / .08);border-radius:4px;padding:3rem;margin-top:2rem;box-shadow:0 4px 20px rgb(0 0 0 / .03);position:relative}.philosophy-content::before{content:'';position:absolute;top:-1px;left:50%;transform:translateX(-50%);width:100px;height:1px;background:linear-gradient(to right,#d4af37,#7B3F00,#f4e4b8)}.philosophy-text{color:#666;line-height:1.8;font-size:1.05rem}.philosophy-text p{margin-bottom:1.5rem}.philosophy-text strong{color:#2b2b2b;font-weight:600}.philosophy-quote{margin-top:2.5rem;padding:2rem;border-left:3px solid #7B3F00;background:linear-gradient(90deg,rgb(123 63 0 / .03),transparent);border-radius:0 4px 4px 0;position:relative}.philosophy-quote::before{content:'"';position:absolute;top:-10px;left:-15px;font-size:4rem;color:rgb(123 63 0 / .1);font-family:serif;font-weight:700}.philosophy-quote p{font-style:italic;color:#555;font-size:1.2rem;line-height:1.7}.quote-author{color:#7B3F00;font-size:1rem;margin-top:1rem;text-align:right;font-weight:600}.countries-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1.5rem;margin-top:2rem}.country-item{background:rgb(255 255 255 / .9);border-radius:4px;padding:1.5rem;text-align:center;border:1px solid rgb(212 175 55 / .08);transition:all 0.3s ease;box-shadow:0 2px 8px rgb(0 0 0 / .05)}.country-item:hover{transform:translateY(-5px);border-color:rgb(123 63 0 / .2);box-shadow:0 8px 20px rgb(123 63 0 / .08)}.country-flag{font-size:2.5rem;margin-bottom:.8rem;filter:drop-shadow(0 2px 4px rgb(0 0 0 / .1))}.country-name{color:#2b2b2b;font-size:1.1rem;font-weight:500}.footer{background:rgb(255 255 255 / .9);padding:3rem 2rem 2rem;text-align:center;border-top:1px solid rgb(123 63 0 / .1);position:relative}.footer::before{content:'';position:absolute;top:0;left:0;width:100%;height:1px;background:linear-gradient(to right,transparent,#7B3F00,transparent)}.footer-content{max-width:1200px;margin:0 auto}.footer p{color:#888;margin-bottom:.8rem;font-size:.9rem}.social-links{display:flex;justify-content:center;gap:1.5rem;margin:2rem 0}.social-links a{color:#888;font-size:1.2rem;transition:all 0.3s ease;width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgb(255 255 255 / .9);border:1px solid rgb(123 63 0 / .1)}.social-links a:hover{color:#7B3F00;transform:translateY(-3px);box-shadow:0 6px 15px rgb(123 63 0 / .15);border-color:rgb(123 63 0 / .2)}.language-switcher{position:fixed;top:20px;right:20px;z-index:1001;display:flex;gap:5px;background:rgb(255 255 255 / .9);border-radius:4px;padding:5px;border:1px solid rgb(123 63 0 / .1);box-shadow:0 4px 15px rgb(0 0 0 / .05);backdrop-filter:blur(10px)}.lang-btn{background:#fff0;border:none;color:#888;padding:6px 12px;border-radius:3px;cursor:pointer;transition:all 0.3s ease;font-size:.85rem;font-weight:400;display:flex;align-items:center;gap:5px}.lang-btn:hover{background:rgb(123 63 0 / .08);color:#666}.lang-btn.active{background:rgb(123 63 0 / .15);color:#7B3F00}.lang-flag{font-size:1rem}.lang-content{display:none}.lang-content.active{display:block}@media (max-width:768px){.nav-menu{display:none}.cards-grid,.products-grid{grid-template-columns:1fr}.cta-buttons{flex-direction:column;align-items:center}.btn{padding:12px 24px;width:100%;max-width:300px;justify-content:center}.philosophy-content{padding:2rem 1.5rem}.philosophy-quote{padding:1.5rem}.countries-grid{grid-template-columns:repeat(2,1fr)}.language-switcher{top:15px;right:15px}}@media (max-width:480px){.section{padding:4rem 1rem}.countries-grid{grid-template-columns:1fr}.philosophy-content{padding:1.5rem 1rem}}.text-center{text-align:center}.mb-2{margin-bottom:2rem}.mb-3{margin-bottom:3rem}
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Helvetica Neue',Arial,sans-serif}body{background:linear-gradient(135deg,#f9f5f0 0%,#faf0f4 100%);color:#3a3a3a;line-height:1.6;overflow-x:hidden;position:relative}body::before,body::after{content:'';position:fixed;width:500px;height:500px;border-radius:50%;pointer-events:none;z-index:0;opacity:.03}body::before{top:-200px;right:-200px;background:radial-gradient(circle,#7B3F00 0%,transparent 70%);box-shadow:0 0 150px 150px rgb(123 63 0 / .1)}body::after{bottom:-200px;left:-200px;background:radial-gradient(circle,#8B4513 0%,transparent 70%);box-shadow:0 0 150px 150px rgb(139 69 19 / .1)}.header{position:fixed;top:0;width:100%;background:rgb(255 255 255 / .95);backdrop-filter:blur(10px);z-index:1000;padding:1rem 0;transition:all 0.3s ease;border-bottom:1px solid rgb(212 175 55 / .1);box-shadow:0 2px 20px rgb(123 63 0 / .05)}.nav-container{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 2rem}.logo{font-size:1.8rem;font-weight:300;letter-spacing:2px;color:#2b2b2b;text-transform:uppercase;position:relative}.logo::after{content:'';position:absolute;bottom:-5px;left:0;width:60%;height:1px;background:linear-gradient(to right,transparent,#7B3F00,transparent)}.logo span{display:block;font-size:11px;letter-spacing:8px;margin-top:2px;color:#888}.nav-menu{display:flex;list-style:none;gap:2rem}.nav-menu a{color:#3a3a3a;text-decoration:none;font-weight:400;transition:all 0.3s ease;position:relative;font-size:14px;letter-spacing:.5px}.nav-menu a:hover{color:#d4af37}.nav-menu a::after{content:'';position:absolute;bottom:-5px;left:0;width:0;height:1px;background:linear-gradient(135deg,#d4af37,#7B3F00);transition:width 0.3s ease}.nav-menu a:hover::after{width:100%}.hero{min-height:calc(100vh - 80px);display:flex;align-items:center;justify-content:center;text-align:center;padding:6rem 2rem 4rem;position:relative;background:linear-gradient(135deg,rgb(249 245 240 / .9),rgb(250 240 244 / .9));overflow:hidden}.hero::before{content:'';position:absolute;top:10%;right:10%;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgb(123 63 0 / .03) 0%,transparent 70%);filter:blur(40px);z-index:1}.hero-content{max-width:900px;z-index:2}.hero h1{font-size:clamp(2rem, 5vw, 3.2rem);margin-bottom:1rem;font-weight:400;letter-spacing:1px;color:#2b2b2b;line-height:1.2}.hero h1 span{color:#d4af37;font-weight:500;text-shadow:0 0 30px rgb(212 175 55 / .2)}.hero-subtitle{font-size:1.2rem;color:#666;margin-bottom:2.5rem;font-weight:300;letter-spacing:.5px;max-width:700px;margin-left:auto;margin-right:auto;line-height:1.7}.cta-buttons{display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap}.btn{padding:14px 28px;border:none;border-radius:2px;font-weight:400;text-decoration:none;display:inline-flex;align-items:center;gap:.8rem;transition:all 0.3s ease;cursor:pointer;font-size:14px;letter-spacing:.5px;position:relative;overflow:hidden}.btn::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgb(255 255 255 / .2),transparent);transition:left 0.7s ease}.btn:hover::before{left:100%}.btn-primary{background:linear-gradient(to right,#d4af37,#f4e4b8);color:#2a2a2a;box-shadow:0 3px 15px rgb(212 175 55 / .3)}.btn-primary:hover{box-shadow:0 5px 20px rgb(212 175 55 / .4);transform:translateY(-2px)}.btn-secondary{background:#fff0;color:#666;border:1px solid #ddd;box-shadow:0 2px 8px rgb(0 0 0 / .05)}.btn-secondary:hover{border-color:#d4af37;color:#d4af37;box-shadow:0 4px 12px rgb(212 175 55 / .15)}.section{padding:5rem 2rem;background:rgb(255 255 255 / .7);position:relative}.section-light{background:linear-gradient(135deg,#f5f1ec 0%,#f7ecec 100%)}.container{max-width:1200px;margin:0 auto;position:relative;z-index:2}.section-title{font-size:clamp(1.6rem, 3vw, 2.2rem);text-align:center;margin-bottom:3rem;font-weight:400;letter-spacing:1px;color:#2b2b2b;position:relative;padding-bottom:15px}.section-title::after{content:'';position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:60px;height:2px;background:linear-gradient(to right,#d4af37,#7B3F00,#f4e4b8)}.cards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem}.card{background:rgb(255 255 255 / .9);border:1px solid rgb(212 175 55 / .08);border-radius:4px;padding:2.5rem 2rem;transition:all 0.3s ease;box-shadow:0 2px 10px rgb(0 0 0 / .05);position:relative}.card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(to right,transparent,#7B3F00,transparent);opacity:0;transition:opacity 0.3s ease}.card:hover{border-color:rgb(123 63 0 / .15);box-shadow:0 8px 25px rgb(123 63 0 / .08);transform:translateY(-5px)}.card:hover::before{opacity:1}.card-icon{font-size:2.2rem;color:#d4af37;margin-bottom:1.5rem;text-shadow:0 0 10px rgb(212 175 55 / .2)}.card h3{font-size:1.3rem;margin-bottom:1rem;color:#2b2b2b;font-weight:500}.card p{color:#666;line-height:1.7;font-size:.95rem}.products-section{background:linear-gradient(135deg,#f8f3e8 0%,#f5efe8 100%);position:relative;overflow:hidden}.products-section::before{content:'';position:absolute;top:0;right:0;width:200px;height:200px;background:radial-gradient(circle,rgb(123 63 0 / .03) 0%,transparent 70%);filter:blur(30px)}.products-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem}.product-card{background:rgb(255 255 255 / .95);border:1px solid rgb(123 63 0 / .08);border-radius:8px;padding:2.5rem 2rem;transition:all 0.4s ease;box-shadow:0 4px 15px rgb(0 0 0 / .03);position:relative;overflow:hidden}.product-card::before{content:'';position:absolute;top:0;left:0;width:100%;height:3px;background:linear-gradient(to right,#d4af37,#7B3F00,#f4e4b8);transform:translateX(-100%);transition:transform 0.5s ease}.product-card:hover{transform:translateY(-8px);box-shadow:0 12px 30px rgb(123 63 0 / .1);border-color:rgb(123 63 0 / .15)}.product-card:hover::before{transform:translateX(0)}.product-icon{font-size:2.5rem;color:#7B3F00;margin-bottom:1.5rem;transition:all 0.3s ease}.product-card:hover .product-icon{color:#d4af37;transform:scale(1.1)}.product-badge{position:absolute;top:15px;right:15px;background:linear-gradient(135deg,#d4af37,#7B3F00);color:#fff;padding:4px 12px;border-radius:20px;font-size:.75rem;font-weight:600;letter-spacing:.5px}.product-features{margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid rgb(123 63 0 / .08);list-style:none}.product-features li{margin-bottom:.5rem;color:#666;font-size:.9rem;display:flex;align-items:center;gap:.5rem}.product-features li i{color:#7B3F00;font-size:.8rem}.philosophy-content{background:rgb(255 255 255 / .9);border:1px solid rgb(212 175 55 / .08);border-radius:4px;padding:3rem;margin-top:2rem;box-shadow:0 4px 20px rgb(0 0 0 / .03);position:relative}.philosophy-content::before{content:'';position:absolute;top:-1px;left:50%;transform:translateX(-50%);width:100px;height:1px;background:linear-gradient(to right,#d4af37,#7B3F00,#f4e4b8)}.philosophy-text{color:#666;line-height:1.8;font-size:1.05rem}.philosophy-text p{margin-bottom:1.5rem}.philosophy-text strong{color:#2b2b2b;font-weight:600}.philosophy-quote{margin-top:2.5rem;padding:2rem;border-left:3px solid #7B3F00;background:linear-gradient(90deg,rgb(123 63 0 / .03),transparent);border-radius:0 4px 4px 0;position:relative}.philosophy-quote::before{content:'"';position:absolute;top:-10px;left:-15px;font-size:4rem;color:rgb(123 63 0 / .1);font-family:serif;font-weight:700}.philosophy-quote p{font-style:italic;color:#555;font-size:1.2rem;line-height:1.7}.quote-author{color:#7B3F00;font-size:1rem;margin-top:1rem;text-align:right;font-weight:600}.countries-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1.5rem;margin-top:2rem}.country-item{background:rgb(255 255 255 / .9);border-radius:4px;padding:1.5rem;text-align:center;border:1px solid rgb(212 175 55 / .08);transition:all 0.3s ease;box-shadow:0 2px 8px rgb(0 0 0 / .05)}.country-item:hover{transform:translateY(-5px);border-color:rgb(123 63 0 / .2);box-shadow:0 8px 20px rgb(123 63 0 / .08)}.country-flag{font-size:2.5rem;margin-bottom:.8rem;filter:drop-shadow(0 2px 4px rgb(0 0 0 / .1))}.country-name{color:#2b2b2b;font-size:1.1rem;font-weight:500}.footer{background:rgb(255 255 255 / .9);padding:3rem 2rem 2rem;text-align:center;border-top:1px solid rgb(123 63 0 / .1);position:relative}.footer::before{content:'';position:absolute;top:0;left:0;width:100%;height:1px;background:linear-gradient(to right,transparent,#7B3F00,transparent)}.footer-content{max-width:1200px;margin:0 auto}.footer p{color:#888;margin-bottom:.8rem;font-size:.9rem}.social-links{display:flex;justify-content:center;gap:1.5rem;margin:2rem 0}.social-links a{color:#888;font-size:1.2rem;transition:all 0.3s ease;width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgb(255 255 255 / .9);border:1px solid rgb(123 63 0 / .1)}.social-links a:hover{color:#7B3F00;transform:translateY(-3px);box-shadow:0 6px 15px rgb(123 63 0 / .15);border-color:rgb(123 63 0 / .2)}.language-switcher{position:fixed;top:15px;right:15px;z-index:1001;display:flex;gap:2px;background:rgb(255 255 255 / .97);border-radius:2px;padding:3px;border:1px solid rgb(123 63 0 / .08);box-shadow:0 2px 8px rgb(0 0 0 / .04);backdrop-filter:blur(10px)}.lang-btn{background:#fff0;border:none;color:#888;padding:5px 9px;border-radius:1px;cursor:pointer;transition:all 0.3s ease;font-size:.7rem;font-weight:400;display:flex;align-items:center;gap:3px;min-height:32px;min-width:38px;justify-content:center}.lang-btn:hover{background:rgb(123 63 0 / .06);color:#666}.lang-btn.active{background:rgb(123 63 0 / .1);color:#7B3F00;font-weight:500}.lang-flag{font-size:.8rem}.lang-content{display:none}.lang-content.active{display:block}@media (max-width:768px){.nav-menu{display:none}.cards-grid,.products-grid{grid-template-columns:1fr}.cta-buttons{flex-direction:column;align-items:center}.btn{padding:12px 24px;width:100%;max-width:300px;justify-content:center}.philosophy-content{padding:2rem 1.5rem}.philosophy-quote{padding:1.5rem}.countries-grid{grid-template-columns:repeat(2,1fr)}.language-switcher{top:12px;right:12px;padding:2px;gap:1px}.lang-btn{padding:4px 8px;font-size:.65rem;min-height:30px;min-width:36px}.hero{padding:5rem 1.5rem 3rem;min-height:calc(100vh - 70px)}}@media (max-width:480px){.section{padding:4rem 1rem}.countries-grid{grid-template-columns:1fr}.philosophy-content{padding:1.5rem 1rem}.language-switcher{top:10px;right:10px}.hero{padding:4rem 1rem 2.5rem}}@media (min-width:1366px){.hero{padding:7rem 2rem 5rem;min-height:calc(100vh - 90px)}}@media (min-width:1440px){.hero{padding:7.5rem 2rem 5.5rem;min-height:calc(100vh - 85px)}}@media (min-width:1920px){.hero{padding:8rem 2rem 6rem;min-height:calc(100vh - 100px)}}@media (min-width:2560px){.hero{padding:10rem 2rem 8rem;min-height:calc(100vh - 120px)}}body[dir="rtl"] .logo::after,body[dir="rtl"] .nav-menu a::after,body[dir="rtl"] .section-title::after{left:auto;right:0;transform:none}body[dir="rtl"] .section-title::after,body[dir="rtl"] .philosophy-content::before{right:50%;transform:translateX(50%)}body[dir="rtl"] .philosophy-quote{border-left:none;border-right:3px solid #7B3F00;background:linear-gradient(90deg,transparent,rgb(123 63 0 / .03))}body[dir="rtl"] .philosophy-quote::before{left:auto;right:-15px}.text-center{text-align:center}.mb-2{margin-bottom:2rem}.mb-3{margin-bottom:3rem}
     </style>
 </head>
 <body>
@@ -70,7 +70,7 @@
             
             <p class="hero-subtitle lang-content active" data-lang="pt">Desde 2019, construindo infraestrutura blockchain descentralizada para um futuro digital soberano e livre.</p>
             <p class="hero-subtitle lang-content" data-lang="en">Since 2019, building decentralized blockchain infrastructure for a sovereign and free digital future.</p>
-            <p class="hero-subtitle lang-content" data-lang="ar">منذ عام 2019، نبني بنية تحتية بلوكشين لامركزية لمستقبل رقمي سيادي وحُر.</p>
+            <p class="hero-subtitle lang-content" data-lang="ar">منذ 2019، نبني بنية بلوكشين لا مركزية لمستقبل رقمي سيادي وحُر.</p>
             
             <div class="cta-buttons">
                 <a href="#produtos" class="btn btn-primary">
@@ -115,11 +115,11 @@
                     
                     <!-- English Content -->
                     <div class="lang-content" data-lang="en">
-                        <p>Since 2019, AVZ Infra has been designing digital infrastructures with a clear goal: reduce dependence, increase sovereignty.</p>
+                        <p>Since 2019, AVZ Infra has designed digital infrastructures with a clear goal: reduce dependence, increase sovereignty.</p>
                         
-                        <p>We believe that truly innovative systems are those that eliminate single points of control, simplify architecture, and return power to the user. In a global scenario marked by excessive centralization, we choose to build the opposite.</p>
+                        <p>We believe truly innovative systems eliminate single points of control, simplify architecture, and return power to the user. In a global landscape marked by excessive centralization, we choose to build the opposite.</p>
                         
-                        <p>Our foundation rests on three pillars: <strong>digital sovereignty</strong>, <strong>real decentralization</strong>, and <strong>verifiable transparency</strong>. We develop infrastructures where identities, data, and assets are not mediated — they are controlled directly by those who use them.</p>
+                        <p>Our foundation rests on three pillars: <strong>digital sovereignty</strong>, <strong>real decentralization</strong>, and <strong>verifiable transparency</strong>. We develop infrastructures where identities, data, and assets are not mediated—they are controlled directly by those who use them.</p>
                         
                         <p>Blockchain, for us, is not just technology. It is a commitment to systems that cannot be censored, interrupted, or appropriated by centralized entities.</p>
                         
@@ -128,13 +128,13 @@
                     
                     <!-- Arabic Content -->
                     <div class="lang-content" data-lang="ar">
-                        <p>منذ عام 2019، تصمم AVZ Infra بنى تحتية رقمية بهدف واضح: تقليل الاعتماد، وزيادة السيادة.</p>
+                        <p>منذ 2019، تُصمم AVZ Infra بنى تحتية رقمية بهدف واضح: تقليل الاعتماد، وزيادة السيادة.</p>
                         
-                        <p>نعتقد أن الأنظمة المبتكرة حقًا هي تلك التي تقضي على نقاط التحكم الفردية، وتبسط البنية، وتعيد السلطة للمستخدم. في سيناريو عالمي يتسم بالمركزية المفرطة، نختار بناء العكس.</p>
+                        <p>نؤمن أن الأنظمة المبتكرة حقًا هي تلك التي تزيل نقاط التحكم الفردية، وتبسط البنية، وتعيد السلطة للمستخدم. في مشهد عالمي يتسم بمركزية مفرطة، نختار بناء العكس.</p>
                         
-                        <p>يقوم أساسنا على ثلاثة ركائز: <strong>السيادة الرقمية</strong>، <strong>اللامركزية الحقيقية</strong>، و<strong>الشفافية القابلة للتحقق</strong>. نطور بنى تحتية حيث لا يتم وساطة الهويات والبيانات والأصول — بل يتحكم فيها مباشرة من يستخدمها.</p>
+                        <p>يقوم أساسنا على ثلاثة ركائز: <strong>السيادة الرقمية</strong>، <strong>اللا مركزية الحقيقية</strong>، و<strong>الشفافية القابلة للتحقق</strong>. نطور بنى تحتية حيث لا تتم وساطة الهويات والبيانات والأصول — بل يتحكم بها مباشرة من يستخدمها.</p>
                         
-                        <p>البلوكشين، بالنسبة لنا، ليست مجرد تقنية. إنها التزام بأنظمة لا يمكن حظرها أو مقاطعتها أو استيلاء كيانات مركزية عليها.</p>
+                        <p>البلوكشين، بالنسبة لنا، ليست مجرد تقنية. إنها التزام بأنظمة لا يمكن حظرها أو تعطيلها أو استيلاء كيانات مركزية عليها.</p>
                         
                         <p>لا نضحّي بالحرية باسم الأمن. نصمم أنظمة تتعايش فيهما معًا بالتصميم.</p>
                     </div>
@@ -142,8 +142,8 @@
                 
                 <div class="philosophy-quote">
                     <p class="lang-content active" data-lang="pt">"Infraestrutura é poder. Nosso trabalho é devolvê-lo ao usuário."</p>
-                    <p class="lang-content" data-lang="en">"Infrastructure is power. Our job is to return it to the user."</p>
-                    <p class="lang-content" data-lang="ar">"البنية التحتية هي قوة. وظيفتنا هي إعادتها إلى المستخدم."</p>
+                    <p class="lang-content" data-lang="en">"Infrastructure is power. Our work is to return it to the user."</p>
+                    <p class="lang-content" data-lang="ar">"البنية التحتية هي قوة. عملنا هو إعادتها إلى المستخدم."</p>
                     <div class="quote-author lang-content active" data-lang="pt">— AVZ Infra</div>
                     <div class="quote-author lang-content" data-lang="en">— AVZ Infra</div>
                     <div class="quote-author lang-content" data-lang="ar">— AVZ Infra</div>
@@ -171,6 +171,367 @@
                 <!-- Produto Único: Exclusive Identity -->
                 <div class="product-card">
                     <div class="product-badge">
+                        <span class="lang-content active" data-lang="pt">Ativo Soberano</span>
+                        <span class="lang-content" data-lang="en">Sovereign Asset</span>
+                        <span class="lang-content" data-lang="ar">أصل سيادي</span>
+                    </div>
+                    <div class="product-icon">
+                        <i class="fas fa-fingerprint"></i>
+                    </div>
+                    <h3>Exclusive Identity</h3>
+                    <p>
+                        <span class="lang-content active" data-lang="pt">Infraestrutura de identidade digital auto-soberana que garante controle absoluto sobre dados pessoais e ativos digitais, com valor de referência interno estabelecido.</span>
+                        <span class="lang-content" data-lang="en">Self-sovereign digital identity infrastructure ensuring absolute control over personal data and digital assets, with established internal reference value.</span>
+                        <span class="lang-content" data-lang="ar">بنية تحتية للهوية الرقمية ذاتية السيادة تضمن سيطرة مطلقة على البيانات الشخصية والأصول الرقمية، مع قيمة مرجعية داخلية محددة.</span>
+                    </p>
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i> 
+                            <span class="lang-content active" data-lang="pt">Identidade auto-soberana com controle absoluto</span>
+                            <span class="lang-content" data-lang="en">Self-sovereign identity with absolute control</span>
+                            <span class="lang-content" data-lang="ar">هوية ذاتية السيادة مع سيطرة مطلقة</span>
+                        </li>
+                        <li><i class="fas fa-check"></i> 
+                            <span class="lang-content active" data-lang="pt">Criptografia quântica-resistente end-to-end</span>
+                            <span class="lang-content" data-lang="en">Quantum-resistant end-to-end encryption</span>
+                            <span class="lang-content" data-lang="ar">تشفير من طرف لطرف مقاوم للكم</span>
+                        </li>
+                        <li><i class="fas fa-check"></i> 
+                            <span class="lang-content active" data-lang="pt">Valor de referência interno: ~USD 3.6M</span>
+                            <span class="lang-content" data-lang="en">Internal reference value: ~USD 3.6M</span>
+                            <span class="lang-content" data-lang="ar">قيمة مرجعية داخلية: ~USD 3.6M</span>
+                        </li>
+                        <li><i class="fas fa-check"></i> 
+                            <span class="lang-content active" data-lang="pt">Verificação sem dependência de terceiros</span>
+                            <span class="lang-content" data-lang="en">Verification without third-party dependency</span>
+                            <span class="lang-content" data-lang="ar">التحقق دون اعتماد على طرف ثالث</span>
+                        </li>
+                        <li><i class="fas fa-check"></i> 
+                            <span class="lang-content active" data-lang="pt">Portabilidade soberana entre sistemas</span>
+                            <span class="lang-content" data-lang="en">Sovereign portability between systems</span>
+                            <span class="lang-content" data-lang="ar">إمكانية النقل السيادية بين الأنظمة</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infraestrutura / Infrastructure -->
+    <section id="infraestrutura" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="lang-content active" data-lang="pt">Infraestrutura Descentralizada</span>
+                <span class="lang-content" data-lang="en">Decentralized Infrastructure</span>
+                <span class="lang-content" data-lang="ar">البنية التحتية اللا مركزية</span>
+            </h2>
+            
+            <div class="cards-grid">
+                <!-- Card 1 -->
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>
+                        <span class="lang-content active" data-lang="pt">Arquitetura Distribuída</span>
+                        <span class="lang-content" data-lang="en">Distributed Architecture</span>
+                        <span class="lang-content" data-lang="ar">هندسة موزعة</span>
+                    </h3>
+                    <p>
+                        <span class="lang-content active" data-lang="pt">Infraestrutura descentralizada que elimina pontos únicos de falha e garante alta disponibilidade.</span>
+                        <span class="lang-content" data-lang="en">Decentralized infrastructure that eliminates single points of failure and ensures high availability.</span>
+                        <span class="lang-content" data-lang="ar">بنية تحتية لا مركزية تزيل نقاط الفشل الفردية وتضمن توافرًا عاليًا.</span>
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>
+                        <span class="lang-content active" data-lang="pt">Performance Otimizada</span>
+                        <span class="lang-content" data-lang="en">Optimized Performance</span>
+                        <span class="lang-content" data-lang="ar">أداء مُحسَّن</span>
+                    </h3>
+                    <p>
+                        <span class="lang-content active" data-lang="pt">Rede distribuída globalmente com latência mínima e throughput máximo para operações em tempo real.</span>
+                        <span class="lang-content" data-lang="en">Globally distributed network with minimal latency and maximum throughput for real-time operations.</span>
+                        <span class="lang-content" data-lang="ar">شبكة موزعة عالميًا بأقل زمن انتقال وأقصى معدل نقل للعمليات في الوقت الفعلي.</span>
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>
+                        <span class="lang-content active" data-lang="pt">Segurança Enterprise</span>
+                        <span class="lang-content" data-lang="en">Enterprise Security</span>
+                        <span class="lang-content" data-lang="ar">أمان المؤسسات</span>
+                    </h3>
+                    <p>
+                        <span class="lang-content active" data-lang="pt">Protocolos de segurança de nível institucional com criptografia de ponta a ponta.</span>
+                        <span class="lang-content" data-lang="en">Institutional-level security protocols with end-to-end encryption.</span>
+                        <span class="lang-content" data-lang="ar">بروتوكولات أمان على مستوى المؤسسات مع تشفير من طرف لطرف.</span>
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </div>
+                    <h3>
+                        <span class="lang-content active" data-lang="pt">Escalabilidade Ilimitada</span>
+                        <span class="lang-content" data-lang="en">Unlimited Scalability</span>
+                        <span class="lang-content" data-lang="ar">قابلية توسع غير محدودة</span>
+                    </h3>
+                    <p>
+                        <span class="lang-content active" data-lang="pt">Arquitetura projetada para escalar horizontalmente conforme a demanda cresce.</span>
+                        <span class="lang-content" data-lang="en">Architecture designed to scale horizontally as demand grows.</span>
+                        <span class="lang-content" data-lang="ar">هندسة مصممة للتوسع أفقيًا مع نمو الطلب.</span>
+                    </p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>
+                        <span class="lang-content active" data-lang="pt">Resiliência Operacional</span>
+                        <span class="lang-content" data-lang="en">Operational Resilience</span>
+                        <span class="lang-content" data-lang="ar">المرونة التشغيلية</span>
+                    </h3>
+                    <p>
+                        <span class="lang-content active" data-lang="pt">Sistema tolerante a falhas com recuperação automática e redundância distribuída.</span>
+                        <span class="lang-content" data-lang="en">Fault-tolerant system with automatic recovery and distributed redundancy.</span>
+                        <span class="lang-content" data-lang="ar">نظام متحمل للأعطال مع استعادة تلقائية وتكرار موزع.</span>
+                    </p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>
+                        <span class="lang-content active" data-lang="pt">Soberania Absoluta</span>
+                        <span class="lang-content" data-lang="en">Absolute Sovereignty</span>
+                        <span class="lang-content" data-lang="ar">سيادة مطلقة</span>
+                    </h3>
+                    <p>
+                        <span class="lang-content active" data-lang="pt">Sistemas de Identidade Digital projetados para soberania absoluta em qualquer funcionalidade necessária.</span>
+                        <span class="lang-content" data-lang="en">Digital Identity Systems designed for absolute sovereignty in any required functionality.</span>
+                        <span class="lang-content" data-lang="ar">أنظمة الهوية الرقمية المصممة للسيادة المطلقة في أي وظيفة مطلوبة.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Presença Global / Global Presence -->
+    <section id="presenca" class="section section-light">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="lang-content active" data-lang="pt">Presença Global</span>
+                <span class="lang-content" data-lang="en">Global Presence</span>
+                <span class="lang-content" data-lang="ar">الوجود العالمي</span>
+            </h2>
+            
+            <p class="text-center mb-3" style="color: #666; font-size: 1.05rem;">
+                <span class="lang-content active" data-lang="pt">Infraestrutura distribuída em múltiplas regiões para máxima resiliência</span>
+                <span class="lang-content" data-lang="en">Infrastructure distributed across multiple regions for maximum resilience</span>
+                <span class="lang-content" data-lang="ar">بنية تحتية موزعة عبر مناطق متعددة لأقصى قدر من المرونة</span>
+            </p>
+            
+            <div class="countries-grid">
+                <div class="country-item">
+                    <div class="country-flag">🇧🇷</div>
+                    <div class="country-name">
+                        <span class="lang-content active" data-lang="pt">Brasil</span>
+                        <span class="lang-content" data-lang="en">Brazil</span>
+                        <span class="lang-content" data-lang="ar">البرازيل</span>
+                    </div>
+                </div>
+                <div class="country-item">
+                    <div class="country-flag">🇺🇸</div>
+                    <div class="country-name">
+                        <span class="lang-content active" data-lang="pt">Estados Unidos</span>
+                        <span class="lang-content" data-lang="en">United States</span>
+                        <span class="lang-content" data-lang="ar">الولايات المتحدة</span>
+                    </div>
+                </div>
+                <div class="country-item">
+                    <div class="country-flag">🇪🇺</div>
+                    <div class="country-name">
+                        <span class="lang-content active" data-lang="pt">União Europeia</span>
+                        <span class="lang-content" data-lang="en">European Union</span>
+                        <span class="lang-content" data-lang="ar">الاتحاد الأوروبي</span>
+                    </div>
+                </div>
+                <div class="country-item">
+                    <div class="country-flag">🇸🇬</div>
+                    <div class="country-name">
+                        <span class="lang-content active" data-lang="pt">Singapura</span>
+                        <span class="lang-content" data-lang="en">Singapore</span>
+                        <span class="lang-content" data-lang="ar">سنغافورة</span>
+                    </div>
+                </div>
+                <div class="country-item">
+                    <div class="country-flag">🇯🇵</div>
+                    <div class="country-name">
+                        <span class="lang-content active" data-lang="pt">Japão</span>
+                        <span class="lang-content" data-lang="en">Japan</span>
+                        <span class="lang-content" data-lang="ar">اليابان</span>
+                    </div>
+                </div>
+                <div class="country-item">
+                    <div class="country-flag">🇦🇪</div>
+                    <div class="country-name">
+                        <span class="lang-content active" data-lang="pt">Emirados Árabes</span>
+                        <span class="lang-content" data-lang="en">UAE</span>
+                        <span class="lang-content" data-lang="ar">الإمارات</span>
+                    </div>
+                </div>
+                <div class="country-item">
+                    <div class="country-flag">🇨🇦</div>
+                    <div class="country-name">
+                        <span class="lang-content active" data-lang="pt">Canadá</span>
+                        <span class="lang-content" data-lang="en">Canada</span>
+                        <span class="lang-content" data-lang="ar">كندا</span>
+                    </div>
+                </div>
+                <div class="country-item">
+                    <div class="country-flag">🇦🇺</div>
+                    <div class="country-name">
+                        <span class="lang-content active" data-lang="pt">Austrália</span>
+                        <span class="lang-content" data-lang="en">Australia</span>
+                        <span class="lang-content" data-lang="ar">أستراليا</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://medium.com/" target="_blank"><i class="fab fa-medium"></i></a>
+            </div>
+            
+            <p>
+                <span class="lang-content active" data-lang="pt">© 2026 AVZ Infra. Todos os direitos reservados.</span>
+                <span class="lang-content" data-lang="en">© 2026 AVZ Infra. All rights reserved.</span>
+                <span class="lang-content" data-lang="ar">© 2026 AVZ Infra. جميع الحقوق محفوظة.</span>
+            </p>
+            
+            <p style="color: #7B3F00; font-size: 0.9rem; margin-top: 1.5rem; font-weight: 500;">
+                <span class="lang-content active" data-lang="pt">"Construindo a infraestrutura que conecta o presente ao futuro."</span>
+                <span class="lang-content" data-lang="en">"Building the infrastructure that connects the present to the future."</span>
+                <span class="lang-content" data-lang="ar">"نَبني البنيةَ التحتية التي تَربط الحاضرَ بالمستقبل."</span>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Language Switching
+        document.addEventListener('DOMContentLoaded', function() {
+            const langButtons = document.querySelectorAll('.lang-btn');
+            const langContents = document.querySelectorAll('.lang-content');
+            
+            // Set initial language to Portuguese
+            setLanguage('pt');
+            
+            // Add click event to language buttons
+            langButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const lang = this.getAttribute('data-lang');
+                    setLanguage(lang);
+                    
+                    // Update active button
+                    langButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Update RTL for Arabic
+                    if (lang === 'ar') {
+                        document.body.setAttribute('dir', 'rtl');
+                        document.documentElement.setAttribute('dir', 'rtl');
+                        document.documentElement.setAttribute('lang', 'ar');
+                    } else {
+                        document.body.removeAttribute('dir');
+                        document.documentElement.removeAttribute('dir');
+                        document.documentElement.setAttribute('lang', lang);
+                    }
+                });
+            });
+            
+            function setLanguage(lang) {
+                // Hide all language content
+                langContents.forEach(content => {
+                    content.classList.remove('active');
+                });
+                
+                // Show content for selected language
+                const activeContents = document.querySelectorAll(`.lang-content[data-lang="${lang}"]`);
+                activeContents.forEach(content => {
+                    content.classList.add('active');
+                });
+                
+                // Update HTML lang attribute
+                document.documentElement.setAttribute('lang', lang);
+            }
+            
+            // Smooth scrolling
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+            
+            // Header scroll effect
+            window.addEventListener('scroll', () => {
+                const header = document.querySelector('.header');
+                if (window.scrollY > 100) {
+                    header.style.background = 'rgb(255 255 255 / .98)';
+                    header.style.backdropFilter = 'blur(15px)';
+                    header.style.boxShadow = '0 5px 25px rgba(123, 63, 0, 0.08)';
+                } else {
+                    header.style.background = 'rgb(255 255 255 / .95)';
+                    header.style.backdropFilter = 'blur(10px)';
+                    header.style.boxShadow = '0 2px 20px rgba(123, 63, 0, 0.05)';
+                }
+            });
+
+            // Adjust hero height on resize
+            function adjustHeroHeight() {
+                const header = document.querySelector('.header');
+                const hero = document.querySelector('.hero');
+                if (header && hero) {
+                    const headerHeight = header.offsetHeight;
+                    hero.style.minHeight = `calc(100vh - ${headerHeight}px)`;
+                }
+            }
+
+            // Initial adjustment
+            adjustHeroHeight();
+            window.addEventListener('resize', adjustHeroHeight);
+        });
+    </script>
+</body>
+                        </html>                    <div class="product-badge">
                         <span class="lang-content active" data-lang="pt">Ativo Soberano</span>
                         <span class="lang-content" data-lang="en">Sovereign Asset</span>
                         <span class="lang-content" data-lang="ar">أصول سيادية</span>
