@@ -39,7 +39,7 @@ body[dir="rtl"] #fundadora .lang-content[data-lang="ar"] {
     line-height: 1.6;
 }
 
-/* Estilos específicos para seção Fundadora */
+/* Estilos específicos para seção Fundadora - CORRIGIDOS */
 .founder-grid {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -69,12 +69,13 @@ body[dir="rtl"] #fundadora .lang-content[data-lang="ar"] {
 
 .founder-frame-inner {
     width: 100%;
-    aspect-ratio: 1/1;
+    aspect-ratio: 4/5;
     border-radius: 2px;
     background: linear-gradient(135deg, #f5f1ec 0%, #f7ecec 100%);
     padding: 8px;
     border: 1px solid rgb(212 175 55 / .08);
     box-shadow: 0 4px 15px rgb(0 0 0 / .05);
+    overflow: hidden;
 }
 
 .founder-image-container {
@@ -86,17 +87,30 @@ body[dir="rtl"] #fundadora .lang-content[data-lang="ar"] {
     justify-content: center;
     overflow: hidden;
     border-radius: 1px;
+    position: relative;
 }
 
-.founder-image-placeholder {
+/* ESTILOS CORRIGIDOS PARA A IMAGEM */
+.founder-image-container img {
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgb(212 175 55 / .03) 0%, rgb(123 63 0 / .02) 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: rgb(123 63 0 / .15);
-    font-size: 3rem;
+    object-fit: contain; /* Alterado de cover para contain */
+    object-position: center top; /* Foca no rosto */
+    border-radius: 1px;
+    background-color: #f5f1ec;
+}
+
+/* Garantir que a imagem não seja cortada */
+.founder-image-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(245, 241, 236, 0.1) 0%, rgba(247, 236, 236, 0.1) 100%);
+    z-index: 1;
+    pointer-events: none;
 }
 
 .founder-highlight {
@@ -543,7 +557,7 @@ body[dir="rtl"] .founder-purpose {
         </div>
     </section>
 
-    <!-- Seção Fundadora COM FOTO INTEGRADA -->
+    <!-- Seção Fundadora COM FOTO INTEGRADA E CORRIGIDA -->
     <section id="fundadora" class="section">
         <div class="container">
             <h2 class="section-title">
@@ -553,17 +567,16 @@ body[dir="rtl"] .founder-purpose {
             </h2>
             
             <div class="founder-grid">
-                <!-- Bloco Visual COM FOTO -->
+                <!-- Bloco Visual COM FOTO CORRIGIDA -->
                 <div style="text-align: center;">
                     <div class="founder-frame">
-                        <!-- Frame -->
+                        <!-- Frame com proporção ajustada -->
                         <div class="founder-frame-inner">
-                            <!-- Container da Imagem COM FOTO REAL -->
+                            <!-- Container da Imagem COM FOTO REAL E CORRIGIDA -->
                             <div class="founder-image-container">
-                                <!-- Foto institucional de Viviane Baz -->
+                                <!-- Foto institucional de Viviane Baz - CORRIGIDA -->
                                 <img src="https://raw.githubusercontent.com/Vivianeadev/avzinfra/main/photo.jpg" 
-                                     alt="Viviane Baz - Fundadora e Arquiteta do Sistema AVZ Infra" 
-                                     style="width: 100%; height: 100%; object-fit: cover; border-radius: 1px;">
+                                     alt="Viviane Baz - Fundadora e Arquiteta do Sistema AVZ Infra">
                             </div>
                         </div>
                         
