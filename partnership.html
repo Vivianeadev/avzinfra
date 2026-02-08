@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ponte para Investidores – Parceria com Universidades</title>
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- CSS IDÊNTICO À PÁGINA PRINCIPAL -->
+    <style>
+        /* CSS IDÊNTICO - NÃO ALTERADO */
+        *{margin:0;padding:0;box-sizing:border-box;font-family:'Helvetica Neue',Arial,sans-serif}body{background:linear-gradient(135deg,#f9f5f0 0%,#faf0f4 100%);color:#3a3a3a;line-height:1.6;overflow-x:hidden;position:relative}body::before,body::after{content:'';position:fixed;width:500px;height:500px;border-radius:50%;pointer-events:none;z-index:0;opacity:.03}body::before{top:-200px;right:-200px;background:radial-gradient(circle,#7B3F00 0%,transparent 70%);box-shadow:0 0 150px 150px rgb(123 63 0 / .1)}body::after{bottom:-200px;left:-200px;background:radial-gradient(circle,#8B4513 0%,transparent 70%);box-shadow:0 0 150px 150px rgb(139 69 19 / .1)}.header{position:fixed;top:0;width:100%;background:rgb(255 255 255 / .95);backdrop-filter:blur(10px);z-index:1000;padding:1rem 0;transition:all 0.3s ease;border-bottom:1px solid rgb(212 175 55 / .1);box-shadow:0 2px 20px rgb(123 63 0 / .05)}.nav-container{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 2rem}.logo{font-size:1.8rem;font-weight:300;letter-spacing:2px;color:#2b2b2b;text-transform:uppercase;position:relative}.logo::after{content:'';position:absolute;bottom:-5px;left:0;width:60%;height:1px;background:linear-gradient(to right,transparent,#7B3F00,transparent)}.logo span{display:block;font-size:11px;letter-spacing:8px;margin-top:2px;color:#888}.nav-menu{display:flex;list-style:none;gap:2rem}.nav-menu a{color:#3a3a3a;text-decoration:none;font-weight:400;transition:all 0.3s ease;position:relative;font-size:14px;letter-spacing:.5px}.nav-menu a:hover{color:#d4af37}.nav-menu a::after{content:'';position:absolute;bottom:-5px;left:0;width:0;height:1px;background:linear-gradient(135deg,#d4af37,#7B3F00);transition:width 0.3s ease}.nav-menu a:hover::after{width:100%}.hero{min-height:calc(100vh - 80px);display:flex;align-items:center;justify-content:center;text-align:center;padding:6rem 2rem 4rem;position:relative;background:linear-gradient(135deg,rgb(249 245 240 / .9),rgb(250 240 244 / .9));overflow:hidden}.hero::before{content:'';position:absolute;top:10%;right:10%;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgb(123 63 0 / .03) 0%,transparent 70%);filter:blur(40px);z-index:1}.hero-content{max-width:900px;z-index:2}.hero h1{font-size:clamp(2rem, 5vw, 3.2rem);margin-bottom:1rem;font-weight:400;letter-spacing:1px;color:#2b2b2b;line-height:1.2}.hero h1 span{color:#d4af37;font-weight:500;text-shadow:0 0 30px rgb(212 175 55 / .2)}.hero-subtitle{font-size:1.2rem;color:#666;margin-bottom:2.5rem;font-weight:300;letter-spacing:.5px;max-width:700px;margin-left:auto;margin-right:auto;line-height:1.7}.cta-buttons{display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap}.btn{padding:14px 28px;border:none;border-radius:2px;font-weight:400;text-decoration:none;display:inline-flex;align-items:center;gap:.8rem;transition:all 0.3s ease;cursor:pointer;font-size:14px;letter-spacing:.5px;position:relative;overflow:hidden}.btn::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgb(255 255 255 / .2),transparent);transition:left 0.7s ease}.btn:hover::before{left:100%}.btn-primary{background:linear-gradient(to right,#d4af37,#f4e4b8);color:#2a2a2a;box-shadow:0 3px 15px rgb(212 175 55 / .3)}.btn-primary:hover{box-shadow:0 5px 20px rgb(212 175 55 / .4);transform:translateY(-2px)}.btn-secondary{background:#fff0;color:#666;border:1px solid #ddd;box-shadow:0 2px 8px rgb(0 0 0 / .05)}.btn-secondary:hover{border-color:#d4af37;color:#d4af37;box-shadow:0 4px 12px rgb(212 175 55 / .15)}.section{padding:5rem 2rem;background:rgb(255 255 255 / .7);position:relative}.section-light{background:linear-gradient(135deg,#f5f1ec 0%,#f7ecec 100%)}.container{max-width:1200px;margin:0 auto;position:relative;z-index:2}.section-title{font-size:clamp(1.6rem, 3vw, 2.2rem);text-align:center;margin-bottom:3rem;font-weight:400;letter-spacing:1px;color:#2b2b2b;position:relative;padding-bottom:15px}.section-title::after{content:'';position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:60px;height:2px;background:linear-gradient(to right,#d4af37,#7B3F00,#f4e4b8)}.cards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem}.card{background:rgb(255 255 255 / .9);border:1px solid rgb(212 175 55 / .08);border-radius:4px;padding:2.5rem 2rem;transition:all 0.3s ease;box-shadow:0 2px 10px rgb(0 0 0 / .05);position:relative}.card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(to right,transparent,#7B3F00,transparent);opacity:0;transition:opacity 0.3s ease}.card:hover{border-color:rgb(123 63 0 / .15);box-shadow:0 8px 25px rgb(123 63 0 / .08);transform:translateY(-5px)}.card:hover::before{opacity:1}.card-icon{font-size:2.2rem;color:#d4af37;margin-bottom:1.5rem;text-shadow:0 0 10px rgb(212 175 55 / .2)}.card h3{font-size:1.3rem;margin-bottom:1rem;color:#2b2b2b;font-weight:500}.card p{color:#666;line-height:1.7;font-size:.95rem}.philosophy-content{background:rgb(255 255 255 / .9);border:1px solid rgb(212 175 55 / .08);border-radius:4px;padding:3rem;margin-top:2rem;box-shadow:0 4px 20px rgb(0 0 0 / .03);position:relative}.philosophy-content::before{content:'';position:absolute;top:-1px;left:50%;transform:translateX(-50%);width:100px;height:1px;background:linear-gradient(to right,#d4af37,#7B3F00,#f4e4b8)}.philosophy-text{color:#666;line-height:1.8;font-size:1.05rem}.philosophy-text p{margin-bottom:1.5rem}.philosophy-text strong{color:#2b2b2b;font-weight:600}.philosophy-quote{margin-top:2.5rem;padding:2rem;border-left:3px solid #7B3F00;background:linear-gradient(90deg,rgb(123 63 0 / .03),transparent);border-radius:0 4px 4px 0;position:relative}.philosophy-quote::before{content:'"';position:absolute;top:-10px;left:-15px;font-size:4rem;color:rgb(123 63 0 / .1);font-family:serif;font-weight:700}.philosophy-quote p{font-style:italic;color:#555;font-size:1.2rem;line-height:1.7}.quote-author{color:#7B3F00;font-size:1rem;margin-top:1rem;text-align:right;font-weight:600}.footer{background:rgb(255 255 255 / .9);padding:3rem 2rem 2rem;text-align:center;border-top:1px solid rgb(123 63 0 / .1);position:relative}.footer::before{content:'';position:absolute;top:0;left:0;width:100%;height:1px;background:linear-gradient(to right,transparent,#7B3F00,transparent)}.footer-content{max-width:1200px;margin:0 auto}.footer p{color:#888;margin-bottom:.8rem;font-size:.9rem}.social-links{display:flex;justify-content:center;gap:1.5rem;margin:2rem 0}.social-links a{color:#888;font-size:1.2rem;transition:all 0.3s ease;width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgb(255 255 255 / .9);border:1px solid rgb(123 63 0 / .1)}.social-links a:hover{color:#7B3F00;transform:translateY(-3px);box-shadow:0 6px 15px rgb(123 63 0 / .15);border-color:rgb(123 63 0 / .2)}.language-switcher{position:fixed;top:10px;right:10px;z-index:1001;display:flex;gap:1px;background:rgb(255 255 255 / .97);border-radius:1px;padding:2px;border:1px solid rgb(123 63 0 / .08);box-shadow:0 1px 6px rgb(0 0 0 / .06);backdrop-filter:blur(10px);min-width:120px;height:34px;align-items:center;justify-content:center}.lang-btn{background:#fff0;border:none;color:#888;padding:3px 6px;border-radius:0;cursor:pointer;transition:all 0.2s ease;font-size:.65rem;font-weight:400;display:flex;align-items:center;gap:2px;min-height:28px;min-width:38px;justify-content:center;flex:1;height:100%}.lang-btn:hover{background:rgb(123 63 0 / .04);color:#666}.lang-btn.active{background:rgb(123 63 0 / .08);color:#7B3F00;font-weight:500;border-radius:0}.lang-flag{font-size:.7rem}.lang-content{display:none}.lang-content.active{display:block}@media (max-width:768px){.nav-menu{display:none}.cards-grid{grid-template-columns:1fr}.cta-buttons{flex-direction:column;align-items:center}.btn{padding:12px 24px;width:100%;max-width:300px;justify-content:center}.philosophy-content{padding:2rem 1.5rem}.philosophy-quote{padding:1.5rem}.language-switcher{top:8px;right:8px;min-width:110px;height:32px}.lang-btn{padding:2px 5px;font-size:.6rem;min-height:26px;min-width:34px;gap:1px}.hero{padding:5rem 1.5rem 3rem;min-height:calc(100vh - 70px)}}@media (max-width:480px){.section{padding:4rem 1rem}.philosophy-content{padding:1.5rem 1rem}.language-switcher{top:6px;right:6px;min-width:100px;height:30px}.lang-btn{padding:1px 4px;font-size:.55rem;min-height:24px;min-width:30px}.hero{padding:4rem 1rem 2.5rem}}@media (min-width:1366px){.hero{padding:7rem 2rem 5rem;min-height:calc(100vh - 90px)}}@media (min-width:1440px){.hero{padding:7.5rem 2rem 5.5rem;min-height:calc(100vh - 85px)}}@media (min-width:1920px){.hero{padding:8rem 2rem 6rem;min-height:calc(100vh - 100px)}}@media (min-width:2560px){.hero{padding:10rem 2rem 8rem;min-height:calc(100vh - 120px)}}body[dir="rtl"] .logo::after,body[dir="rtl"] .nav-menu a::after,body[dir="rtl"] .section-title::after{left:auto;right:0;transform:none}body[dir="rtl"] .section-title::after,body[dir="rtl"] .philosophy-content::before{right:50%;transform:translateX(50%)}body[dir="rtl"] .philosophy-quote{border-left:none;border-right:3px solid #7B3F00;background:linear-gradient(90deg,transparent,rgb(123 63 0 / .03))}body[dir="rtl"] .philosophy-quote::before{left:auto;right:-15px}.text-center{text-align:center}.mb-2{margin-bottom:2rem}.mb-3{margin-bottom:3rem}body[dir="rtl"] .lang-content[data-lang="ar"]{display:block!important;text-align:right;direction:rtl}body[dir="rtl"] #fundadora p[style*="color: #888"]{text-align:right}
+        
+        /* ESTILOS ESPECÍFICOS SIMPLIFICADOS */
+        .coordinator-section {
+            background: linear-gradient(135deg, rgba(249, 245, 240, 0.7) 0%, rgba(250, 240, 244, 0.7) 100%);
+            border-radius: 8px;
+            padding: 3rem;
+            margin: 3rem 0;
+            border: 1px solid rgba(212, 175, 55, 0.1);
+        }
+        
+        @media (max-width: 768px) {
+            .coordinator-section {
+                padding: 2rem;
+                margin: 2rem 0;
+            }
+        }
+        
+        .coordinator-grid {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        
+        @media (max-width: 768px) {
+            .coordinator-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+        
+        .coordinator-photo {
+            width: 100%;
+            height: 300px;
+            background-color: #f5f1ec;
+            border-radius: 4px;
+            overflow: hidden;
+            position: relative;
+            border: 1px solid rgba(212, 175, 55, 0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .coordinator-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .photo-placeholder {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #f5f1ec 0%, #f7ecec 100%);
+            color: #7B3F00;
+            font-size: 1.2rem;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .simple-card {
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid rgba(212, 175, 55, 0.08);
+            border-radius: 4px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+        
+        .simple-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(123, 63, 0, 0.08);
+        }
+        
+        .invitation-box {
+            background: linear-gradient(135deg, rgba(123, 63, 0, 0.05) 0%, rgba(212, 175, 55, 0.05) 100%);
+            border: 1px solid rgba(123, 63, 0, 0.1);
+            border-radius: 8px;
+            padding: 2.5rem;
+            text-align: center;
+            margin: 3rem 0;
+        }
+        
+        @media (max-width: 768px) {
+            .invitation-box {
+                padding: 2rem;
+                margin: 2rem 0;
+            }
+        }
+        
+        .benefit-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 4px;
+            border-left: 3px solid #7B3F00;
+        }
+        
+        .benefit-icon {
+            color: #7B3F00;
+            font-size: 1.5rem;
+            margin-top: 0.2rem;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <button class="lang-btn active" data-lang="pt">
+            <span class="lang-flag">🇧🇷</span>
+            <span>PT</span>
+        </button>
+        <button class="lang-btn" data-lang="en">
+            <span class="lang-flag">🇺🇸</span>
+            <span>EN</span>
+        </button>
+        <button class="lang-btn" data-lang="ar">
+            <span class="lang-flag">🇸🇦</span>
+            <span>AR</span>
+        </button>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">PROGRAMA IP<span>Ponte para Investidores</span></div>
+            <ul class="nav-menu">
+                <li><a href="#convite">
+                    <span class="lang-content active" data-lang="pt">Convite</span>
+                    <span class="lang-content" data-lang="en">Invitation</span>
+                    <span class="lang-content" data-lang="ar">دعوة</span>
+                </a></li>
+                <li><a href="#coordenadora">
+                    <span class="lang-content active" data-lang="pt">Manifesto</span>
+                    <span class="lang-content" data-lang="en">Manifesto</span>
+                    <span class="lang-content" data-lang="ar">بيان</span>
+                </a></li>
+                <li><a href="#beneficios">
+                    <span class="lang-content active" data-lang="pt">Benefícios</span>
+                    <span class="lang-content" data-lang="en">Benefits</span>
+                    <span class="lang-content" data-lang="ar">فوائد</span>
+                </a></li>
+                <li><a href="#como-funciona">
+                    <span class="lang-content active" data-lang="pt">Como Funciona</span>
+                    <span class="lang-content" data-lang="en">How It Works</span>
+                    <span class="lang-content" data-lang="ar">كيف يعمل</span>
+                </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>
+                <span class="lang-content active" data-lang="pt">Ponte Direta para <span>Investidores</span></span>
+                <span class="lang-content" data-lang="en">Direct Bridge to <span>Investidores</span></span>
+                <span class="lang-content" data-lang="ar">جسر مباشر إلى <span>المستثمرين</span></span>
+            </h1>
+            
+            <p class="hero-subtitle">
+                <span class="lang-content active" data-lang="pt">Conectamos projetos acadêmicos de excelência com investidores reais. Uma parceria simples entre sua universidade e o mercado.</span>
+                <span class="lang-content" data-lang="en">We connect excellence academic projects with real investors. A simple partnership between your university and the market.</span>
+                <span class="lang-content" data-lang="ar">نربط مشاريع أكاديمية متميزة بمستثمرين حقيقيين. شراكة بسيطة بين جامعتك والسوق.</span>
+            </p>
+            
+            <div class="cta-buttons">
+                <!-- CORREÇÃO: Alterado para programaip.html -->
+                <a href="programaip.html" target="_blank" class="btn btn-primary">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span class="lang-content active" data-lang="pt">Conheça o Convite aos Estudantes</span>
+                    <span class="lang-content" data-lang="en">View Student Invitation</span>
+                    <span class="lang-content" data-lang="ar">شاهد دعوة الطلاب</span>
+                </a>
+                <a href="#beneficios" class="btn btn-secondary">
+                    <i class="fas fa-university"></i>
+                    <span class="lang-content active" data-lang="pt">Benefícios para a Universidade</span>
+                    <span class="lang-content" data-lang="en">University Benefits</span>
+                    <span class="lang-content" data-lang="ar">فوائد الجامعة</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção: Convite Simples -->
+    <section id="convite" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="lang-content active" data-lang="pt">Uma Proposta Clara</span>
+                <span class="lang-content" data-lang="en">A Clear Proposal</span>
+                <span class="lang-content" data-lang="ar">اقتراح واضح</span>
+            </h2>
+            
+            <div class="invitation-box">
+                <h3 style="color: #2b2b2b; margin-bottom: 1rem;">
+                    <span class="lang-content active" data-lang="pt">Convide seus alunos a conectar com investidores</span>
+                    <span class="lang-content" data-lang="en">Invite your students to connect with investors</span>
+                    <span class="lang-content" data-lang="ar">ادع طلابك للاتصال بالمستثمرين</span>
+                </h3>
+                
+                <p style="color: #666; max-width: 700px; margin: 0 auto 2rem;">
+                    <span class="lang-content active" data-lang="pt">Selecione projetos acadêmicos promissores de seus alunos. Nós apresentamos esses projetos a investidores reais. Simples assim.</span>
+                    <span class="lang-content" data-lang="en">Select promising academic projects from your students. We present these projects to real investors. That simple.</span>
+                    <span class="lang-content" data-lang="ar">اختر مشاريع أكاديمية واعدة من طلابك. نقدم هذه المشاريع لمستثمرين حقيقيين. بهذه البساطة.</span>
+                </p>
+                
+                <div class="cta-buttons">
+                    <a href="#como-funciona" class="btn btn-primary">
+                        <i class="fas fa-play-circle"></i>
+                        <span class="lang-content active" data-lang="pt">Como Funciona</span>
+                        <span class="lang-content" data-lang="en">How It Works</span>
+                        <span class="lang-content" data-lang="ar">كيف يعمل</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>
+                        <span class="lang-content active" data-lang="pt">Ponte Direta</span>
+                        <span class="lang-content" data-lang="en">Direct Bridge</span>
+                        <span class="lang-content" data-lang="ar">جسر مباشر</span>
+                    </h3>
+                    <p>
+                        <span class="lang-content active" data-lang="pt">Conectamos projetos acadêmicos diretamente com investidores interessados em tecnologia e inovação.</span>
+                        <span class="lang-content" data-lang="en">We connect academic projects directly with investors interested in technology and innovation.</span>
+                        <span class="lang-content" data-lang="ar">نربط المشاريع الأكاديمية مباشرة بمستثمرين مهتمين بالتكنولوجيا والابتكار.</span>
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-filter"></i>
+                    </div>
+                    <h3>
+                        <span class="lang-content active" data-lang="pt">Seleção Simplificada</span>
+                        <span class="lang-content" data-lang="en">Simplified Selection</span>
+                        <span class="lang-content" data-lang="ar">اختيار مبسط</span>
+                    </h3>
+                    <p>
+                        <span class="lang-content active" data-lang="pt">A universidade indica os projetos. Nós fazemos a curadoria técnica e apresentamos aos investidores.</span>
+                        <span class="lang-content" data-lang="en">The university indicates the projects. We do technical curation and present to investors.</span>
+                        <span class="lang-content" data-lang="ar">تحدد الجامعة المشاريع. نقوم بالتقييم التقني ونقدم للمستثمرين.</span>
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>
+                        <span class="lang-content active" data-lang="pt">Resultado Concreto</span>
+                        <span class="lang-content" data-lang="en">Concrete Result</span>
+                        <span class="lang-content" data-lang="ar">نتيجة ملموسة</span>
+                    </h3>
+                    <p>
+                        <span class="lang-content active" data-lang="pt">Projetos que teriam ficado na gaveta ganham a chance real de se tornarem produtos ou empresas.</span>
+                        <span class="lang-content" data-lang="en">Projects that would have stayed in the drawer get a real chance to become products or companies.</span>
+                        <span class="lang-content" data-lang="ar">المشاريع التي كانت ستبقى في الدرج تحصل على فرصة حقيقية لتصبح منتجات أو شركات.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção: Manifesto da Idealizadora -->
+    <section id="coordenadora" class="section section-light">
+        <div class="container">
+            <h2 class="section-title">
+                <!-- ALTEREI AQUI: Coordenadora → Idealizadora -->
+                <span class="lang-content active" data-lang="pt">Manifesto da Idealizadora</span>
+                <span class="lang-content" data-lang="en">Founder's Manifesto</span>
+                <span class="lang-content" data-lang="ar">بيان المؤسسة</span>
+            </h2>
+            
+            <div class="coordinator-section">
+                <div class="coordinator-grid">
+                    <!-- Espaço para sua foto -->
+                    <div class="coordinator-photo">
+                        <!-- Imagem da idealizadora -->
+                        <img src="photo-coordenadora.jpg" alt="Idealizadora do Programa">
+                    </div>
+                    
+                    <div class="philosophy-text">
+                        <div class="lang-content active" data-lang="pt">
+                            <h3 style="color: #2b2b2b; margin-bottom: 1.5rem; font-weight: 500; font-size: 1.1rem;">Sempre planejei um presente ao mundo...</h3>
+                            <p>"Por anos, carreguei o desejo profundo de criar algo verdadeiramente valioso para a humanidade. Sempre planejei um presente ao mundo, mas faltavam as ferramentas certas para transformar essa visão em realidade."</p>
+                            
+                            <p>"Hoje, com este programa, finalmente tenho o instrumento que sempre busquei. Uma ponte direta entre o talento acadêmico e o mercado real. Uma maneira simples, mas poderosa, de transformar ideias em impacto."</p>
+                            
+                            <p>"Convidamos universidades que compartilham essa visão. Instituições que desejam ver o avanço real da produção intelectual de seus alunos. Não é sobre complexidade, é sobre conexão genuína entre quem cria e quem investe."</p>
+                            
+                            <p style="font-style: italic; margin-top: 2rem; color: #7B3F00;">
+                                "O melhor presente que podemos dar ao mundo é permitir que boas ideias encontrem seu caminho."
+                            </p>
+                        </div>
+                        
+                        <div class="lang-content" data-lang="en">
+                            <h3 style="color: #2b2b2b; margin-bottom: 1.5rem; font-weight: 500; font-size: 1.1rem;">I always planned a gift to the world...</h3>
+                            <p>"For years, I carried the deep desire to create something truly valuable for humanity. I always planned a gift to the world, but I lacked the right tools to turn this vision into reality."</p>
+                            
+                            <p>"Today, with this program, I finally have the instrument I always sought. A direct bridge between academic talent and the real market. A simple, yet powerful way to transform ideas into impact."</p>
+                            
+                            <p>"We invite universities that share this vision. Institutions that want to see the real advancement of their students' intellectual production. It's not about complexity, it's about genuine connection between creators and investors."</p>
+                            
+                            <p style="font-style: italic; margin-top: 2rem; color: #7B3F00;">
+                                "The best gift we can give the world is to allow good ideas to find their way."
+                            </p>
+                        </div>
+                        
+                        <div class="lang-content" data-lang="ar">
+                            <h3 style="color: #2b2b2b; margin-bottom: 1.5rem; font-weight: 500; font-size: 1.1rem; text-align: right;">دائمًا خططت لهدية للعالم...</h3>
+                            <p style="text-align: right;">"لسنوات، حملت الرغبة العميقة في إنشاء شيء ذي قيمة حقيقية للبشرية. لطالما خططت لهدية للعالم، لكنني افتقرت إلى الأدوات المناسبة لتحويل هذه الرؤية إلى واقع."</p>
+                            
+                            <p style="text-align: right;">"اليوم، مع هذا البرنامج، لدي أخيرًا الأداة التي سعيت إليها دائمًا. جسر مباشر بين المواهب الأكاديمية والسوق الحقيقي. طريقة بسيطة لكنها قوية لتحويل الأفكار إلى تأثير."</p>
+                            
+                            <p style="text-align: right;">"ندعو الجامعات التي تشارك هذه الرؤية. مؤسسات ترغب في رؤية التقدم الحقيقي للإنتاج الفكري لطلابها. الأمر لا يتعلق بالتعقيد، بل بالاتصال الحقيقي بين المبدعين والمستثمرين."</p>
+                            
+                            <p style="font-style: italic; margin-top: 2rem; color: #7B3F00; text-align: right;">
+                                "أفضل هدية يمكننا تقديمها للعالم هي السماح للأفكار الجيدة بإيجاد طريقها."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção: Benefícios -->
+    <section id="beneficios" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="lang-content active" data-lang="pt">Benefícios para Sua Universidade</span>
+                <span class="lang-content" data-lang="en">Benefits for Your University</span>
+                <span class="lang-content" data-lang="ar">فوائد لجامعتك</span>
+            </h2>
+            
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <div>
+                        <h4 style="color: #2b2b2b; margin-bottom: 0.5rem;">
+                            <span class="lang-content active" data-lang="pt">Diferencial Competitivo</span>
+                            <span class="lang-content" data-lang="en">Competitive Advantage</span>
+                            <span class="lang-content" data-lang="ar">ميزة تنافسية</span>
+                        </h4>
+                        <p style="color: #666;">
+                            <span class="lang-content active" data-lang="pt">Ofereça aos seus alunos uma ponte real para o mercado, tornando sua universidade mais atrativa para talentos promissores.</span>
+                            <span class="lang-content" data-lang="en">Offer your students a real bridge to the market, making your university more attractive to promising talents.</span>
+                            <span class="lang-content" data-lang="ar">قدم لطلابك جسرًا حقيقيًا إلى السوق، مما يجعل جامعتك أكثر جاذبية للمواهب الواعدة.</span>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div>
+                        <h4 style="color: #2b2b2b; margin-bottom: 0.5rem;">
+                            <span class="lang-content active" data-lang="pt">Resultados Mensuráveis</span>
+                            <span class="lang-content" data-lang="en">Measurable Results</span>
+                            <span class="lang-content" data-lang="ar">نتائج قابلة للقياس</span>
+                        </h4>
+                        <p style="color: #666;">
+                            <span class="lang-content active" data-lang="pt">Acompanhe quantos projetos de seus alunos foram apresentados a investidores e quantos evoluíram para negócios reais.</span>
+                            <span class="lang-content" data-lang="en">Track how many of your students' projects were presented to investors and how many evolved into real businesses.</span>
+                            <span class="lang-content" data-lang="ar">تتبع عدد مشاريع طلابك التي تم تقديمها للمستثمرين وعددها التي تطورت إلى أعمال حقيقية.</span>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <div>
+                        <h4 style="color: #2b2b2b; margin-bottom: 0.5rem;">
+                            <span class="lang-content active" data-lang="pt">Conexão com o Mercado</span>
+                            <span class="lang-content" data-lang="en">Market Connection</span>
+                            <span class="lang-content" data-lang="ar">اتصال بالسوق</span>
+                        </h4>
+                        <p style="color: #666;">
+                            <span class="lang-content active" data-lang="pt">Estabeleça uma conexão direta entre a produção acadêmica e o ecossistema de investimento em tecnologia.</span>
+                            <span class="lang-content" data-lang="en">Establish a direct connection between academic production and the technology investment ecosystem.</span>
+                            <span class="lang-content" data-lang="ar">أنشئ اتصالًا مباشرًا بين الإنتاج الأكاديمي والنظام البيئي للاستثمار التكنولوجي.</span>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div>
+                        <h4 style="color: #2b2b2b; margin-bottom: 0.5rem;">
+                            <span class="lang-content active" data-lang="pt">Formação Completa</span>
+                            <span class="lang-content" data-lang="en">Complete Education</span>
+                            <span class="lang-content" data-lang="ar">تعليم كامل</span>
+                        </h4>
+                        <p style="color: #666;">
+                            <span class="lang-content active" data-lang="pt">Vá além da teoria: mostre aos alunos o caminho real desde a ideia acadêmica até o investimento concreto.</span>
+                            <span class="lang-content" data-lang="en">Go beyond theory: show students the real path from academic idea to concrete investment.</span>
+                            <span class="lang-content" data-lang="ar">تجاوز النظرية: أظهر للطلاب المسار الحقيقي من الفكرة الأكاديمية إلى الاستثمار الملموس.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção: Como Funciona -->
+    <section id="como-funciona" class="section section-light">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="lang-content active" data-lang="pt">Como Funciona</span>
+                <span class="lang-content" data-lang="en">How It Works</span>
+                <span class="lang-content" data-lang="ar">كيف يعمل</span>
+            </h2>
+            
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-1"></i>
+                    </div>
+                    <h3>
+                        <span class="lang-content active" data-lang="pt">Seleção</span>
+                        <span class="lang-content" data-lang="en">Selection</span>
+                        <span class="lang-content" data-lang="ar">الاختيار</span>
+                    </h3>
+                    <p>
+                        <span class="lang-content active" data-lang="pt">A universidade identifica projetos acadêmicos promissores desenvolvidos por seus alunos.</span>
+                        <span class="lang-content" data-lang="en">The university identifies promising academic projects developed by its students.</span>
+                        <span class="lang-content" data-lang="ar">تحدد الجامعة المشاريع الأكاديمية الواعدة المطورة من قبل طلابها.</span>
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-2"></i>
+                    </div>
+                    <h3>
+                        <span class="lang-content active" data-lang="pt">Apresentação</span>
+                        <span class="lang-content" data-lang="en">Presentation</span>
+                        <span class="lang-content" data-lang="ar">العرض</span>
+                    </h3>
+                    <p>
+                        <span class="lang-content active" data-lang="pt">Nós preparamos os projetos e os apresentamos a investidores qualificados em tecnologia.</span>
+                        <span class="lang-content" data-lang="en">We prepare the projects and present them to qualified technology investors.</span>
+                        <span class="lang-content" data-lang="ar">نقوم بإعداد المشاريع ونعرضها على مستثمرين تقنيين مؤهلين.</span>
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-3"></i>
+                    </div>
+                    <h3>
+                        <span class="lang-content active" data-lang="pt">Conexão</span>
+                        <span class="lang-content" data-lang="en">Connection</span>
+                        <span class="lang-content" data-lang="ar">الاتصال</span>
+                    </h3>
+                    <p>
+                        <span class="lang-content active" data-lang="pt">Investidores interessados conectam diretamente com os estudantes para possíveis investimentos.</span>
+                        <span class="lang-content" data-lang="en">Interested investors connect directly with students for potential investments.</span>
+                        <span class="lang-content" data-lang="ar">يتصل المستثمرون المهتمون مباشرة بالطلاب لاستثمارات محتملة.</span>
+                    </p>
+                </div>
+            </div>
+            
+            <!-- CORREÇÃO: Botão removido conforme solicitado -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>
+                <span class="lang-content active" data-lang="pt">© 2026 Ponte para Investidores – Parceria com Universidades.</span>
+                <span class="lang-content" data-lang="en">© 2026 Bridge to Investors – University Partnership.</span>
+                <span class="lang-content" data-lang="ar">© 2026 جسر إلى المستثمرين – شراكة جامعية.</span>
+            </p>
+            
+            <p style="color: #7B3F00; font-size: 0.9rem; margin-top: 1.5rem; font-weight: 500;">
+                <span class="lang-content active" data-lang="pt">"Conectando talento acadêmico com investimento real."</span>
+                <span class="lang-content" data-lang="en">"Connecting academic talent with real investment."</span>
+                <span class="lang-content" data-lang="ar">"ربط المواهب الأكاديمية باستثمار حقيقي."</span>
+            </p>
+            
+            <div class="social-links">
+                <a href="#">
+                    <i class="fas fa-university"></i>
+                </a>
+                <a href="#">
+                    <i class="fas fa-handshake"></i>
+                </a>
+                <a href="#">
+                    <i class="fas fa-chart-line"></i>
+                </a>
+            </div>
+            
+            <p style="color: #888; font-size: 0.8rem; margin-top: 2rem;">
+                <span class="lang-content active" data-lang="pt">Uma ponte simples entre universidades e investidores.</span>
+                <span class="lang-content" data-lang="en">A simple bridge between universities and investors.</span>
+                <span class="lang-content" data-lang="ar">جسر بسيط بين الجامعات والمستثمرين.</span>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Sistema de Múltiplas Línguas
+        document.addEventListener('DOMContentLoaded', function() {
+            const langButtons = document.querySelectorAll('.lang-btn');
+            const langContents = document.querySelectorAll('.lang-content');
+            
+            // Definir língua inicial como Português
+            setLanguage('pt');
+            
+            // Adicionar evento de clique aos botões de língua
+            langButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const lang = this.getAttribute('data-lang');
+                    setLanguage(lang);
+                    
+                    // Atualizar botão ativo
+                    langButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Atualizar RTL para Árabe
+                    if (lang === 'ar') {
+                        document.body.setAttribute('dir', 'rtl');
+                        document.documentElement.setAttribute('dir', 'rtl');
+                        document.documentElement.setAttribute('lang', 'ar');
+                    } else {
+                        document.body.removeAttribute('dir');
+                        document.documentElement.removeAttribute('dir');
+                        document.documentElement.setAttribute('lang', lang);
+                    }
+                });
+            });
+            
+            function setLanguage(lang) {
+                // Esconder todo conteúdo de língua
+                langContents.forEach(content => {
+                    content.classList.remove('active');
+                });
+                
+                // Mostrar conteúdo da língua selecionada
+                const activeContents = document.querySelectorAll(`.lang-content[data-lang="${lang}"]`);
+                activeContents.forEach(content => {
+                    content.classList.add('active');
+                });
+                
+                // Atualizar atributo lang do HTML
+                document.documentElement.setAttribute('lang', lang);
+            }
+            
+            // Scroll suave
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+            
+            // Efeito de scroll no header
+            window.addEventListener('scroll', () => {
+                const header = document.querySelector('.header');
+                if (window.scrollY > 100) {
+                    header.style.background = 'rgb(255 255 255 / .98)';
+                    header.style.backdropFilter = 'blur(15px)';
+                    header.style.boxShadow = '0 5px 25px rgba(123, 63, 0, 0.08)';
+                } else {
+                    header.style.background = 'rgb(255 255 255 / .95)';
+                    header.style.backdropFilter = 'blur(10px)';
+                    header.style.boxShadow = '0 2px 20px rgba(123, 63, 0, 0.05)';
+                }
+            });
+
+            // Ajustar altura do hero no resize
+            function adjustHeroHeight() {
+                const header = document.querySelector('.header');
+                const hero = document.querySelector('.hero');
+                if (header && hero) {
+                    const headerHeight = header.offsetHeight;
+                    hero.style.minHeight = `calc(100vh - ${headerHeight}px)`;
+                }
+            }
+
+            // Ajuste inicial
+            adjustHeroHeight();
+            window.addEventListener('resize', adjustHeroHeight);
+        });
+    </script>
+</body>
+</html>
