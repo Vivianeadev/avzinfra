@@ -3,437 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AVZ Infra | Ativos de Luxo & Tecnologia Patenteada</title>
+    <title>AVZ Infra | Infraestrutura Digital Institucional</title>
     <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- O CSS PERMANECE EXATAMENTE IGUAL -->
     <style>
     *{margin:0;padding:0;box-sizing:border-box;font-family:'Helvetica Neue',Arial,sans-serif}body{background:linear-gradient(135deg,#f9f5f0 0%,#faf0f4 100%);color:#3a3a3a;line-height:1.6;overflow-x:hidden;position:relative}body::before,body::after{content:'';position:fixed;width:500px;height:500px;border-radius:50%;pointer-events:none;z-index:0;opacity:.03}body::before{top:-200px;right:-200px;background:radial-gradient(circle,#7B3F00 0%,transparent 70%);box-shadow:0 0 150px 150px rgb(123 63 0 / .1)}body::after{bottom:-200px;left:-200px;background:radial-gradient(circle,#8B4513 0%,transparent 70%);box-shadow:0 0 150px 150px rgb(139 69 19 / .1)}.header{position:fixed;top:0;width:100%;background:rgb(255 255 255 / .95);backdrop-filter:blur(10px);z-index:1000;padding:1rem 0;transition:all 0.3s ease;border-bottom:1px solid rgb(212 175 55 / .1);box-shadow:0 2px 20px rgb(123 63 0 / .05)}.nav-container{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 2rem}.logo{font-size:1.8rem;font-weight:300;letter-spacing:2px;color:#2b2b2b;text-transform:uppercase;position:relative}.logo::after{content:'';position:absolute;bottom:-5px;left:0;width:60%;height:1px;background:linear-gradient(to right,transparent,#7B3F00,transparent)}.logo span{display:block;font-size:11px;letter-spacing:8px;margin-top:2px;color:#888}.nav-menu{display:flex;list-style:none;gap:2rem}.nav-menu a{color:#3a3a3a;text-decoration:none;font-weight:400;transition:all 0.3s ease;position:relative;font-size:14px;letter-spacing:.5px}.nav-menu a:hover{color:#d4af37}.nav-menu a::after{content:'';position:absolute;bottom:-5px;left:0;width:0;height:1px;background:linear-gradient(135deg,#d4af37,#7B3F00);transition:width 0.3s ease}.nav-menu a:hover::after{width:100%}.hero{min-height:calc(100vh - 80px);display:flex;align-items:center;justify-content:center;text-align:center;padding:6rem 2rem 4rem;position:relative;background:linear-gradient(135deg,rgb(249 245 240 / .9),rgb(250 240 244 / .9));overflow:hidden}.hero::before{content:'';position:absolute;top:10%;right:10%;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgb(123 63 0 / .03) 0%,transparent 70%);filter:blur(40px);z-index:1}.hero-content{max-width:900px;z-index:2}.hero h1{font-size:clamp(2rem, 5vw, 3.2rem);margin-bottom:1rem;font-weight:400;letter-spacing:1px;color:#2b2b2b;line-height:1.2}.hero h1 span{color:#d4af37;font-weight:500;text-shadow:0 0 30px rgb(212 175 55 / .2)}.hero-subtitle{font-size:1.2rem;color:#666;margin-bottom:2.5rem;font-weight:300;letter-spacing:.5px;max-width:700px;margin-left:auto;margin-right:auto;line-height:1.7}.cta-buttons{display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap}.btn{padding:14px 28px;border:none;border-radius:2px;font-weight:400;text-decoration:none;display:inline-flex;align-items:center;gap:.8rem;transition:all 0.3s ease;cursor:pointer;font-size:14px;letter-spacing:.5px;position:relative;overflow:hidden}.btn::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgb(255 255 255 / .2),transparent);transition:left 0.7s ease}.btn:hover::before{left:100%}.btn-primary{background:linear-gradient(to right,#d4af37,#f4e4b8);color:#2a2a2a;box-shadow:0 3px 15px rgb(212 175 55 / .3)}.btn-primary:hover{box-shadow:0 5px 20px rgb(212 175 55 / .4);transform:translateY(-2px)}.btn-secondary{background:#fff0;color:#666;border:1px solid #ddd;box-shadow:0 2px 8px rgb(0 0 0 / .05)}.btn-secondary:hover{border-color:#d4af37;color:#d4af37;box-shadow:0 4px 12px rgb(212 175 55 / .15)}.btn-layer{background:linear-gradient(to right,#7B3F00,#8B4513);color:#fff;border:1px solid #7B3F00;box-shadow:0 3px 15px rgb(123 63 0 / .3)}.btn-layer:hover{background:linear-gradient(to right,#8B4513,#7B3F00);color:#fff;box-shadow:0 5px 20px rgb(123 63 0 / .4);transform:translateY(-2px);border-color:#8B4513}.section{padding:5rem 2rem;background:rgb(255 255 255 / .7);position:relative}.section-light{background:linear-gradient(135deg,#f5f1ec 0%,#f7ecec 100%)}.container{max-width:1200px;margin:0 auto;position:relative;z-index:2}.section-title{font-size:clamp(1.6rem, 3vw, 2.2rem);text-align:center;margin-bottom:3rem;font-weight:400;letter-spacing:1px;color:#2b2b2b;position:relative;padding-bottom:15px}.section-title::after{content:'';position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:60px;height:2px;background:linear-gradient(to right,#d4af37,#7B3F00,#f4e4b8)}.cards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem}.card{background:rgb(255 255 255 / .9);border:1px solid rgb(212 175 55 / .08);border-radius:4px;padding:2.5rem 2rem;transition:all 0.3s ease;box-shadow:0 2px 10px rgb(0 0 0 / .05);position:relative}.card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(to right,transparent,#7B3F00,transparent);opacity:0;transition:opacity 0.3s ease}.card:hover{border-color:rgb(123 63 0 / .15);box-shadow:0 8px 25px rgb(123 63 0 / .08);transform:translateY(-5px)}.card:hover::before{opacity:1}.card-icon{font-size:2.2rem;color:#d4af37;margin-bottom:1.5rem;text-shadow:0 0 10px rgb(212 175 55 / .2)}.card h3{font-size:1.3rem;margin-bottom:1rem;color:#2b2b2b;font-weight:500}.card p{color:#666;line-height:1.7;font-size:.95rem}.products-section{background:linear-gradient(135deg,#f8f3e8 0%,#f5efe8 100%);position:relative;overflow:hidden}.products-section::before{content:'';position:absolute;top:0;right:0;width:200px;height:200px;background:radial-gradient(circle,rgb(123 63 0 / .03) 0%,transparent 70%);filter:blur(30px)}.products-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem}.product-card{background:rgb(255 255 255 / .95);border:1px solid rgb(123 63 0 / .08);border-radius:8px;padding:2.5rem 2rem;transition:all 0.4s ease;box-shadow:0 4px 15px rgb(0 0 0 / .03);position:relative;overflow:hidden}.product-card::before{content:'';position:absolute;top:0;left:0;width:100%;height:3px;background:linear-gradient(to right,#d4af37,#7B3F00,#f4e4b8);transform:translateX(-100%);transition:transform 0.5s ease}.product-card:hover{transform:translateY(-8px);box-shadow:0 12px 30px rgb(123 63 0 / .1);border-color:rgb(123 63 0 / .15)}.product-card:hover::before{transform:translateX(0)}.product-icon{font-size:2.5rem;color:#7B3F00;margin-bottom:1.5rem;transition:all 0.3s ease}.product-card:hover .product-icon{color:#d4af37;transform:scale(1.1)}.product-badge{position:absolute;top:15px;right:15px;background:linear-gradient(135deg,#d4af37,#7B3F00);color:#fff;padding:4px 12px;border-radius:20px;font-size:.75rem;font-weight:600;letter-spacing:.5px}.product-features{margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid rgb(123 63 0 / .08);list-style:none}.product-features li{margin-bottom:.5rem;color:#666;font-size:.9rem;display:flex;align-items:center;gap:.5rem}.product-features li i{color:#7B3F00;font-size:.8rem}.philosophy-content{background:rgb(255 255 255 / .9);border:1px solid rgb(212 175 55 / .08);border-radius:4px;padding:3rem;margin-top:2rem;box-shadow:0 4px 20px rgb(0 0 0 / .03);position:relative}.philosophy-content::before{content:'';position:absolute;top:-1px;left:50%;transform:translateX(-50%);width:100px;height:1px;background:linear-gradient(to right,#d4af37,#7B3F00,#f4e4b8)}.philosophy-text{color:#666;line-height:1.8;font-size:1.05rem}.philosophy-text p{margin-bottom:1.5rem}.philosophy-text strong{color:#2b2b2b;font-weight:600}.philosophy-quote{margin-top:2.5rem;padding:2rem;border-left:3px solid #7B3F00;background:linear-gradient(90deg,rgb(123 63 0 / .03),transparent);border-radius:0 4px 4px 0;position:relative}.philosophy-quote::before{content:'"';position:absolute;top:-10px;left:-15px;font-size:4rem;color:rgb(123 63 0 / .1);font-family:serif;font-weight:700}.philosophy-quote p{font-style:italic;color:#555;font-size:1.2rem;line-height:1.7}.quote-author{color:#7B3F00;font-size:1rem;margin-top:1rem;text-align:right;font-weight:600}.countries-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1.5rem;margin-top:2rem}.country-item{background:rgb(255 255 255 / .9);border-radius:4px;padding:1.5rem;text-align:center;border:1px solid rgb(212 175 55 / .08);transition:all 0.3s ease;box-shadow:0 2px 8px rgb(0 0 0 / .05)}.country-item:hover{transform:translateY(-5px);border-color:rgb(123 63 0 / .2);box-shadow:0 8px 20px rgb(123 63 0 / .08)}.country-flag{font-size:2.5rem;margin-bottom:.8rem;filter:drop-shadow(0 2px 4px rgb(0 0 0 / .1))}.country-name{color:#2b2b2b;font-size:1.1rem;font-weight:500}.footer{background:rgb(255 255 255 / .9);padding:3rem 2rem 2rem;text-align:center;border-top:1px solid rgb(123 63 0 / .1);position:relative}.footer::before{content:'';position:absolute;top:0;left:0;width:100%;height:1px;background:linear-gradient(to right,transparent,#7B3F00,transparent)}.footer-content{max-width:1200px;margin:0 auto}.footer p{color:#888;margin-bottom:.8rem;font-size:.9rem}.social-links{display:flex;justify-content:center;gap:1.5rem;margin:2rem 0}.social-links a{color:#888;font-size:1.2rem;transition:all 0.3s ease;width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgb(255 255 255 / .9);border:1px solid rgb(123 63 0 / .1)}.social-links a:hover{color:#7B3F00;transform:translateY(-3px);box-shadow:0 6px 15px rgb(123 63 0 / .15);border-color:rgb(123 63 0 / .2)}.language-switcher{position:fixed;top:10px;right:10px;z-index:1001;display:flex;gap:1px;background:rgb(255 255 255 / .97);border-radius:1px;padding:2px;border:1px solid rgb(123 63 0 / .08);box-shadow:0 1px 6px rgb(0 0 0 / .06);backdrop-filter:blur(10px);min-width:120px;height:34px;align-items:center;justify-content:center}.lang-btn{background:#fff0;border:none;color:#888;padding:3px 6px;border-radius:0;cursor:pointer;transition:all 0.2s ease;font-size:.65rem;font-weight:400;display:flex;align-items:center;gap:2px;min-height:28px;min-width:38px;justify-content:center;flex:1;height:100%}.lang-btn:hover{background:rgb(123 63 0 / .04);color:#666}.lang-btn.active{background:rgb(123 63 0 / .08);color:#7B3F00;font-weight:500;border-radius:0}.lang-flag{font-size:.7rem}.lang-content{display:none}.lang-content.active{display:block}@media (max-width:768px){.nav-menu{display:none}.cards-grid,.products-grid{grid-template-columns:1fr}.cta-buttons{flex-direction:column;align-items:center}.btn{padding:12px 24px;width:100%;max-width:300px;justify-content:center}.philosophy-content{padding:2rem 1.5rem}.philosophy-quote{padding:1.5rem}.countries-grid{grid-template-columns:repeat(2,1fr)}.language-switcher{top:8px;right:8px;min-width:110px;height:32px}.lang-btn{padding:2px 5px;font-size:.6rem;min-height:26px;min-width:34px;gap:1px}.hero{padding:5rem 1.5rem 3rem;min-height:calc(100vh - 70px)}}@media (max-width:480px){.section{padding:4rem 1rem}.countries-grid{grid-template-columns:1fr}.philosophy-content{padding:1.5rem 1rem}.language-switcher{top:6px;right:6px;min-width:100px;height:30px}.lang-btn{padding:1px 4px;font-size:.55rem;min-height:24px;min-width:30px}.hero{padding:4rem 1rem 2.5rem}}@media (min-width:1366px){.hero{padding:7rem 2rem 5rem;min-height:calc(100vh - 90px)}}@media (min-width:1440px){.hero{padding:7.5rem 2rem 5.5rem;min-height:calc(100vh - 85px)}}@media (min-width:1920px){.hero{padding:8rem 2rem 6rem;min-height:calc(100vh - 100px)}}@media (min-width:2560px){.hero{padding:10rem 2rem 8rem;min-height:calc(100vh - 120px)}}body[dir="rtl"] .logo::after,body[dir="rtl"] .nav-menu a::after,body[dir="rtl"] .section-title::after{left:auto;right:0;transform:none}body[dir="rtl"] .section-title::after,body[dir="rtl"] .philosophy-content::before{right:50%;transform:translateX(50%)}body[dir="rtl"] .philosophy-quote{border-left:none;border-right:3px solid #7B3F00;background:linear-gradient(90deg,transparent,rgb(123 63 0 / .03))}body[dir="rtl"] .philosophy-quote::before{left:auto;right:-15px}.text-center{text-align:center}.mb-2{margin-bottom:2rem}.mb-3{margin-bottom:3rem}body[dir="rtl"] .lang-content[data-lang="ar"]{display:block!important;text-align:right;direction:rtl}body[dir="rtl"] #fundadora p[style*="color: #888"]{text-align:right}@media (max-width:768px){.cards-grid[style*="grid-template-columns: 1fr 2fr"]{grid-template-columns:1fr!important;gap:2rem}#fundadora .cards-grid>div:first-child{text-align:center;margin:0 auto}}body[dir="rtl"] #fundadora .lang-content[data-lang="ar"]{text-align:right;line-height:1.6}.founder-grid{display:grid;grid-template-columns:1fr 2fr;gap:3rem;align-items:start;margin-top:2rem}@media (max-width:768px){.founder-grid{grid-template-columns:1fr;gap:2rem}.founder-grid>div:first-child{text-align:center;margin:0 auto}}.founder-frame{position:relative;display:inline-block;max-width:280px;width:100%}.founder-frame-inner{width:100%;aspect-ratio:4/5;border-radius:2px;background:linear-gradient(135deg,#f5f1ec 0%,#f7ecec 100%);padding:8px;border:1px solid rgb(212 175 55 / .08);box-shadow:0 4px 15px rgb(0 0 0 / .05);overflow:hidden}.founder-image-container{width:100%;height:100%;background-color:#f9f9f9;display:flex;align-items:center;justify-content:center;overflow:hidden;border-radius:1px;position:relative}.founder-image-container img{width:100%;height:100%;object-fit:contain;object-position:center top;border-radius:1px;background-color:#f5f1ec}.founder-image-container::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient(135deg,rgb(245 241 236 / .1) 0%,rgb(247 236 236 / .1) 100%);z-index:1;pointer-events:none}.founder-highlight{position:absolute;top:-1px;left:-1px;right:-1px;bottom:-1px;border:1px solid rgb(123 63 0 / .1);border-radius:2px;pointer-events:none}.founder-name{color:#2b2b2b;font-size:1.1rem;font-weight:400;letter-spacing:.5px;margin-top:1.5rem}.founder-title{color:#7B3F00;font-size:.85rem;margin-top:.25rem;font-weight:400}.founder-purpose{background:linear-gradient(135deg,rgb(245 241 236 / .3) 0%,rgb(247 236 236 / .3) 100%);border-left:2px solid rgb(123 63 0 / .2);padding:1.5rem;border-radius:2px;margin-top:2rem}body[dir="rtl"] .founder-purpose{border-left:none;border-right:2px solid rgb(123 63 0 / .2)}.founder-institutional-note{margin-top:3rem;padding-top:1.5rem;border-top:1px solid rgb(212 175 55 / .1);text-align:center}.founder-institutional-note p{color:#888;font-size:.8rem;line-height:1.5;max-width:700px;margin:0 auto}.language-switcher .lang-btn:first-child{border-top-left-radius:1px;border-bottom-left-radius:1px}.language-switcher .lang-btn:last-child{border-top-right-radius:1px;border-bottom-right-radius:1px}.language-switcher .lang-btn:not(:last-child){border-right:.5px solid rgb(123 63 0 / .1)}.language-switcher .lang-btn:not(:first-child){border-left:.5px solid rgb(123 63 0 / .1)}.architecture-section{margin-top:2.5rem;padding-top:2.5rem;border-top:1px solid rgb(123 63 0 / .08)}.architecture-title{font-size:1.1rem;color:#2b2b2b;margin-bottom:1.2rem;font-weight:500;position:relative;padding-left:12px}.architecture-title:before{content:'';position:absolute;left:0;top:50%;transform:translateY(-50%);width:4px;height:16px;background:linear-gradient(to bottom,#7B3F00,#d4af37);border-radius:2px}body[dir="rtl"] .architecture-title:before{left:auto;right:0}body[dir="rtl"] .architecture-title{padding-left:0;padding-right:12px}.architecture-content{background:rgb(250 245 240 / .4);border-radius:4px;padding:1.8rem;border:1px solid rgb(212 175 55 / .05)}.architecture-content p{color:#555;line-height:1.7;margin-bottom:1rem;font-size:.92rem}.architecture-content strong{color:#3a3a3a;font-weight:600}.architecture-list{list-style:none;margin-top:1.2rem}.architecture-list li{margin-bottom:.8rem;color:#555;font-size:.9rem;position:relative;padding-left:20px}.architecture-list li:before{content:'•';position:absolute;left:8px;color:#7B3F00;font-size:1.2rem}body[dir="rtl"] .architecture-list li{padding-left:0;padding-right:20px}body[dir="rtl"] .architecture-list li:before{left:auto;right:8px}.architecture-subtitle{font-size:.95rem;color:#7B3F00;margin:1.5rem 0 .8rem;font-weight:500;border-bottom:1px solid rgb(123 63 0 / .1);padding-bottom:5px}.architecture-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem;margin-top:1.5rem}.architecture-item{background:rgb(255 255 255 / .8);padding:1.2rem;border-radius:3px;border:1px solid rgb(212 175 55 / .08)}.architecture-item-title{font-size:.95rem;color:#2b2b2b;margin-bottom:.5rem;font-weight:500}.architecture-item-desc{font-size:.85rem;color:#666;line-height:1.6}
 
-    /* Overlay Styles - COOKIE CONSENT, EXCLUSIVE POPUP, LAYER VERIFICATION */
-    .cookie-consent {
-        position: fixed;
-        bottom: 30px;
-        left: 30px;
-        right: 30px;
-        z-index: 9999;
-        display: flex;
-        justify-content: center;
-        animation: slideUp 0.5s ease;
-    }
-    .cookie-container {
-        max-width: 1200px;
-        width: 100%;
-        background: rgba(255, 255, 255, 0.98);
-        backdrop-filter: blur(10px);
-        border: 1px solid rgba(212, 175, 55, 0.15);
-        border-radius: 8px;
-        padding: 1.5rem;
-        display: flex;
-        gap: 1.5rem;
-        align-items: center;
-        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(212, 175, 55, 0.05);
-        position: relative;
-    }
-    .cookie-icon {
-        width: 50px;
-        height: 50px;
-        background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(123, 63, 0, 0.1));
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.5rem;
-        color: #7B3F00;
-        flex-shrink: 0;
-    }
-    .cookie-content {
-        flex: 1;
-    }
-    .cookie-content h4 {
-        color: #2b2b2b;
-        font-size: 1.1rem;
-        margin-bottom: 0.3rem;
-        font-weight: 500;
-    }
-    .cookie-content p {
-        color: #666;
-        font-size: 0.9rem;
-        margin-bottom: 1rem;
-        line-height: 1.5;
-        max-width: 800px;
-    }
-    .cookie-actions {
-        display: flex;
-        gap: 1rem;
-        flex-wrap: wrap;
-    }
-    .btn-cookie {
-        padding: 0.6rem 1.2rem;
-        border: none;
-        border-radius: 2px;
-        font-size: 0.8rem;
-        font-weight: 500;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        letter-spacing: 0.5px;
-    }
-    .btn-cookie-primary {
-        background: linear-gradient(to right, #7B3F00, #8B4513);
-        color: white;
-        border: 1px solid #7B3F00;
-    }
-    .btn-cookie-primary:hover {
-        background: linear-gradient(to right, #8B4513, #7B3F00);
-        transform: translateY(-2px);
-        box-shadow: 0 5px 15px rgba(123, 63, 0, 0.3);
-    }
-    .btn-cookie-secondary {
-        background: transparent;
-        color: #666;
-        border: 1px solid #ddd;
-    }
-    .btn-cookie-secondary:hover {
-        border-color: #d4af37;
-        color: #d4af37;
-    }
-    .btn-cookie-text {
-        background: transparent;
-        color: #7B3F00;
-        text-decoration: underline;
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .cookie-close {
-        position: absolute;
-        top: 15px;
-        right: 15px;
-        background: transparent;
-        border: none;
-        color: #999;
-        cursor: pointer;
-        font-size: 1rem;
-        padding: 5px;
-    }
-    @keyframes slideUp {
-        from { transform: translateY(100px); opacity: 0; }
-        to { transform: translateY(0); opacity: 1; }
-    }
-    .exclusive-popup {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 10000;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
-    }
-    .popup-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(0, 0, 0, 0.5);
-        backdrop-filter: blur(5px);
-        animation: fadeIn 0.3s ease;
-    }
-    .popup-container {
-        position: relative;
-        width: 100%;
-        max-width: 650px;
-        background: white;
-        border-radius: 8px;
-        box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(212, 175, 55, 0.1);
-        animation: scaleIn 0.4s ease;
-        z-index: 10001;
-    }
-    .popup-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1.2rem 1.5rem;
-        border-bottom: 1px solid rgba(212, 175, 55, 0.1);
-    }
-    .popup-badge {
-        background: linear-gradient(135deg, #d4af37, #7B3F00);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-weight: 600;
-        font-size: 0.8rem;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-    }
-    .popup-close {
-        background: transparent;
-        border: none;
-        color: #999;
-        cursor: pointer;
-        font-size: 1.2rem;
-        transition: all 0.3s ease;
-    }
-    .popup-close:hover {
-        color: #7B3F00;
-        transform: rotate(90deg);
-    }
-    .popup-body {
-        padding: 2rem 1.5rem;
-    }
-    .popup-icon {
-        width: 70px;
-        height: 70px;
-        background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(123, 63, 0, 0.1));
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 2rem;
-        color: #7B3F00;
-        margin: 0 auto 1.5rem;
-    }
-    .popup-body h2 {
-        text-align: center;
-        color: #2b2b2b;
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-        font-weight: 400;
-    }
-    .popup-description {
-        text-align: center;
-        color: #666;
-        font-size: 0.95rem;
-        line-height: 1.6;
-        margin-bottom: 2rem;
-    }
-    .popup-form {
-        display: flex;
-        flex-direction: column;
-        gap: 1.2rem;
-    }
-    .form-row {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-    }
-    .form-group {
-        display: flex;
-        flex-direction: column;
-        gap: 0.4rem;
-    }
-    .form-group label {
-        color: #2b2b2b;
-        font-size: 0.8rem;
-        font-weight: 500;
-        letter-spacing: 0.5px;
-    }
-    .form-group input,
-    .form-group select {
-        padding: 0.8rem 1rem;
-        border: 1px solid #ddd;
-        border-radius: 2px;
-        font-size: 0.9rem;
-        transition: all 0.3s ease;
-    }
-    .form-group input:focus,
-    .form-group select:focus {
-        outline: none;
-        border-color: #d4af37;
-        box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.1);
-    }
-    .form-checkbox {
-        display: flex;
-        align-items: flex-start;
-        gap: 0.8rem;
-        margin: 0.5rem 0;
-    }
-    .form-checkbox input {
-        margin-top: 0.2rem;
-    }
-    .form-checkbox label {
-        color: #666;
-        font-size: 0.8rem;
-        line-height: 1.4;
-    }
-    .btn-popup-submit {
-        background: linear-gradient(to right, #7B3F00, #8B4513);
-        color: white;
-        padding: 1rem;
-        border: none;
-        border-radius: 2px;
-        font-size: 0.95rem;
-        font-weight: 500;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.8rem;
-    }
-    .btn-popup-submit:hover {
-        background: linear-gradient(to right, #8B4513, #7B3F00);
-        transform: translateY(-2px);
-        box-shadow: 0 5px 20px rgba(123, 63, 0, 0.3);
-    }
-    .popup-footnote {
-        text-align: center;
-        color: #888;
-        font-size: 0.75rem;
-        margin-top: 1rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.5rem;
-    }
-    .layer-verification {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 10000;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
-    }
-    .verification-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(0, 0, 0, 0.5);
-        backdrop-filter: blur(5px);
-    }
-    .verification-container {
-        position: relative;
-        width: 100%;
-        max-width: 550px;
-        background: white;
-        border-radius: 8px;
-        padding: 2rem;
-        box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
-        z-index: 10001;
-        animation: scaleIn 0.4s ease;
-    }
-    .verification-badge {
-        position: absolute;
-        top: -12px;
-        left: 50%;
-        transform: translateX(-50%);
-        background: linear-gradient(to right, #7B3F00, #8B4513);
-        color: white;
-        padding: 0.4rem 1.5rem;
-        border-radius: 30px;
-        font-size: 0.7rem;
-        font-weight: 600;
-        letter-spacing: 2px;
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-    }
-    .verification-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 2rem;
-    }
-    .verification-header h3 {
-        color: #2b2b2b;
-        font-size: 1.2rem;
-        font-weight: 400;
-    }
-    .verification-close {
-        background: transparent;
-        border: none;
-        color: #999;
-        cursor: pointer;
-        font-size: 1.1rem;
-    }
-    .verification-options {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-        margin-bottom: 1.5rem;
-    }
-    .verification-option {
-        background: #f9f9f9;
-        border: 1px solid #eee;
-        border-radius: 4px;
-        padding: 1.5rem 1rem;
-        text-align: center;
-        cursor: pointer;
-        transition: all 0.3s ease;
-    }
-    .verification-option:hover {
-        border-color: #d4af37;
-        background: white;
-        transform: translateY(-3px);
-        box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-    }
-    .option-icon {
-        font-size: 2rem;
-        color: #7B3F00;
-        margin-bottom: 1rem;
-    }
-    .option-content h4 {
-        color: #2b2b2b;
-        margin-bottom: 0.3rem;
-        font-size: 1rem;
-    }
-    .option-content p {
-        color: #888;
-        font-size: 0.8rem;
-        line-height: 1.4;
-    }
-    .profile-form {
-        margin-top: 2rem;
-        padding-top: 2rem;
-        border-top: 1px solid #eee;
-    }
-    .profile-form h4 {
-        color: #7B3F00;
-        margin-bottom: 1.5rem;
-        font-size: 1rem;
-        font-weight: 500;
-    }
-    .btn-verification {
-        width: 100%;
-        padding: 0.8rem;
-        background: linear-gradient(to right, #7B3F00, #8B4513);
-        color: white;
-        border: none;
-        border-radius: 2px;
-        font-weight: 500;
-        cursor: pointer;
-        transition: all 0.3s ease;
-    }
-    .btn-verification:hover {
-        background: linear-gradient(to right, #8B4513, #7B3F00);
-        transform: translateY(-2px);
-    }
-    @keyframes scaleIn {
-        from { transform: scale(0.9); opacity: 0; }
-        to { transform: scale(1); opacity: 1; }
-    }
-    @keyframes fadeIn {
-        from { opacity: 0; }
-        to { opacity: 1; }
-    }
-    @media (max-width: 768px) {
-        .cookie-consent { left: 15px; right: 15px; bottom: 15px; }
-        .cookie-container { flex-direction: column; text-align: center; padding: 1.8rem 1rem; }
-        .cookie-actions { justify-content: center; }
-        .cookie-close { top: 10px; right: 10px; }
-        .form-row { grid-template-columns: 1fr; }
-        .popup-container { max-width: 95%; }
-        .verification-options { grid-template-columns: 1fr; }
-    }
-    body[dir="rtl"] .cookie-close { left: 15px; right: auto; }
-    body[dir="rtl"] .form-checkbox { flex-direction: row-reverse; }
+    .cookie-consent{position:fixed;bottom:30px;left:30px;right:30px;z-index:9999;display:flex;justify-content:center;animation:slideUp 0.5s ease}.cookie-container{max-width:1200px;width:100%;background:rgb(255 255 255 / .98);backdrop-filter:blur(10px);border:1px solid rgb(212 175 55 / .15);border-radius:8px;padding:1.5rem;display:flex;gap:1.5rem;align-items:center;box-shadow:0 15px 40px rgb(0 0 0 / .08),0 0 0 1px rgb(212 175 55 / .05);position:relative}.cookie-icon{width:50px;height:50px;background:linear-gradient(135deg,rgb(212 175 55 / .1),rgb(123 63 0 / .1));border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;color:#7B3F00;flex-shrink:0}.cookie-content{flex:1}.cookie-content h4{color:#2b2b2b;font-size:1.1rem;margin-bottom:.3rem;font-weight:500}.cookie-content p{color:#666;font-size:.9rem;margin-bottom:1rem;line-height:1.5;max-width:800px}.cookie-actions{display:flex;gap:1rem;flex-wrap:wrap}.btn-cookie{padding:.6rem 1.2rem;border:none;border-radius:2px;font-size:.8rem;font-weight:500;cursor:pointer;transition:all 0.3s ease;letter-spacing:.5px}.btn-cookie-primary{background:linear-gradient(to right,#7B3F00,#8B4513);color:#fff;border:1px solid #7B3F00}.btn-cookie-primary:hover{background:linear-gradient(to right,#8B4513,#7B3F00);transform:translateY(-2px);box-shadow:0 5px 15px rgb(123 63 0 / .3)}.btn-cookie-secondary{background:#fff0;color:#666;border:1px solid #ddd}.btn-cookie-secondary:hover{border-color:#d4af37;color:#d4af37}.cookie-close{position:absolute;top:15px;right:15px;background:#fff0;border:none;color:#999;cursor:pointer;font-size:1rem;padding:5px}@keyframes slideUp{from{transform:translateY(100px);opacity:0}to{transform:translateY(0);opacity:1}}.exclusive-popup{position:fixed;top:0;left:0;right:0;bottom:0;z-index:10000;display:flex;align-items:center;justify-content:center;padding:20px}.popup-overlay{position:absolute;top:0;left:0;right:0;bottom:0;background:rgb(0 0 0 / .5);backdrop-filter:blur(5px);animation:fadeIn 0.3s ease}.popup-container{position:relative;width:100%;max-width:550px;background:#fff;border-radius:8px;box-shadow:0 30px 60px rgb(0 0 0 / .3),0 0 0 1px rgb(212 175 55 / .1);animation:scaleIn 0.4s ease;z-index:10001}.popup-header{display:flex;justify-content:space-between;align-items:center;padding:1rem 1.5rem;border-bottom:1px solid rgb(212 175 55 / .1)}.popup-badge{background:linear-gradient(135deg,#d4af37,#7B3F00);-webkit-background-clip:text;-webkit-text-fill-color:#fff0;font-weight:600;font-size:.8rem;letter-spacing:2px;text-transform:uppercase}.popup-close{background:#fff0;border:none;color:#999;cursor:pointer;font-size:1.5rem;transition:all 0.3s ease;width:40px;height:40px;display:flex;align-items:center;justify-content:center;border-radius:50%}.popup-close:hover{color:#7B3F00;background:rgb(123 63 0 / .05);transform:rotate(90deg)}.popup-body{padding:1.8rem 1.8rem 2rem}.popup-icon{width:60px;height:60px;background:linear-gradient(135deg,rgb(212 175 55 / .1),rgb(123 63 0 / .1));border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.8rem;color:#7B3F00;margin:0 auto 1rem}.popup-body h2{text-align:center;color:#2b2b2b;font-size:1.3rem;margin-bottom:.5rem;font-weight:400}.popup-description{text-align:center;color:#666;font-size:.9rem;line-height:1.6;margin-bottom:1.5rem}.popup-form{display:flex;flex-direction:column;gap:1rem}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}.form-group{display:flex;flex-direction:column;gap:.3rem}.form-group label{color:#2b2b2b;font-size:.75rem;font-weight:500;letter-spacing:.5px}.form-group input,.form-group select,.form-group textarea{padding:.7rem .9rem;border:1px solid #ddd;border-radius:2px;font-size:.85rem;transition:all 0.3s ease}.form-group input:focus,.form-group select:focus,.form-group textarea:focus{outline:none;border-color:#d4af37;box-shadow:0 0 0 2px rgb(212 175 55 / .1)}.form-checkbox{display:flex;align-items:flex-start;gap:.8rem;margin:.3rem 0}.form-checkbox input{margin-top:.15rem}.form-checkbox label{color:#666;font-size:.75rem;line-height:1.4}.btn-popup-submit{width:100%;padding:.9rem;background:linear-gradient(to right,#7B3F00,#8B4513);color:#fff;border:none;border-radius:2px;font-size:.9rem;font-weight:500;cursor:pointer;transition:all 0.3s ease;display:flex;align-items:center;justify-content:center;gap:.8rem;margin-top:.5rem}.btn-popup-submit:hover{background:linear-gradient(to right,#8B4513,#7B3F00);transform:translateY(-2px);box-shadow:0 5px 20px rgb(123 63 0 / .3)}.popup-footnote{text-align:center;color:#888;font-size:.7rem;margin-top:.8rem;display:flex;align-items:center;justify-content:center;gap:.5rem}@keyframes scaleIn{from{transform:scale(.9);opacity:0}to{transform:scale(1);opacity:1}}@keyframes fadeIn{from{opacity:0}to{opacity:1}}@media (max-width:768px){.cookie-consent{left:15px;right:15px;bottom:15px}.cookie-container{flex-direction:column;text-align:center;padding:1.8rem 1rem}.cookie-actions{justify-content:center}.cookie-close{top:10px;right:10px}.form-row{grid-template-columns:1fr}.popup-container{max-width:95%}}body[dir="rtl"] .cookie-close{left:15px;right:auto}body[dir="rtl"] .form-checkbox{flex-direction:row-reverse}
     </style>
 </head>
 <body>
@@ -456,27 +32,17 @@
     <!-- Header -->
     <header class="header">
         <nav class="nav-container">
-            <div class="logo">AVZ INFRA<span>Tecnologia e Infraestrutura</span></div>
+            <div class="logo">AVZ INFRA<span>Infraestrutura Digital Institucional</span></div>
             <ul class="nav-menu">
                 <li><a href="#home">
                     <span class="lang-content active" data-lang="pt">Início</span>
                     <span class="lang-content" data-lang="en">Home</span>
                     <span class="lang-content" data-lang="ar">الرئيسية</span>
                 </a></li>
-                <li><a href="#exclusive-identity">
-                    <span class="lang-content active" data-lang="pt">Ativo de Luxo</span>
-                    <span class="lang-content" data-lang="en">Luxury Asset</span>
-                    <span class="lang-content" data-lang="ar">أصل فاخر</span>
-                </a></li>
-                <li><a href="#layer-2026">
-                    <span class="lang-content active" data-lang="pt">Programa Registrado</span>
-                    <span class="lang-content" data-lang="en">Registered Program</span>
-                    <span class="lang-content" data-lang="ar">برنامج مسجل</span>
-                </a></li>
                 <li><a href="#filosofia">
-                    <span class="lang-content active" data-lang="pt">Filosofia</span>
-                    <span class="lang-content" data-lang="en">Philosophy</span>
-                    <span class="lang-content" data-lang="ar">الفلسفة</span>
+                    <span class="lang-content active" data-lang="pt">Arquitetura</span>
+                    <span class="lang-content" data-lang="en">Architecture</span>
+                    <span class="lang-content" data-lang="ar">الهندسة</span>
                 </a></li>
                 <li><a href="#fundadora">
                     <span class="lang-content active" data-lang="pt">Fundadora</span>
@@ -492,87 +58,91 @@
         </nav>
     </header>
 
-    <!-- Hero Section - Foco nos Dois Ativos -->
+    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1 class="lang-content active" data-lang="pt"><span>AVZ Infra</span> | Ativos Exclusivos</h1>
-            <h1 class="lang-content" data-lang="en"><span>AVZ Infra</span> | Exclusive Assets</h1>
-            <h1 class="lang-content" data-lang="ar"><span>AVZ Infra</span> | أصول حصرية</h1>
+            <h1 class="lang-content active" data-lang="pt"><span>AVZ Infra</span> | Infraestrutura Digital Institucional</h1>
+            <h1 class="lang-content" data-lang="en"><span>AVZ Infra</span> | Institutional Digital Infrastructure</h1>
+            <h1 class="lang-content" data-lang="ar"><span>AVZ Infra</span> | البنية التحتية الرقمية المؤسسية</h1>
             
             <p class="hero-subtitle lang-content active" data-lang="pt">
-                Desenvolvemos ativos digitais de alto valor: um portfólio de luxo com licença limitada e um programa registrado para desenvolvedores.
+                Arquitetura de infraestrutura digital alinhada a padrões globais de conformidade: Portfólio de Luxo, Infraestrutura Educacional Ruanda, Camada de Ativos Digitais e Programa de Governança LAYER 2026.
             </p>
             <p class="hero-subtitle lang-content" data-lang="en">
-                We develop high-value digital assets: a luxury portfolio with limited license and a registered program for developers.
+                Digital infrastructure architecture aligned with global compliance standards: Luxury Portfolio, Rwanda Educational Infrastructure, Digital Asset Layer, and LAYER 2026 Governance Program.
             </p>
             <p class="hero-subtitle lang-content" data-lang="ar">
-                نطور أصولًا رقمية عالية القيمة: محفظة فاخرة بترخيص محدود وبرنامج مسجل للمطورين.
+                هندسة البنية التحتية الرقمية المتوافقة مع معايير الامتثال العالمية: محفظة فاخرة، البنية التحتية التعليمية في رواندا، طبقة الأصول الرقمية، وبرنامج حوكمة LAYER 2026.
             </p>
             <div class="cta-buttons">
-                <a href="#exclusive-identity" class="btn btn-primary" id="exclusiveIdentityBtn">
+                <a href="#portfolio" class="btn btn-primary" id="portfolioBtn">
                     <i class="fas fa-gem"></i>
-                    <span class="lang-content active" data-lang="pt">Exclusive Identity</span>
-                    <span class="lang-content" data-lang="en">Exclusive Identity</span>
-                    <span class="lang-content" data-lang="ar">Exclusive Identity</span>
+                    <span class="lang-content active" data-lang="pt">Portfólio de Luxo</span>
+                    <span class="lang-content" data-lang="en">Luxury Portfolio</span>
+                    <span class="lang-content" data-lang="ar">محفظة فاخرة</span>
                 </a>
                 <a href="#layer-2026" class="btn btn-layer" id="layer2026Btn">
                     <i class="fas fa-layer-group"></i>
-                    <span class="lang-content active" data-lang="pt">LAYER 2026</span>
-                    <span class="lang-content" data-lang="en">LAYER 2026</span>
-                    <span class="lang-content" data-lang="ar">LAYER 2026</span>
+                    <span class="lang-content active" data-lang="pt">Programa de Governança</span>
+                    <span class="lang-content" data-lang="en">Governance Program</span>
+                    <span class="lang-content" data-lang="ar">برنامج الحوكمة</span>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- SEÇÃO 1: EXCLUSIVE IDENTITY - Ativo de Luxo + Infraestrutura Educacional Ruanda -->
-    <section id="exclusive-identity" class="section products-section">
+    <!-- SEÇÃO 1: PORTFÓLIO DE LUXO -->
+    <section id="portfolio" class="section products-section">
         <div class="container">
             <div class="product-badge" style="position: relative; top: 0; right: 0; margin-bottom: 2rem;">
-                <span class="lang-content active" data-lang="pt">ATIVO DE LUXO • LICENÇA LIMITADA</span>
-                <span class="lang-content" data-lang="en">LUXURY ASSET • LIMITED LICENSE</span>
-                <span class="lang-content" data-lang="ar">أصل فاخر • ترخيص محدود</span>
+                <span class="lang-content active" data-lang="pt">PORTFÓLIO DE LUXO • ATIVO DIGITAL COM LICENÇA LIMITADA</span>
+                <span class="lang-content" data-lang="en">LUXURY PORTFOLIO • DIGITAL ASSET WITH LIMITED LICENSE</span>
+                <span class="lang-content" data-lang="ar">محفظة فاخرة • أصل رقمي برخصة محدودة</span>
             </div>
             
             <h2 class="section-title">
-                <span class="lang-content active" data-lang="pt">Exclusive Identity</span>
-                <span class="lang-content" data-lang="en">Exclusive Identity</span>
-                <span class="lang-content" data-lang="ar">Exclusive Identity</span>
+                <span class="lang-content active" data-lang="pt">Portfólio de Luxo</span>
+                <span class="lang-content" data-lang="en">Luxury Portfolio</span>
+                <span class="lang-content" data-lang="ar">محفظة فاخرة</span>
             </h2>
             
             <p class="text-center mb-3" style="color: #666; font-size: 1.05rem;">
-                <span class="lang-content active" data-lang="pt">Carteira digital soberana com cessão integral disponível para investidores do mercado de luxo</span>
-                <span class="lang-content" data-lang="en">Sovereign digital wallet with full assignment available for luxury market investors</span>
-                <span class="lang-content" data-lang="ar">محفظة رقمية سيادية مع تنازل كامل متاح لمستثمري سوق الفخامة</span>
+                <span class="lang-content active" data-lang="pt">Ativo digital com licença limitada, valor institucional estabelecido e cessão integral disponível em português e árabe. Propriedade verificável e soberana em blockchain privado.</span>
+                <span class="lang-content" data-lang="en">Digital asset with limited license, established institutional value, and full assignment available in Portuguese and Arabic. Verifiable and sovereign ownership on private blockchain.</span>
+                <span class="lang-content" data-lang="ar">أصل رقمي برخصة محدودة، وقيمة مؤسسية ثابتة، وتنازل كامل متاح باللغتين البرتغالية والعربية. ملكية قابلة للتحقق وذات سيادة على blockchain خاص.</span>
             </p>
             
             <div class="products-grid">
-                <!-- CARTÃO 1: PORTFÓLIO DE LUXO (Exclusive Identity) -->
+                <!-- CARD: PORTFÓLIO DE LUXO -->
                 <div class="product-card">
                     <div class="product-badge">
-                        <span class="lang-content active" data-lang="pt">Cessão Disponível</span>
-                        <span class="lang-content" data-lang="en">Assignment Available</span>
-                        <span class="lang-content" data-lang="ar">تنازل متاح</span>
+                        <span class="lang-content active" data-lang="pt">Licença Limitada</span>
+                        <span class="lang-content" data-lang="en">Limited License</span>
+                        <span class="lang-content" data-lang="ar">رخصة محدودة</span>
                     </div>
                     <div class="product-icon">
                         <i class="fas fa-crown"></i>
                     </div>
-                    <h3>Portfólio de Luxo</h3>
+                    <h3>
+                        <span class="lang-content active" data-lang="pt">Portfólio de Luxo</span>
+                        <span class="lang-content" data-lang="en">Luxury Portfolio</span>
+                        <span class="lang-content" data-lang="ar">محفظة فاخرة</span>
+                    </h3>
                     <p>
-                        <span class="lang-content active" data-lang="pt">Ativo digital com licença limitada, valor institucional estabelecido e cessão integral disponível em português e árabe.</span>
-                        <span class="lang-content" data-lang="en">Digital asset with limited license, established institutional value, and full assignment available in Portuguese and Arabic.</span>
-                        <span class="lang-content" data-lang="ar">أصل رقمي بترخيص محدود، قيمة مؤسسية محددة، وتنازل كامل متاح بالبرتغالية والعربية.</span>
+                        <span class="lang-content active" data-lang="pt">Ativo digital com valor institucional estabelecido, disponível para cessão integral em português e árabe.</span>
+                        <span class="lang-content" data-lang="en">Digital asset with established institutional value, available for full assignment in Portuguese and Arabic.</span>
+                        <span class="lang-content" data-lang="ar">أصل رقمي بقيمة مؤسسية ثابتة، متاح للتنازل الكامل باللغتين البرتغالية والعربية.</span>
                     </p>
                     <ul class="product-features">
                         <li><i class="fas fa-check"></i> 
                             <span class="lang-content active" data-lang="pt"><strong>Licença Limitada:</strong> Número controlado de unidades globais</span>
                             <span class="lang-content" data-lang="en"><strong>Limited License:</strong> Controlled number of global units</span>
-                            <span class="lang-content" data-lang="ar"><strong>ترخيص محدود:</strong> عدد مسيطر عليه من الوحدات العالمية</span>
+                            <span class="lang-content" data-lang="ar"><strong>رخصة محدودة:</strong> عدد محدود من الوحدات العالمية</span>
                         </li>
                         <li><i class="fas fa-check"></i> 
                             <span class="lang-content active" data-lang="pt"><strong>Cessão Integral:</strong> Disponível em português e árabe</span>
                             <span class="lang-content" data-lang="en"><strong>Full Assignment:</strong> Available in Portuguese and Arabic</span>
-                            <span class="lang-content" data-lang="ar"><strong>تنازل كامل:</strong> متاح بالبرتغالية والعربية</span>
+                            <span class="lang-content" data-lang="ar"><strong>تنازل كامل:</strong> متاح باللغتين البرتغالية والعربية</span>
                         </li>
                         <li><i class="fas fa-check"></i> 
                             <span class="lang-content active" data-lang="pt"><strong>Valor Institucional:</strong> Precificação baseada em ativo real</span>
@@ -582,35 +152,66 @@
                         <li><i class="fas fa-check"></i> 
                             <span class="lang-content active" data-lang="pt"><strong>Blockchain Privado:</strong> Propriedade verificável e soberana</span>
                             <span class="lang-content" data-lang="en"><strong>Private Blockchain:</strong> Verifiable and sovereign ownership</span>
-                            <span class="lang-content" data-lang="ar"><strong>بلوكشين خاص:</strong> ملكية قابلة للتحقق وسيادية</span>
+                            <span class="lang-content" data-lang="ar"><strong>بلوكتشين خاص:</strong> ملكية قابلة للتحقق وذات سيادة</span>
+                        </li>
+                        <li><i class="fas fa-coins"></i> 
+                            <span class="lang-content active" data-lang="pt"><strong>Valuation:</strong> USD 2M</span>
+                            <span class="lang-content" data-lang="en"><strong>Valuation:</strong> USD 2M</span>
+                            <span class="lang-content" data-lang="ar"><strong>التقييم:</strong> 2 مليون دولار</span>
                         </li>
                     </ul>
                 </div>
-                <!-- CARTÃO 2: INFRAESTRUTURA EDUCACIONAL RUANDA (com valuation corrigido para USD 4M) -->
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 2: INFRAESTRUTURA EDUCACIONAL RUANDA -->
+    <section id="rwanda" class="section section-light">
+        <div class="container">
+            <div class="product-badge" style="position: relative; top: 0; right: 0; margin-bottom: 2rem; background: linear-gradient(135deg, #7B3F00, #8B4513);">
+                <span class="lang-content active" data-lang="pt">INFRAESTRUTURA EDUCACIONAL RUANDA • CONEXÃO BRASIL-RUANDA</span>
+                <span class="lang-content" data-lang="en">RWANDA EDUCATIONAL INFRASTRUCTURE • BRAZIL-RWANDA CONNECTION</span>
+                <span class="lang-content" data-lang="ar">البنية التحتية التعليمية في رواندا • اتصال البرازيل-رواندا</span>
+            </div>
+            
+            <h2 class="section-title">
+                <span class="lang-content active" data-lang="pt">Infraestrutura Educacional Ruanda</span>
+                <span class="lang-content" data-lang="en">Rwanda Educational Infrastructure</span>
+                <span class="lang-content" data-lang="ar">البنية التحتية التعليمية في رواندا</span>
+            </h2>
+            
+            <p class="text-center mb-3" style="color: #666; font-size: 1.05rem;">
+                <span class="lang-content active" data-lang="pt">Infraestrutura educacional para Ruanda com forte conexão com Brasil. Grandes oportunidades estratégicas. Em fase de finalização da inovação.</span>
+                <span class="lang-content" data-lang="en">Educational infrastructure for Rwanda with strong connection to Brazil. Major strategic opportunities. In innovation finalization phase.</span>
+                <span class="lang-content" data-lang="ar">بنية تحتية تعليمية لرواندا مع اتصال قوي بالبرازيل. فرص استراتيجية كبيرة. في مرحلة الانتهاء من الابتكار.</span>
+            </p>
+            
+            <div class="products-grid">
+                <!-- CARD: INFRAESTRUTURA EDUCACIONAL RUANDA -->
                 <div class="product-card">
                     <div class="product-badge">
-                        <span class="lang-content active" data-lang="pt">Inovação · Fase Final</span>
-                        <span class="lang-content" data-lang="en">Innovation · Final Phase</span>
-                        <span class="lang-content" data-lang="ar">ابتكار · المرحلة النهائية</span>
+                        <span class="lang-content active" data-lang="pt">Projeto Estratégico</span>
+                        <span class="lang-content" data-lang="en">Strategic Project</span>
+                        <span class="lang-content" data-lang="ar">مشروع استراتيجي</span>
                     </div>
                     <div class="product-icon">
-                        <i class="fas fa-globe-africa"></i>
+                        <i class="fas fa-graduation-cap"></i>
                     </div>
                     <h3>
                         <span class="lang-content active" data-lang="pt">Infraestrutura Educacional Ruanda</span>
                         <span class="lang-content" data-lang="en">Rwanda Educational Infrastructure</span>
-                        <span class="lang-content" data-lang="ar">البنية التحتية التعليمية رواندا</span>
+                        <span class="lang-content" data-lang="ar">البنية التحتية التعليمية في رواندا</span>
                     </h3>
                     <p>
-                        <span class="lang-content active" data-lang="pt">Infraestrutura educacional para Ruanda com forte conexão com Brasil. Grandes oportunidades estratégicas. Em fase de finalização da inovação.</span>
-                        <span class="lang-content" data-lang="en">Educational infrastructure for Rwanda with strong connection to Brazil. Major strategic opportunities. In final phase of innovation.</span>
-                        <span class="lang-content" data-lang="ar">بنية تحتية تعليمية لرواندا مع اتصال قوي بالبرازيل. فرص استراتيجية كبيرة. في المرحلة النهائية من الابتكار.</span>
+                        <span class="lang-content active" data-lang="pt">Infraestrutura educacional inovadora conectando Brasil e Ruanda, com oportunidades estratégicas significativas.</span>
+                        <span class="lang-content" data-lang="en">Innovative educational infrastructure connecting Brazil and Rwanda, with significant strategic opportunities.</span>
+                        <span class="lang-content" data-lang="ar">بنية تحتية تعليمية مبتكرة تربط البرازيل ورواندا، مع فرص استراتيجية كبيرة.</span>
                     </p>
                     <ul class="product-features">
                         <li><i class="fas fa-check"></i> 
                             <span class="lang-content active" data-lang="pt"><strong>Conexão institucional:</strong> Brasil–Ruanda</span>
                             <span class="lang-content" data-lang="en"><strong>Institutional connection:</strong> Brazil–Rwanda</span>
-                            <span class="lang-content" data-lang="ar"><strong>اتصال مؤسسي:</strong> البرازيل–رواندا</span>
+                            <span class="lang-content" data-lang="ar"><strong>اتصال مؤسسي:</strong> البرازيل-رواندا</span>
                         </li>
                         <li><i class="fas fa-check"></i> 
                             <span class="lang-content active" data-lang="pt"><strong>Infraestrutura educacional:</strong> Modelo inovador</span>
@@ -620,12 +221,12 @@
                         <li><i class="fas fa-check"></i> 
                             <span class="lang-content active" data-lang="pt"><strong>Fase:</strong> Finalização da inovação</span>
                             <span class="lang-content" data-lang="en"><strong>Phase:</strong> Innovation finalization</span>
-                            <span class="lang-content" data-lang="ar"><strong>المرحلة:</strong> الابتكار النهائي</span>
+                            <span class="lang-content" data-lang="ar"><strong>المرحلة:</strong> الانتهاء من الابتكار</span>
                         </li>
                         <li><i class="fas fa-coins"></i> 
-                            <span class="lang-content active" data-lang="pt"><strong>Valuation potencial:</strong> USD 4M</span>
-                            <span class="lang-content" data-lang="en"><strong>Potential valuation:</strong> USD 4M</span>
-                            <span class="lang-content" data-lang="ar"><strong>التقييم المحتمل:</strong> ٤ ملايين دولار</span>
+                            <span class="lang-content active" data-lang="pt"><strong>Valuation:</strong> USD 4M</span>
+                            <span class="lang-content" data-lang="en"><strong>Valuation:</strong> USD 4M</span>
+                            <span class="lang-content" data-lang="ar"><strong>التقييم:</strong> 4 مليون دولار</span>
                         </li>
                     </ul>
                 </div>
@@ -633,13 +234,82 @@
         </div>
     </section>
 
-    <!-- SEÇÃO 2: LAYER 2026 - Programa Registrado (original restaurado) -->
+    <!-- SEÇÃO 3: CAMADA DE ATIVOS DIGITAIS (ERC) -->
+    <section id="digital-asset" class="section products-section">
+        <div class="container">
+            <div class="product-badge" style="position: relative; top: 0; right: 0; margin-bottom: 2rem;">
+                <span class="lang-content active" data-lang="pt">CAMADA DE ATIVOS DIGITAIS • ESTRUTURA ERC</span>
+                <span class="lang-content" data-lang="en">DIGITAL ASSET LAYER • ERC STRUCTURE</span>
+                <span class="lang-content" data-lang="ar">طبقة الأصول الرقمية • هيكل ERC</span>
+            </div>
+            
+            <h2 class="section-title">
+                <span class="lang-content active" data-lang="pt">Camada de Ativos Digitais</span>
+                <span class="lang-content" data-lang="en">Digital Asset Layer</span>
+                <span class="lang-content" data-lang="ar">طبقة الأصول الرقمية</span>
+            </h2>
+            
+            <p class="text-center mb-3" style="color: #666; font-size: 1.05rem;">
+                <span class="lang-content active" data-lang="pt">Camada de ativos digitais desenvolvida sob princípios de arquitetura de contratos inteligentes, com segregação de custódia e alinhamento às estruturas de conformidade ISO 27001 e GDPR.</span>
+                <span class="lang-content" data-lang="en">Digital asset layer developed under smart contract architecture principles, with segregated custody and alignment with ISO 27001 and GDPR compliance frameworks.</span>
+                <span class="lang-content" data-lang="ar">طبقة أصول رقمية مطورة تحت مبادئ هندسة العقود الذكية، مع عزلة الحفظ والتوافق مع أطر الامتثال ISO 27001 و GDPR.</span>
+            </p>
+            
+            <div class="products-grid">
+                <!-- CARD: CAMADA DE ATIVOS DIGITAIS (ERC) -->
+                <div class="product-card">
+                    <div class="product-badge">
+                        <span class="lang-content active" data-lang="pt">Estrutura Auditável</span>
+                        <span class="lang-content" data-lang="en">Audit-Ready Structure</span>
+                        <span class="lang-content" data-lang="ar">هيكل جاهز للتدقيق</span>
+                    </div>
+                    <div class="product-icon">
+                        <i class="fas fa-link"></i>
+                    </div>
+                    <h3>
+                        <span class="lang-content active" data-lang="pt">Camada de Ativos Digitais (ERC)</span>
+                        <span class="lang-content" data-lang="en">Digital Asset Layer (ERC)</span>
+                        <span class="lang-content" data-lang="ar">طبقة الأصول الرقمية (ERC)</span>
+                    </h3>
+                    <p>
+                        <span class="lang-content active" data-lang="pt">Infraestrutura de ativos digitais arquitetada sob princípios dos padrões ERC, com design preparado para auditoria de contratos inteligentes e custódia segregada.</span>
+                        <span class="lang-content" data-lang="en">Digital asset infrastructure architected under ERC standards principles, with smart contract audit-ready design and segregated custody.</span>
+                        <span class="lang-content" data-lang="ar">بنية تحتية للأصول الرقمية مصممة تحت مبادئ معايير ERC، مع تصميم جاهز لتدقيق العقود الذكية وحفظ منعزل.</span>
+                    </p>
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i> 
+                            <span class="lang-content active" data-lang="pt"><strong>Alinhamento ERC:</strong> Estruturado sob princípios ERC-20 e ERC-721</span>
+                            <span class="lang-content" data-lang="en"><strong>ERC Alignment:</strong> Structured under ERC-20 and ERC-721 principles</span>
+                            <span class="lang-content" data-lang="ar"><strong>توافق ERC:</strong> منظم تحت مبادئ ERC-20 و ERC-721</span>
+                        </li>
+                        <li><i class="fas fa-check"></i> 
+                            <span class="lang-content active" data-lang="pt"><strong>Pronto para Auditoria:</strong> Arquitetura de contratos inteligentes preparada para auditoria terceirizada</span>
+                            <span class="lang-content" data-lang="en"><strong>Audit-Ready:</strong> Smart contract architecture designed for third-party audit</span>
+                            <span class="lang-content" data-lang="ar"><strong>جاهز للتدقيق:</strong> هندسة العقود الذكية مصممة لتدقيق طرف ثالث</span>
+                        </li>
+                        <li><i class="fas fa-check"></i> 
+                            <span class="lang-content active" data-lang="pt"><strong>Custódia Segregada:</strong> Princípios de custódia alinhados a padrões institucionais</span>
+                            <span class="lang-content" data-lang="en"><strong>Segregated Custody:</strong> Custody principles aligned with institutional standards</span>
+                            <span class="lang-content" data-lang="ar"><strong>حفظ منعزل:</strong> مبادئ الحفظ متوافقة مع المعايير المؤسسية</span>
+                        </li>
+                        <li><i class="fas fa-check"></i> 
+                            <span class="lang-content active" data-lang="pt"><strong>Estrutura de Conformidade:</strong> Desenhado em referência à ISO 27001 e GDPR</span>
+                            <span class="lang-content" data-lang="en"><strong>Compliance Framework:</strong> Designed in reference to ISO 27001 and GDPR</span>
+                            <span class="lang-content" data-lang="ar"><strong>إطار الامتثال:</strong> مصمم بالرجوع إلى ISO 27001 و GDPR</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 4: LAYER 2026 - Governance Program -->
     <section id="layer-2026" class="section section-light">
         <div class="container">
             <div class="product-badge" style="position: relative; top: 0; right: 0; margin-bottom: 2rem; background: linear-gradient(135deg, #7B3F00, #8B4513);">
-                <span class="lang-content active" data-lang="pt">PROGRAMA REGISTRADO • GOVERNAÇA INTELECTUAL</span>
-                <span class="lang-content" data-lang="en">REGISTERED PROGRAM • INTELLECTUAL GOVERNANCE</span>
-                <span class="lang-content" data-lang="ar">برنامج مسجل • حوكمة فكرية</span>
+                <span class="lang-content active" data-lang="pt">PROGRAMA DE GOVERNANÇA REGISTRADO • ISO 27001 | ISO 27701</span>
+                <span class="lang-content" data-lang="en">REGISTERED GOVERNANCE PROGRAM • ISO 27001 | ISO 27701</span>
+                <span class="lang-content" data-lang="ar">برنامج حوكمة مسجل • ISO 27001 | ISO 27701</span>
             </div>
             
             <h2 class="section-title">
@@ -649,9 +319,9 @@
             </h2>
             
             <p class="text-center mb-3" style="color: #666; font-size: 1.05rem;">
-                <span class="lang-content active" data-lang="pt">Programa estruturado com base no Layer Talent Governance Model, obra intelectual registrada e protegida por direito autoral.</span>
-                <span class="lang-content" data-lang="en">Structured program based on the Layer Talent Governance Model, a registered intellectual work protected by copyright.</span>
-                <span class="lang-content" data-lang="ar">برنامج منظم يستند إلى نموذج Layer Talent Governance Model، عمل فكري مسجل ومحمي بحقوق المؤلف.</span>
+                <span class="lang-content active" data-lang="pt">Programa estruturado sob princípios de governança de segurança da informação e privacidade, em referência às normas ISO 27001 e ISO 27701, com arquitetura de confiança zero.</span>
+                <span class="lang-content" data-lang="en">Program structured under information security and privacy governance principles, in reference to ISO 27001 and ISO 27701, with zero trust architecture.</span>
+                <span class="lang-content" data-lang="ar">برنامج منظم تحت مبادئ حوكمة أمن المعلومات والخصوصية، بالرجوع إلى ISO 27001 و ISO 27701، مع بنية الثقة الصفرية.</span>
             </p>
             
             <div class="cards-grid">
@@ -660,14 +330,14 @@
                         <i class="fas fa-bridge"></i>
                     </div>
                     <h3>
-                        <span class="lang-content active" data-lang="pt">Ponte Empresa–Talento</span>
-                        <span class="lang-content" data-lang="en">Company–Talent Bridge</span>
-                        <span class="lang-content" data-lang="ar">جسر الشركة–الموهبة</span>
+                        <span class="lang-content active" data-lang="pt">Governança de Acesso</span>
+                        <span class="lang-content" data-lang="en">Access Governance</span>
+                        <span class="lang-content" data-lang="ar">حوكمة الوصول</span>
                     </h3>
                     <p>
-                        <span class="lang-content active" data-lang="pt">Conexão estruturada entre organizações e talentos emergentes, orientada por metodologia de governança intelectual.</span>
-                        <span class="lang-content" data-lang="en">Structured connection between organizations and emerging talents, guided by intellectual governance methodology.</span>
-                        <span class="lang-content" data-lang="ar">اتصال منظم بين المنظمات والمواهب الناشئة، موجه بطريقة حوكمة فكرية.</span>
+                        <span class="lang-content active" data-lang="pt">Conexão estruturada entre organizações e talentos baseada em princípios de autenticação multifator e controle de acesso Zero Trust.</span>
+                        <span class="lang-content" data-lang="en">Structured connection between organizations and talents based on multi-factor authentication and Zero Trust access control principles.</span>
+                        <span class="lang-content" data-lang="ar">اتصال منظم بين المنظمات والمواهب بناءً على مبادئ المصادقة متعددة العوامل والتحكم في الوصول بالثقة الصفرية.</span>
                     </p>
                 </div>
 
@@ -676,14 +346,14 @@
                         <i class="fas fa-user-graduate"></i>
                     </div>
                     <h3>
-                        <span class="lang-content active" data-lang="pt">Foco em Talentos em Início de Carreira</span>
-                        <span class="lang-content" data-lang="en">Focus on Early-Career Talents</span>
-                        <span class="lang-content" data-lang="ar">التركيز على المواهب في بداية الحياة المهنية</span>
+                        <span class="lang-content active" data-lang="pt">Privacidade e Proteção de Dados</span>
+                        <span class="lang-content" data-lang="en">Privacy and Data Protection</span>
+                        <span class="lang-content" data-lang="ar">الخصوصية وحماية البيانات</span>
                     </h3>
                     <p>
-                        <span class="lang-content active" data-lang="pt">Programa voltado a desenvolvedores em fase inicial, com critérios metodológicos claros e governança formal.</span>
-                        <span class="lang-content" data-lang="en">Program aimed at early-stage developers, with clear methodological criteria and formal governance.</span>
-                        <span class="lang-content" data-lang="ar">برنامج موجه للمطورين في المراحل الأولى، بمعايير منهجية واضحة وحوكمة رسمية.</span>
+                        <span class="lang-content active" data-lang="pt">Programa desenhado com alinhamento à LGPD e GDPR, assegurando a proteção de dados pessoais desde a concepção.</span>
+                        <span class="lang-content" data-lang="en">Program designed with alignment to LGPD and GDPR, ensuring personal data protection by design.</span>
+                        <span class="lang-content" data-lang="ar">برنامج مصمم بالتوافق مع LGPD و GDPR، لضمان حماية البيانات الشخصية منذ التصميم.</span>
                     </p>
                 </div>
 
@@ -692,84 +362,96 @@
                         <i class="fas fa-registered"></i>
                     </div>
                     <h3>
-                        <span class="lang-content active" data-lang="pt">Modelo Registrado</span>
-                        <span class="lang-content" data-lang="en">Registered Model</span>
-                        <span class="lang-content" data-lang="ar">نموذج مسجل</span>
+                        <span class="lang-content active" data-lang="pt">Arquitetura de Segurança</span>
+                        <span class="lang-content" data-lang="en">Security Architecture</span>
+                        <span class="lang-content" data-lang="ar">هندسة الأمان</span>
                     </h3>
                     <p>
-                        <span class="lang-content active" data-lang="pt">Metodologia exclusiva registrada como obra intelectual, protegida pela legislação brasileira e tratados internacionais.</span>
-                        <span class="lang-content" data-lang="en">Exclusive methodology registered as intellectual work, protected by Brazilian legislation and international treaties.</span>
-                        <span class="lang-content" data-lang="ar">منهجية حصرية مسجلة كعمل فكري، محمية بموجب التشريع البرازيلي والمعاهدات الدولية.</span>
+                        <span class="lang-content active" data-lang="pt">Metodologia exclusiva registrada como obra intelectual, com camadas de segurança baseadas em OWASP Top 10 e criptografia AES-256.</span>
+                        <span class="lang-content" data-lang="en">Exclusive methodology registered as intellectual work, with security layers based on OWASP Top 10 and AES-256 encryption.</span>
+                        <span class="lang-content" data-lang="ar">منهجية حصرية مسجلة كعمل فكري، مع طبقات أمان تستند إلى OWASP Top 10 وتشفير AES-256.</span>
                     </p>
                 </div>
             </div>
             
-            <!-- Arquitetura Técnica do Layer 2026 (original) -->
+            <!-- Governance Structure Details -->
             <div class="architecture-section" style="margin-top: 4rem;">
                 <div class="architecture-title lang-content active" data-lang="pt">
-                    Estrutura do Programa
+                    Estrutura de Governança
                 </div>
                 <div class="architecture-title lang-content" data-lang="en">
-                    Program Structure
+                    Governance Structure
                 </div>
                 <div class="architecture-title lang-content" data-lang="ar">
-                    هيكل البرنامج
+                    هيكل الحوكمة
                 </div>
                 
                 <div class="architecture-content">
                     <div class="lang-content active" data-lang="pt">
-                        <p>O <strong>LAYER 2026</strong> é um programa registrado que opera como uma <strong>plataforma de conexão estruturada</strong> entre empresas que buscam talentos e desenvolvedores em fase inicial de carreira.</p>
+                        <p>O <strong>LAYER 2026</strong> é um programa de governança registrado que opera como uma <strong>plataforma de conexão estruturada</strong> entre organizações e talentos, com alinhamento aos seguintes referenciais:</p>
                         
                         <div class="architecture-grid">
                             <div class="architecture-item">
-                                <div class="architecture-item-title">Para Empresas</div>
-                                <div class="architecture-item-desc">Acesso a talentos emergentes com capacitação prévia e mentoria contínua.</div>
+                                <div class="architecture-item-title">ISO 27001</div>
+                                <div class="architecture-item-desc">Princípios de gestão de segurança da informação aplicados à infraestrutura do programa.</div>
                             </div>
                             <div class="architecture-item">
-                                <div class="architecture-item-title">Para Desenvolvedores</div>
-                                <div class="architecture-item-desc">Oportunidades reais com suporte técnico e desenvolvimento de carreira.</div>
+                                <div class="architecture-item-title">ISO 27701</div>
+                                <div class="architecture-item-desc">Extensão de privacidade para tratamento de dados pessoais.</div>
                             </div>
                             <div class="architecture-item">
-                                <div class="architecture-item-title">Modelo Registrado</div>
-                                <div class="architecture-item-desc">Metodologia exclusiva registrada e protegida juridicamente.</div>
+                                <div class="architecture-item-title">NIST CSF</div>
+                                <div class="architecture-item-desc">Framework de cibersegurança para identificação, proteção e resposta.</div>
+                            </div>
+                            <div class="architecture-item">
+                                <div class="architecture-item-title">Zero Trust</div>
+                                <div class="architecture-item-desc">Modelo de confiança zero aplicado a identidades e acessos.</div>
                             </div>
                         </div>
                     </div>
                     
                     <div class="lang-content" data-lang="en">
-                        <p><strong>LAYER 2026</strong> is a registered program that operates as a <strong>structured connection platform</strong> between companies seeking talent and early-career developers.</p>
+                        <p><strong>LAYER 2026</strong> is a registered governance program that operates as a <strong>structured connection platform</strong> between organizations and talents, aligned with the following frameworks:</p>
                         
                         <div class="architecture-grid">
                             <div class="architecture-item">
-                                <div class="architecture-item-title">For Companies</div>
-                                <div class="architecture-item-desc">Access to emerging talents with prior training and continuous mentoring.</div>
+                                <div class="architecture-item-title">ISO 27001</div>
+                                <div class="architecture-item-desc">Information security management principles applied to the program infrastructure.</div>
                             </div>
                             <div class="architecture-item">
-                                <div class="architecture-item-title">For Developers</div>
-                                <div class="architecture-item-desc">Real opportunities with technical support and career development.</div>
+                                <div class="architecture-item-title">ISO 27701</div>
+                                <div class="architecture-item-desc">Privacy extension for personal data processing.</div>
                             </div>
                             <div class="architecture-item">
-                                <div class="architecture-item-title">Registered Model</div>
-                                <div class="architecture-item-desc">Exclusive methodology legally registered and protected.</div>
+                                <div class="architecture-item-title">NIST CSF</div>
+                                <div class="architecture-item-desc">Cybersecurity framework for identification, protection, and response.</div>
+                            </div>
+                            <div class="architecture-item">
+                                <div class="architecture-item-title">Zero Trust</div>
+                                <div class="architecture-item-desc">Zero trust model applied to identities and access.</div>
                             </div>
                         </div>
                     </div>
                     
                     <div class="lang-content" data-lang="ar">
-                        <p><strong>LAYER 2026</strong> هو برنامج مسجل يعمل كـ <strong>منصة اتصال منظمة</strong> بين الشركات التي تبحث عن مواهب والمطورين في بداية حياتهم المهنية.</p>
+                        <p><strong>LAYER 2026</strong> هو برنامج حوكمة مسجل يعمل كـ <strong>منصة اتصال منظمة</strong> بين المنظمات والمواهب، متوافق مع الأطر التالية:</p>
                         
                         <div class="architecture-grid">
                             <div class="architecture-item">
-                                <div class="architecture-item-title">للشركات</div>
-                                <div class="architecture-item-desc">الوصول إلى المواهب الناشئة مع تدريب مسبق وتوجيه مستمر.</div>
+                                <div class="architecture-item-title">ISO 27001</div>
+                                <div class="architecture-item-desc">مبادئ إدارة أمن المعلومات المطبقة على البنية التحتية للبرنامج.</div>
                             </div>
                             <div class="architecture-item">
-                                <div class="architecture-item-title">للمطورين</div>
-                                <div class="architecture-item-desc">فرص حقيقية مع دعم تقني وتطوير مهني.</div>
+                                <div class="architecture-item-title">ISO 27701</div>
+                                <div class="architecture-item-desc">امتداد الخصوصية لمعالجة البيانات الشخصية.</div>
                             </div>
                             <div class="architecture-item">
-                                <div class="architecture-item-title">نموذج مسجل</div>
-                                <div class="architecture-item-desc">منهجية حصرية مسجلة قانونيًا ومحمية.</div>
+                                <div class="architecture-item-title">NIST CSF</div>
+                                <div class="architecture-item-desc">إطار الأمن السيبراني للتحديد والحماية والاستجابة.</div>
+                            </div>
+                            <div class="architecture-item">
+                                <div class="architecture-item-title">Zero Trust</div>
+                                <div class="architecture-item-desc">نموذج الثقة الصفرية المطبق على الهويات والوصول.</div>
                             </div>
                         </div>
                     </div>
@@ -778,50 +460,56 @@
         </div>
     </section>
 
-    <!-- SEÇÃO 3: FILOSOFIA (original) -->
+    <!-- SEÇÃO 5: Arquitetura de Conformidade -->
     <section id="filosofia" class="section">
         <div class="container">
             <h2 class="section-title">
-                <span class="lang-content active" data-lang="pt">Filosofia Estratégica</span>
-                <span class="lang-content" data-lang="en">Strategic Philosophy</span>
-                <span class="lang-content" data-lang="ar">الفلسفة الإستراتيجية</span>
+                <span class="lang-content active" data-lang="pt">Arquitetura de Conformidade Institucional</span>
+                <span class="lang-content" data-lang="en">Institutional Compliance Architecture</span>
+                <span class="lang-content" data-lang="ar">الهيكل المؤسسي للامتثال</span>
             </h2>
             
             <div class="philosophy-content">
                 <div class="philosophy-text">
                     <div class="lang-content active" data-lang="pt">
-                        <p>Criamos <strong>ativos digitais com valor institucional</strong> e <strong>programas estruturados com proteção intelectual</strong>. Acreditamos que a verdadeira inovação está na combinação de tecnologia sofisticada com modelos de negócio sustentáveis.</p>
+                        <p>Nossa abordagem integra princípios de segurança da informação (ISO 27001), gestão de privacidade (ISO 27701) e arquitetura de ativos digitais (padrões ERC). A infraestrutura é desenhada sob o modelo de confiança zero (Zero Trust) e alinhada às recomendações do NIST e FATF para prevenção à lavagem de dinheiro e combate ao financiamento do terrorismo.</p>
                         
-                        <p>Nossa abordagem une:</p>
+                        <p>Os pilares da arquitetura são:</p>
                         
                         <ul style="margin-left: 2rem; color: #666; line-height: 1.8;">
-                            <li><strong>Mercado de Luxo:</strong> Ativos digitais com licença limitada e alto valor percebido</li>
-                            <li><strong>Mercado Educacional/Tech:</strong> Programas registrados que resolvem problemas reais do setor</li>
-                            <li><strong>Soberania Digital:</strong> Controle total sobre tecnologia e propriedade intelectual</li>
+                            <li><strong>Portfólio de Luxo:</strong> Ativo digital com licença limitada, blockchain privado e cessão integral.</li>
+                            <li><strong>Infraestrutura Educacional Ruanda:</strong> Projeto inovador conectando Brasil e Ruanda.</li>
+                            <li><strong>Camada de Ativos Digitais:</strong> Estruturada sob princípios ERC, com contratos inteligentes auditáveis e custódia segregada.</li>
+                            <li><strong>Programa de Governança:</strong> Registrado e alinhado a ISO 27001, ISO 27701 e NIST, com foco em proteção de dados e acesso baseado em Zero Trust.</li>
+                            <li><strong>Conformidade Legal:</strong> Estruturas de dados em conformidade com GDPR, LGPD e recomendações do GAFI.</li>
                         </ul>
                     </div>
                     
                     <div class="lang-content" data-lang="en">
-                        <p>We create <strong>digital assets with institutional value</strong> and <strong>structured programs with intellectual protection</strong>. We believe true innovation lies in combining sophisticated technology with sustainable business models.</p>
+                        <p>Our approach integrates information security (ISO 27001), privacy management (ISO 27701), and digital asset architecture (ERC standards) principles. The infrastructure is designed under the Zero Trust model and aligned with NIST and FATF recommendations for anti-money laundering and counter-terrorist financing.</p>
                         
-                        <p>Our approach combines:</p>
+                        <p>The architecture pillars are:</p>
                         
                         <ul style="margin-left: 2rem; color: #666; line-height: 1.8;">
-                            <li><strong>Luxury Market:</strong> Digital assets with limited license and high perceived value</li>
-                            <li><strong>Educational/Tech Market:</strong> Registered programs that solve real sector problems</li>
-                            <li><strong>Digital Sovereignty:</strong> Total control over technology and intellectual property</li>
+                            <li><strong>Luxury Portfolio:</strong> Digital asset with limited license, private blockchain, and full assignment.</li>
+                            <li><strong>Rwanda Educational Infrastructure:</strong> Innovative project connecting Brazil and Rwanda.</li>
+                            <li><strong>Digital Asset Layer:</strong> Structured under ERC principles, with auditable smart contracts and segregated custody.</li>
+                            <li><strong>Governance Program:</strong> Registered and aligned with ISO 27001, ISO 27701, and NIST, focusing on data protection and Zero Trust-based access.</li>
+                            <li><strong>Legal Compliance:</strong> Data frameworks compliant with GDPR, LGPD, and FATF recommendations.</li>
                         </ul>
                     </div>
                     
                     <div class="lang-content" data-lang="ar">
-                        <p>ننشئ <strong>أصولًا رقمية ذات قيمة مؤسسية</strong> و<strong>برامج منظمة مع حماية فكرية</strong>. نعتقد أن الابتكار الحقيقي يكمن في الجمع بين التكنولوجيا المتطورة ونماذج الأعمال المستدامة.</p>
+                        <p>يجمع نهجنا بين مبادئ أمن المعلومات (ISO 27001)، وإدارة الخصوصية (ISO 27701)، وهندسة الأصول الرقمية (معايير ERC). تم تصميم البنية التحتية وفق نموذج الثقة الصفرية ومتوافقة مع توصيات NIST و FATF لمكافحة غسل الأموال وتمويل الإرهاب.</p>
                         
-                        <p>يجمع نهجنا بين:</p>
+                        <p>ركائز الهيكل هي:</p>
                         
                         <ul style="margin-right: 2rem; color: #666; line-height: 1.8; text-align: right;">
-                            <li><strong>سوق الفخامة:</strong> أصول رقمية بترخيص محدود وقيمة متصورة عالية</li>
-                            <li><strong>سوق التعليم/التكنولوجيا:</strong> برامج مسجلة تحل مشاكل قطاعية حقيقية</li>
-                            <li><strong>السيادة الرقمية:</strong> سيطرة كاملة على التكنولوجيا والملكية الفكرية</li>
+                            <li><strong>محفظة فاخرة:</strong> أصل رقمي برخصة محدودة، بلوكتشين خاص، وتنازل كامل.</li>
+                            <li><strong>البنية التحتية التعليمية في رواندا:</strong> مشروع مبتكر يربط البرازيل ورواندا.</li>
+                            <li><strong>طبقة الأصول الرقمية:</strong> منظمة تحت مبادئ ERC، مع عقود ذكية قابلة للتدقيق وحفظ منعزل.</li>
+                            <li><strong>برنامج الحوكمة:</strong> مسجل ومتوافق مع ISO 27001 و ISO 27701 و NIST، مع التركيز على حماية البيانات والوصول القائم على الثقة الصفرية.</li>
+                            <li><strong>الامتثال القانوني:</strong> أطر بيانات متوافقة مع GDPR و LGPD وتوصيات FATF.</li>
                         </ul>
                     </div>
                 </div>
@@ -829,7 +517,7 @@
         </div>
     </section>
 
-    <!-- SEÇÃO 4: FUNDADORA (original) -->
+    <!-- SEÇÃO 6: FUNDADORA (Founder) -->
     <section id="fundadora" class="section section-light">
         <div class="container">
             <h2 class="section-title">
@@ -866,15 +554,11 @@
                     <div class="lang-content active" data-lang="pt">
                         <div style="margin-bottom: 2rem;">
                             <p style="color: #666; line-height: 1.7; font-size: 0.95rem; margin-bottom: 1.5rem;">
-                                A construção de tecnologia não é neutra em seus efeitos. Sistemas moldam comportamentos, concentram ou distribuem poder, protegem ou expõem pessoas. Ignorar isso é abdicar da responsabilidade que acompanha qualquer infraestrutura crítica.
+                                A construção de infraestruturas digitais institucionais exige a integração de padrões de segurança, privacidade e conformidade. Minha atuação concentra-se em arquitetar sistemas que respeitem a soberania digital e a continuidade institucional, alinhados a referenciais como ISO 27001, NIST e GDPR.
                             </p>
                             
                             <p style="color: #666; line-height: 1.7; font-size: 0.95rem; margin-bottom: 1.5rem;">
-                                Minha preocupação sempre esteve menos na tecnologia em si e mais nas consequências silenciosas de como ela é projetada, adotada e controlada. Em uma sociedade cada vez mais dependente de sistemas digitais, decisões técnicas passam a ter impacto direto sobre dignidade, autonomia e continuidade institucional.
-                            </p>
-                            
-                            <p style="color: #666; line-height: 1.7; font-size: 0.95rem; margin-bottom: 1.5rem;">
-                                Por isso, criei dois ativos complementares: um portfólio de luxo com valor institucional e um programa registrado para formação de talentos. Ambos representam uma visão de tecnologia que serve à humanidade, protegendo sua autonomia e integridade.
+                                Criei três ativos complementares: um portfólio de luxo em blockchain privado, uma infraestrutura educacional para Ruanda, uma camada de ativos digitais estruturada sob padrões ERC e um programa de governança registrado, todos desenhados para operar com transparência, auditabilidade e proteção de dados.
                             </p>
                         </div>
                     </div>
@@ -883,15 +567,11 @@
                     <div class="lang-content" data-lang="en">
                         <div style="margin-bottom: 2rem;">
                             <p style="color: #666; line-height: 1.7; font-size: 0.95rem; margin-bottom: 1.5rem;">
-                                Technology construction is not neutral in its effects. Systems shape behaviors, concentrate or distribute power, protect or expose people. Ignoring this is abdicating the responsibility that accompanies any critical infrastructure.
+                                Building institutional digital infrastructures requires the integration of security, privacy, and compliance standards. My work focuses on architecting systems that respect digital sovereignty and institutional continuity, aligned with frameworks such as ISO 27001, NIST, and GDPR.
                             </p>
                             
                             <p style="color: #666; line-height: 1.7; font-size: 0.95rem; margin-bottom: 1.5rem;">
-                                My concern has always been less about the technology itself and more about the silent consequences of how it is designed, adopted, and controlled. In a society increasingly dependent on digital systems, technical decisions come to have a direct impact on dignity, autonomy, and institutional continuity.
-                            </p>
-                            
-                            <p style="color: #666; line-height: 1.7; font-size: 0.95rem; margin-bottom: 1.5rem;">
-                                Therefore, I created two complementary assets: a luxury portfolio with institutional value and a registered talent development program. Both represent a vision of technology that serves humanity, protecting its autonomy and integrity.
+                                I created three complementary assets: a luxury portfolio on private blockchain, an educational infrastructure for Rwanda, a digital asset layer structured under ERC standards, and a registered governance program, all designed to operate with transparency, auditability, and data protection.
                             </p>
                         </div>
                     </div>
@@ -900,99 +580,140 @@
                     <div class="lang-content" data-lang="ar">
                         <div style="margin-bottom: 2rem;">
                             <p style="color: #666; line-height: 1.7; font-size: 0.95rem; margin-bottom: 1.5rem; text-align: right;">
-                                بناء التكنولوجيا ليس محايدًا في آثاره. الأنظمة تشكل السلوكيات، وتتركز أو توزع السلطة، وتحمي أو تعرض الناس. تجاهل هذا هو تنازل عن المسؤولية التي ترافق أي بنية تحتية حرجة.
+                                يتطلب بناء البنى التحتية الرقمية المؤسسية دمج معايير الأمان والخصوصية والامتثال. يركز عملي على تصميم أنظمة تحترم السيادة الرقمية والاستمرارية المؤسسية، بما يتماشى مع أطر مثل ISO 27001 و NIST و GDPR.
                             </p>
                             
                             <p style="color: #666; line-height: 1.7; font-size: 0.95rem; margin-bottom: 1.5rem; text-align: right;">
-                                كان اهتمامي دائمًا أقل بالتكنولوجيا نفسها وأكثر بالعواقب الصامتة لكيفية تصميمها واعتمادها والتحكم بها. في مجتمع يعتمد بشكل متزايد على الأنظمة الرقمية، تأخذ القرارات التقنية تأثيرًا مباشرًا على الكرامة والاستقلالية والاستمرارية المؤسسية.
-                            </p>
-                            
-                            <p style="color: #666; line-height: 1.7; font-size: 0.95rem; margin-bottom: 1.5rem; text-align: right;">
-                                لذلك، قمت بإنشاء أصلين مكملين: محفظة فاخرة ذات قيمة مؤسسية وبرنامج مسجل لتطوير المواهب. كلاهما يمثل رؤية للتكنولوجيا تخدم الإنسانية، حمايةً لاستقلاليتها وسلامتها.
+                                لقد أنشأت ثلاثة أصول مكملة: محفظة فاخرة على بلوكتشين خاص، بنية تحتية تعليمية لرواندا، طبقة أصول رقمية منظمة تحت معايير ERC، وبرنامج حوكمة مسجل، وكلها مصممة للعمل بشفافية وقابلية للتدقيق وحماية البيانات.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Nota Institucional (original) -->
+            <!-- Nota Institucional -->
             <div class="founder-institutional-note">
                 <p>
                     <span class="lang-content active" data-lang="pt">
-                        Viviane Baz atua na interseção entre tecnologia, soberania digital e infraestrutura crítica. 
-                        Acredita que sistemas tecnológicos devem servir à humanidade, protegendo sua autonomia e integridade.
+                        Viviane Baz atua na interseção entre tecnologia, soberania digital e infraestrutura crítica, desenvolvendo arquiteturas de conformidade para ativos digitais e programas de governança.
                     </span>
                     <span class="lang-content" data-lang="en">
-                        Viviane Baz operates at the intersection of technology, digital sovereignty, and critical infrastructure. 
-                        Believes that technological systems should serve humanity, protecting its autonomy and integrity.
+                        Viviane Baz operates at the intersection of technology, digital sovereignty, and critical infrastructure, developing compliance architectures for digital assets and governance programs.
                     </span>
                     <span class="lang-content" data-lang="ar">
-                        تعمل فيفيان باز عند تقاطع التكنولوجيا والسيادة الرقمية والبنية التحتية الحرجة.
-                        تؤمن بأن الأنظمة التكنولوجية يجب أن تخدم الإنسانية، حمايةً لاستقلاليتها وسلامتها.
+                        تعمل فيفيان باز عند تقاطع التكنولوجيا والسيادة الرقمية والبنية التحتية الحرجة، وتطوير هياكل الامتثال للأصول الرقمية وبرامج الحوكمة.
                     </span>
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- SEÇÃO 5: OPORTUNIDADES (original, com mailto já configurado) -->
+    <!-- SEÇÃO 7: OPORTUNIDADES INSTITUCIONAIS - com envio de formulário -->
     <section id="contato" class="section">
         <div class="container">
             <h2 class="section-title">
-                <span class="lang-content active" data-lang="pt">Oportunidades Exclusivas</span>
-                <span class="lang-content" data-lang="en">Exclusive Opportunities</span>
-                <span class="lang-content" data-lang="ar">فرص حصرية</span>
+                <span class="lang-content active" data-lang="pt">Oportunidades Institucionais</span>
+                <span class="lang-content" data-lang="en">Institutional Opportunities</span>
+                <span class="lang-content" data-lang="ar">الفرص المؤسسية</span>
             </h2>
             
             <div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));">
-                <!-- Card para Investidores -->
+                <!-- Card for Institutional Investors - Portfólio de Luxo -->
                 <div class="card" style="border-top: 3px solid #d4af37;">
                     <div class="card-icon">
-                        <i class="fas fa-handshake"></i>
+                        <i class="fas fa-gem"></i>
                     </div>
                     <h3>
-                        <span class="lang-content active" data-lang="pt">Para Investidores</span>
-                        <span class="lang-content" data-lang="en">For Investors</span>
-                        <span class="lang-content" data-lang="ar">للمستثمرين</span>
+                        <span class="lang-content active" data-lang="pt">Aquisição - Portfólio de Luxo</span>
+                        <span class="lang-content" data-lang="en">Acquisition - Luxury Portfolio</span>
+                        <span class="lang-content" data-lang="ar">الاستحواذ - المحفظة الفاخرة</span>
                     </h3>
                     <p>
-                        <span class="lang-content active" data-lang="pt">Interessado na cessão integral do Exclusive Identity? Entre em contato para conhecer os detalhes da oferta exclusiva.</span>
-                        <span class="lang-content" data-lang="en">Interested in the full assignment of Exclusive Identity? Contact us to learn about the exclusive offer details.</span>
-                        <span class="lang-content" data-lang="ar">مهتم بالتنازل الكامل عن Exclusive Identity؟ اتصل بنا لمعرفة تفاصيل العرض الحصري.</span>
+                        <span class="lang-content active" data-lang="pt">Interessado na aquisição do ativo digital com licença limitada? A estrutura de cessão integral está disponível para investidores qualificados.</span>
+                        <span class="lang-content" data-lang="en">Interested in acquiring the digital asset with limited license? The full assignment structure is available to qualified investors.</span>
+                        <span class="lang-content" data-lang="ar">مهتم بشراء الأصل الرقمي برخصة محدودة؟ هيكل التنازل الكامل متاح للمستثمرين المؤهلين.</span>
                     </p>
                     <div style="margin-top: 2rem;">
-                        <a href="mailto:avzproptech@outlook.com?subject=Interesse%20na%20Cess%C3%A3o%20Exclusive%20Identity" 
-                           class="btn btn-primary" style="width: 100%; justify-content: center;">
+                        <a href="#" onclick="showPortfolioForm()" class="btn btn-primary" style="width: 100%; justify-content: center;">
                             <i class="fas fa-envelope"></i>
-                            <span class="lang-content active" data-lang="pt">Expressar Interesse</span>
-                            <span class="lang-content" data-lang="en">Express Interest</span>
-                            <span class="lang-content" data-lang="ar">التعبير عن الاهتمام</span>
+                            <span class="lang-content active" data-lang="pt">Solicitar Informações</span>
+                            <span class="lang-content" data-lang="en">Request Information</span>
+                            <span class="lang-content" data-lang="ar">طلب المعلومات</span>
                         </a>
                     </div>
                 </div>
 
-                <!-- Card para Empresas -->
+                <!-- Card for Rwanda Infrastructure -->
                 <div class="card" style="border-top: 3px solid #7B3F00;">
                     <div class="card-icon">
-                        <i class="fas fa-building"></i>
+                        <i class="fas fa-globe-africa"></i>
                     </div>
                     <h3>
-                        <span class="lang-content active" data-lang="pt">Para Empresas</span>
-                        <span class="lang-content" data-lang="en">For Companies</span>
-                        <span class="lang-content" data-lang="ar">للشركات</span>
+                        <span class="lang-content active" data-lang="pt">Parceria - Infraestrutura Ruanda</span>
+                        <span class="lang-content" data-lang="en">Partnership - Rwanda Infrastructure</span>
+                        <span class="lang-content" data-lang="ar">شراكة - البنية التحتية في رواندا</span>
                     </h3>
                     <p>
-                        <span class="lang-content active" data-lang="pt">Quer participar do LAYER 2026 como parceira? Conecte-se com talentos emergentes através do nosso programa registrado.</span>
-                        <span class="lang-content" data-lang="en">Want to participate in LAYER 2026 as a partner? Connect with emerging talents through our registered program.</span>
-                        <span class="lang-content" data-lang="ar">تريد المشاركة في LAYER 2026 كشريك؟ تواصل مع المواهب الناشئة من خلال برنامجنا المسجل.</span>
+                        <span class="lang-content active" data-lang="pt">Interessado em participar do projeto educacional Brasil-Ruanda? Buscamos parceiros institucionais.</span>
+                        <span class="lang-content" data-lang="en">Interested in participating in the Brazil-Rwanda educational project? We are seeking institutional partners.</span>
+                        <span class="lang-content" data-lang="ar">مهتم بالمشاركة في المشروع التعليمي البرازيل-رواندا؟ نحن نبحث عن شركاء مؤسسيين.</span>
                     </p>
                     <div style="margin-top: 2rem;">
-                        <a href="mailto:avzproptech@outlook.com?subject=Parceria%20LAYER%202026" 
-                           class="btn btn-layer" style="width: 100%; justify-content: center;">
+                        <a href="#" onclick="showRwandaForm()" class="btn btn-layer" style="width: 100%; justify-content: center;">
+                            <i class="fas fa-handshake"></i>
+                            <span class="lang-content active" data-lang="pt">Solicitar Avaliação</span>
+                            <span class="lang-content" data-lang="en">Request Evaluation</span>
+                            <span class="lang-content" data-lang="ar">طلب تقييم</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card for Digital Asset Layer -->
+                <div class="card" style="border-top: 3px solid #d4af37;">
+                    <div class="card-icon">
+                        <i class="fas fa-link"></i>
+                    </div>
+                    <h3>
+                        <span class="lang-content active" data-lang="pt">Aquisição - Camada de Ativos Digitais</span>
+                        <span class="lang-content" data-lang="en">Acquisition - Digital Asset Layer</span>
+                        <span class="lang-content" data-lang="ar">الاستحواذ - طبقة الأصول الرقمية</span>
+                    </h3>
+                    <p>
+                        <span class="lang-content active" data-lang="pt">Interessado na aquisição da camada de ativos digitais ERC? Estrutura auditável com custódia segregada.</span>
+                        <span class="lang-content" data-lang="en">Interested in acquiring the ERC digital asset layer? Audit-ready structure with segregated custody.</span>
+                        <span class="lang-content" data-lang="ar">مهتم بشراء طبقة الأصول الرقمية ERC؟ هيكل جاهز للتدقيق مع حفظ منعزل.</span>
+                    </p>
+                    <div style="margin-top: 2rem;">
+                        <a href="#" onclick="showDigitalAssetForm()" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                            <i class="fas fa-file-signature"></i>
+                            <span class="lang-content active" data-lang="pt">Solicitar Due Diligence</span>
+                            <span class="lang-content" data-lang="en">Request Due Diligence</span>
+                            <span class="lang-content" data-lang="ar">طلب العناية الواجبة</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card for Layer 2026 Program -->
+                <div class="card" style="border-top: 3px solid #7B3F00;">
+                    <div class="card-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3>
+                        <span class="lang-content active" data-lang="pt">Participação - LAYER 2026</span>
+                        <span class="lang-content" data-lang="en">Participation - LAYER 2026</span>
+                        <span class="lang-content" data-lang="ar">مشاركة - LAYER 2026</span>
+                    </h3>
+                    <p>
+                        <span class="lang-content active" data-lang="pt">Interessado em participar do programa de governança? Parceria requer alinhamento aos princípios de segurança.</span>
+                        <span class="lang-content" data-lang="en">Interested in participating in the governance program? Partnership requires alignment with security principles.</span>
+                        <span class="lang-content" data-lang="ar">مهتم بالمشاركة في برنامج الحوكمة؟ تتطلب الشراكة التوافق مع مبادئ الأمان.</span>
+                    </p>
+                    <div style="margin-top: 2rem;">
+                        <a href="#" onclick="showLayerForm()" class="btn btn-layer" style="width: 100%; justify-content: center;">
                             <i class="fas fa-users"></i>
-                            <span class="lang-content active" data-lang="pt">Solicitar Parceria</span>
-                            <span class="lang-content" data-lang="en">Request Partnership</span>
-                            <span class="lang-content" data-lang="ar">طلب شراكة</span>
+                            <span class="lang-content active" data-lang="pt">Solicitar Acesso</span>
+                            <span class="lang-content" data-lang="en">Request Access</span>
+                            <span class="lang-content" data-lang="ar">طلب الوصول</span>
                         </a>
                     </div>
                 </div>
@@ -1010,37 +731,40 @@
             </p>
             
             <p style="color: #7B3F00; font-size: 0.9rem; margin-top: 1.5rem; font-weight: 500;">
-                <span class="lang-content active" data-lang="pt">"Criando ativos digitais com valor e propósito."</span>
-                <span class="lang-content" data-lang="en">"Creating digital assets with value and purpose."</span>
-                <span class="lang-content" data-lang="ar">"نصنع أصولًا رقمية ذات قيمة وهدف."</span>
+                <span class="lang-content active" data-lang="pt">Infraestrutura digital institucional com conformidade e propósito.</span>
+                <span class="lang-content" data-lang="en">Institutional digital infrastructure with compliance and purpose.</span>
+                <span class="lang-content" data-lang="ar">بنية تحتية رقمية مؤسسية مع الامتثال والغرض.</span>
             </p>
         </div>
     </footer>
 
-    <!-- COOKIE CONSENT (original) -->
+    <!-- COOKIE CONSENT -->
     <div id="cookieConsent" class="cookie-consent" style="display: none;">
         <div class="cookie-container">
             <div class="cookie-icon">
                 <i class="fas fa-shield-alt"></i>
             </div>
             <div class="cookie-content">
-                <h4>Privacidade e Segurança</h4>
-                <p>Utilizamos cookies essenciais para segurança e funcionalidade. Para ativos de luxo e programas registrados, seus dados são protegidos com criptografia institucional.</p>
+                <h4>
+                    <span class="lang-content active" data-lang="pt">Privacidade e Conformidade</span>
+                    <span class="lang-content" data-lang="en">Privacy and Compliance</span>
+                    <span class="lang-content" data-lang="ar">الخصوصية والامتثال</span>
+                </h4>
+                <p>
+                    <span class="lang-content active" data-lang="pt">Utilizamos cookies essenciais para funcionalidade e segurança. Seus dados são tratados em conformidade com LGPD e GDPR.</span>
+                    <span class="lang-content" data-lang="en">We use essential cookies for functionality and security. Your data is processed in compliance with LGPD and GDPR.</span>
+                    <span class="lang-content" data-lang="ar">نحن نستخدم ملفات تعريف الارتباط الأساسية للوظائف والأمان. تتم معالجة بياناتك وفقًا لـ LGPD و GDPR.</span>
+                </p>
                 <div class="cookie-actions">
                     <button id="acceptCookies" class="btn-cookie btn-cookie-primary">
-                        <span class="lang-content active" data-lang="pt">Aceitar Todos</span>
-                        <span class="lang-content" data-lang="en">Accept All</span>
-                        <span class="lang-content" data-lang="ar">قبول الكل</span>
+                        <span class="lang-content active" data-lang="pt">Aceitar</span>
+                        <span class="lang-content" data-lang="en">Accept</span>
+                        <span class="lang-content" data-lang="ar">قبول</span>
                     </button>
                     <button id="essentialCookies" class="btn-cookie btn-cookie-secondary">
                         <span class="lang-content active" data-lang="pt">Apenas Essenciais</span>
                         <span class="lang-content" data-lang="en">Only Essential</span>
                         <span class="lang-content" data-lang="ar">الأساسية فقط</span>
-                    </button>
-                    <button id="cookieSettings" class="btn-cookie btn-cookie-text">
-                        <span class="lang-content active" data-lang="pt">Configurar</span>
-                        <span class="lang-content" data-lang="en">Settings</span>
-                        <span class="lang-content" data-lang="ar">إعدادات</span>
                     </button>
                 </div>
             </div>
@@ -1050,57 +774,71 @@
         </div>
     </div>
 
-    <!-- POPUP DE CONTEÚDO EXCLUSIVO - Exclusive Identity (com campos nomeados e envio por email) -->
-    <div id="exclusivePopup" class="exclusive-popup" style="display: none;">
+    <!-- POPUP DE FORMULÁRIO TRADUZÍVEL -->
+    <div id="genericFormPopup" class="exclusive-popup" style="display: none;">
         <div class="popup-overlay"></div>
         <div class="popup-container">
             <div class="popup-header">
-                <div class="popup-badge">Exclusive Identity</div>
-                <button class="popup-close" onclick="closePopup()">
+                <div class="popup-badge" id="popupBadge">AVZ Infra</div>
+                <button class="popup-close" onclick="closeGenericPopup()">
                     <i class="fas fa-times"></i>
                 </button>
             </div>
             
             <div class="popup-body">
-                <div class="popup-icon">
+                <div class="popup-icon" id="popupIcon">
                     <i class="fas fa-file-signature"></i>
                 </div>
                 
-                <h2 class="lang-content active" data-lang="pt">Conteúdo para Investidores</h2>
-                <h2 class="lang-content" data-lang="en">Investor Content</h2>
-                <h2 class="lang-content" data-lang="ar">محتوى المستثمرين</h2>
+                <h2 id="popupTitle">Formulário de Contato</h2>
                 
-                <p class="popup-description lang-content active" data-lang="pt">
-                    Para acessar a apresentação completa do Exclusive Identity, incluindo valuation, estrutura de cessão e due diligence, solicitamos sua identificação.
-                </p>
-                <p class="popup-description lang-content" data-lang="en">
-                    To access the complete Exclusive Identity presentation, including valuation, assignment structure, and due diligence, we request your identification.
-                </p>
-                <p class="popup-description lang-content" data-lang="ar">
-                    للوصول إلى العرض التقديمي الكامل لـ Exclusive Identity، بما في ذلك التقييم وهيكل التنازل والعناية الواجبة، نطلب تحديد هويتك.
+                <p class="popup-description" id="popupDescription">
+                    Preencha seus dados para receber mais informações.
                 </p>
                 
-                <form id="exclusiveForm" class="popup-form" onsubmit="sendExclusiveForm(event)">
+                <form id="contactForm" class="popup-form" action="mailto:avzproptech@outlook.com" method="post" enctype="text/plain">
+                    <input type="hidden" id="formSubject" name="subject" value="Contato AVZ Infra">
+                    
                     <div class="form-row">
                         <div class="form-group">
-                            <label>Nome completo / Full name</label>
-                            <input type="text" name="nome" placeholder="Seu nome" required>
+                            <label>
+                                <span class="lang-content active" data-lang="pt">Nome completo</span>
+                                <span class="lang-content" data-lang="en">Full name</span>
+                                <span class="lang-content" data-lang="ar">الاسم الكامل</span>
+                            </label>
+                            <input type="text" name="name" placeholder="Seu nome" required>
                         </div>
                         <div class="form-group">
-                            <label>Email institucional</label>
+                            <label>
+                                <span class="lang-content active" data-lang="pt">Email institucional</span>
+                                <span class="lang-content" data-lang="en">Institutional email</span>
+                                <span class="lang-content" data-lang="ar">البريد الإلكتروني المؤسسي</span>
+                            </label>
                             <input type="email" name="email" placeholder="email@empresa.com" required>
                         </div>
                     </div>
                     
                     <div class="form-row">
                         <div class="form-group">
-                            <label>Empresa / Organization</label>
-                            <input type="text" name="empresa" placeholder="Nome da empresa" required>
+                            <label>
+                                <span class="lang-content active" data-lang="pt">Empresa</span>
+                                <span class="lang-content" data-lang="en">Organization</span>
+                                <span class="lang-content" data-lang="ar">المنظمة</span>
+                            </label>
+                            <input type="text" name="company" placeholder="Nome da empresa" required>
                         </div>
                         <div class="form-group">
-                            <label>País / Country</label>
-                            <select name="pais" required>
-                                <option value="">Selecione</option>
+                            <label>
+                                <span class="lang-content active" data-lang="pt">País</span>
+                                <span class="lang-content" data-lang="en">Country</span>
+                                <span class="lang-content" data-lang="ar">البلد</span>
+                            </label>
+                            <select name="country" required>
+                                <option value="">
+                                    <span class="lang-content active" data-lang="pt">Selecione</span>
+                                    <span class="lang-content" data-lang="en">Select</span>
+                                    <span class="lang-content" data-lang="ar">اختر</span>
+                                </option>
                                 <option value="BR">Brasil</option>
                                 <option value="AE">Emirados Árabes</option>
                                 <option value="SA">Arábia Saudita</option>
@@ -1111,151 +849,50 @@
                         </div>
                     </div>
                     
+                    <div class="form-group">
+                        <label>
+                            <span class="lang-content active" data-lang="pt">Mensagem</span>
+                            <span class="lang-content" data-lang="en">Message</span>
+                            <span class="lang-content" data-lang="ar">الرسالة</span>
+                        </label>
+                        <textarea name="message" rows="2" placeholder="Sua mensagem" style="padding: 0.7rem 0.9rem; border: 1px solid #ddd; border-radius: 2px; font-size: 0.85rem;"></textarea>
+                    </div>
+                    
                     <div class="form-checkbox">
-                        <input type="checkbox" name="aceito_nda" id="ndaLuxury" required>
-                        <label for="ndaLuxury">
+                        <input type="checkbox" id="privacyConsent" required>
+                        <label for="privacyConsent">
                             <span class="lang-content active" data-lang="pt">
-                                Confirmo que sou investidor qualificado e concordo com o termo de confidencialidade
+                                Concordo com os termos de privacidade e conformidade.
                             </span>
                             <span class="lang-content" data-lang="en">
-                                I confirm that I am a qualified investor and agree to the confidentiality agreement
+                                I agree to the privacy and compliance terms.
                             </span>
                             <span class="lang-content" data-lang="ar">
-                                أؤكد أنني مستثمر مؤهل وأوافق على اتفاقية السرية
+                                أوافق على شروط الخصوصية والامتثال.
                             </span>
                         </label>
                     </div>
                     
                     <button type="submit" class="btn-popup-submit">
-                        <i class="fas fa-lock-open"></i>
-                        <span class="lang-content active" data-lang="pt">Acessar Material Exclusivo</span>
-                        <span class="lang-content" data-lang="en">Access Exclusive Material</span>
-                        <span class="lang-content" data-lang="ar">الوصول إلى المواد الحصرية</span>
+                        <i class="fas fa-paper-plane"></i>
+                        <span class="lang-content active" data-lang="pt">Enviar Mensagem</span>
+                        <span class="lang-content" data-lang="en">Send Message</span>
+                        <span class="lang-content" data-lang="ar">إرسال الرسالة</span>
                     </button>
                     
                     <p class="popup-footnote">
                         <i class="fas fa-shield"></i>
-                        <span class="lang-content active" data-lang="pt">Seus dados são protegidos com criptografia de nível institucional</span>
-                        <span class="lang-content" data-lang="en">Your data is protected with institutional-grade encryption</span>
-                        <span class="lang-content" data-lang="ar">بياناتك محمية بتشفير على المستوى المؤسسي</span>
+                        <span class="lang-content active" data-lang="pt">Seus dados são enviados diretamente para nossa equipe</span>
+                        <span class="lang-content" data-lang="en">Your data is sent directly to our team</span>
+                        <span class="lang-content" data-lang="ar">يتم إرسال بياناتك مباشرة إلى فريقنا</span>
                     </p>
                 </form>
             </div>
         </div>
     </div>
 
-    <!-- POPUP DE VERIFICAÇÃO - LAYER 2026 (com formulários nomeados e envio por email) -->
-    <div id="layerVerification" class="layer-verification" style="display: none;">
-        <div class="verification-overlay"></div>
-        <div class="verification-container">
-            <div class="verification-badge">
-                <i class="fas fa-check-circle"></i>
-                LAYER 2026
-            </div>
-            
-            <div class="verification-header">
-                <h3 class="lang-content active" data-lang="pt">Verificação de Perfil</h3>
-                <h3 class="lang-content" data-lang="en">Profile Verification</h3>
-                <h3 class="lang-content" data-lang="ar">التحقق من الملف الشخصي</h3>
-                
-                <button class="verification-close" onclick="closeLayerVerification()">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            
-            <div class="verification-options">
-                <div class="verification-option" onclick="selectProfile('company')">
-                    <div class="option-icon">
-                        <i class="fas fa-building"></i>
-                    </div>
-                    <div class="option-content">
-                        <h4 class="lang-content active" data-lang="pt">Empresa</h4>
-                        <h4 class="lang-content" data-lang="en">Company</h4>
-                        <h4 class="lang-content" data-lang="ar">شركة</h4>
-                        
-                        <p class="lang-content active" data-lang="pt">Busco talentos emergentes para minha organização</p>
-                        <p class="lang-content" data-lang="en">I'm looking for emerging talents for my organization</p>
-                        <p class="lang-content" data-lang="ar">أبحث عن مواهب ناشئة لمؤسستي</p>
-                    </div>
-                </div>
-                
-                <div class="verification-option" onclick="selectProfile('developer')">
-                    <div class="option-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <div class="option-content">
-                        <h4 class="lang-content active" data-lang="pt">Desenvolvedor</h4>
-                        <h4 class="lang-content" data-lang="en">Developer</h4>
-                        <h4 class="lang-content" data-lang="ar">مطور</h4>
-                        
-                        <p class="lang-content active" data-lang="pt">Em início de carreira, busco oportunidades</p>
-                        <p class="lang-content" data-lang="en">Early-career, looking for opportunities</p>
-                        <p class="lang-content" data-lang="ar">بداية الحياة المهنية، أبحث عن فرص</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div id="companyForm" class="profile-form" style="display: none;">
-                <h4 class="lang-content active" data-lang="pt">Cadastro para Empresas</h4>
-                <h4 class="lang-content" data-lang="en">Company Registration</h4>
-                <h4 class="lang-content" data-lang="ar">تسجيل الشركات</h4>
-                
-                <form onsubmit="sendCompanyForm(event)">
-                    <div class="form-group">
-                        <input type="text" name="empresa" placeholder="Nome da empresa" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" name="email" placeholder="Email corporativo" required>
-                    </div>
-                    <div class="form-group">
-                        <select name="porte" required>
-                            <option value="">Porte da empresa</option>
-                            <option value="startup">Startup</option>
-                            <option value="pme">PME</option>
-                            <option value="corporation">Corporação</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="btn-verification">
-                        <span class="lang-content active" data-lang="pt">Solicitar Acesso</span>
-                        <span class="lang-content" data-lang="en">Request Access</span>
-                        <span class="lang-content" data-lang="ar">طلب الوصول</span>
-                    </button>
-                </form>
-            </div>
-            
-            <div id="developerForm" class="profile-form" style="display: none;">
-                <h4 class="lang-content active" data-lang="pt">Cadastro para Desenvolvedores</h4>
-                <h4 class="lang-content" data-lang="en">Developer Registration</h4>
-                <h4 class="lang-content" data-lang="ar">تسجيل المطورين</h4>
-                
-                <form onsubmit="sendDeveloperForm(event)">
-                    <div class="form-group">
-                        <input type="text" name="nome" placeholder="Nome completo" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" name="email" placeholder="Email" required>
-                    </div>
-                    <div class="form-group">
-                        <select name="area" required>
-                            <option value="">Área de interesse</option>
-                            <option value="frontend">Frontend</option>
-                            <option value="backend">Backend</option>
-                            <option value="fullstack">Full Stack</option>
-                            <option value="mobile">Mobile</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="btn-verification">
-                        <span class="lang-content active" data-lang="pt">Participar do Programa</span>
-                        <span class="lang-content" data-lang="en">Join the Program</span>
-                        <span class="lang-content" data-lang="ar">انضم إلى البرنامج</span>
-                    </button>
-                </form>
-            </div>
-        </div>
-    </div>
-
     <script>
-        // Language Switching (mantido original)
+        // Language Switching
         document.addEventListener('DOMContentLoaded', function() {
             const langButtons = document.querySelectorAll('.lang-btn');
             const langContents = document.querySelectorAll('.lang-content');
@@ -1357,28 +994,21 @@
                 document.getElementById('cookieConsent').style.display = 'none';
             });
             
-            document.getElementById('cookieSettings').addEventListener('click', function() {
-                alert('Configurações de privacidade disponíveis em breve');
-            });
-            
             document.getElementById('closeCookie').addEventListener('click', function() {
                 document.getElementById('cookieConsent').style.display = 'none';
             });
             
-            // Exclusive Identity button
-            document.getElementById('exclusiveIdentityBtn').addEventListener('click', function(e) {
+            // Portfolio button
+            document.getElementById('portfolioBtn').addEventListener('click', function(e) {
                 e.preventDefault();
-                showExclusivePopup();
+                showPortfolioForm();
             });
             
-            // LAYER 2026 button
+            // Layer 2026 button
             document.getElementById('layer2026Btn').addEventListener('click', function(e) {
                 e.preventDefault();
-                showLayerVerification();
+                showLayerForm();
             });
-            
-            // Exibir popup após 10 segundos (opcional, comentado para manter foco)
-            // setTimeout(showExclusivePopup, 10000);
         });
 
         // Cookie Consent
@@ -1388,70 +1018,114 @@
             }
         }
 
-        // Popup de Conteúdo Exclusivo
-        function showExclusivePopup() {
-            document.getElementById('exclusivePopup').style.display = 'flex';
+        // Generic Popup functions
+        function showGenericPopup() {
+            document.getElementById('genericFormPopup').style.display = 'flex';
         }
 
-        function closePopup() {
-            document.getElementById('exclusivePopup').style.display = 'none';
+        function closeGenericPopup() {
+            document.getElementById('genericFormPopup').style.display = 'none';
         }
 
-        // Verificação LAYER 2026
-        function showLayerVerification() {
-            document.getElementById('layerVerification').style.display = 'flex';
+        // Form specific functions with translation support
+        function showPortfolioForm() {
+            document.getElementById('popupBadge').innerHTML = 
+                '<span class="lang-content active" data-lang="pt">Portfólio de Luxo</span>' +
+                '<span class="lang-content" data-lang="en">Luxury Portfolio</span>' +
+                '<span class="lang-content" data-lang="ar">محفظة فاخرة</span>';
+            document.getElementById('popupIcon').innerHTML = '<i class="fas fa-gem"></i>';
+            
+            const title = document.getElementById('popupTitle');
+            title.innerHTML = 
+                '<span class="lang-content active" data-lang="pt">Aquisição - Portfólio de Luxo</span>' +
+                '<span class="lang-content" data-lang="en">Acquisition - Luxury Portfolio</span>' +
+                '<span class="lang-content" data-lang="ar">الاستحواذ - المحفظة الفاخرة</span>';
+            
+            const desc = document.getElementById('popupDescription');
+            desc.innerHTML = 
+                '<span class="lang-content active" data-lang="pt">Preencha seus dados para receber informações sobre o ativo digital com licença limitada.</span>' +
+                '<span class="lang-content" data-lang="en">Fill in your details to receive information about the digital asset with limited license.</span>' +
+                '<span class="lang-content" data-lang="ar">املأ بياناتك لتلقي معلومات حول الأصل الرقمي برخصة محدودة.</span>';
+            
+            document.getElementById('formSubject').value = 'Interesse - Portfólio de Luxo';
+            showGenericPopup();
         }
 
-        function closeLayerVerification() {
-            document.getElementById('layerVerification').style.display = 'none';
+        function showRwandaForm() {
+            document.getElementById('popupBadge').innerHTML = 
+                '<span class="lang-content active" data-lang="pt">Infraestrutura Ruanda</span>' +
+                '<span class="lang-content" data-lang="en">Rwanda Infrastructure</span>' +
+                '<span class="lang-content" data-lang="ar">البنية التحتية في رواندا</span>';
+            document.getElementById('popupIcon').innerHTML = '<i class="fas fa-globe-africa"></i>';
+            
+            const title = document.getElementById('popupTitle');
+            title.innerHTML = 
+                '<span class="lang-content active" data-lang="pt">Parceria - Infraestrutura Ruanda</span>' +
+                '<span class="lang-content" data-lang="en">Partnership - Rwanda Infrastructure</span>' +
+                '<span class="lang-content" data-lang="ar">شراكة - البنية التحتية في رواندا</span>';
+            
+            const desc = document.getElementById('popupDescription');
+            desc.innerHTML = 
+                '<span class="lang-content active" data-lang="pt">Preencha seus dados para receber informações sobre o projeto educacional Brasil-Ruanda.</span>' +
+                '<span class="lang-content" data-lang="en">Fill in your details to receive information about the Brazil-Rwanda educational project.</span>' +
+                '<span class="lang-content" data-lang="ar">املأ بياناتك لتلقي معلومات حول المشروع التعليمي البرازيل-رواندا.</span>';
+            
+            document.getElementById('formSubject').value = 'Interesse - Infraestrutura Ruanda';
+            showGenericPopup();
         }
 
-        function selectProfile(type) {
-            document.querySelectorAll('.profile-form').forEach(form => {
-                form.style.display = 'none';
-            });
-            document.getElementById(type + 'Form').style.display = 'block';
+        function showDigitalAssetForm() {
+            document.getElementById('popupBadge').innerHTML = 
+                '<span class="lang-content active" data-lang="pt">Camada de Ativos Digitais</span>' +
+                '<span class="lang-content" data-lang="en">Digital Asset Layer</span>' +
+                '<span class="lang-content" data-lang="ar">طبقة الأصول الرقمية</span>';
+            document.getElementById('popupIcon').innerHTML = '<i class="fas fa-link"></i>';
+            
+            const title = document.getElementById('popupTitle');
+            title.innerHTML = 
+                '<span class="lang-content active" data-lang="pt">Aquisição - Camada de Ativos Digitais</span>' +
+                '<span class="lang-content" data-lang="en">Acquisition - Digital Asset Layer</span>' +
+                '<span class="lang-content" data-lang="ar">الاستحواذ - طبقة الأصول الرقمية</span>';
+            
+            const desc = document.getElementById('popupDescription');
+            desc.innerHTML = 
+                '<span class="lang-content active" data-lang="pt">Preencha seus dados para receber informações sobre a camada de ativos digitais ERC.</span>' +
+                '<span class="lang-content" data-lang="en">Fill in your details to receive information about the ERC digital asset layer.</span>' +
+                '<span class="lang-content" data-lang="ar">املأ بياناتك لتلقي معلومات حول طبقة الأصول الرقمية ERC.</span>';
+            
+            document.getElementById('formSubject').value = 'Due Diligence - Digital Asset Layer';
+            showGenericPopup();
         }
 
-        // Funções para envio dos formulários por email
-        function sendExclusiveForm(event) {
-            event.preventDefault();
-            const form = event.target;
-            const formData = new FormData(form);
-            let body = "Dados do formulário Exclusive Identity:\n\n";
-            for (let [key, value] of formData.entries()) {
-                body += `${key}: ${value}\n`;
-            }
-            const mailtoLink = `mailto:avzproptech@outlook.com?subject=${encodeURIComponent("Interesse no Exclusive Identity")}&body=${encodeURIComponent(body)}`;
-            window.location.href = mailtoLink;
-            closePopup();
+        function showLayerForm() {
+            document.getElementById('popupBadge').innerHTML = 
+                '<span class="lang-content active" data-lang="pt">LAYER 2026</span>' +
+                '<span class="lang-content" data-lang="en">LAYER 2026</span>' +
+                '<span class="lang-content" data-lang="ar">LAYER 2026</span>';
+            document.getElementById('popupIcon').innerHTML = '<i class="fas fa-layer-group"></i>';
+            
+            const title = document.getElementById('popupTitle');
+            title.innerHTML = 
+                '<span class="lang-content active" data-lang="pt">Participação - LAYER 2026</span>' +
+                '<span class="lang-content" data-lang="en">Participation - LAYER 2026</span>' +
+                '<span class="lang-content" data-lang="ar">مشاركة - LAYER 2026</span>';
+            
+            const desc = document.getElementById('popupDescription');
+            desc.innerHTML = 
+                '<span class="lang-content active" data-lang="pt">Preencha seus dados para solicitar acesso ao programa de governança.</span>' +
+                '<span class="lang-content" data-lang="en">Fill in your details to request access to the governance program.</span>' +
+                '<span class="lang-content" data-lang="ar">املأ بياناتك لطلب الوصول إلى برنامج الحوكمة.</span>';
+            
+            document.getElementById('formSubject').value = 'Participação - LAYER 2026';
+            showGenericPopup();
         }
 
-        function sendCompanyForm(event) {
-            event.preventDefault();
-            const form = event.target;
-            const formData = new FormData(form);
-            let body = "Dados do formulário LAYER 2026 - Empresa:\n\n";
-            for (let [key, value] of formData.entries()) {
-                body += `${key}: ${value}\n`;
-            }
-            const mailtoLink = `mailto:avzproptech@outlook.com?subject=${encodeURIComponent("Parceria LAYER 2026 - Empresa")}&body=${encodeURIComponent(body)}`;
-            window.location.href = mailtoLink;
-            closeLayerVerification();
-        }
-
-        function sendDeveloperForm(event) {
-            event.preventDefault();
-            const form = event.target;
-            const formData = new FormData(form);
-            let body = "Dados do formulário LAYER 2026 - Desenvolvedor:\n\n";
-            for (let [key, value] of formData.entries()) {
-                body += `${key}: ${value}\n`;
-            }
-            const mailtoLink = `mailto:avzproptech@outlook.com?subject=${encodeURIComponent("Participação LAYER 2026 - Desenvolvedor")}&body=${encodeURIComponent(body)}`;
-            window.location.href = mailtoLink;
-            closeLayerVerification();
-        }
+        // Handle form submission (optional - will use mailto)
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            // Allow default mailto behavior
+            // Optional: close popup after submission
+            setTimeout(closeGenericPopup, 1000);
+        });
     </script>
 </body>
 </html>
