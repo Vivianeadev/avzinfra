@@ -3,15 +3,1221 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AVZ Infra | Infraestrutura Digital</title>
-    <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>AVZ Infra | Tecnologia Blockchain e Sistemas de Identidade Soberana</title>
+    
+    <!-- Fontes Otimizadas -->
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@300;400;500;600;700&family=Cinzel:wght@400;500;600;700&family=Marcellus&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
     <style>
-    *{margin:0;padding:0;box-sizing:border-box;font-family:'Helvetica Neue',Arial,sans-serif}body{background:linear-gradient(135deg,#f9f5f0 0%,#faf0f4 100%);color:#3a3a3a;line-height:1.6;overflow-x:hidden;position:relative}body::before,body::after{content:'';position:fixed;width:500px;height:500px;border-radius:50%;pointer-events:none;z-index:0;opacity:.03}body::before{top:-200px;right:-200px;background:radial-gradient(circle,#7B3F00 0%,transparent 70%);box-shadow:0 0 150px 150px rgb(123 63 0 / .1)}body::after{bottom:-200px;left:-200px;background:radial-gradient(circle,#8B4513 0%,transparent 70%);box-shadow:0 0 150px 150px rgb(139 69 19 / .1)}.header{position:fixed;top:0;width:100%;background:rgb(255 255 255 / .95);backdrop-filter:blur(10px);z-index:1000;padding:1rem 0;transition:all 0.3s ease;border-bottom:1px solid rgb(212 175 55 / .1);box-shadow:0 2px 20px rgb(123 63 0 / .05)}.nav-container{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 2rem}.logo{font-size:1.8rem;font-weight:300;letter-spacing:2px;color:#2b2b2b;text-transform:uppercase;position:relative}.logo::after{content:'';position:absolute;bottom:-5px;left:0;width:60%;height:1px;background:linear-gradient(to right,transparent,#7B3F00,transparent)}.logo span{display:block;font-size:11px;letter-spacing:8px;margin-top:2px;color:#888}.nav-menu{display:flex;list-style:none;gap:2rem}.nav-menu a{color:#3a3a3a;text-decoration:none;font-weight:400;transition:all 0.3s ease;position:relative;font-size:14px;letter-spacing:.5px}.nav-menu a:hover{color:#d4af37}.nav-menu a::after{content:'';position:absolute;bottom:-5px;left:0;width:0;height:1px;background:linear-gradient(135deg,#d4af37,#7B3F00);transition:width 0.3s ease}.nav-menu a:hover::after{width:100%}.hero{min-height:calc(100vh - 80px);display:flex;align-items:center;justify-content:center;text-align:center;padding:6rem 2rem 4rem;position:relative;background:linear-gradient(135deg,rgb(249 245 240 / .9),rgb(250 240 244 / .9));overflow:hidden}.hero::before{content:'';position:absolute;top:10%;right:10%;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgb(123 63 0 / .03) 0%,transparent 70%);filter:blur(40px);z-index:1}.hero-content{max-width:900px;z-index:2}.hero h1{font-size:clamp(2rem, 5vw, 3.2rem);margin-bottom:1rem;font-weight:400;letter-spacing:1px;color:#2b2b2b;line-height:1.2}.hero h1 span{color:#d4af37;font-weight:500}.hero-subtitle{font-size:1.2rem;color:#666;margin-bottom:1.5rem;font-weight:300;letter-spacing:.5px;max-width:700px;margin-left:auto;margin-right:auto;line-height:1.7}.btn{padding:14px 28px;border:none;border-radius:2px;font-weight:400;text-decoration:none;display:inline-flex;align-items:center;gap:.8rem;transition:all 0.3s ease;cursor:pointer;font-size:14px;letter-spacing:.5px;position:relative;overflow:hidden}.btn::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgb(255 255 255 / .2),transparent);transition:left 0.7s ease}.btn:hover::before{left:100%}.btn-primary{background:linear-gradient(to right,#d4af37,#f4e4b8);color:#2a2a2a;box-shadow:0 3px 15px rgb(212 175 55 / .3)}.btn-primary:hover{box-shadow:0 5px 20px rgb(212 175 55 / .4);transform:translateY(-2px)}.btn-layer{background:linear-gradient(to right,#7B3F00,#8B4513);color:#fff;border:1px solid #7B3F00;box-shadow:0 3px 15px rgb(123 63 0 / .3)}.btn-layer:hover{background:linear-gradient(to right,#8B4513,#7B3F00);color:#fff;box-shadow:0 5px 20px rgb(123 63 0 / .4);transform:translateY(-2px);border-color:#8B4513}.section{padding:5rem 2rem;background:rgb(255 255 255 / .7);position:relative}.section-light{background:linear-gradient(135deg,#f5f1ec 0%,#f7ecec 100%)}.container{max-width:1200px;margin:0 auto;position:relative;z-index:2}.section-title{font-size:clamp(1.6rem, 3vw, 2.2rem);text-align:center;margin-bottom:3rem;font-weight:400;letter-spacing:1px;color:#2b2b2b;position:relative;padding-bottom:15px}.section-title::after{content:'';position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:60px;height:2px;background:linear-gradient(to right,#d4af37,#7B3F00,#f4e4b8)}.cards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem}.card{background:rgb(255 255 255 / .9);border:1px solid rgb(212 175 55 / .08);border-radius:4px;padding:2.5rem 2rem;transition:all 0.3s ease;box-shadow:0 2px 10px rgb(0 0 0 / .05);position:relative;cursor:pointer}.card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(to right,transparent,#7B3F00,transparent);opacity:0;transition:opacity 0.3s ease}.card:hover{border-color:rgb(123 63 0 / .15);box-shadow:0 8px 25px rgb(123 63 0 / .08);transform:translateY(-5px)}.card:hover::before{opacity:1}.card-icon{font-size:2.2rem;color:#d4af37;margin-bottom:1.5rem}.card h3{font-size:1.3rem;margin-bottom:1rem;color:#2b2b2b;font-weight:500}.card p{color:#666;line-height:1.7;font-size:.95rem}.products-section{background:linear-gradient(135deg,#f8f3e8 0%,#f5efe8 100%);position:relative;overflow:hidden}.products-section::before{content:'';position:absolute;top:0;right:0;width:200px;height:200px;background:radial-gradient(circle,rgb(123 63 0 / .03) 0%,transparent 70%);filter:blur(30px)}.products-grid{display:grid;grid-template-columns:repeat(3, 1fr);gap:2rem}@media (max-width:768px){.products-grid{grid-template-columns:1fr}}.product-card{background:rgb(255 255 255 / .95);border:1px solid rgb(123 63 0 / .08);border-radius:8px;padding:2rem;transition:all 0.4s ease;box-shadow:0 4px 15px rgb(0 0 0 / .03);position:relative;overflow:hidden;display:flex;flex-direction:column}.product-card::before{content:'';position:absolute;top:0;left:0;width:100%;height:3px;background:linear-gradient(to right,#d4af37,#7B3F00,#f4e4b8);transform:translateX(-100%);transition:transform 0.5s ease}.product-card:hover{transform:translateY(-8px);box-shadow:0 12px 30px rgb(123 63 0 / .1);border-color:rgb(123 63 0 / .15)}.product-card:hover::before{transform:translateX(0)}.product-icon{font-size:2.5rem;color:#7B3F00;margin-bottom:1.5rem;transition:all 0.3s ease}.product-card:hover .product-icon{color:#d4af37}.product-badge{display:inline-block;background:rgba(212,175,55,0.1);color:#7B3F00;font-size:0.75rem;padding:0.25rem 1rem;border-radius:20px;margin-bottom:1rem;border:1px solid rgba(212,175,55,0.2)}.launch-date{color:#7B3F00;font-weight:500;margin-bottom:0.5rem}.footer{background:rgb(255 255 255 / .9);padding:3rem 2rem 2rem;text-align:center;border-top:1px solid rgb(123 63 0 / .1);position:relative}.footer::before{content:'';position:absolute;top:0;left:0;width:100%;height:1px;background:linear-gradient(to right,transparent,#7B3F00,transparent)}.footer-content{max-width:1200px;margin:0 auto}.footer p{color:#888;margin-bottom:.8rem;font-size:.9rem}.language-switcher{position:fixed;top:10px;right:10px;z-index:1001;display:flex;gap:1px;background:rgb(255 255 255 / .97);border-radius:1px;padding:2px;border:1px solid rgb(123 63 0 / .08);box-shadow:0 1px 6px rgb(0 0 0 / .06);backdrop-filter:blur(10px);min-width:120px;height:34px;align-items:center;justify-content:center}.lang-btn{background:#fff0;border:none;color:#888;padding:3px 6px;border-radius:0;cursor:pointer;transition:all 0.2s ease;font-size:.65rem;font-weight:400;display:flex;align-items:center;gap:2px;min-height:28px;min-width:38px;justify-content:center;flex:1;height:100%}.lang-btn:hover{background:rgb(123 63 0 / .04);color:#666}.lang-btn.active{background:rgb(123 63 0 / .08);color:#7B3F00;font-weight:500;border-radius:0}.lang-flag{font-size:.7rem}.lang-content{display:none}.lang-content.active{display:block}@media (max-width:768px){.nav-menu{display:none}.cta-buttons{flex-direction:column;align-items:center}.btn{padding:12px 24px;width:100%;max-width:300px;justify-content:center}.language-switcher{top:8px;right:8px;min-width:110px;height:32px}.lang-btn{padding:2px 5px;font-size:.6rem;min-height:26px;min-width:34px;gap:1px}.hero{padding:5rem 1.5rem 3rem}}@media (max-width:480px){.section{padding:4rem 1rem}.language-switcher{top:6px;right:6px;min-width:100px;height:30px}.lang-btn{padding:1px 4px;font-size:.55rem;min-height:24px;min-width:30px}.hero{padding:4rem 1rem 2.5rem}}body[dir="rtl"] .logo::after,body[dir="rtl"] .nav-menu a::after,body[dir="rtl"] .section-title::after{left:auto;right:0;transform:none}body[dir="rtl"] .section-title::after{right:50%;transform:translateX(50%)}body[dir="rtl"] .product-badge{right:auto;left:15px}.text-center{text-align:center}.founder-grid{display:grid;grid-template-columns:1fr 2fr;gap:3rem;align-items:start;margin-top:2rem}@media (max-width:768px){.founder-grid{grid-template-columns:1fr;gap:2rem}}.founder-frame{position:relative;display:inline-block;max-width:280px;width:100%}.founder-frame-inner{width:100%;aspect-ratio:4/5;border-radius:2px;background:linear-gradient(135deg,#f5f1ec 0%,#f7ecec 100%);padding:8px;border:1px solid rgb(212 175 55 / .08);box-shadow:0 4px 15px rgb(0 0 0 / .05);overflow:hidden}.founder-image-container{width:100%;height:100%;background-color:#f9f9f9;display:flex;align-items:center;justify-content:center;overflow:hidden;border-radius:1px}.founder-image-container img{width:100%;height:100%;object-fit:contain;object-position:center top}.founder-name{color:#2b2b2b;font-size:1.1rem;font-weight:400;margin-top:1.5rem}.founder-title{color:#7B3F00;font-size:.85rem;margin-top:.25rem}.founder-institutional-note{margin-top:3rem;padding-top:1.5rem;border-top:1px solid rgb(212 175 55 / .1);text-align:center}.founder-institutional-note p{color:#888;font-size:.8rem;line-height:1.5;max-width:700px;margin:0 auto}.strategic-note{max-width:1200px;margin:4rem auto 0;padding:0 2rem;color:#666;font-size:0.95rem;line-height:1.8;border-top:1px solid rgb(212 175 55 / .1);padding-top:2.5rem}.btn-dev{display:inline-block;margin-top:2rem;padding:0.8rem 2rem;background:transparent;border:1px solid #7B3F00;color:#7B3F00;font-size:0.9rem;letter-spacing:0.5px;text-decoration:none;transition:all 0.3s ease}.btn-dev:hover{background:#7B3F00;color:#fff}.popup-overlay{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);backdrop-filter:blur(5px);z-index:2000;display:none}.popup-container{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);width:90%;max-width:500px;background:#fff;border-radius:8px;box-shadow:0 20px 40px rgba(0,0,0,0.2);z-index:2001;display:none;padding:2rem}.popup-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:1.5rem}.popup-title{color:#2b2b2b;font-size:1.3rem;font-weight:400}.popup-close{background:none;border:none;color:#999;font-size:1.5rem;cursor:pointer;transition:color 0.3s ease}.popup-close:hover{color:#7B3F00}.popup-form{display:flex;flex-direction:column;gap:1.2rem}.form-group{display:flex;flex-direction:column;gap:0.3rem}.form-group label{color:#2b2b2b;font-size:0.8rem;font-weight:500;letter-spacing:0.5px}.form-group input,.form-group select,.form-group textarea{padding:0.7rem;border:1px solid #ddd;border-radius:2px;font-size:0.9rem;transition:all 0.3s ease}.form-group input:focus,.form-group select:focus,.form-group textarea:focus{outline:none;border-color:#d4af37;box-shadow:0 0 0 2px rgba(212,175,55,0.1)}.btn-popup{width:100%;padding:0.9rem;background:linear-gradient(to right,#7B3F00,#8B4513);color:#fff;border:none;border-radius:2px;font-size:0.9rem;font-weight:500;cursor:pointer;transition:all 0.3s ease;margin-top:0.5rem}.btn-popup:hover{background:linear-gradient(to right,#8B4513,#7B3F00);transform:translateY(-2px);box-shadow:0 5px 20px rgba(123,63,0,0.3)}body.popup-open{overflow:hidden}
+        /* VARIÁVEIS DE DESIGN UNIFICADO */
+        :root {
+            /* Cores Principais (da versão atual) */
+            --color-primary: #7B3F00;
+            --color-secondary: #d4af37;
+            --color-accent: #8B4513;
+            --color-light: #f4e4b8;
+            --color-dark: #2b2b2b;
+            --color-text: #666;
+            --color-bg: linear-gradient(135deg, #f9f5f0 0%, #faf0f4 100%);
+            
+            /* Elementos de Luxo (da versão premium) */
+            --gold-primary: #D4AF37;
+            --gold-secondary: #F4E4B8;
+            --gold-accent: #B8860B;
+            --carbon: #1A1A1A;
+            --platinum: #E5E4E2;
+            
+            /* Transições e Efeitos */
+            --transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --shadow-luxury: 0 25px 50px rgba(123, 63, 0, 0.1);
+            --shadow-gold: 0 8px 32px rgba(212, 175, 55, 0.3);
+            --shadow-gold-strong: 0 0 30px rgba(212, 175, 55, 0.2);
+            --gradient-gold: linear-gradient(135deg, #D4AF37 0%, #F4E4B8 50%, #7B3F00 100%);
+            --gradient-dark: linear-gradient(135deg, #2b2b2b 0%, #1A1A1A 100%);
+            --gradient-gold-text: linear-gradient(135deg, #D4AF37 0%, #F4E4B8 50%, #FFD700 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background: var(--color-bg);
+            color: var(--color-text);
+            line-height: 1.6;
+            overflow-x: hidden;
+            position: relative;
+            font-size: 15px;
+        }
+
+        /* EFEITO DE PARTÍCULAS DOURADAS (LUXO) */
+        .luxury-particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .luxury-particle {
+            position: absolute;
+            background: radial-gradient(circle, var(--gold-primary) 0%, transparent 70%);
+            border-radius: 50%;
+            opacity: 0;
+            animation: floatLuxury 20s infinite linear;
+        }
+
+        @keyframes floatLuxury {
+            0% {
+                transform: translateY(100vh) rotate(0deg) scale(0.5);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.15;
+            }
+            90% {
+                opacity: 0.15;
+            }
+            100% {
+                transform: translateY(-100px) rotate(360deg) scale(1);
+                opacity: 0;
+            }
+        }
+
+        /* HEADER PREMIUM COM LUXO */
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgb(255 255 255 / .98);
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+            padding: 0.8rem 0;
+            transition: var(--transition);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+            box-shadow: 0 5px 20px rgba(123, 63, 0, 0.05);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-family: 'Cinzel', serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--color-dark);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            position: relative;
+            padding-bottom: 8px;
+        }
+
+        .logo::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: var(--gradient-gold);
+            box-shadow: 0 0 8px rgba(212, 175, 55, 0.3);
+        }
+
+        .logo-tagline {
+            font-size: 0.7rem;
+            letter-spacing: 3px;
+            color: var(--color-primary);
+            margin-top: 2px;
+            font-weight: 300;
+            font-family: 'Marcellus', serif;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+        }
+
+        .nav-menu a {
+            color: var(--color-dark);
+            text-decoration: none;
+            font-weight: 400;
+            transition: var(--transition);
+            position: relative;
+            font-size: 14px;
+            letter-spacing: .5px;
+            padding: 5px 0;
+        }
+
+        .nav-menu a:hover {
+            color: var(--gold-primary);
+        }
+
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--gradient-gold);
+            transition: width 0.3s ease;
+        }
+
+        .nav-menu a:hover::after {
+            width: 100%;
+        }
+
+        /* HERO SECTION COM LUXO */
+        .hero {
+            min-height: calc(100vh - 80px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 6rem 2rem 4rem;
+            position: relative;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(212, 175, 55, 0.08) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(123, 63, 0, 0.08) 0%, transparent 50%),
+                linear-gradient(135deg, rgb(249 245 240 / .95), rgb(250 240 244 / .95));
+            overflow: hidden;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-family: 'Cinzel', serif;
+            font-size: clamp(2.8rem, 6vw, 4rem);
+            margin-bottom: 1.5rem;
+            font-weight: 400;
+            letter-spacing: 1px;
+            color: var(--color-dark);
+            line-height: 1.1;
+            position: relative;
+        }
+
+        .hero h1 span {
+            background: var(--gradient-gold-text);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+            font-weight: 600;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            color: var(--color-primary);
+            margin-bottom: 3rem;
+            font-family: 'Marcellus', serif;
+            letter-spacing: .5px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.7;
+        }
+
+        /* BOTÕES COM LUXO */
+        .btn {
+            padding: 1.2rem 2.8rem;
+            border: none;
+            border-radius: 2px;
+            font-weight: 500;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 1rem;
+            transition: var(--transition);
+            cursor: pointer;
+            font-size: 14px;
+            position: relative;
+            overflow: hidden;
+            letter-spacing: .5px;
+            font-family: 'Helvetica Neue', sans-serif;
+            text-transform: uppercase;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.7s ease;
+        }
+
+        .btn:hover::before {
+            left: 100%;
+        }
+
+        .btn-primary {
+            background: var(--gradient-gold);
+            color: var(--color-dark);
+            box-shadow: var(--shadow-gold);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-gold-strong);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--color-text);
+            border: 1px solid rgba(123, 63, 0, 0.2);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--gold-primary);
+            color: var(--gold-primary);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-gold);
+        }
+
+        /* SEÇÕES COM LUXO INTEGRADO */
+        .section {
+            padding: 6rem 2rem;
+            position: relative;
+            background: rgb(255 255 255 / .8);
+        }
+
+        .section-light {
+            background: linear-gradient(135deg, #f5f1ec 0%, #f7ecec 100%);
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .section-title {
+            font-family: 'Cinzel', serif;
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            text-align: center;
+            margin-bottom: 4rem;
+            font-weight: 400;
+            letter-spacing: 1px;
+            color: var(--color-dark);
+            position: relative;
+            padding-bottom: 20px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: var(--gradient-gold);
+            box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+        }
+
+        /* CATEGORIAS ESPECIALIDADES (DA VERSÃO PREMIUM) */
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .category-card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 12px;
+            padding: 3rem 2.5rem;
+            text-align: center;
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+        }
+
+        .category-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--gradient-gold);
+            transform: translateX(-100%);
+            transition: transform 0.5s ease;
+        }
+
+        .category-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--gold-primary);
+            box-shadow: var(--shadow-luxury);
+        }
+
+        .category-card:hover::before {
+            transform: translateX(0);
+        }
+
+        .category-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            color: var(--gold-primary);
+            text-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
+        }
+
+        .category-title {
+            font-family: 'Cinzel', serif;
+            font-size: 1.6rem;
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+            letter-spacing: 1px;
+            font-weight: 500;
+        }
+
+        .category-description {
+            color: var(--color-text);
+            font-size: 1rem;
+            line-height: 1.7;
+            font-family: 'Marcellus', serif;
+        }
+
+        /* ESPECIALIDADES DETALHADAS */
+        .specialties-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .specialty-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 12px;
+            padding: 3rem;
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+        }
+
+        .specialty-card:hover {
+            transform: translateY(-15px);
+            border-color: var(--gold-primary);
+            box-shadow: var(--shadow-luxury);
+        }
+
+        .specialty-header {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .specialty-icon {
+            font-size: 2.5rem;
+            color: var(--gold-primary);
+            width: 70px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(212, 175, 55, 0.08);
+            border-radius: 10px;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .specialty-title {
+            font-family: 'Cinzel', serif;
+            font-size: 1.6rem;
+            color: var(--color-primary);
+            letter-spacing: 1px;
+            font-weight: 500;
+        }
+
+        .specialty-content {
+            margin-bottom: 2rem;
+        }
+
+        .specialty-description {
+            color: var(--color-text);
+            font-size: 1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            font-family: 'Marcellus', serif;
+        }
+
+        .specialty-features {
+            list-style: none;
+            margin-top: 1.5rem;
+        }
+
+        .specialty-features li {
+            color: var(--color-text);
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.8rem;
+            font-size: 0.95rem;
+        }
+
+        .specialty-features i {
+            color: var(--gold-primary);
+            margin-top: 0.2rem;
+            font-size: 0.9rem;
+        }
+
+        .specialty-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin-top: 2rem;
+        }
+
+        .specialty-tag {
+            padding: 0.5rem 1.2rem;
+            background: rgba(212, 175, 55, 0.08);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 20px;
+            color: var(--color-primary);
+            font-size: 0.85rem;
+            font-family: 'Marcellus', serif;
+            letter-spacing: 0.5px;
+        }
+
+        /* TECNOLOGIAS BLOCKCHAIN */
+        .technologies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .tech-card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            transition: var(--transition);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+        }
+
+        .tech-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--gold-primary);
+            box-shadow: var(--shadow-gold);
+        }
+
+        .tech-icon {
+            font-size: 2.5rem;
+            color: var(--gold-primary);
+            margin-bottom: 1rem;
+            text-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
+        }
+
+        .tech-name {
+            font-family: 'Cinzel', serif;
+            color: var(--color-primary);
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .tech-desc {
+            color: var(--color-text);
+            font-size: 0.9rem;
+            font-family: 'Marcellus', serif;
+        }
+
+        /* CASOS DE USO */
+        .use-cases-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .use-case-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 12px;
+            padding: 2.5rem;
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            transition: var(--transition);
+            position: relative;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+        }
+
+        .use-case-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--gold-primary);
+            box-shadow: var(--shadow-luxury);
+        }
+
+        .use-case-number {
+            font-family: 'Cinzel', serif;
+            font-size: 2.5rem;
+            color: var(--gold-primary);
+            opacity: 0.3;
+            position: absolute;
+            top: 1rem;
+            right: 1.5rem;
+            font-weight: 600;
+        }
+
+        .use-case-title {
+            font-family: 'Cinzel', serif;
+            font-size: 1.5rem;
+            color: var(--color-primary);
+            margin-bottom: 1.5rem;
+            letter-spacing: 1px;
+            font-weight: 500;
+        }
+
+        .use-case-description {
+            color: var(--color-text);
+            line-height: 1.7;
+            font-family: 'Marcellus', serif;
+        }
+
+        /* PRESENÇA GLOBAL */
+        .countries-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .country-item {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            transition: var(--transition);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+        }
+
+        .country-item:hover {
+            transform: translateY(-8px);
+            border-color: var(--gold-primary);
+            box-shadow: var(--shadow-gold);
+        }
+
+        .country-flag {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+        }
+
+        .country-name {
+            color: var(--color-primary);
+            font-size: 1.2rem;
+            font-weight: 500;
+            font-family: 'Cinzel', serif;
+        }
+
+        /* SEÇÃO FUNDADORA */
+        .founder-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 4rem;
+            align-items: start;
+            margin-top: 3rem;
+        }
+
+        .founder-frame {
+            position: relative;
+            display: inline-block;
+            max-width: 300px;
+            width: 100%;
+        }
+
+        .founder-frame-inner {
+            width: 100%;
+            aspect-ratio: 4/5;
+            border-radius: 4px;
+            background: linear-gradient(135deg, #f5f1ec 0%, #f7ecec 100%);
+            padding: 10px;
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            box-shadow: 0 8px 25px rgba(123, 63, 0, 0.08);
+            overflow: hidden;
+        }
+
+        .founder-image-container {
+            width: 100%;
+            height: 100%;
+            background-color: #f9f9f9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border-radius: 2px;
+            position: relative;
+        }
+
+        .founder-image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 2px;
+        }
+
+        .founder-name {
+            color: var(--color-dark);
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin-top: 1.5rem;
+            font-family: 'Cinzel', serif;
+        }
+
+        .founder-title {
+            color: var(--color-primary);
+            font-size: 0.9rem;
+            margin-top: 0.25rem;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+        }
+
+        .founder-purpose {
+            background: linear-gradient(135deg, rgba(245, 241, 236, 0.3) 0%, rgba(247, 236, 236, 0.3) 100%);
+            border-left: 2px solid rgba(123, 63, 0, 0.2);
+            padding: 2rem;
+            border-radius: 4px;
+            margin-top: 2rem;
+        }
+
+        /* FOOTER COM LUXO */
+        .footer {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 4rem 2rem 2rem;
+            text-align: center;
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
+            position: relative;
+        }
+
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: var(--gradient-gold);
+            box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer p {
+            color: var(--color-text);
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+            font-family: 'Marcellus', serif;
+        }
+
+        /* LANGUAGE SWITCHER - REPOSICIONADO */
+        .language-switcher {
+            position: fixed;
+            top: 90px;
+            right: 20px;
+            z-index: 999;
+            display: flex;
+            gap: 2px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 30px;
+            padding: 5px;
+            border: 1px solid rgba(212, 175, 55, 0.25);
+            box-shadow: 0 8px 20px rgba(123, 63, 0, 0.12);
+            min-width: 130px;
+            height: 40px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lang-btn {
+            background: transparent;
+            border: none;
+            color: var(--color-text);
+            padding: 4px 10px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 0.7rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            min-height: 30px;
+            min-width: 38px;
+            justify-content: center;
+            flex: 1;
+            height: 100%;
+            letter-spacing: 0.3px;
+        }
+
+        .lang-btn:hover {
+            background: rgba(212, 175, 55, 0.1);
+            color: var(--color-primary);
+        }
+
+        .lang-btn.active {
+            background: var(--gradient-gold);
+            color: var(--color-dark);
+            font-weight: 600;
+            box-shadow: 0 2px 8px rgba(212, 175, 55, 0.3);
+        }
+
+        .lang-flag {
+            font-size: 0.9rem;
+        }
+
+        /* CONTENT MANAGER PARA IDIOMAS */
+        .lang-content {
+            display: none;
+        }
+
+        .lang-content.active {
+            display: block;
+        }
+
+        /* RESPONSIVIDADE */
+        @media (max-width: 1024px) {
+            .nav-menu {
+                gap: 1.5rem;
+            }
+            
+            .specialties-grid,
+            .categories-grid {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 2rem;
+            }
+            
+            .language-switcher {
+                top: 85px;
+                right: 15px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+            
+            .hero {
+                padding: 5rem 1.5rem 3rem;
+                min-height: calc(100vh - 70px);
+            }
+            
+            .hero h1 {
+                font-size: clamp(2.2rem, 8vw, 3rem);
+            }
+            
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .section {
+                padding: 4rem 1.5rem;
+            }
+            
+            .section-title {
+                font-size: clamp(1.8rem, 5vw, 2.2rem);
+                margin-bottom: 3rem;
+            }
+            
+            .specialties-grid,
+            .categories-grid,
+            .use-cases-grid,
+            .technologies-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .specialty-card,
+            .category-card,
+            .use-case-card {
+                padding: 2rem;
+            }
+            
+            .founder-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                text-align: center;
+            }
+            
+            .founder-frame {
+                margin: 0 auto;
+            }
+            
+            .founder-purpose {
+                border-left: none;
+                border-top: 2px solid rgba(123, 63, 0, 0.2);
+                padding: 1.5rem;
+            }
+            
+            .language-switcher {
+                top: 75px;
+                right: 10px;
+                min-width: 120px;
+                height: 36px;
+            }
+            
+            .btn {
+                padding: 1rem 2rem;
+                font-size: 0.9rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-container {
+                padding: 0 1rem;
+            }
+            
+            .logo {
+                font-size: 1.5rem;
+            }
+            
+            .logo-tagline {
+                font-size: 0.6rem;
+            }
+            
+            .hero {
+                padding: 4rem 1rem 2.5rem;
+            }
+            
+            .section {
+                padding: 3rem 1rem;
+            }
+            
+            .specialty-header {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+            
+            .specialty-icon {
+                width: 60px;
+                height: 60px;
+                font-size: 2rem;
+            }
+            
+            .language-switcher {
+                top: 70px;
+                right: 8px;
+                min-width: 110px;
+                height: 32px;
+            }
+            
+            .lang-btn {
+                padding: 3px 6px;
+                font-size: 0.6rem;
+                min-width: 32px;
+            }
+        }
+
+        /* RTL SUPPORT */
+        body[dir="rtl"] .logo::after,
+        body[dir="rtl"] .nav-menu a::after,
+        body[dir="rtl"] .section-title::after {
+            left: auto;
+            right: 0;
+            transform: none;
+        }
+        
+        body[dir="rtl"] .section-title::after {
+            right: 50%;
+            transform: translateX(50%);
+        }
+        
+        body[dir="rtl"] .founder-purpose {
+            border-left: none;
+            border-right: 2px solid rgba(123, 63, 0, 0.2);
+        }
+        
+        body[dir="rtl"] .lang-content[data-lang="ar"] {
+            text-align: right;
+            direction: rtl;
+        }
+        
+        /* POPUP DE CONTATO LUXO - REFINADO */
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(10, 5, 0, 0.85);
+            backdrop-filter: blur(12px);
+            z-index: 10000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        
+        .popup-overlay.active {
+            display: flex;
+            opacity: 1;
+        }
+        
+        .popup-container {
+            width: 90%;
+            max-width: 650px;
+            max-height: 85vh;
+            overflow-y: auto;
+            background: #fffcf8;
+            border: 2px solid var(--gold-primary);
+            border-radius: 16px;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(212, 175, 55, 0.3) inset;
+            position: relative;
+            padding: 3rem 2.5rem;
+            transform: scale(0.92) translateY(20px);
+            transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        
+        .popup-overlay.active .popup-container {
+            transform: scale(1) translateY(0);
+        }
+        
+        .popup-container::-webkit-scrollbar {
+            width: 6px;
+        }
+        
+        .popup-container::-webkit-scrollbar-track {
+            background: rgba(212, 175, 55, 0.1);
+            border-radius: 10px;
+        }
+        
+        .popup-container::-webkit-scrollbar-thumb {
+            background: var(--gold-primary);
+            border-radius: 10px;
+        }
+        
+        .popup-close {
+            position: absolute;
+            top: 1.2rem;
+            right: 1.5rem;
+            font-size: 2.2rem;
+            color: var(--color-primary);
+            cursor: pointer;
+            transition: var(--transition);
+            line-height: 1;
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: rgba(212, 175, 55, 0.12);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            font-weight: 300;
+        }
+        
+        .popup-close:hover {
+            color: var(--gold-primary);
+            transform: rotate(180deg);
+            background: rgba(212, 175, 55, 0.25);
+            border-color: var(--gold-primary);
+        }
+        
+        .popup-title {
+            font-family: 'Cinzel', serif;
+            font-size: 2.2rem;
+            color: var(--color-primary);
+            margin-bottom: 0.75rem;
+            padding-right: 40px;
+            letter-spacing: 1px;
+            font-weight: 500;
+            border-left: 4px solid var(--gold-primary);
+            padding-left: 1rem;
+        }
+        
+        .popup-subtitle {
+            font-family: 'Marcellus', serif;
+            color: var(--color-text);
+            margin-bottom: 2rem;
+            font-size: 1rem;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+            padding-bottom: 1.2rem;
+            font-style: italic;
+            letter-spacing: 0.3px;
+        }
+        
+        .popup-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        
+        .form-group label {
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: var(--color-primary);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 500;
+        }
+        
+        .form-group label i {
+            color: var(--gold-primary);
+            font-size: 1rem;
+            width: 20px;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 8px;
+            padding: 0.9rem 1.2rem;
+            font-family: 'Helvetica Neue', sans-serif;
+            color: var(--color-dark);
+            transition: var(--transition);
+            font-size: 0.95rem;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--gold-primary);
+            box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.15);
+            background: white;
+        }
+        
+        .form-group select {
+            appearance: none;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23d4af37' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 1rem center;
+            background-size: 1.2rem;
+        }
+        
+        .form-group textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+        
+        .form-hint {
+            font-size: 0.75rem;
+            color: var(--color-text);
+            opacity: 0.6;
+            margin-top: 0.25rem;
+            font-family: 'Marcellus', serif;
+        }
+        
+        .popup-submit {
+            background: var(--gradient-gold);
+            border: none;
+            border-radius: 40px;
+            padding: 1.2rem 2rem;
+            font-family: 'Cinzel', serif;
+            font-weight: 600;
+            color: var(--color-dark);
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1.5rem;
+            border: 1px solid rgba(212, 175, 55, 0.6);
+            letter-spacing: 1px;
+            font-size: 1rem;
+            text-transform: uppercase;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+        }
+        
+        .popup-submit:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(212, 175, 55, 0.4);
+        }
+        
+        .popup-submit i {
+            font-size: 1.2rem;
+        }
+        
+        .popup-footer {
+            margin-top: 2rem;
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--color-text);
+            border-top: 1px dashed rgba(212, 175, 55, 0.3);
+            padding-top: 1.5rem;
+            font-family: 'Marcellus', serif;
+        }
+        
+        @media (max-width: 768px) {
+            .popup-container {
+                padding: 2rem 1.5rem;
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            
+            .popup-title {
+                font-size: 1.8rem;
+                padding-left: 0.75rem;
+            }
+        }
     </style>
 </head>
 <body>
-    <!-- Language Switcher -->
+    <!-- Efeito de Partículas de Luxo -->
+    <div class="luxury-particles" id="luxuryParticles"></div>
+
+    <!-- Language Switcher - REPOSICIONADO -->
     <div class="language-switcher">
         <button class="lang-btn active" data-lang="pt">
             <span class="lang-flag">🇧🇷</span>
@@ -30,27 +1236,44 @@
     <!-- Header -->
     <header class="header">
         <nav class="nav-container">
-            <div class="logo">AVZ INFRA<span>Infraestrutura Digital</span></div>
+            <div>
+                <div class="logo">AVZ INFRA</div>
+                <div class="logo-tagline">TECNOLOGIA E INFRAESTRUTURA</div>
+            </div>
             <ul class="nav-menu">
                 <li><a href="#home">
                     <span class="lang-content active" data-lang="pt">Início</span>
                     <span class="lang-content" data-lang="en">Home</span>
                     <span class="lang-content" data-lang="ar">الرئيسية</span>
                 </a></li>
-                <li><a href="#infraestrutura">
-                    <span class="lang-content active" data-lang="pt">Infraestrutura</span>
-                    <span class="lang-content" data-lang="en">Infrastructure</span>
-                    <span class="lang-content" data-lang="ar">البنية التحتية</span>
+                <li><a href="#especialidades">
+                    <span class="lang-content active" data-lang="pt">Especialidades</span>
+                    <span class="lang-content" data-lang="en">Specialties</span>
+                    <span class="lang-content" data-lang="ar">التخصصات</span>
+                </a></li>
+                <li><a href="#produtos">
+                    <span class="lang-content active" data-lang="pt">Produtos</span>
+                    <span class="lang-content" data-lang="en">Products</span>
+                    <span class="lang-content" data-lang="ar">المنتجات</span>
+                </a></li>
+                <li><a href="#tecnologias">
+                    <span class="lang-content active" data-lang="pt">Tecnologias</span>
+                    <span class="lang-content" data-lang="en">Technologies</span>
+                    <span class="lang-content" data-lang="ar">التقنيات</span>
+                </a></li>
+                <li><a href="#presenca">
+                    <span class="lang-content active" data-lang="pt">Presença Global</span>
+                    <span class="lang-content" data-lang="en">Global Presence</span>
+                    <span class="lang-content" data-lang="ar">الوجود العالمي</span>
                 </a></li>
                 <li><a href="#fundadora">
                     <span class="lang-content active" data-lang="pt">Fundadora</span>
                     <span class="lang-content" data-lang="en">Founder</span>
                     <span class="lang-content" data-lang="ar">المؤسسة</span>
                 </a></li>
-                <li><a href="#contato">
-                    <span class="lang-content active" data-lang="pt">Contato</span>
-                    <span class="lang-content" data-lang="en">Contact</span>
-                    <span class="lang-content" data-lang="ar">اتصال</span>
+                <!-- NOVO BOTÃO PARA DESENVOLVEDORES -->
+                <li><a href="https://avzinfra.info" target="_blank" style="color: var(--gold-primary); font-weight: 600;">
+                    <i class="fas fa-code"></i> Dev
                 </a></li>
             </ul>
         </nav>
@@ -59,123 +1282,799 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1 class="lang-content active" data-lang="pt"><span>AVZ Infra</span> | Infraestrutura Digital</h1>
-            <h1 class="lang-content" data-lang="en"><span>AVZ Infra</span> | Digital Infrastructure</h1>
-            <h1 class="lang-content" data-lang="ar"><span>AVZ Infra</span> | البنية التحتية الرقمية</h1>
+            <h1>
+                <span class="lang-content active" data-lang="pt">Especialidades<br>Tecnológicas</span>
+                <span class="lang-content" data-lang="en">Technological<br>Specialties</span>
+                <span class="lang-content" data-lang="ar">التخصصات<br>التقنية</span>
+            </h1>
             
             <p class="hero-subtitle lang-content active" data-lang="pt">
-                Arquitetura e desenvolvimento de sistemas tecnológicos com foco em automação, inteligência artificial e segurança.
+                Soluções de infraestrutura blockchain de ponta para transformar negócios e setores inteiros. Soberania digital não é opcional.
             </p>
             <p class="hero-subtitle lang-content" data-lang="en">
-                Architecture and development of technological systems focused on automation, artificial intelligence and security.
+                Cutting-edge blockchain infrastructure solutions to transform businesses and entire sectors. Digital sovereignty is not optional.
             </p>
             <p class="hero-subtitle lang-content" data-lang="ar">
-                هندسة وتطوير الأنظمة التكنولوجية مع التركيز على الأتمتة والذكاء الاصطناعي والأمن.
+                حلول بنية تحتية بلوكشين متطورة لتحويل الأعمال والقطاعات بأكملها. السيادة الرقمية ليست اختيارية.
             </p>
             
-            <a href="https://avzinfra.info" target="_blank" class="btn-dev">
-                <span class="lang-content active" data-lang="pt">Para desenvolvedores</span>
-                <span class="lang-content" data-lang="en">For developers</span>
-                <span class="lang-content" data-lang="ar">للمطورين</span>
-            </a>
+            <div class="cta-buttons">
+                <a href="#especialidades" class="btn btn-primary">
+                    <i class="fas fa-layer-group"></i>
+                    <span class="lang-content active" data-lang="pt">Ver Especialidades</span>
+                    <span class="lang-content" data-lang="en">View Specialties</span>
+                    <span class="lang-content" data-lang="ar">عرض التخصصات</span>
+                </a>
+                <a href="#produtos" class="btn btn-secondary">
+                    <i class="fas fa-box-open"></i>
+                    <span class="lang-content active" data-lang="pt">Nossos Produtos</span>
+                    <span class="lang-content" data-lang="en">Our Products</span>
+                    <span class="lang-content" data-lang="ar">منتجاتنا</span>
+                </a>
+            </div>
         </div>
     </section>
 
-    <!-- Seção de Infraestrutura -->
-    <section id="infraestrutura" class="section products-section">
+    <!-- Especialidades (Categorias) -->
+    <section id="especialidades" class="section section-light">
         <div class="container">
             <h2 class="section-title">
-                <span class="lang-content active" data-lang="pt">Infraestrutura Digital</span>
-                <span class="lang-content" data-lang="en">Digital Infrastructure</span>
-                <span class="lang-content" data-lang="ar">البنية التحتية الرقمية</span>
+                <span class="lang-content active" data-lang="pt">Nossas Especialidades</span>
+                <span class="lang-content" data-lang="en">Our Specialties</span>
+                <span class="lang-content" data-lang="ar">تخصصاتنا</span>
             </h2>
             
-            <div class="products-grid">
-                <!-- Produto 1: Infraestrutura de Soberania Digital -->
-                <div class="product-card">
-                    <div class="product-badge">
-                        <span class="lang-content active" data-lang="pt">Em desenvolvimento</span>
-                        <span class="lang-content" data-lang="en">In development</span>
-                        <span class="lang-content" data-lang="ar">قيد التطوير</span>
+            <div class="categories-grid">
+                <!-- Infraestrutura Blockchain -->
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-layer-group"></i>
                     </div>
-                    <div class="product-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>
-                        <span class="lang-content active" data-lang="pt">Infraestrutura de Soberania Digital</span>
-                        <span class="lang-content" data-lang="en">Digital Sovereignty Infrastructure</span>
-                        <span class="lang-content" data-lang="ar">البنية التحتية للسيادة الرقمية</span>
+                    <h3 class="category-title">
+                        <span class="lang-content active" data-lang="pt">Infraestrutura Blockchain</span>
+                        <span class="lang-content" data-lang="en">Blockchain Infrastructure</span>
+                        <span class="lang-content" data-lang="ar">بنية تحتية للبلوكشين</span>
                     </h3>
-                    <div class="launch-date">
-                        <span class="lang-content active" data-lang="pt">Previsão: Julho 2026</span>
-                        <span class="lang-content" data-lang="en">Estimated: July 2026</span>
-                        <span class="lang-content" data-lang="ar">متوقع: يوليو 2026</span>
-                    </div>
-                    <p>
-                        <span class="lang-content active" data-lang="pt">Arquitetura de camada base com propriedade intelectual registrada e acesso estruturado a múltiplos ledgers. Desenvolvido para aplicações institucionais.</span>
-                        <span class="lang-content" data-lang="en">Base layer architecture with registered intellectual property and structured access to multiple ledgers. Developed for institutional applications.</span>
-                        <span class="lang-content" data-lang="ar">هندسة الطبقة الأساسية مع ملكية فكرية مسجلة ووصول منظم إلى دفاتر حسابات متعددة. مطور للتطبيقات المؤسسية.</span>
+                    <p class="category-description">
+                        <span class="lang-content active" data-lang="pt">Arquiteturas descentralizadas robustas e escaláveis para operações empresariais críticas.</span>
+                        <span class="lang-content" data-lang="en">Robust and scalable decentralized architectures for critical business operations.</span>
+                        <span class="lang-content" data-lang="ar">هندسات لا مركزية قوية وقابلة للتوسع للعمليات التجارية الحرجة.</span>
                     </p>
                 </div>
 
-                <!-- Produto 2: Plataforma de Expansão Continental -->
-                <div class="product-card">
-                    <div class="product-badge">
-                        <span class="lang-content active" data-lang="pt">Em desenvolvimento</span>
-                        <span class="lang-content" data-lang="en">In development</span>
-                        <span class="lang-content" data-lang="ar">قيد التطوير</span>
+                <!-- Sistemas Multi-Chain -->
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-network-wired"></i>
                     </div>
-                    <div class="product-icon">
-                        <i class="fas fa-globe-africa"></i>
-                    </div>
-                    <h3>
-                        <span class="lang-content active" data-lang="pt">Plataforma de Expansão Continental</span>
-                        <span class="lang-content" data-lang="en">Continental Expansion Platform</span>
-                        <span class="lang-content" data-lang="ar">منصة التوسع القاري</span>
+                    <h3 class="category-title">
+                        <span class="lang-content active" data-lang="pt">Sistemas Multi-Chain</span>
+                        <span class="lang-content" data-lang="en">Multi-Chain Systems</span>
+                        <span class="lang-content" data-lang="ar">أنظمة متعددة السلاسل</span>
                     </h3>
-                    <div class="launch-date">
-                        <span class="lang-content active" data-lang="pt">Previsão: Setembro 2026</span>
-                        <span class="lang-content" data-lang="en">Estimated: September 2026</span>
-                        <span class="lang-content" data-lang="ar">متوقع: سبتمبر 2026</span>
-                    </div>
-                    <p>
-                        <span class="lang-content active" data-lang="pt">Estrutura de integração digital para mercados emergentes no continente africano. Projeto em fase de desenvolvimento com base em ativos reais.</span>
-                        <span class="lang-content" data-lang="en">Digital integration structure for emerging markets in the African continent. Project in development phase based on real assets.</span>
-                        <span class="lang-content" data-lang="ar">هيكل تكامل رقمي للأسواق الناشئة في القارة الأفريقية. مشروع في مرحلة التطوير يعتمد على أصول حقيقية.</span>
+                    <p class="category-description">
+                        <span class="lang-content active" data-lang="pt">Interoperabilidade entre diferentes blockchains para máxima flexibilidade e eficiência.</span>
+                        <span class="lang-content" data-lang="en">Interoperability between different blockchains for maximum flexibility and efficiency.</span>
+                        <span class="lang-content" data-lang="ar">التشغيل البيني بين سلاسل الكتل المختلفة لأقصى مرونة وكفاءة.</span>
                     </p>
                 </div>
 
-                <!-- Produto 3: Automação de Alta Frequência -->
-                <div class="product-card">
-                    <div class="product-badge">
-                        <span class="lang-content active" data-lang="pt">Em desenvolvimento</span>
-                        <span class="lang-content" data-lang="en">In development</span>
-                        <span class="lang-content" data-lang="ar">قيد التطوير</span>
+                <!-- Soluções PropTech -->
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-city"></i>
                     </div>
-                    <div class="product-icon">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <h3>
-                        <span class="lang-content active" data-lang="pt">Automação de Alta Frequência</span>
-                        <span class="lang-content" data-lang="en">High-Frequency Automation</span>
-                        <span class="lang-content" data-lang="ar">الأتمتة عالية التردد</span>
+                    <h3 class="category-title">
+                        <span class="lang-content active" data-lang="pt">Soluções PropTech</span>
+                        <span class="lang-content" data-lang="en">PropTech Solutions</span>
+                        <span class="lang-content" data-lang="ar">حلول PropTech</span>
                     </h3>
-                    <div class="launch-date">
-                        <span class="lang-content active" data-lang="pt">Previsão: Abril 2026</span>
-                        <span class="lang-content" data-lang="en">Estimated: April 2026</span>
-                        <span class="lang-content" data-lang="ar">متوقع: أبريل 2026</span>
-                    </div>
-                    <p>
-                        <span class="lang-content active" data-lang="pt">Sistema de execução algorítmica com código auditado e gestão de risco integrada. Desenvolvido para operações institucionais.</span>
-                        <span class="lang-content" data-lang="en">Algorithmic execution system with audited code and integrated risk management. Developed for institutional operations.</span>
-                        <span class="lang-content" data-lang="ar">نظام تنفيذ خوارزمي مع كود مدقق وإدارة مخاطر مدمجة. مطور للعمليات المؤسسية.</span>
+                    <p class="category-description">
+                        <span class="lang-content active" data-lang="pt">Transformação digital do setor imobiliário através de tokenização e contratos inteligentes.</span>
+                        <span class="lang-content" data-lang="en">Digital transformation of the real estate sector through tokenization and smart contracts.</span>
+                        <span class="lang-content" data-lang="ar">التحول الرقمي لقطاع العقارات من خلال الترميز والعقود الذكية.</span>
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Seção: Fundadora -->
+    <!-- Especialidades Detalhadas -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="lang-content active" data-lang="pt">Especialidades Tecnológicas</span>
+                <span class="lang-content" data-lang="en">Technological Specialties</span>
+                <span class="lang-content" data-lang="ar">التخصصات التقنية</span>
+            </h2>
+            
+            <div class="specialties-grid">
+                <!-- Blockchain Infrastructure -->
+                <div class="specialty-card">
+                    <div class="specialty-header">
+                        <div class="specialty-icon">
+                            <i class="fas fa-link"></i>
+                        </div>
+                        <h3 class="specialty-title">
+                            <span class="lang-content active" data-lang="pt">Infraestrutura Blockchain Corporativa</span>
+                            <span class="lang-content" data-lang="en">Corporate Blockchain Infrastructure</span>
+                            <span class="lang-content" data-lang="ar">بنية تحتية بلوكشين مؤسسية</span>
+                        </h3>
+                    </div>
+                    
+                    <div class="specialty-content">
+                        <p class="specialty-description">
+                            <span class="lang-content active" data-lang="pt">Infraestruturas blockchain privadas e híbridas para empresas que exigem segurança máxima, escalabilidade e controle.</span>
+                            <span class="lang-content" data-lang="en">Private and hybrid blockchain infrastructures for companies requiring maximum security, scalability, and control.</span>
+                            <span class="lang-content" data-lang="ar">بنى تحتية بلوكشين خاصة وهجينة للشركات التي تتطلب أقصى درجات الأمان والقابلية للتوسع والتحكم.</span>
+                        </p>
+                        
+                        <ul class="specialty-features">
+                            <li><i class="fas fa-check-circle"></i> 
+                                <span class="lang-content active" data-lang="pt">Redes privadas permissionadas</span>
+                                <span class="lang-content" data-lang="en">Permissioned private networks</span>
+                                <span class="lang-content" data-lang="ar">شبكات خاصة مصرح بها</span>
+                            </li>
+                            <li><i class="fas fa-check-circle"></i> 
+                                <span class="lang-content active" data-lang="pt">Consenso personalizado</span>
+                                <span class="lang-content" data-lang="en">Custom consensus</span>
+                                <span class="lang-content" data-lang="ar">إجماع مخصص</span>
+                            </li>
+                            <li><i class="fas fa-check-circle"></i> 
+                                <span class="lang-content active" data-lang="pt">Integração com sistemas legados</span>
+                                <span class="lang-content" data-lang="en">Legacy system integration</span>
+                                <span class="lang-content" data-lang="ar">التكامل مع الأنظمة القديمة</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="specialty-tags">
+                        <span class="specialty-tag">Hyperledger</span>
+                        <span class="specialty-tag">Ethereum Enterprise</span>
+                        <span class="specialty-tag">Corda</span>
+                    </div>
+                </div>
+
+                <!-- Multi-Chain Systems -->
+                <div class="specialty-card">
+                    <div class="specialty-header">
+                        <div class="specialty-icon">
+                            <i class="fas fa-sitemap"></i>
+                        </div>
+                        <h3 class="specialty-title">
+                            <span class="lang-content active" data-lang="pt">Arquitetura Multi-Chain</span>
+                            <span class="lang-content" data-lang="en">Multi-Chain Architecture</span>
+                            <span class="lang-content" data-lang="ar">هندسة متعددة السلاسل</span>
+                        </h3>
+                    </div>
+                    
+                    <div class="specialty-content">
+                        <p class="specialty-description">
+                            <span class="lang-content active" data-lang="pt">Sistemas que operam simultaneamente em múltiplas blockchains, aproveitando as vantagens de cada uma.</span>
+                            <span class="lang-content" data-lang="en">Systems operating simultaneously on multiple blockchains, leveraging the advantages of each.</span>
+                            <span class="lang-content" data-lang="ar">أنظمة تعمل في وقت واحد على سلاسل كتل متعددة، مستفيدة من مزايا كل منها.</span>
+                        </p>
+                        
+                        <ul class="specialty-features">
+                            <li><i class="fas fa-check-circle"></i> 
+                                <span class="lang-content active" data-lang="pt">Bridges e cross-chain protocols</span>
+                                <span class="lang-content" data-lang="en">Bridges and cross-chain protocols</span>
+                                <span class="lang-content" data-lang="ar">الجسور وبروتوكولات cross-chain</span>
+                            </li>
+                            <li><i class="fas fa-check-circle"></i> 
+                                <span class="lang-content active" data-lang="pt">Atomic swaps entre redes</span>
+                                <span class="lang-content" data-lang="en">Atomic swaps between networks</span>
+                                <span class="lang-content" data-lang="ar">مبادلات ذرية بين الشبكات</span>
+                            </li>
+                            <li><i class="fas fa-check-circle"></i> 
+                                <span class="lang-content active" data-lang="pt">Oracles multi-chain</span>
+                                <span class="lang-content" data-lang="en">Multi-chain oracles</span>
+                                <span class="lang-content" data-lang="ar">أوراكل متعددة السلاسل</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="specialty-tags">
+                        <span class="specialty-tag">Cross-Chain</span>
+                        <span class="specialty-tag">Interoperabilidade</span>
+                        <span class="specialty-tag">Layer 2</span>
+                    </div>
+                </div>
+
+                <!-- PropTech Solutions -->
+                <div class="specialty-card">
+                    <div class="specialty-header">
+                        <div class="specialty-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3 class="specialty-title">
+                            <span class="lang-content active" data-lang="pt">PropTech Avançada</span>
+                            <span class="lang-content" data-lang="en">Advanced PropTech</span>
+                            <span class="lang-content" data-lang="ar">PropTech متقدمة</span>
+                        </h3>
+                    </div>
+                    
+                    <div class="specialty-content">
+                        <p class="specialty-description">
+                            <span class="lang-content active" data-lang="pt">Plataformas imobiliárias digitais que revolucionam a propriedade através de tokenização.</span>
+                            <span class="lang-content" data-lang="en">Digital real estate platforms revolutionizing ownership through tokenization.</span>
+                            <span class="lang-content" data-lang="ar">منصات عقارية رقمية تثور في مجال الملكية من خلال الترميز.</span>
+                        </p>
+                        
+                        <ul class="specialty-features">
+                            <li><i class="fas fa-check-circle"></i> 
+                                <span class="lang-content active" data-lang="pt">Tokenização de propriedades (RWA)</span>
+                                <span class="lang-content" data-lang="en">Property tokenization (RWA)</span>
+                                <span class="lang-content" data-lang="ar">ترميز الممتلكات (RWA)</span>
+                            </li>
+                            <li><i class="fas fa-check-circle"></i> 
+                                <span class="lang-content active" data-lang="pt">Smart contracts para aluguéis</span>
+                                <span class="lang-content" data-lang="en">Smart contracts for rentals</span>
+                                <span class="lang-content" data-lang="ar">عقود ذكية للإيجارات</span>
+                            </li>
+                            <li><i class="fas fa-check-circle"></i> 
+                                <span class="lang-content active" data-lang="pt">Marketplaces descentralizados</span>
+                                <span class="lang-content" data-lang="en">Decentralized marketplaces</span>
+                                <span class="lang-content" data-lang="ar">أسواق لا مركزية</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="specialty-tags">
+                        <span class="specialty-tag">Tokenização</span>
+                        <span class="specialty-tag">RWA</span>
+                        <span class="specialty-tag">Real Estate</span>
+                    </div>
+                </div>
+
+                <!-- DeFi Infrastructure -->
+                <div class="specialty-card">
+                    <div class="specialty-header">
+                        <div class="specialty-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="specialty-title">
+                            <span class="lang-content active" data-lang="pt">Infraestrutura DeFi</span>
+                            <span class="lang-content" data-lang="en">DeFi Infrastructure</span>
+                            <span class="lang-content" data-lang="ar">بنية تحتية DeFi</span>
+                        </h3>
+                    </div>
+                    
+                    <div class="specialty-content">
+                        <p class="specialty-description">
+                            <span class="lang-content active" data-lang="pt">Plataformas financeiras descentralizadas com sistemas de liquidez, empréstimos e staking.</span>
+                            <span class="lang-content" data-lang="en">Decentralized financial platforms with liquidity, lending, and staking systems.</span>
+                            <span class="lang-content" data-lang="ar">منصات مالية لا مركزية مع أنظمة سيادة وقروض وإيداع.</span>
+                        </p>
+                        
+                        <ul class="specialty-features">
+                            <li><i class="fas fa-check-circle"></i> 
+                                <span class="lang-content active" data-lang="pt">Automated Market Makers (AMMs)</span>
+                                <span class="lang-content" data-lang="en">Automated Market Makers (AMMs)</span>
+                                <span class="lang-content" data-lang="ar">صانعي الأسواق الآليين (AMMs)</span>
+                            </li>
+                            <li><i class="fas fa-check-circle"></i> 
+                                <span class="lang-content active" data-lang="pt">Protocolos de empréstimo</span>
+                                <span class="lang-content" data-lang="en">Lending protocols</span>
+                                <span class="lang-content" data-lang="ar">بروتوكولات الإقراض</span>
+                            </li>
+                            <li><i class="fas fa-check-circle"></i> 
+                                <span class="lang-content active" data-lang="pt">Yield optimization</span>
+                                <span class="lang-content" data-lang="en">Yield optimization</span>
+                                <span class="lang-content" data-lang="ar">تحسين العائد</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="specialty-tags">
+                        <span class="specialty-tag">DeFi</span>
+                        <span class="specialty-tag">AMM</span>
+                        <span class="specialty-tag">Lending</span>
+                    </div>
+                </div>
+
+                <!-- Web3 Integration -->
+                <div class="specialty-card">
+                    <div class="specialty-header">
+                        <div class="specialty-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3 class="specialty-title">
+                            <span class="lang-content active" data-lang="pt">Integração Web3</span>
+                            <span class="lang-content" data-lang="en">Web3 Integration</span>
+                            <span class="lang-content" data-lang="ar">تكامل Web3</span>
+                        </h3>
+                    </div>
+                    
+                    <div class="specialty-content">
+                        <p class="specialty-description">
+                            <span class="lang-content active" data-lang="pt">Migração de aplicações web tradicionais para o ecossistema Web3 com identidades descentralizadas.</span>
+                            <span class="lang-content" data-lang="en">Migration of traditional web applications to the Web3 ecosystem with decentralized identities.</span>
+                            <span class="lang-content" data-lang="ar">هجرة تطبيقات الويب التقليدية إلى نظام Web3 بهويات لا مركزية.</span>
+                        </p>
+                        
+                        <ul class="specialty-features">
+                            <li><i class="fas fa-check-circle"></i> 
+                                <span class="lang-content active" data-lang="pt">Decentralized Identifiers (DIDs)</span>
+                                <span class="lang-content" data-lang="en">Decentralized Identifiers (DIDs)</span>
+                                <span class="lang-content" data-lang="ar">معرفات لا مركزية (DIDs)</span>
+                            </li>
+                            <li><i class="fas fa-check-circle"></i> 
+                                <span class="lang-content active" data-lang="pt">Sistemas NFT</span>
+                                <span class="lang-content" data-lang="en">NFT systems</span>
+                                <span class="lang-content" data-lang="ar">أنظمة NFT</span>
+                            </li>
+                            <li><i class="fas fa-check-circle"></i> 
+                                <span class="lang-content active" data-lang="pt">DAOs para governança</span>
+                                <span class="lang-content" data-lang="en">DAOs for governance</span>
+                                <span class="lang-content" data-lang="ar">DAOs للحوكمة</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="specialty-tags">
+                        <span class="specialty-tag">Web3</span>
+                        <span class="specialty-tag">DIDs</span>
+                        <span class="specialty-tag">NFTs</span>
+                    </div>
+                </div>
+
+                <!-- Security & Compliance -->
+                <div class="specialty-card">
+                    <div class="specialty-header">
+                        <div class="specialty-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="specialty-title">
+                            <span class="lang-content active" data-lang="pt">Segurança & Compliance</span>
+                            <span class="lang-content" data-lang="en">Security & Compliance</span>
+                            <span class="lang-content" data-lang="ar">الأمان والامتثال</span>
+                        </h3>
+                    </div>
+                    
+                    <div class="specialty-content">
+                        <p class="specialty-description">
+                            <span class="lang-content active" data-lang="pt">Soluções de segurança de ponta e frameworks de compliance para operações blockchain seguras.</span>
+                            <span class="lang-content" data-lang="en">Cutting-edge security solutions and compliance frameworks for secure blockchain operations.</span>
+                            <span class="lang-content" data-lang="ar">حلول أمان متطورة وأطر امتثال للعمليات الآمنة للبلوكشين.</span>
+                        </p>
+                        
+                        <ul class="specialty-features">
+                            <li><i class="fas fa-check-circle"></i> 
+                                <span class="lang-content active" data-lang="pt">Smart contract auditing</span>
+                                <span class="lang-content" data-lang="en">Smart contract auditing</span>
+                                <span class="lang-content" data-lang="ar">تدقيق العقود الذكية</span>
+                            </li>
+                            <li><i class="fas fa-check-circle"></i> 
+                                <span class="lang-content active" data-lang="pt">KYC/AML nativo</span>
+                                <span class="lang-content" data-lang="en">Native KYC/AML</span>
+                                <span class="lang-content" data-lang="ar">KYC/AML أصلي</span>
+                            </li>
+                            <li><i class="fas fa-check-circle"></i> 
+                                <span class="lang-content active" data-lang="pt">Privacy-preserving</span>
+                                <span class="lang-content" data-lang="en">Privacy-preserving</span>
+                                <span class="lang-content" data-lang="ar">حماية الخصوصية</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="specialty-tags">
+                        <span class="specialty-tag">Security</span>
+                        <span class="specialty-tag">Audit</span>
+                        <span class="specialty-tag">KYC/AML</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produtos -->
+    <section id="produtos" class="section section-light">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="lang-content active" data-lang="pt">Exclusive Identity</span>
+                <span class="lang-content" data-lang="en">Exclusive Identity</span>
+                <span class="lang-content" data-lang="ar">Exclusive Identity</span>
+            </h2>
+            
+            <p class="text-center" style="color: #666; font-size: 1.05rem; margin-bottom: 3rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+                <span class="lang-content active" data-lang="pt">Sistema de identidade digital soberana com valor intrínseco protegido de ~USD 3.6M</span>
+                <span class="lang-content" data-lang="en">Sovereign digital identity system with protected intrinsic value of ~USD 3.6M</span>
+                <span class="lang-content" data-lang="ar">نظام هوية رقمية سيادية ذات قيمة جوهرية محمية تبلغ ~3.6 مليون دولار أمريكي</span>
+            </p>
+            
+            <div class="specialties-grid" style="grid-template-columns: 1fr;">
+                <div class="specialty-card">
+                    <div class="specialty-header">
+                        <div class="specialty-icon">
+                            <i class="fas fa-fingerprint"></i>
+                        </div>
+                        <h3 class="specialty-title">Exclusive Identity</h3>
+                    </div>
+                    
+                    <div class="specialty-content">
+                        <p class="specialty-description">
+                            <span class="lang-content active" data-lang="pt">Infraestrutura de identidade digital auto-soberana que garante controle absoluto sobre dados pessoais e ativos digitais, com valor de referência interno estabelecido.</span>
+                            <span class="lang-content" data-lang="en">Self-sovereign digital identity infrastructure ensuring absolute control over personal data and digital assets, with established internal reference value.</span>
+                            <span class="lang-content" data-lang="ar">بنية تحتية للهوية الرقمية ذاتية السيادة تضمن سيطرة مطلقة على البيانات الشخصية والأصول الرقمية، مع قيمة مرجعية داخلية محددة.</span>
+                        </p>
+                        
+                        <ul class="specialty-features">
+                            <li><i class="fas fa-check-circle"></i> 
+                                <span class="lang-content active" data-lang="pt">Identidade auto-soberana com controle absoluto</span>
+                                <span class="lang-content" data-lang="en">Self-sovereign identity with absolute control</span>
+                                <span class="lang-content" data-lang="ar">هوية ذاتية السيادة مع سيطرة مطلقة</span>
+                            </li>
+                            <li><i class="fas fa-check-circle"></i> 
+                                <span class="lang-content active" data-lang="pt">Criptografia quântica-resistente end-to-end</span>
+                                <span class="lang-content" data-lang="en">Quantum-resistant end-to-end encryption</span>
+                                <span class="lang-content" data-lang="ar">تشفير من طرف لطرف مقاوم للكم</span>
+                            </li>
+                            <li><i class="fas fa-check-circle"></i> 
+                                <span class="lang-content active" data-lang="pt">Valor de referência interno: ~USD 3.6M</span>
+                                <span class="lang-content" data-lang="en">Internal reference value: ~USD 3.6M</span>
+                                <span class="lang-content" data-lang="ar">قيمة مرجعية داخلية: ~USD 3.6M</span>
+                            </li>
+                            <li><i class="fas fa-check-circle"></i> 
+                                <span class="lang-content active" data-lang="pt">Verificação sem dependência de terceiros</span>
+                                <span class="lang-content" data-lang="en">Verification without third-party dependency</span>
+                                <span class="lang-content" data-lang="ar">التحقق دون اعتماد على طرف ثالث</span>
+                            </li>
+                            <li><i class="fas fa-check-circle"></i> 
+                                <span class="lang-content active" data-lang="pt">Portabilidade soberana entre sistemas</span>
+                                <span class="lang-content" data-lang="en">Sovereign portability between systems</span>
+                                <span class="lang-content" data-lang="ar">إمكانية النقل السيادية بين الأنظمة</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="specialty-tags">
+                        <span class="specialty-tag">SSI</span>
+                        <span class="specialty-tag">Decentralized Identity</span>
+                        <span class="specialty-tag">Digital Sovereignty</span>
+                        <span class="specialty-tag">Zero-Knowledge Proofs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tecnologias -->
+    <section id="tecnologias" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="lang-content active" data-lang="pt">Tecnologias Blockchain</span>
+                <span class="lang-content" data-lang="en">Blockchain Technologies</span>
+                <span class="lang-content" data-lang="ar">تقنيات البلوكشين</span>
+            </h2>
+            
+            <div class="technologies-grid">
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fab fa-ethereum"></i>
+                    </div>
+                    <div class="tech-name">Ethereum</div>
+                    <p class="tech-desc">
+                        <span class="lang-content active" data-lang="pt">Smart contracts e EVM</span>
+                        <span class="lang-content" data-lang="en">Smart contracts and EVM</span>
+                        <span class="lang-content" data-lang="ar">العقود الذكية و EVM</span>
+                    </p>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <div class="tech-name">Hyperledger</div>
+                    <p class="tech-desc">
+                        <span class="lang-content active" data-lang="pt">Blockchain empresarial</span>
+                        <span class="lang-content" data-lang="en">Enterprise blockchain</span>
+                        <span class="lang-content" data-lang="ar">بلوكشين المؤسسات</span>
+                    </p>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-link"></i>
+                    </div>
+                    <div class="tech-name">Polkadot</div>
+                    <p class="tech-desc">
+                        <span class="lang-content active" data-lang="pt">Interoperabilidade</span>
+                        <span class="lang-content" data-lang="en">Interoperability</span>
+                        <span class="lang-content" data-lang="ar">التشغيل البيني</span>
+                    </p>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fab fa-bitcoin"></i>
+                    </div>
+                    <div class="tech-name">Bitcoin</div>
+                    <p class="tech-desc">
+                        <span class="lang-content active" data-lang="pt">Security layer</span>
+                        <span class="lang-content" data-lang="en">Security layer</span>
+                        <span class="lang-content" data-lang="ar">طبقة الأمان</span>
+                    </p>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="tech-name">Solana</div>
+                    <p class="tech-desc">
+                        <span class="lang-content active" data-lang="pt">High throughput</span>
+                        <span class="lang-content" data-lang="en">High throughput</span>
+                        <span class="lang-content" data-lang="ar">إنتاجية عالية</span>
+                    </p>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <div class="tech-name">Cosmos</div>
+                    <p class="tech-desc">
+                        <span class="lang-content active" data-lang="pt">Internet of blockchains</span>
+                        <span class="lang-content" data-lang="en">Internet of blockchains</span>
+                        <span class="lang-content" data-lang="ar">إنترنت سلاسل الكتل</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Casos de Uso -->
+    <section class="section section-light">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="lang-content active" data-lang="pt">Casos de Uso</span>
+                <span class="lang-content" data-lang="en">Use Cases</span>
+                <span class="lang-content" data-lang="ar">حالات الاستخدام</span>
+            </h2>
+            
+            <div class="use-cases-grid">
+                <div class="use-case-card">
+                    <div class="use-case-number">01</div>
+                    <h3 class="use-case-title">
+                        <span class="lang-content active" data-lang="pt">Tokenização de Ativos Imobiliários</span>
+                        <span class="lang-content" data-lang="en">Real Estate Asset Tokenization</span>
+                        <span class="lang-content" data-lang="ar">ترميز الأصول العقارية</span>
+                    </h3>
+                    <p class="use-case-description">
+                        <span class="lang-content active" data-lang="pt">Transformamos propriedades de alto valor em tokens digitais, permitindo investimento fracionado e liquidez imediata.</span>
+                        <span class="lang-content" data-lang="en">We transform high-value properties into digital tokens, enabling fractional investment and immediate liquidity.</span>
+                        <span class="lang-content" data-lang="ar">نحول الممتلكات عالية القيمة إلى رموز رقمية، مما يتيح الاستثمار الجزئي والسيولة الفورية.</span>
+                    </p>
+                </div>
+
+                <div class="use-case-card">
+                    <div class="use-case-number">02</div>
+                    <h3 class="use-case-title">
+                        <span class="lang-content active" data-lang="pt">Supply Chain Transparente</span>
+                        <span class="lang-content" data-lang="en">Transparent Supply Chain</span>
+                        <span class="lang-content" data-lang="ar">سلسلة توريد شفافة</span>
+                    </h3>
+                    <p class="use-case-description">
+                        <span class="lang-content active" data-lang="pt">Sistemas de rastreamento em blockchain para cadeias de suprimentos, garantindo procedência e autenticidade.</span>
+                        <span class="lang-content" data-lang="en">Blockchain tracking systems for supply chains, ensuring provenance and authenticity.</span>
+                        <span class="lang-content" data-lang="ar">أنظمة تتبع بلوكشين لسلاسل التوريد، تضمن المنشأ والأصالة.</span>
+                    </p>
+                </div>
+
+                <div class="use-case-card">
+                    <div class="use-case-number">03</div>
+                    <h3 class="use-case-title">
+                        <span class="lang-content active" data-lang="pt">Identidade Digital Soberana</span>
+                        <span class="lang-content" data-lang="en">Sovereign Digital Identity</span>
+                        <span class="lang-content" data-lang="ar">هوية رقمية سيادية</span>
+                    </h3>
+                    <p class="use-case-description">
+                        <span class="lang-content active" data-lang="pt">Soluções de identidade descentralizada que dão aos usuários controle total sobre seus dados pessoais.</span>
+                        <span class="lang-content" data-lang="en">Decentralized identity solutions giving users complete control over their personal data.</span>
+                        <span class="lang-content" data-lang="ar">حلول هوية لا مركزية تمنح المستخدمين سيطرة كاملة على بياناتهم الشخصية.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infraestrutura Descentralizada -->
+    <section id="infraestrutura" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="lang-content active" data-lang="pt">Infraestrutura Descentralizada</span>
+                <span class="lang-content" data-lang="en">Decentralized Infrastructure</span>
+                <span class="lang-content" data-lang="ar">البنية التحتية اللا مركزية</span>
+            </h2>
+            
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3 class="category-title">
+                        <span class="lang-content active" data-lang="pt">Arquitetura Distribuída</span>
+                        <span class="lang-content" data-lang="en">Distributed Architecture</span>
+                        <span class="lang-content" data-lang="ar">هندسة موزعة</span>
+                    </h3>
+                    <p class="category-description">
+                        <span class="lang-content active" data-lang="pt">Infraestrutura descentralizada que elimina pontos únicos de falha e garante alta disponibilidade.</span>
+                        <span class="lang-content" data-lang="en">Decentralized infrastructure that eliminates single points of failure and ensures high availability.</span>
+                        <span class="lang-content" data-lang="ar">بنية تحتية لا مركزية تزيل نقاط الفشل الفردية وتضمن توافرًا عاليًا.</span>
+                    </p>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="category-title">
+                        <span class="lang-content active" data-lang="pt">Performance Otimizada</span>
+                        <span class="lang-content" data-lang="en">Optimized Performance</span>
+                        <span class="lang-content" data-lang="ar">أداء مُحسَّن</span>
+                    </h3>
+                    <p class="category-description">
+                        <span class="lang-content active" data-lang="pt">Rede distribuída globalmente com latência mínima e throughput máximo para operações em tempo real.</span>
+                        <span class="lang-content" data-lang="en">Globally distributed network with minimal latency and maximum throughput for real-time operations.</span>
+                        <span class="lang-content" data-lang="ar">شبكة موزعة عالميًا بأقل زمن انتقال وأقصى معدل نقل للعمليات في الوقت الفعلي.</span>
+                    </p>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3 class="category-title">
+                        <span class="lang-content active" data-lang="pt">Segurança Enterprise</span>
+                        <span class="lang-content" data-lang="en">Enterprise Security</span>
+                        <span class="lang-content" data-lang="ar">أمان المؤسسات</span>
+                    </h3>
+                    <p class="category-description">
+                        <span class="lang-content active" data-lang="pt">Protocolos de segurança de nível institucional com criptografia de ponta a ponta.</span>
+                        <span class="lang-content" data-lang="en">Institutional-level security protocols with end-to-end encryption.</span>
+                        <span class="lang-content" data-lang="ar">بروتوكولات أمان على مستوى المؤسسات مع تشفير من طرف لطرف.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Presença Global -->
+    <section id="presenca" class="section section-light">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="lang-content active" data-lang="pt">Presença Global</span>
+                <span class="lang-content" data-lang="en">Global Presence</span>
+                <span class="lang-content" data-lang="ar">الوجود العالمي</span>
+            </h2>
+            
+            <p class="text-center" style="color: #666; font-size: 1.05rem; margin-bottom: 3rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+                <span class="lang-content active" data-lang="pt">Infraestrutura distribuída em múltiplas regiões para máxima resiliência e performance</span>
+                <span class="lang-content" data-lang="en">Infrastructure distributed across multiple regions for maximum resilience and performance</span>
+                <span class="lang-content" data-lang="ar">بنية تحتية موزعة عبر مناطق متعددة لأقصى قدر من المرونة والأداء</span>
+            </p>
+            
+            <div class="countries-grid">
+                <div class="country-item">
+                    <div class="country-flag">🇧🇷</div>
+                    <div class="country-name">
+                        <span class="lang-content active" data-lang="pt">Brasil</span>
+                        <span class="lang-content" data-lang="en">Brazil</span>
+                        <span class="lang-content" data-lang="ar">البرازيل</span>
+                    </div>
+                </div>
+                <div class="country-item">
+                    <div class="country-flag">🇦🇪</div>
+                    <div class="country-name">
+                        <span class="lang-content active" data-lang="pt">Emirados Árabes</span>
+                        <span class="lang-content" data-lang="en">UAE</span>
+                        <span class="lang-content" data-lang="ar">الإمارات</span>
+                    </div>
+                </div>
+                <div class="country-item">
+                    <div class="country-flag">🇪🇺</div>
+                    <div class="country-name">
+                        <span class="lang-content active" data-lang="pt">União Europeia</span>
+                        <span class="lang-content" data-lang="en">European Union</span>
+                        <span class="lang-content" data-lang="ar">الاتحاد الأوروبي</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filosofia -->
+    <section id="filosofia" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="lang-content active" data-lang="pt">Nossa Filosofia</span>
+                <span class="lang-content" data-lang="en">Our Philosophy</span>
+                <span class="lang-content" data-lang="ar">فلسفتنا</span>
+            </h2>
+            
+            <div class="specialty-card" style="background: rgba(255, 255, 255, 0.95);">
+                <div class="specialty-content">
+                    <div class="lang-content active" data-lang="pt">
+                        <p class="specialty-description">
+                            Desde 2019, a AVZ Infra projeta infraestruturas digitais com um objetivo claro: reduzir dependência, aumentar soberania.
+                        </p>
+                        
+                        <p class="specialty-description">
+                            Acreditamos que sistemas verdadeiramente inovadores são aqueles que eliminam pontos únicos de controle, simplificam a arquitetura e devolvem poder ao usuário. Em um cenário global marcado por centralização excessiva, escolhemos construir o oposto.
+                        </p>
+                        
+                        <p class="specialty-description">
+                            Nossa base está em três pilares: <strong>soberania digital</strong>, <strong>descentralização real</strong> e <strong>transparência verificável</strong>. Desenvolvemos infraestruturas onde identidades, dados e ativos não são intermediados — são controlados diretamente por quem os utiliza.
+                        </p>
+                        
+                        <p class="specialty-description">
+                            Blockchain, para nós, não é apenas tecnologia. É um compromisso com sistemas que não podem ser censurados, interrompidos ou apropriados por entidades centralizadas.
+                        </p>
+                        
+                        <p class="specialty-description">
+                            Não sacrificamos liberdade em nome da segurança. Projetamos sistemas onde ambas coexistem por design.
+                        </p>
+                    </div>
+                    
+                    <div class="lang-content" data-lang="en">
+                        <p class="specialty-description">
+                            Since 2019, AVZ Infra has designed digital infrastructures with a clear goal: reduce dependence, increase sovereignty.
+                        </p>
+                        
+                        <p class="specialty-description">
+                            We believe truly innovative systems eliminate single points of control, simplify architecture, and return power to the user. In a global landscape marked by excessive centralization, we choose to build the opposite.
+                        </p>
+                        
+                        <p class="specialty-description">
+                            Our foundation rests on three pillars: <strong>digital sovereignty</strong>, <strong>real decentralization</strong>, and <strong>verifiable transparency</strong>. We develop infrastructures where identities, data, and assets are not mediated—they are controlled directly by those who use them.
+                        </p>
+                        
+                        <p class="specialty-description">
+                            Blockchain, for us, is not just technology. It is a commitment to systems that cannot be censored, interrupted, or appropriated by centralized entities.
+                        </p>
+                        
+                        <p class="specialty-description">
+                            We do not sacrifice freedom in the name of security. We design systems where both coexist by design.
+                        </p>
+                    </div>
+                    
+                    <div class="lang-content" data-lang="ar">
+                        <p class="specialty-description" style="text-align: right;">
+                            منذ 2019، تُصمم AVZ Infra بنى تحتية رقمية بهدف واضح: تقليل الاعتماد، وزيادة السيادة.
+                        </p>
+                        
+                        <p class="specialty-description" style="text-align: right;">
+                            نؤمن أن الأنظمة المبتكرة حقًا هي تلك التي تزيل نقاط التحكم الفردية، وتبسط البنية، وتعيد السلطة للمستخدم. في مشهد عالمي يتسم بمركزية مفرطة، نختار بناء العكس.
+                        </p>
+                        
+                        <p class="specialty-description" style="text-align: right;">
+                            يقوم أساسنا على ثلاثة ركائز: <strong>السيادة الرقمية</strong>، <strong>اللا مركزية الحقيقية</strong>، و<strong>الشفافية القابلة للتحقق</strong>. نطور بنى تحتية حيث لا تتم وساطة الهويات والبيانات والأصول — بل يتحكم بها مباشرة من يستخدمها.
+                        </p>
+                        
+                        <p class="specialty-description" style="text-align: right;">
+                            البلوكشين، بالنسبة لنا، ليست مجرد تقنية. إنها التزام بأنظمة لا يمكن حظرها أو تعطيلها أو استيلاء كيانات مركزية عليها.
+                        </p>
+                        
+                        <p class="specialty-description" style="text-align: right;">
+                            لا نضحّي بالحرية باسم الأمن. نصمم أنظمة تتعايش فيهما معًا بالتصميم.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="specialty-tags" style="margin-top: 2rem; border-top: 1px solid rgba(212, 175, 55, 0.2); padding-top: 2rem;">
+                    <span class="specialty-tag" style="background: rgba(123, 63, 0, 0.1); color: var(--color-primary);">
+                        <i class="fas fa-quote-left"></i>
+                        <span class="lang-content active" data-lang="pt">Infraestrutura é poder. Nosso trabalho é devolvê-lo ao usuário.</span>
+                        <span class="lang-content" data-lang="en">Infrastructure is power. Our work is to return it to the user.</span>
+                        <span class="lang-content" data-lang="ar">البنية التحتية هي قوة. عملنا هو إعادتها إلى المستخدم.</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fundadora -->
     <section id="fundadora" class="section section-light">
         <div class="container">
             <h2 class="section-title">
@@ -190,95 +2089,329 @@
                         <div class="founder-frame-inner">
                             <div class="founder-image-container">
                                 <img src="https://raw.githubusercontent.com/Vivianeadev/avzinfra/main/photo.jpg" 
-                                     alt="Viviane Baz">
+                                     alt="Viviane Baz - Fundadora e Arquiteta do Sistema AVZ Infra">
                             </div>
                         </div>
-                        <div class="founder-name">Viviane Baz</div>
+                        
+                        <div class="founder-highlight"></div>
+                        
+                        <div class="founder-name">
+                            Viviane Baz
+                        </div>
                         <div class="founder-title">
-                            <span class="lang-content active" data-lang="pt">Fundadora</span>
-                            <span class="lang-content" data-lang="en">Founder</span>
-                            <span class="lang-content" data-lang="ar">المؤسسة</span>
+                            <span class="lang-content active" data-lang="pt">Fundadora e Arquiteta do Sistema</span>
+                            <span class="lang-content" data-lang="en">Founder and System Architect</span>
+                            <span class="lang-content" data-lang="ar">المؤسسة ومهندسة النظام</span>
                         </div>
                     </div>
                 </div>
 
                 <div>
                     <div class="lang-content active" data-lang="pt">
-                        <p style="color: #666; line-height: 1.7; margin-bottom: 1.5rem;">
-                            Arquiteta de sistemas com atuação em infraestrutura digital e tecnologia institucional. Desenvolve arquiteturas baseadas em segurança, privacidade e continuidade, alinhadas a padrões como ISO 27001, NIST e GDPR.
-                        </p>
-                        <p style="color: #666; line-height: 1.7;">
-                            Coordena o desenvolvimento de três projetos: infraestrutura de soberania digital, plataforma de integração para mercados emergentes e sistema de automação algorítmica.
-                        </p>
+                        <div style="margin-bottom: 2rem;">
+                            <p class="specialty-description">
+                                A tecnologia, quando tratada como infraestrutura crítica, carrega uma responsabilidade moral. 
+                                Não se trata de inovação pela inovação, mas de construção pela continuidade.
+                            </p>
+                            
+                            <p class="specialty-description">
+                                Em um mundo digital cada vez mais fragmentado, a soberania identitária deixou de ser um recurso 
+                                técnico para se tornar um direito fundamental. Construir sistemas que protejam essa soberania 
+                                é um ato de serviço às pessoas e instituições que dependem deles.
+                            </p>
+                        </div>
+
+                        <div class="founder-purpose">
+                            <p style="color: var(--color-dark); line-height: 1.7; font-size: 0.95rem; font-style: normal;">
+                                A infraestrutura soberana existe para garantir que a dignidade humana e a continuidade institucional 
+                                persistam no ambiente digital. Sua neutralidade é inegociável, sua confiança deve ser implícita, 
+                                e sua arquitetura deve ser projetada para durar — não para impressionar.
+                            </p>
+                            
+                            <p style="color: var(--color-dark); line-height: 1.7; font-size: 0.95rem; margin-top: 1rem; font-style: normal;">
+                                Independentemente de fronteiras, regimes ou pressões geopolíticas, o sistema deve permanecer 
+                                como uma camada de infraestrutura confiável. Essa é a premissa ética que orienta cada decisão técnica.
+                            </p>
+                        </div>
                     </div>
+
                     <div class="lang-content" data-lang="en">
-                        <p style="color: #666; line-height: 1.7; margin-bottom: 1.5rem;">
-                            Systems architect working with digital infrastructure and institutional technology. Develops architectures based on security, privacy and continuity, aligned with standards such as ISO 27001, NIST and GDPR.
-                        </p>
-                        <p style="color: #666; line-height: 1.7;">
-                            Coordinates the development of three projects: digital sovereignty infrastructure, integration platform for emerging markets, and algorithmic automation system.
-                        </p>
+                        <div style="margin-bottom: 2rem;">
+                            <p class="specialty-description">
+                                Technology, when treated as critical infrastructure, carries a moral responsibility. 
+                                It is not about innovation for innovation's sake, but about building for continuity.
+                            </p>
+                            
+                            <p class="specialty-description">
+                                In an increasingly fragmented digital world, identity sovereignty has moved from being a 
+                                technical resource to becoming a fundamental right. Building systems that protect this 
+                                sovereignty is an act of service to the people and institutions that depend on them.
+                            </p>
+                        </div>
+
+                        <div class="founder-purpose">
+                            <p style="color: var(--color-dark); line-height: 1.7; font-size: 0.95rem; font-style: normal;">
+                                Sovereign infrastructure exists to ensure that human dignity and institutional continuity 
+                                persist in the digital environment. Its neutrality is non-negotiable, its trust must be 
+                                implicit, and its architecture must be designed to last—not to impress.
+                            </p>
+                            
+                            <p style="color: var(--color-dark); line-height: 1.7; font-size: 0.95rem; margin-top: 1rem; font-style: normal;">
+                                Regardless of borders, regimes, or geopolitical pressures, the system must remain 
+                                as a reliable infrastructure layer. This is the ethical premise that guides every technical decision.
+                            </p>
+                        </div>
                     </div>
+
                     <div class="lang-content" data-lang="ar">
-                        <p style="color: #666; line-height: 1.7; margin-bottom: 1.5rem; text-align: right;">
-                            مهندسة أنظمة تعمل في البنية التحتية الرقمية والتكنولوجيا المؤسسية. تطور بنى تعتمد على الأمن والخصوصية والاستمرارية، بما يتماشى مع معايير مثل ISO 27001 و NIST و GDPR.
-                        </p>
-                        <p style="color: #666; line-height: 1.7; text-align: right;">
-                            تنسق تطوير ثلاثة مشاريع: البنية التحتية للسيادة الرقمية، منصة التكامل للأسواق الناشئة، ونظام الأتمتة الخوارزمي.
-                        </p>
+                        <div style="margin-bottom: 2rem;">
+                            <p class="specialty-description" style="text-align: right;">
+                                عندما تُعامل التكنولوجيا كبنية تحتية حرجة، فهي تحمل مسؤولية أخلاقية.
+                                لا يتعلق الأمر بالابتكار من أجل الابتكار، بل بالبناء من أجل الاستمرارية.
+                            </p>
+                            
+                            <p class="specialty-description" style="text-align: right;">
+                                في عالم رقمي متشظٍ بشكل متزايد، انتقلت سيادة الهوية من كونها موردًا تقنيًا
+                                إلى أن تصبح حقًا أساسيًا. بناء أنظمة تحمي هذه السيادة هو فعل خدمة
+                                للأشخاص والمؤسسات التي تعتمد عليها.
+                            </p>
+                        </div>
+
+                        <div class="founder-purpose" style="text-align: right;">
+                            <p style="color: var(--color-dark); line-height: 1.7; font-size: 0.95rem; font-style: normal;">
+                                توجد البنية التحتية السيادية لضمان استمرار الكرامة الإنسانية والاستمرارية المؤسسية
+                                في البيئة الرقمية. حيادها غير قابل للتفاوض، ويجب أن تكون ثقتها ضمنية،
+                                ويجب تصميم هندستها لتستمر — لا لإبهار.
+                            </p>
+                            
+                            <p style="color: var(--color-dark); line-height: 1.7; font-size: 0.95rem; margin-top: 1rem; font-style: normal;">
+                                بغض النظر عن الحدود أو الأنظمة أو الضغوط الجيوسياسية، يجب أن يظل النظام
+                                طبقة بنية تحتية موثوقة. هذه هي المقدمة الأخلاقية التي توجه كل قرار تقني.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="founder-institutional-note">
-                <p>
-                    <span class="lang-content active" data-lang="pt">Atuação em tecnologia, soberania digital e infraestrutura.</span>
-                    <span class="lang-content" data-lang="en">Work in technology, digital sovereignty and infrastructure.</span>
-                    <span class="lang-content" data-lang="ar">العمل في التكنولوجيا والسيادة الرقمية والبنية التحتية.</span>
+                <p class="specialty-description" style="color: var(--color-text); font-size: 0.9rem;">
+                    <span class="lang-content active" data-lang="pt">
+                        Viviane Baz atua na interseção entre tecnologia, soberania digital e infraestrutura crítica. 
+                        Acredita que sistemas tecnológicos devem servir à humanidade, protegendo sua autonomia e integridade.
+                    </span>
+                    <span class="lang-content" data-lang="en">
+                        Viviane Baz operates at the intersection of technology, digital sovereignty, and critical infrastructure. 
+                        Believes that technological systems should serve humanity, protecting its autonomy and integrity.
+                    </span>
+                    <span class="lang-content" data-lang="ar">
+                        تعمل فيفيان باز عند تقاطع التكنولوجيا والسيادة الرقمية والبنية التحتية الحرجة.
+                        تؤمن بأن الأنظمة التكنولوجية يجب أن تخدم الإنسانية، حمايةً لاستقلاليتها وسلامتها.
+                    </span>
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- Seção: Contato -->
-    <section id="contato" class="section">
+    <!-- CTA Final -->
+    <section class="section" style="background: linear-gradient(135deg, rgba(123, 63, 0, 0.05) 0%, rgba(212, 175, 55, 0.05) 100%);">
         <div class="container">
-            <h2 class="section-title">
-                <span class="lang-content active" data-lang="pt">Contato</span>
-                <span class="lang-content" data-lang="en">Contact</span>
-                <span class="lang-content" data-lang="ar">اتصال</span>
-            </h2>
-            
-            <div class="cards-grid" style="grid-template-columns: repeat(3, 1fr);">
-                <div class="card" onclick="openPopup('soberania')">
-                    <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
-                    <h3>Soberania Digital</h3>
-                    <p>Infraestrutura de camada base</p>
-                </div>
-                <div class="card" onclick="openPopup('expansao')">
-                    <div class="card-icon"><i class="fas fa-globe-africa"></i></div>
-                    <h3>Expansão Continental</h3>
-                    <p>Integração para mercados emergentes</p>
-                </div>
-                <div class="card" onclick="openPopup('automacao')">
-                    <div class="card-icon"><i class="fas fa-robot"></i></div>
-                    <h3>Automação</h3>
-                    <p>Sistema de execução algorítmica</p>
-                </div>
+            <div class="specialty-card" style="text-align: center; padding: 4rem;">
+                <h2 class="section-title" style="font-size: 2.2rem; margin-bottom: 1.5rem;">
+                    <span class="lang-content active" data-lang="pt">Transforme Seu Negócio com Blockchain</span>
+                    <span class="lang-content" data-lang="en">Transform Your Business with Blockchain</span>
+                    <span class="lang-content" data-lang="ar">حوّل عملك مع البلوكشين</span>
+                </h2>
+                
+                <p class="specialty-description" style="max-width: 700px; margin: 0 auto 2.5rem;">
+                    <span class="lang-content active" data-lang="pt">
+                        Nossa expertise em infraestrutura blockchain pode impulsionar sua empresa para a próxima era digital. 
+                        Desenvolvemos soluções personalizadas que combinam inovação tecnológica com resultados comerciais tangíveis.
+                    </span>
+                    <span class="lang-content" data-lang="en">
+                        Our blockchain infrastructure expertise can propel your company into the next digital era. 
+                        We develop customized solutions that combine technological innovation with tangible business results.
+                    </span>
+                    <span class="lang-content" data-lang="ar">
+                        يمكن لخبرتنا في بنية تحتية البلوكشين دفع شركتك إلى العصر الرقمي التالي.
+                        نطور حلولاً مخصصة تجمع بين الابتكار التكنولوجي ونتائج الأعمال الملموسة.
+                    </span>
+                </p>
+                
+                <!-- Botão modificado para abrir popup -->
+                <a href="#" class="btn btn-primary" id="openPopupBtn">
+                    <i class="fas fa-rocket"></i>
+                    <span class="lang-content active" data-lang="pt">Conversar com Especialista</span>
+                    <span class="lang-content" data-lang="en">Talk to an Expert</span>
+                    <span class="lang-content" data-lang="ar">تحدث مع خبير</span>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Nota Institucional -->
-    <div class="strategic-note">
-        <div class="lang-content active" data-lang="pt">
-            A AVZ Infra desenvolve infraestrutura digital e sistemas tecnológicos para aplicações institucionais. O trabalho envolve automação, inteligência artificial e arquitetura segura, com foco em soluções estruturadas e visão de longo prazo.
-        </div>
-        <div class="lang-content" data-lang="en">
-            AVZ Infra develops digital infrastructure and technological systems for institutional applications. The work involves automation, artificial intelligence and secure architecture, focused on structured solutions and long-term vision.
-        </div>
-        <div class="lang-content" data-lang="ar">
-            تطور AVZ Infra البنية التحتية الرقمية والأنظمة التكنولوجية للتطبيقات المؤسسية. يتضمن العمل الأتمتة والذكاء الاصطناعي والهندسة الآمنة، مع التركيز على الحلول المنظمة والرؤية طويلة الأجل.
+    <!-- POPUP DE CONTATO LUXO - REFINADO -->
+    <div class="popup-overlay" id="contactPopup">
+        <div class="popup-container">
+            <div class="popup-close" id="closePopupBtn">&times;</div>
+            
+            <h2 class="popup-title">
+                <span class="lang-content active" data-lang="pt">Contato Estratégico</span>
+                <span class="lang-content" data-lang="en">Strategic Contact</span>
+                <span class="lang-content" data-lang="ar">اتصال استراتيجي</span>
+            </h2>
+            
+            <p class="popup-subtitle">
+                <span class="lang-content active" data-lang="pt">Formalize sua solicitação. Nossa equipe retornará em até 24 horas úteis.</span>
+                <span class="lang-content" data-lang="en">Formalize your request. Our team will respond within 24 business hours.</span>
+                <span class="lang-content" data-lang="ar">قم بتقديم طلبك رسميًا. سيرد فريقنا في غضون 24 ساعة عمل.</span>
+            </p>
+            
+            <form class="popup-form" id="contactForm">
+                <!-- Natureza do Contato -->
+                <div class="form-group">
+                    <label>
+                        <i class="fas fa-briefcase"></i>
+                        <span class="lang-content active" data-lang="pt">Natureza do Contato</span>
+                        <span class="lang-content" data-lang="en">Contact Nature</span>
+                        <span class="lang-content" data-lang="ar">طبيعة الاتصال</span>
+                    </label>
+                    <select name="natureza" required>
+                        <option value="" disabled selected>-- Selecione --</option>
+                        <option value="contratar_servicos">
+                            <span class="lang-content active" data-lang="pt">Contratar nossos serviços</span>
+                            <span class="lang-content" data-lang="en">Hire our services</span>
+                            <span class="lang-content" data-lang="ar">توظيف خدماتنا</span>
+                        </option>
+                        <option value="produto_especifico">
+                            <span class="lang-content active" data-lang="pt">Informações sobre produto específico</span>
+                            <span class="lang-content" data-lang="en">Information about specific product</span>
+                            <span class="lang-content" data-lang="ar">معلومات عن منتج معين</span>
+                        </option>
+                        <option value="parceria">
+                            <span class="lang-content active" data-lang="pt">Oferecer parceria institucional</span>
+                            <span class="lang-content" data-lang="en">Offer institutional partnership</span>
+                            <span class="lang-content" data-lang="ar">تقديم شراكة مؤسسية</span>
+                        </option>
+                        <option value="investidor">
+                            <span class="lang-content active" data-lang="pt">Sou investidor</span>
+                            <span class="lang-content" data-lang="en">I am an investor</span>
+                            <span class="lang-content" data-lang="ar">أنا مستثمر</span>
+                        </option>
+                        <option value="imprensa">
+                            <span class="lang-content active" data-lang="pt">Imprensa / Comunicação</span>
+                            <span class="lang-content" data-lang="en">Press / Media</span>
+                            <span class="lang-content" data-lang="ar">صحافة / إعلام</span>
+                        </option>
+                        <option value="outros">
+                            <span class="lang-content active" data-lang="pt">Outros assuntos</span>
+                            <span class="lang-content" data-lang="en">Other matters</span>
+                            <span class="lang-content" data-lang="ar">مواضيع أخرى</span>
+                        </option>
+                    </select>
+                </div>
+                
+                <!-- Nome Completo / Representante Legal -->
+                <div class="form-group">
+                    <label>
+                        <i class="fas fa-user-tie"></i>
+                        <span class="lang-content active" data-lang="pt">Nome Completo (Representante Legal)</span>
+                        <span class="lang-content" data-lang="en">Full Name (Legal Representative)</span>
+                        <span class="lang-content" data-lang="ar">الاسم الكامل (الممثل القانوني)</span>
+                    </label>
+                    <input type="text" name="nome" required placeholder="Ex: Dr. Roberto Silva">
+                </div>
+                
+                <!-- Email Corporativo -->
+                <div class="form-group">
+                    <label>
+                        <i class="fas fa-envelope"></i>
+                        <span class="lang-content active" data-lang="pt">E-mail Corporativo</span>
+                        <span class="lang-content" data-lang="en">Corporate Email</span>
+                        <span class="lang-content" data-lang="ar">البريد الإلكتروني للشركة</span>
+                    </label>
+                    <input type="email" name="email" required placeholder="contato@empresa.com">
+                </div>
+                
+                <!-- Telefone com DDI -->
+                <div class="form-group">
+                    <label>
+                        <i class="fas fa-phone-alt"></i>
+                        <span class="lang-content active" data-lang="pt">Telefone (com DDI/DDD)</span>
+                        <span class="lang-content" data-lang="en">Phone (with country/area code)</span>
+                        <span class="lang-content" data-lang="ar">الهاتف (مع رمز الدولة/المنطقة)</span>
+                    </label>
+                    <input type="tel" name="telefone" required placeholder="+55 11 91234-5678">
+                </div>
+                
+                <!-- Linha dupla: CPF/CNPJ e Razão Social -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>
+                            <i class="fas fa-id-card"></i>
+                            <span class="lang-content active" data-lang="pt">CPF / CNPJ</span>
+                            <span class="lang-content" data-lang="en">Tax ID / Company Registration</span>
+                            <span class="lang-content" data-lang="ar">الرقم الضريبي / تسجيل الشركة</span>
+                        </label>
+                        <input type="text" name="documento" required placeholder="12.345.678/0001-90">
+                        <div class="form-hint">Documento válido conforme legislação</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>
+                            <i class="fas fa-building"></i>
+                            <span class="lang-content active" data-lang="pt">Razão Social / Nome da Empresa</span>
+                            <span class="lang-content" data-lang="en">Company Name / Legal Entity</span>
+                            <span class="lang-content" data-lang="ar">الاسم القانوني / الكيان القانوني</span>
+                        </label>
+                        <input type="text" name="empresa" placeholder="AVZ Infra Tecnologia Ltda" required>
+                    </div>
+                </div>
+                
+                <!-- Cargo / Função -->
+                <div class="form-group">
+                    <label>
+                        <i class="fas fa-chair"></i>
+                        <span class="lang-content active" data-lang="pt">Cargo / Função</span>
+                        <span class="lang-content" data-lang="en">Position / Role</span>
+                        <span class="lang-content" data-lang="ar">المنصب / الدور</span>
+                    </label>
+                    <input type="text" name="cargo" placeholder="Ex: Diretor de Inovação, CEO">
+                </div>
+                
+                <!-- Mensagem Formal -->
+                <div class="form-group">
+                    <label>
+                        <i class="fas fa-file-alt"></i>
+                        <span class="lang-content active" data-lang="pt">Mensagem / Assunto</span>
+                        <span class="lang-content" data-lang="en">Message / Subject</span>
+                        <span class="lang-content" data-lang="ar">الرسالة / الموضوع</span>
+                    </label>
+                    <textarea name="mensagem" rows="5" required placeholder="Descreva sua solicitação de forma clara e objetiva..."></textarea>
+                </div>
+                
+                <!-- Termos -->
+                <div class="form-group" style="flex-direction: row; align-items: center; gap: 1rem;">
+                    <input type="checkbox" name="termos" id="termos" required style="width: auto;">
+                    <label for="termos" style="font-size: 0.85rem; color: var(--color-text);">
+                        <span class="lang-content active" data-lang="pt">Li e aceito a Política de Privacidade e os termos de confidencialidade.</span>
+                        <span class="lang-content" data-lang="en">I have read and accept the Privacy Policy and confidentiality terms.</span>
+                        <span class="lang-content" data-lang="ar">لقد قرأت وأوافق على سياسة الخصوصية وشروط السرية.</span>
+                    </label>
+                </div>
+                
+                <button type="submit" class="popup-submit">
+                    <i class="fas fa-paper-plane"></i>
+                    <span class="lang-content active" data-lang="pt">Enviar Solicitação Formal</span>
+                    <span class="lang-content" data-lang="en">Submit Formal Request</span>
+                    <span class="lang-content" data-lang="ar">إرسال الطلب الرسمي</span>
+                </button>
+            </form>
+            
+            <div class="popup-footer">
+                <i class="fas fa-lock" style="margin-right: 0.5rem;"></i>
+                <span class="lang-content active" data-lang="pt">Comunicação criptografada. Todas as informações são tratadas com sigilo absoluto.</span>
+                <span class="lang-content" data-lang="en">Encrypted communication. All information is treated with absolute confidentiality.</span>
+                <span class="lang-content" data-lang="ar">اتصال مشفر. جميع المعلومات تعامل بسرية تامة.</span>
+            </div>
         </div>
     </div>
 
@@ -286,189 +2419,186 @@
     <footer class="footer">
         <div class="footer-content">
             <p>
-                <span class="lang-content active" data-lang="pt">© 2026 AVZ Infra</span>
-                <span class="lang-content" data-lang="en">© 2026 AVZ Infra</span>
-                <span class="lang-content" data-lang="ar">© 2026 AVZ Infra</span>
+                <span class="lang-content active" data-lang="pt">© 2026 AVZ Infra. Todos os direitos reservados.</span>
+                <span class="lang-content" data-lang="en">© 2026 AVZ Infra. All rights reserved.</span>
+                <span class="lang-content" data-lang="ar">© 2026 AVZ Infra. جميع الحقوق محفوظة.</span>
+            </p>
+            
+            <p style="color: var(--color-primary); font-size: 0.9rem; margin-top: 1.5rem; font-weight: 500;">
+                <span class="lang-content active" data-lang="pt">"Construindo a infraestrutura que conecta o presente ao futuro."</span>
+                <span class="lang-content" data-lang="en">"Building the infrastructure that connects the present to the future."</span>
+                <span class="lang-content" data-lang="ar">"نَبني البنيةَ التحتية التي تَربط الحاضرَ بالمستقبل."</span>
             </p>
         </div>
     </footer>
 
-    <!-- Popup de Contato -->
-    <div class="popup-overlay" id="popupOverlay" onclick="closePopup()"></div>
-    <div class="popup-container" id="popupContainer">
-        <div class="popup-header">
-            <h3 class="popup-title" id="popupTitle">Contato</h3>
-            <button class="popup-close" onclick="closePopup()">&times;</button>
-        </div>
-        <form class="popup-form" id="contactForm" action="mailto:avzproptech@outlook.com" method="post" enctype="text/plain">
-            <input type="hidden" name="subject" id="subjectField" value="">
-            
-            <div class="form-group">
-                <label>
-                    <span class="lang-content active" data-lang="pt">Nome</span>
-                    <span class="lang-content" data-lang="en">Name</span>
-                    <span class="lang-content" data-lang="ar">الاسم</span>
-                </label>
-                <input type="text" name="name" required>
-            </div>
-            
-            <div class="form-group">
-                <label>
-                    <span class="lang-content active" data-lang="pt">Email</span>
-                    <span class="lang-content" data-lang="en">Email</span>
-                    <span class="lang-content" data-lang="ar">البريد الإلكتروني</span>
-                </label>
-                <input type="email" name="email" required>
-            </div>
-            
-            <div class="form-group">
-                <label>
-                    <span class="lang-content active" data-lang="pt">Empresa</span>
-                    <span class="lang-content" data-lang="en">Company</span>
-                    <span class="lang-content" data-lang="ar">الشركة</span>
-                </label>
-                <input type="text" name="company">
-            </div>
-            
-            <div class="form-group">
-                <label>
-                    <span class="lang-content active" data-lang="pt">Motivo do contato</span>
-                    <span class="lang-content" data-lang="en">Subject</span>
-                    <span class="lang-content" data-lang="ar">الموضوع</span>
-                </label>
-                <select name="motivo" id="motivoSelect" required>
-                    <option value="">
-                        <span class="lang-content active" data-lang="pt">Selecione</span>
-                        <span class="lang-content" data-lang="en">Select</span>
-                        <span class="lang-content" data-lang="ar">اختر</span>
-                    </option>
-                    <option value="Soberania Digital">
-                        <span class="lang-content active" data-lang="pt">Soberania Digital</span>
-                        <span class="lang-content" data-lang="en">Digital Sovereignty</span>
-                        <span class="lang-content" data-lang="ar">السيادة الرقمية</span>
-                    </option>
-                    <option value="Expansão Continental">
-                        <span class="lang-content active" data-lang="pt">Expansão Continental</span>
-                        <span class="lang-content" data-lang="en">Continental Expansion</span>
-                        <span class="lang-content" data-lang="ar">التوسع القاري</span>
-                    </option>
-                    <option value="Automação">
-                        <span class="lang-content active" data-lang="pt">Automação</span>
-                        <span class="lang-content" data-lang="en">Automation</span>
-                        <span class="lang-content" data-lang="ar">الأتمتة</span>
-                    </option>
-                    <option value="Outro">
-                        <span class="lang-content active" data-lang="pt">Outro</span>
-                        <span class="lang-content" data-lang="en">Other</span>
-                        <span class="lang-content" data-lang="ar">آخر</span>
-                    </option>
-                </select>
-            </div>
-            
-            <div class="form-group">
-                <label>
-                    <span class="lang-content active" data-lang="pt">Mensagem</span>
-                    <span class="lang-content" data-lang="en">Message</span>
-                    <span class="lang-content" data-lang="ar">الرسالة</span>
-                </label>
-                <textarea name="message" rows="4" required></textarea>
-            </div>
-            
-            <button type="submit" class="btn-popup">
-                <span class="lang-content active" data-lang="pt">Enviar mensagem</span>
-                <span class="lang-content" data-lang="en">Send message</span>
-                <span class="lang-content" data-lang="ar">إرسال الرسالة</span>
-            </button>
-        </form>
-    </div>
-
     <script>
+        // Efeito de partículas de luxo
+        function createLuxuryParticles() {
+            const particlesContainer = document.getElementById('luxuryParticles');
+            const particlesCount = 25;
+            
+            for (let i = 0; i < particlesCount; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('luxury-particle');
+                
+                const size = Math.random() * 4 + 1;
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
+                particle.style.left = `${Math.random() * 100}vw`;
+                particle.style.animationDelay = `${Math.random() * 15}s`;
+                particle.style.animationDuration = `${Math.random() * 8 + 12}s`;
+                
+                particlesContainer.appendChild(particle);
+            }
+        }
+        
+        createLuxuryParticles();
+
+        // Language Switching System
         document.addEventListener('DOMContentLoaded', function() {
             const langButtons = document.querySelectorAll('.lang-btn');
             const langContents = document.querySelectorAll('.lang-content');
             
+            // Set initial language to Portuguese
             setLanguage('pt');
             
+            // Add click event to language buttons
             langButtons.forEach(button => {
                 button.addEventListener('click', function() {
                     const lang = this.getAttribute('data-lang');
                     setLanguage(lang);
                     
+                    // Update active button
                     langButtons.forEach(btn => btn.classList.remove('active'));
                     this.classList.add('active');
                     
+                    // Update RTL for Arabic
                     if (lang === 'ar') {
                         document.body.setAttribute('dir', 'rtl');
+                        document.documentElement.setAttribute('dir', 'rtl');
+                        document.documentElement.setAttribute('lang', 'ar');
                     } else {
                         document.body.removeAttribute('dir');
+                        document.documentElement.removeAttribute('dir');
+                        document.documentElement.setAttribute('lang', lang);
                     }
                 });
             });
             
             function setLanguage(lang) {
-                langContents.forEach(content => content.classList.remove('active'));
-                document.querySelectorAll(`.lang-content[data-lang="${lang}"]`).forEach(content => {
+                // Hide all language content
+                langContents.forEach(content => {
+                    content.classList.remove('active');
+                });
+                
+                // Show content for selected language
+                const activeContents = document.querySelectorAll(`.lang-content[data-lang="${lang}"]`);
+                activeContents.forEach(content => {
                     content.classList.add('active');
                 });
+                
+                // Update HTML lang attribute
+                document.documentElement.setAttribute('lang', lang);
             }
             
+            // Smooth scrolling
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     e.preventDefault();
                     const target = document.querySelector(this.getAttribute('href'));
-                    if (target) target.scrollIntoView({ behavior: 'smooth' });
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
                 });
+            });
+            
+            // Header scroll effect
+            window.addEventListener('scroll', () => {
+                const header = document.querySelector('.header');
+                if (window.scrollY > 100) {
+                    header.style.background = 'rgb(255 255 255 / .99)';
+                    header.style.backdropFilter = 'blur(25px)';
+                    header.style.boxShadow = '0 8px 30px rgba(123, 63, 0, 0.1)';
+                    header.style.borderBottomColor = 'rgba(212, 175, 55, 0.2)';
+                } else {
+                    header.style.background = 'rgb(255 255 255 / .98)';
+                    header.style.backdropFilter = 'blur(20px)';
+                    header.style.boxShadow = '0 5px 20px rgba(123, 63, 0, 0.05)';
+                    header.style.borderBottomColor = 'rgba(212, 175, 55, 0.15)';
+                }
+            });
+
+            // Adjust hero height on resize
+            function adjustHeroHeight() {
+                const header = document.querySelector('.header');
+                const hero = document.querySelector('.hero');
+                if (header && hero) {
+                    const headerHeight = header.offsetHeight;
+                    hero.style.minHeight = `calc(100vh - ${headerHeight}px)`;
+                }
+            }
+
+            // Initial adjustments
+            adjustHeroHeight();
+            window.addEventListener('resize', adjustHeroHeight);
+            
+            // Add subtle parallax effect to hero
+            window.addEventListener('scroll', () => {
+                const scrolled = window.pageYOffset;
+                const hero = document.querySelector('.hero');
+                if (hero && scrolled < hero.offsetHeight) {
+                    hero.style.transform = `translateY(${scrolled * 0.4}px)`;
+                }
             });
         });
 
-        function openPopup(tipo) {
-            let titulo = '';
-            let motivo = '';
-            const langAtual = document.querySelector('.lang-btn.active').getAttribute('data-lang');
+        // POPUP DE CONTATO
+        document.addEventListener('DOMContentLoaded', function() {
+            const popup = document.getElementById('contactPopup');
+            const openBtn = document.getElementById('openPopupBtn');
+            const closeBtn = document.getElementById('closePopupBtn');
+            const contactForm = document.getElementById('contactForm');
             
-            if (tipo === 'soberania') {
-                titulo = langAtual === 'pt' ? 'Contato - Soberania Digital' : 
-                        langAtual === 'en' ? 'Contact - Digital Sovereignty' : 'اتصال - السيادة الرقمية';
-                motivo = 'Soberania Digital';
-            } else if (tipo === 'expansao') {
-                titulo = langAtual === 'pt' ? 'Contato - Expansão Continental' : 
-                        langAtual === 'en' ? 'Contact - Continental Expansion' : 'اتصال - التوسع القاري';
-                motivo = 'Expansão Continental';
-            } else if (tipo === 'automacao') {
-                titulo = langAtual === 'pt' ? 'Contato - Automação' : 
-                        langAtual === 'en' ? 'Contact - Automation' : 'اتصال - الأتمتة';
-                motivo = 'Automação';
+            // Abrir popup
+            if (openBtn) {
+                openBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    popup.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                });
             }
             
-            document.getElementById('popupTitle').textContent = titulo;
-            document.getElementById('subjectField').value = motivo;
+            // Fechar popup
+            if (closeBtn) {
+                closeBtn.addEventListener('click', function() {
+                    popup.classList.remove('active');
+                    document.body.style.overflow = '';
+                });
+            }
             
-            // Selecionar o motivo no dropdown
-            const motivoSelect = document.getElementById('motivoSelect');
-            for (let i = 0; i < motivoSelect.options.length; i++) {
-                if (motivoSelect.options[i].value === motivo) {
-                    motivoSelect.selectedIndex = i;
-                    break;
+            // Fechar ao clicar fora do container
+            popup.addEventListener('click', function(e) {
+                if (e.target === popup) {
+                    popup.classList.remove('active');
+                    document.body.style.overflow = '';
                 }
-            }
+            });
             
-            document.getElementById('popupOverlay').style.display = 'block';
-            document.getElementById('popupContainer').style.display = 'block';
-            document.body.classList.add('popup-open');
-        }
-
-        function closePopup() {
-            document.getElementById('popupOverlay').style.display = 'none';
-            document.getElementById('popupContainer').style.display = 'none';
-            document.body.classList.remove('popup-open');
-        }
-
-        // Fechar popup ao clicar fora
-        window.onclick = function(event) {
-            if (event.target === document.getElementById('popupOverlay')) {
-                closePopup();
+            // Submit do formulário (simulação)
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('Solicitação enviada com sucesso. Nossa equipe analisará e retornará em até 24 horas úteis.');
+                    popup.classList.remove('active');
+                    document.body.style.overflow = '';
+                    contactForm.reset();
+                });
             }
-        }
+        });
     </script>
 </body>
 </html>
