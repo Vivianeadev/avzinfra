@@ -18,7 +18,7 @@
             --color-accent: #8B4513;
             --color-light: #f4e4b8;
             --color-dark: #2b2b2b;
-            --color-text: #666;
+            --color-text: #3d3d3d; /* Cor mais escura para melhor contraste */
             --color-bg: linear-gradient(135deg, #f9f5f0 0%, #faf0f4 100%);
             
             /* Elementos de Luxo (da versão premium) */
@@ -180,6 +180,131 @@
             width: 100%;
         }
 
+        /* BOTÃO DE IDIOMA UNIFICADO */
+        .lang-toggle {
+            position: fixed;
+            top: 90px;
+            right: 20px;
+            z-index: 999;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 40px;
+            padding: 8px 16px;
+            border: 1px solid rgba(212, 175, 55, 0.25);
+            box-shadow: 0 8px 20px rgba(123, 63, 0, 0.12);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            transition: var(--transition);
+            min-width: 100px;
+            justify-content: center;
+        }
+
+        .lang-toggle:hover {
+            border-color: var(--gold-primary);
+            box-shadow: var(--shadow-gold);
+            transform: translateY(-2px);
+        }
+
+        .lang-toggle .current-lang {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-family: 'Cinzel', serif;
+            font-weight: 500;
+            color: var(--color-dark);
+        }
+
+        .lang-toggle .current-lang span {
+            font-size: 0.9rem;
+        }
+
+        .lang-toggle .lang-flag {
+            font-size: 1.2rem;
+        }
+
+        .lang-toggle .lang-arrow {
+            color: var(--gold-primary);
+            font-size: 0.8rem;
+            transition: transform 0.3s ease;
+        }
+
+        .lang-dropdown {
+            position: absolute;
+            top: 110%;
+            right: 0;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(212, 175, 55, 0.25);
+            box-shadow: 0 15px 30px rgba(123, 63, 0, 0.15);
+            padding: 8px 0;
+            min-width: 120px;
+            display: none;
+            overflow: hidden;
+            list-style: none;
+        }
+
+        .lang-dropdown.show {
+            display: block;
+        }
+
+        .lang-dropdown li {
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            transition: var(--transition);
+            color: var(--color-dark);
+            font-size: 0.9rem;
+        }
+
+        .lang-dropdown li:hover {
+            background: rgba(212, 175, 55, 0.1);
+            color: var(--gold-primary);
+        }
+
+        .lang-dropdown li.active {
+            background: var(--gradient-gold);
+            color: var(--color-dark);
+            font-weight: 500;
+        }
+
+        /* MELHORIAS DE CONTRASTE PARA TEXTOS */
+        .category-description,
+        .specialty-description,
+        .use-case-description,
+        .tech-desc,
+        .specialty-features li,
+        .founder-purpose p,
+        .founder-institutional-note p {
+            color: #3d3d3d;
+            font-weight: 400;
+            line-height: 1.7;
+        }
+
+        .category-title,
+        .specialty-title,
+        .use-case-title {
+            color: #5a3a1a;
+            font-weight: 600;
+        }
+
+        .specialty-tag {
+            color: #5a3a1a;
+            background: rgba(212, 175, 55, 0.15);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            font-weight: 500;
+        }
+
+        .use-case-number {
+            color: #b8860b;
+            opacity: 0.6;
+            font-weight: 700;
+        }
+
         /* HERO SECTION COM LUXO */
         .hero {
             min-height: calc(100vh - 80px);
@@ -335,7 +460,7 @@
             box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
         }
 
-        /* CATEGORIAS ESPECIALIDADES (DA VERSÃO PREMIUM) */
+        /* CATEGORIAS ESPECIALIDADES */
         .categories-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -388,17 +513,9 @@
         .category-title {
             font-family: 'Cinzel', serif;
             font-size: 1.6rem;
-            color: var(--color-primary);
             margin-bottom: 1rem;
             letter-spacing: 1px;
             font-weight: 500;
-        }
-
-        .category-description {
-            color: var(--color-text);
-            font-size: 1rem;
-            line-height: 1.7;
-            font-family: 'Marcellus', serif;
         }
 
         /* ESPECIALIDADES DETALHADAS */
@@ -450,21 +567,8 @@
         .specialty-title {
             font-family: 'Cinzel', serif;
             font-size: 1.6rem;
-            color: var(--color-primary);
             letter-spacing: 1px;
             font-weight: 500;
-        }
-
-        .specialty-content {
-            margin-bottom: 2rem;
-        }
-
-        .specialty-description {
-            color: var(--color-text);
-            font-size: 1rem;
-            line-height: 1.8;
-            margin-bottom: 1.5rem;
-            font-family: 'Marcellus', serif;
         }
 
         .specialty-features {
@@ -473,7 +577,6 @@
         }
 
         .specialty-features li {
-            color: var(--color-text);
             margin-bottom: 0.8rem;
             display: flex;
             align-items: flex-start;
@@ -496,10 +599,7 @@
 
         .specialty-tag {
             padding: 0.5rem 1.2rem;
-            background: rgba(212, 175, 55, 0.08);
-            border: 1px solid rgba(212, 175, 55, 0.2);
             border-radius: 20px;
-            color: var(--color-primary);
             font-size: 0.85rem;
             font-family: 'Marcellus', serif;
             letter-spacing: 0.5px;
@@ -546,7 +646,6 @@
         }
 
         .tech-desc {
-            color: var(--color-text);
             font-size: 0.9rem;
             font-family: 'Marcellus', serif;
         }
@@ -579,8 +678,6 @@
         .use-case-number {
             font-family: 'Cinzel', serif;
             font-size: 2.5rem;
-            color: var(--gold-primary);
-            opacity: 0.3;
             position: absolute;
             top: 1rem;
             right: 1.5rem;
@@ -590,16 +687,9 @@
         .use-case-title {
             font-family: 'Cinzel', serif;
             font-size: 1.5rem;
-            color: var(--color-primary);
             margin-bottom: 1.5rem;
             letter-spacing: 1px;
             font-weight: 500;
-        }
-
-        .use-case-description {
-            color: var(--color-text);
-            line-height: 1.7;
-            font-family: 'Marcellus', serif;
         }
 
         /* PRESENÇA GLOBAL */
@@ -742,238 +832,7 @@
             font-family: 'Marcellus', serif;
         }
 
-        /* LANGUAGE SWITCHER - REPOSICIONADO */
-        .language-switcher {
-            position: fixed;
-            top: 90px;
-            right: 20px;
-            z-index: 999;
-            display: flex;
-            gap: 2px;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-radius: 30px;
-            padding: 5px;
-            border: 1px solid rgba(212, 175, 55, 0.25);
-            box-shadow: 0 8px 20px rgba(123, 63, 0, 0.12);
-            min-width: 130px;
-            height: 40px;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .lang-btn {
-            background: transparent;
-            border: none;
-            color: var(--color-text);
-            padding: 4px 10px;
-            border-radius: 25px;
-            cursor: pointer;
-            transition: var(--transition);
-            font-size: 0.7rem;
-            font-weight: 500;
-            display: flex;
-            align-items: center;
-            gap: 4px;
-            min-height: 30px;
-            min-width: 38px;
-            justify-content: center;
-            flex: 1;
-            height: 100%;
-            letter-spacing: 0.3px;
-        }
-
-        .lang-btn:hover {
-            background: rgba(212, 175, 55, 0.1);
-            color: var(--color-primary);
-        }
-
-        .lang-btn.active {
-            background: var(--gradient-gold);
-            color: var(--color-dark);
-            font-weight: 600;
-            box-shadow: 0 2px 8px rgba(212, 175, 55, 0.3);
-        }
-
-        .lang-flag {
-            font-size: 0.9rem;
-        }
-
-        /* CONTENT MANAGER PARA IDIOMAS */
-        .lang-content {
-            display: none;
-        }
-
-        .lang-content.active {
-            display: block;
-        }
-
-        /* RESPONSIVIDADE */
-        @media (max-width: 1024px) {
-            .nav-menu {
-                gap: 1.5rem;
-            }
-            
-            .specialties-grid,
-            .categories-grid {
-                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-                gap: 2rem;
-            }
-            
-            .language-switcher {
-                top: 85px;
-                right: 15px;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .nav-menu {
-                display: none;
-            }
-            
-            .hero {
-                padding: 5rem 1.5rem 3rem;
-                min-height: calc(100vh - 70px);
-            }
-            
-            .hero h1 {
-                font-size: clamp(2.2rem, 8vw, 3rem);
-            }
-            
-            .hero-subtitle {
-                font-size: 1.1rem;
-            }
-            
-            .section {
-                padding: 4rem 1.5rem;
-            }
-            
-            .section-title {
-                font-size: clamp(1.8rem, 5vw, 2.2rem);
-                margin-bottom: 3rem;
-            }
-            
-            .specialties-grid,
-            .categories-grid,
-            .use-cases-grid,
-            .technologies-grid {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-            
-            .specialty-card,
-            .category-card,
-            .use-case-card {
-                padding: 2rem;
-            }
-            
-            .founder-grid {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-                text-align: center;
-            }
-            
-            .founder-frame {
-                margin: 0 auto;
-            }
-            
-            .founder-purpose {
-                border-left: none;
-                border-top: 2px solid rgba(123, 63, 0, 0.2);
-                padding: 1.5rem;
-            }
-            
-            .language-switcher {
-                top: 75px;
-                right: 10px;
-                min-width: 120px;
-                height: 36px;
-            }
-            
-            .btn {
-                padding: 1rem 2rem;
-                font-size: 0.9rem;
-            }
-            
-            .cta-buttons {
-                flex-direction: column;
-                align-items: center;
-                gap: 1rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .nav-container {
-                padding: 0 1rem;
-            }
-            
-            .logo {
-                font-size: 1.5rem;
-            }
-            
-            .logo-tagline {
-                font-size: 0.6rem;
-            }
-            
-            .hero {
-                padding: 4rem 1rem 2.5rem;
-            }
-            
-            .section {
-                padding: 3rem 1rem;
-            }
-            
-            .specialty-header {
-                flex-direction: column;
-                text-align: center;
-                gap: 1rem;
-            }
-            
-            .specialty-icon {
-                width: 60px;
-                height: 60px;
-                font-size: 2rem;
-            }
-            
-            .language-switcher {
-                top: 70px;
-                right: 8px;
-                min-width: 110px;
-                height: 32px;
-            }
-            
-            .lang-btn {
-                padding: 3px 6px;
-                font-size: 0.6rem;
-                min-width: 32px;
-            }
-        }
-
-        /* RTL SUPPORT */
-        body[dir="rtl"] .logo::after,
-        body[dir="rtl"] .nav-menu a::after,
-        body[dir="rtl"] .section-title::after {
-            left: auto;
-            right: 0;
-            transform: none;
-        }
-        
-        body[dir="rtl"] .section-title::after {
-            right: 50%;
-            transform: translateX(50%);
-        }
-        
-        body[dir="rtl"] .founder-purpose {
-            border-left: none;
-            border-right: 2px solid rgba(123, 63, 0, 0.2);
-        }
-        
-        body[dir="rtl"] .lang-content[data-lang="ar"] {
-            text-align: right;
-            direction: rtl;
-        }
-        
-        /* POPUP DE CONTATO LUXO - REFINADO */
+        /* POPUP DE CONTATO LUXO */
         .popup-overlay {
             position: fixed;
             top: 0;
@@ -1012,20 +871,6 @@
         
         .popup-overlay.active .popup-container {
             transform: scale(1) translateY(0);
-        }
-        
-        .popup-container::-webkit-scrollbar {
-            width: 6px;
-        }
-        
-        .popup-container::-webkit-scrollbar-track {
-            background: rgba(212, 175, 55, 0.1);
-            border-radius: 10px;
-        }
-        
-        .popup-container::-webkit-scrollbar-thumb {
-            background: var(--gold-primary);
-            border-radius: 10px;
         }
         
         .popup-close {
@@ -1134,27 +979,6 @@
             background: white;
         }
         
-        .form-group select {
-            appearance: none;
-            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23d4af37' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
-            background-repeat: no-repeat;
-            background-position: right 1rem center;
-            background-size: 1.2rem;
-        }
-        
-        .form-group textarea {
-            min-height: 100px;
-            resize: vertical;
-        }
-        
-        .form-hint {
-            font-size: 0.75rem;
-            color: var(--color-text);
-            opacity: 0.6;
-            margin-top: 0.25rem;
-            font-family: 'Marcellus', serif;
-        }
-        
         .popup-submit {
             background: var(--gradient-gold);
             border: none;
@@ -1182,10 +1006,6 @@
             box-shadow: 0 12px 30px rgba(212, 175, 55, 0.4);
         }
         
-        .popup-submit i {
-            font-size: 1.2rem;
-        }
-        
         .popup-footer {
             margin-top: 2rem;
             text-align: center;
@@ -1195,20 +1015,113 @@
             padding-top: 1.5rem;
             font-family: 'Marcellus', serif;
         }
+
+        /* CONTENT MANAGER PARA IDIOMAS */
+        .lang-content {
+            display: none;
+        }
+
+        .lang-content.active {
+            display: block;
+        }
+
+        .nav-menu .lang-content.active,
+        .btn .lang-content.active,
+        .category-card .lang-content.active,
+        .specialty-card .lang-content.active,
+        .use-case-card .lang-content.active {
+            display: inline-block;
+        }
+
+        /* RTL SUPPORT */
+        body[dir="rtl"] .logo::after {
+            left: auto;
+            right: 0;
+        }
         
+        body[dir="rtl"] .section-title::after {
+            left: auto;
+            right: 50%;
+            transform: translateX(50%);
+        }
+        
+        body[dir="rtl"] .founder-purpose {
+            border-left: none;
+            border-right: 2px solid rgba(123, 63, 0, 0.2);
+        }
+        
+        body[dir="rtl"] .lang-content[data-lang="ar"] {
+            text-align: right;
+            direction: rtl;
+        }
+
+        /* RESPONSIVIDADE */
+        @media (max-width: 1024px) {
+            .nav-menu {
+                gap: 1.5rem;
+            }
+            
+            .lang-toggle {
+                top: 85px;
+                right: 15px;
+            }
+        }
+
         @media (max-width: 768px) {
-            .popup-container {
-                padding: 2rem 1.5rem;
+            .nav-menu {
+                display: none;
+            }
+            
+            .hero {
+                padding: 5rem 1.5rem 3rem;
+            }
+            
+            .lang-toggle {
+                top: 75px;
+                right: 10px;
+                min-width: 90px;
+                padding: 6px 12px;
+            }
+            
+            .founder-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                text-align: center;
+            }
+            
+            .founder-frame {
+                margin: 0 auto;
+            }
+            
+            .founder-purpose {
+                border-left: none;
+                border-top: 2px solid rgba(123, 63, 0, 0.2);
+                padding: 1.5rem;
             }
             
             .form-row {
                 grid-template-columns: 1fr;
-                gap: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo {
+                font-size: 1.5rem;
             }
             
-            .popup-title {
-                font-size: 1.8rem;
-                padding-left: 0.75rem;
+            .logo-tagline {
+                font-size: 0.6rem;
+            }
+            
+            .lang-toggle {
+                top: 70px;
+                right: 8px;
+                min-width: 80px;
+                padding: 5px 10px;
+            }
+            
+            .lang-toggle .current-lang span {
+                font-size: 0.8rem;
             }
         }
     </style>
@@ -1217,20 +1130,27 @@
     <!-- Efeito de Partículas de Luxo -->
     <div class="luxury-particles" id="luxuryParticles"></div>
 
-    <!-- Language Switcher - REPOSICIONADO -->
-    <div class="language-switcher">
-        <button class="lang-btn active" data-lang="pt">
+    <!-- Botão de Idioma Unificado -->
+    <div class="lang-toggle" id="langToggle">
+        <div class="current-lang" id="currentLang">
             <span class="lang-flag">🇧🇷</span>
-            <span>PT</span>
-        </button>
-        <button class="lang-btn" data-lang="en">
-            <span class="lang-flag">🇺🇸</span>
-            <span>EN</span>
-        </button>
-        <button class="lang-btn" data-lang="ar">
-            <span class="lang-flag">🇸🇦</span>
-            <span>AR</span>
-        </button>
+            <span>Português</span>
+        </div>
+        <i class="fas fa-chevron-down lang-arrow" id="langArrow"></i>
+        <ul class="lang-dropdown" id="langDropdown">
+            <li data-lang="pt" class="active">
+                <span class="lang-flag">🇧🇷</span>
+                <span>Português</span>
+            </li>
+            <li data-lang="en">
+                <span class="lang-flag">🇺🇸</span>
+                <span>English</span>
+            </li>
+            <li data-lang="ar">
+                <span class="lang-flag">🇸🇦</span>
+                <span>العربية</span>
+            </li>
+        </ul>
     </div>
 
     <!-- Header -->
@@ -1677,7 +1597,7 @@
                 <span class="lang-content" data-lang="ar">Exclusive Identity</span>
             </h2>
             
-            <p class="text-center" style="color: #666; font-size: 1.05rem; margin-bottom: 3rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+            <p class="text-center" style="color: #4a4a4a; font-size: 1.05rem; margin-bottom: 3rem; max-width: 800px; margin-left: auto; margin-right: auto;">
                 <span class="lang-content active" data-lang="pt">Sistema de identidade digital soberana com valor intrínseco protegido de ~USD 3.6M</span>
                 <span class="lang-content" data-lang="en">Sovereign digital identity system with protected intrinsic value of ~USD 3.6M</span>
                 <span class="lang-content" data-lang="ar">نظام هوية رقمية سيادية ذات قيمة جوهرية محمية تبلغ ~3.6 مليون دولار أمريكي</span>
@@ -1949,7 +1869,7 @@
                 <span class="lang-content" data-lang="ar">الوجود العالمي</span>
             </h2>
             
-            <p class="text-center" style="color: #666; font-size: 1.05rem; margin-bottom: 3rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+            <p class="text-center" style="color: #4a4a4a; font-size: 1.05rem; margin-bottom: 3rem; max-width: 800px; margin-left: auto; margin-right: auto;">
                 <span class="lang-content active" data-lang="pt">Infraestrutura distribuída em múltiplas regiões para máxima resiliência e performance</span>
                 <span class="lang-content" data-lang="en">Infrastructure distributed across multiple regions for maximum resilience and performance</span>
                 <span class="lang-content" data-lang="ar">بنية تحتية موزعة عبر مناطق متعددة لأقصى قدر من المرونة والأداء</span>
@@ -2194,7 +2114,7 @@
             </div>
 
             <div class="founder-institutional-note">
-                <p class="specialty-description" style="color: var(--color-text); font-size: 0.9rem;">
+                <p class="specialty-description" style="color: #4a4a4a; font-size: 0.9rem;">
                     <span class="lang-content active" data-lang="pt">
                         Viviane Baz atua na interseção entre tecnologia, soberania digital e infraestrutura crítica. 
                         Acredita que sistemas tecnológicos devem servir à humanidade, protegendo sua autonomia e integridade.
@@ -2248,7 +2168,7 @@
         </div>
     </section>
 
-    <!-- POPUP DE CONTATO LUXO - REFINADO -->
+    <!-- POPUP DE CONTATO LUXO -->
     <div class="popup-overlay" id="contactPopup">
         <div class="popup-container">
             <div class="popup-close" id="closePopupBtn">&times;</div>
@@ -2266,7 +2186,6 @@
             </p>
             
             <form class="popup-form" id="contactForm">
-                <!-- Natureza do Contato -->
                 <div class="form-group">
                     <label>
                         <i class="fas fa-briefcase"></i>
@@ -2309,7 +2228,6 @@
                     </select>
                 </div>
                 
-                <!-- Nome Completo / Representante Legal -->
                 <div class="form-group">
                     <label>
                         <i class="fas fa-user-tie"></i>
@@ -2320,7 +2238,6 @@
                     <input type="text" name="nome" required placeholder="Ex: Dr. Roberto Silva">
                 </div>
                 
-                <!-- Email Corporativo -->
                 <div class="form-group">
                     <label>
                         <i class="fas fa-envelope"></i>
@@ -2331,7 +2248,6 @@
                     <input type="email" name="email" required placeholder="contato@empresa.com">
                 </div>
                 
-                <!-- Telefone com DDI -->
                 <div class="form-group">
                     <label>
                         <i class="fas fa-phone-alt"></i>
@@ -2342,7 +2258,6 @@
                     <input type="tel" name="telefone" required placeholder="+55 11 91234-5678">
                 </div>
                 
-                <!-- Linha dupla: CPF/CNPJ e Razão Social -->
                 <div class="form-row">
                     <div class="form-group">
                         <label>
@@ -2366,7 +2281,6 @@
                     </div>
                 </div>
                 
-                <!-- Cargo / Função -->
                 <div class="form-group">
                     <label>
                         <i class="fas fa-chair"></i>
@@ -2377,7 +2291,6 @@
                     <input type="text" name="cargo" placeholder="Ex: Diretor de Inovação, CEO">
                 </div>
                 
-                <!-- Mensagem Formal -->
                 <div class="form-group">
                     <label>
                         <i class="fas fa-file-alt"></i>
@@ -2388,7 +2301,6 @@
                     <textarea name="mensagem" rows="5" required placeholder="Descreva sua solicitação de forma clara e objetiva..."></textarea>
                 </div>
                 
-                <!-- Termos -->
                 <div class="form-group" style="flex-direction: row; align-items: center; gap: 1rem;">
                     <input type="checkbox" name="termos" id="termos" required style="width: auto;">
                     <label for="termos" style="font-size: 0.85rem; color: var(--color-text);">
@@ -2455,23 +2367,53 @@
         
         createLuxuryParticles();
 
-        // Language Switching System
+        // Sistema de Idioma Unificado
         document.addEventListener('DOMContentLoaded', function() {
-            const langButtons = document.querySelectorAll('.lang-btn');
+            const langToggle = document.getElementById('langToggle');
+            const langDropdown = document.getElementById('langDropdown');
+            const langArrow = document.getElementById('langArrow');
+            const currentLang = document.getElementById('currentLang');
+            const langOptions = document.querySelectorAll('.lang-dropdown li');
             const langContents = document.querySelectorAll('.lang-content');
             
             // Set initial language to Portuguese
-            setLanguage('pt');
+            let currentLanguage = 'pt';
             
-            // Add click event to language buttons
-            langButtons.forEach(button => {
-                button.addEventListener('click', function() {
+            // Toggle dropdown
+            langToggle.addEventListener('click', function(e) {
+                e.stopPropagation();
+                langDropdown.classList.toggle('show');
+                langArrow.style.transform = langDropdown.classList.contains('show') ? 'rotate(180deg)' : 'rotate(0)';
+            });
+            
+            // Close dropdown when clicking outside
+            document.addEventListener('click', function() {
+                langDropdown.classList.remove('show');
+                langArrow.style.transform = 'rotate(0)';
+            });
+            
+            // Select language
+            langOptions.forEach(option => {
+                option.addEventListener('click', function(e) {
+                    e.stopPropagation();
                     const lang = this.getAttribute('data-lang');
-                    setLanguage(lang);
                     
-                    // Update active button
-                    langButtons.forEach(btn => btn.classList.remove('active'));
+                    // Update current language display
+                    const flag = this.querySelector('.lang-flag').textContent;
+                    const langName = this.querySelector('span:last-child').textContent;
+                    currentLang.innerHTML = `<span class="lang-flag">${flag}</span><span>${langName}</span>`;
+                    
+                    // Update active state in dropdown
+                    langOptions.forEach(opt => opt.classList.remove('active'));
                     this.classList.add('active');
+                    
+                    // Set language
+                    setLanguage(lang);
+                    currentLanguage = lang;
+                    
+                    // Close dropdown
+                    langDropdown.classList.remove('show');
+                    langArrow.style.transform = 'rotate(0)';
                     
                     // Update RTL for Arabic
                     if (lang === 'ar') {
@@ -2542,11 +2484,10 @@
                 }
             }
 
-            // Initial adjustments
             adjustHeroHeight();
             window.addEventListener('resize', adjustHeroHeight);
             
-            // Add subtle parallax effect to hero
+            // Parallax effect
             window.addEventListener('scroll', () => {
                 const scrolled = window.pageYOffset;
                 const hero = document.querySelector('.hero');
@@ -2563,7 +2504,6 @@
             const closeBtn = document.getElementById('closePopupBtn');
             const contactForm = document.getElementById('contactForm');
             
-            // Abrir popup
             if (openBtn) {
                 openBtn.addEventListener('click', function(e) {
                     e.preventDefault();
@@ -2572,7 +2512,6 @@
                 });
             }
             
-            // Fechar popup
             if (closeBtn) {
                 closeBtn.addEventListener('click', function() {
                     popup.classList.remove('active');
@@ -2580,7 +2519,6 @@
                 });
             }
             
-            // Fechar ao clicar fora do container
             popup.addEventListener('click', function(e) {
                 if (e.target === popup) {
                     popup.classList.remove('active');
@@ -2588,7 +2526,6 @@
                 }
             });
             
-            // Submit do formulário (simulação)
             if (contactForm) {
                 contactForm.addEventListener('submit', function(e) {
                     e.preventDefault();
