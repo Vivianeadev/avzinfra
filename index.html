@@ -6,36 +6,31 @@
     <title>AVZ Infra | Tecnologia Blockchain e Sistemas de Identidade Soberana</title>
     
     <!-- Fontes Otimizadas -->
-    <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@300;400;500;600;700&family=Cinzel:wght@400;500;600;700&family=Marcellus&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cinzel:wght@400;500;600;700&family=Marcellus&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <style>
-        /* VARIÁVEIS DE DESIGN UNIFICADO */
+        /* ===== VARIÁVEIS DE DESIGN ===== */
         :root {
-            /* Cores Principais (da versão atual) */
-            --color-primary: #7B3F00;
-            --color-secondary: #d4af37;
-            --color-accent: #8B4513;
-            --color-light: #f4e4b8;
-            --color-dark: #2b2b2b;
-            --color-text: #3d3d3d; /* Cor mais escura para melhor contraste */
-            --color-bg: linear-gradient(135deg, #f9f5f0 0%, #faf0f4 100%);
-            
-            /* Elementos de Luxo (da versão premium) */
+            /* Cores Principais - AZUL MARINHO + DOURADO LUXO */
+            --color-primary: #0a3147;
+            --color-primary-light: #1a4b6d;
             --gold-primary: #D4AF37;
             --gold-secondary: #F4E4B8;
-            --gold-accent: #B8860B;
-            --carbon: #1A1A1A;
-            --platinum: #E5E4E2;
+            --gold-dark: #B8860B;
+            --color-dark: #1A1A1A;
+            --color-text: #2b2b2b;
+            --color-text-light: #4a4a4a;
+            --color-bg: linear-gradient(135deg, #f9f5f0 0%, #faf0f4 100%);
             
             /* Transições e Efeitos */
             --transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-            --shadow-luxury: 0 25px 50px rgba(123, 63, 0, 0.1);
-            --shadow-gold: 0 8px 32px rgba(212, 175, 55, 0.3);
-            --shadow-gold-strong: 0 0 30px rgba(212, 175, 55, 0.2);
-            --gradient-gold: linear-gradient(135deg, #D4AF37 0%, #F4E4B8 50%, #7B3F00 100%);
-            --gradient-dark: linear-gradient(135deg, #2b2b2b 0%, #1A1A1A 100%);
-            --gradient-gold-text: linear-gradient(135deg, #D4AF37 0%, #F4E4B8 50%, #FFD700 100%);
+            --shadow-luxury: 0 25px 50px rgba(10, 49, 71, 0.1);
+            --shadow-gold: 0 8px 25px rgba(212, 175, 55, 0.25);
+            --shadow-gold-strong: 0 10px 30px rgba(212, 175, 55, 0.35);
+            --gradient-gold: linear-gradient(135deg, #D4AF37 0%, #E5C55F 50%, #B8860B 100%);
+            --gradient-gold-subtle: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(244, 228, 184, 0.1) 100%);
+            --gradient-gold-text: linear-gradient(135deg, #D4AF37 0%, #F4E4B8 50%, #B8860B 100%);
         }
 
         * {
@@ -45,7 +40,7 @@
         }
 
         body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-family: 'Inter', sans-serif;
             background: var(--color-bg);
             color: var(--color-text);
             line-height: 1.6;
@@ -54,7 +49,7 @@
             font-size: 15px;
         }
 
-        /* EFEITO DE PARTÍCULAS DOURADAS (LUXO) */
+        /* EFEITO DE PARTÍCULAS DOURADAS */
         .luxury-particles {
             position: fixed;
             top: 0;
@@ -90,18 +85,18 @@
             }
         }
 
-        /* HEADER PREMIUM COM LUXO */
+        /* HEADER PREMIUM */
         .header {
             position: fixed;
             top: 0;
             width: 100%;
-            background: rgb(255 255 255 / .98);
+            background: rgba(255, 255, 255, 0.98);
             backdrop-filter: blur(20px);
             z-index: 1000;
             padding: 0.8rem 0;
             transition: var(--transition);
             border-bottom: 1px solid rgba(212, 175, 55, 0.15);
-            box-shadow: 0 5px 20px rgba(123, 63, 0, 0.05);
+            box-shadow: 0 5px 20px rgba(10, 49, 71, 0.05);
         }
 
         .nav-container {
@@ -117,7 +112,7 @@
             font-family: 'Cinzel', serif;
             font-size: 1.8rem;
             font-weight: 600;
-            color: var(--color-dark);
+            color: var(--color-primary);
             text-transform: uppercase;
             letter-spacing: 2px;
             position: relative;
@@ -138,13 +133,13 @@
         .logo-tagline {
             font-size: 0.7rem;
             letter-spacing: 3px;
-            color: var(--color-primary);
+            color: var(--gold-dark);
             margin-top: 2px;
             font-weight: 300;
             font-family: 'Marcellus', serif;
         }
 
-        /* HAMBÚRGUER MENU PARA MOBILE */
+        /* HAMBÚRGUER MENU */
         .hamburger {
             display: none;
             flex-direction: column;
@@ -182,7 +177,7 @@
         }
 
         .nav-menu a {
-            color: var(--color-dark);
+            color: var(--color-text);
             text-decoration: none;
             font-weight: 400;
             transition: var(--transition);
@@ -211,7 +206,7 @@
             width: 100%;
         }
 
-        /* BOTÃO DE IDIOMA UNIFICADO */
+        /* BOTÃO DE IDIOMA */
         .lang-toggle {
             position: fixed;
             top: 90px;
@@ -222,7 +217,7 @@
             border-radius: 40px;
             padding: 8px 16px;
             border: 1px solid rgba(212, 175, 55, 0.25);
-            box-shadow: 0 8px 20px rgba(123, 63, 0, 0.12);
+            box-shadow: 0 8px 20px rgba(10, 49, 71, 0.12);
             display: flex;
             align-items: center;
             gap: 10px;
@@ -244,7 +239,7 @@
             gap: 8px;
             font-family: 'Cinzel', serif;
             font-weight: 500;
-            color: var(--color-dark);
+            color: var(--color-primary);
         }
 
         .lang-toggle .current-lang span {
@@ -269,7 +264,7 @@
             backdrop-filter: blur(10px);
             border-radius: 20px;
             border: 1px solid rgba(212, 175, 55, 0.25);
-            box-shadow: 0 15px 30px rgba(123, 63, 0, 0.15);
+            box-shadow: 0 15px 30px rgba(10, 49, 71, 0.15);
             padding: 8px 0;
             min-width: 120px;
             display: none;
@@ -288,7 +283,7 @@
             gap: 10px;
             cursor: pointer;
             transition: var(--transition);
-            color: var(--color-dark);
+            color: var(--color-text);
             font-size: 0.9rem;
         }
 
@@ -299,44 +294,11 @@
 
         .lang-dropdown li.active {
             background: var(--gradient-gold);
-            color: var(--color-dark);
+            color: white;
             font-weight: 500;
         }
 
-        /* MELHORIAS DE CONTRASTE PARA TEXTOS */
-        .category-description,
-        .specialty-description,
-        .use-case-description,
-        .tech-desc,
-        .specialty-features li,
-        .founder-purpose p,
-        .founder-institutional-note p {
-            color: #3d3d3d;
-            font-weight: 400;
-            line-height: 1.7;
-        }
-
-        .category-title,
-        .specialty-title,
-        .use-case-title {
-            color: #5a3a1a;
-            font-weight: 600;
-        }
-
-        .specialty-tag {
-            color: #5a3a1a;
-            background: rgba(212, 175, 55, 0.15);
-            border: 1px solid rgba(212, 175, 55, 0.3);
-            font-weight: 500;
-        }
-
-        .use-case-number {
-            color: #b8860b;
-            opacity: 0.6;
-            font-weight: 700;
-        }
-
-        /* HERO SECTION COM LUXO */
+        /* HERO SECTION */
         .hero {
             min-height: calc(100vh - 80px);
             display: flex;
@@ -347,7 +309,7 @@
             position: relative;
             background: 
                 radial-gradient(circle at 20% 80%, rgba(212, 175, 55, 0.08) 0%, transparent 50%),
-                radial-gradient(circle at 80% 20%, rgba(123, 63, 0, 0.08) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(10, 49, 71, 0.08) 0%, transparent 50%),
                 linear-gradient(135deg, rgb(249 245 240 / .95), rgb(250 240 244 / .95));
             overflow: hidden;
         }
@@ -363,7 +325,7 @@
             margin-bottom: 1.5rem;
             font-weight: 400;
             letter-spacing: 1px;
-            color: var(--color-dark);
+            color: var(--color-primary);
             line-height: 1.1;
             position: relative;
         }
@@ -389,24 +351,25 @@
             line-height: 1.7;
         }
 
-        /* BOTÕES COM LUXO */
+        /* ===== BOTÕES SEM BORDAS - APENAS FUNDO NO HOVER ===== */
         .btn {
-            padding: 1.2rem 2.8rem;
+            padding: 1rem 2.5rem;
             border: none;
-            border-radius: 2px;
+            border-radius: 0;
             font-weight: 500;
             text-decoration: none;
             display: inline-flex;
             align-items: center;
-            gap: 1rem;
+            justify-content: center;
+            gap: 0.8rem;
             transition: var(--transition);
             cursor: pointer;
-            font-size: 14px;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+            font-family: 'Inter', sans-serif;
+            text-transform: uppercase;
             position: relative;
             overflow: hidden;
-            letter-spacing: .5px;
-            font-family: 'Helvetica Neue', sans-serif;
-            text-transform: uppercase;
         }
 
         .btn::before {
@@ -418,38 +381,74 @@
             height: 100%;
             background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
             transition: left 0.7s ease;
+            z-index: 1;
         }
 
         .btn:hover::before {
             left: 100%;
         }
 
+        .btn span, .btn i {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* BOTÃO PRIMÁRIO - DOURADO SÓLIDO */
         .btn-primary {
             background: var(--gradient-gold);
-            color: var(--color-dark);
-            box-shadow: var(--shadow-gold);
+            color: var(--color-primary);
+            box-shadow: 0 6px 16px rgba(212, 175, 55, 0.25);
         }
 
         .btn-primary:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-gold-strong);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 24px rgba(212, 175, 55, 0.35);
+            background: linear-gradient(135deg, #E5C55F 0%, #F9E9B8 50%, #C6992B 100%);
         }
 
+        /* BOTÃO SECUNDÁRIO - SEM BORDA, FUNDO TRANSLÚCIDO NO HOVER */
         .btn-secondary {
             background: transparent;
-            color: var(--color-text);
-            border: 1px solid rgba(123, 63, 0, 0.2);
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            color: var(--color-primary);
+            box-shadow: none;
         }
 
         .btn-secondary:hover {
-            border-color: var(--gold-primary);
-            color: var(--gold-primary);
+            background: var(--gradient-gold-subtle);
+            color: var(--color-primary);
             transform: translateY(-2px);
-            box-shadow: var(--shadow-gold);
+            box-shadow: 0 8px 20px rgba(212, 175, 55, 0.18);
         }
 
-        /* SEÇÕES COM LUXO INTEGRADO */
+        /* BOTÃO DO POPUP */
+        .popup-submit {
+            background: var(--gradient-gold);
+            border: none;
+            border-radius: 0;
+            padding: 1rem 2rem;
+            font-family: 'Cinzel', serif;
+            font-weight: 600;
+            color: var(--color-primary);
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1.5rem;
+            letter-spacing: 1px;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            box-shadow: 0 6px 16px rgba(212, 175, 55, 0.25);
+            width: 100%;
+        }
+        
+        .popup-submit:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 28px rgba(212, 175, 55, 0.35);
+        }
+
+        /* SEÇÕES */
         .section {
             padding: 6rem 2rem;
             position: relative;
@@ -474,7 +473,7 @@
             margin-bottom: 4rem;
             font-weight: 400;
             letter-spacing: 1px;
-            color: var(--color-dark);
+            color: var(--color-primary);
             position: relative;
             padding-bottom: 20px;
         }
@@ -547,6 +546,13 @@
             margin-bottom: 1rem;
             letter-spacing: 1px;
             font-weight: 500;
+            color: var(--color-primary);
+        }
+
+        .category-description {
+            color: var(--color-text-light);
+            font-weight: 400;
+            line-height: 1.7;
         }
 
         /* ESPECIALIDADES DETALHADAS */
@@ -600,6 +606,13 @@
             font-size: 1.6rem;
             letter-spacing: 1px;
             font-weight: 500;
+            color: var(--color-primary);
+        }
+
+        .specialty-description {
+            color: var(--color-text-light);
+            font-weight: 400;
+            line-height: 1.7;
         }
 
         .specialty-features {
@@ -613,6 +626,7 @@
             align-items: flex-start;
             gap: 0.8rem;
             font-size: 0.95rem;
+            color: var(--color-text-light);
         }
 
         .specialty-features i {
@@ -634,6 +648,9 @@
             font-size: 0.85rem;
             font-family: 'Marcellus', serif;
             letter-spacing: 0.5px;
+            color: var(--color-primary);
+            background: rgba(212, 175, 55, 0.15);
+            border: 1px solid rgba(212, 175, 55, 0.3);
         }
 
         /* TECNOLOGIAS BLOCKCHAIN */
@@ -679,6 +696,7 @@
         .tech-desc {
             font-size: 0.9rem;
             font-family: 'Marcellus', serif;
+            color: var(--color-text-light);
         }
 
         /* CASOS DE USO */
@@ -713,6 +731,8 @@
             top: 1rem;
             right: 1.5rem;
             font-weight: 600;
+            color: var(--gold-dark);
+            opacity: 0.6;
         }
 
         .use-case-title {
@@ -721,6 +741,13 @@
             margin-bottom: 1.5rem;
             letter-spacing: 1px;
             font-weight: 500;
+            color: var(--color-primary);
+        }
+
+        .use-case-description {
+            color: var(--color-text-light);
+            font-weight: 400;
+            line-height: 1.7;
         }
 
         /* PRESENÇA GLOBAL */
@@ -783,7 +810,7 @@
             background: linear-gradient(135deg, #f5f1ec 0%, #f7ecec 100%);
             padding: 10px;
             border: 1px solid rgba(212, 175, 55, 0.15);
-            box-shadow: 0 8px 25px rgba(123, 63, 0, 0.08);
+            box-shadow: 0 8px 25px rgba(10, 49, 71, 0.08);
             overflow: hidden;
         }
 
@@ -808,7 +835,7 @@
         }
 
         .founder-name {
-            color: var(--color-dark);
+            color: var(--color-primary);
             font-size: 1.3rem;
             font-weight: 500;
             margin-top: 1.5rem;
@@ -816,7 +843,7 @@
         }
 
         .founder-title {
-            color: var(--color-primary);
+            color: var(--gold-dark);
             font-size: 0.9rem;
             margin-top: 0.25rem;
             font-weight: 400;
@@ -825,15 +852,27 @@
 
         .founder-purpose {
             background: linear-gradient(135deg, rgba(245, 241, 236, 0.3) 0%, rgba(247, 236, 236, 0.3) 100%);
-            border-left: 2px solid rgba(123, 63, 0, 0.2);
+            border-left: 2px solid rgba(10, 49, 71, 0.2);
             padding: 2rem;
             border-radius: 4px;
             margin-top: 2rem;
         }
 
-        /* FOOTER COM LUXO */
+        .founder-purpose p {
+            color: var(--color-text-light);
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+
+        .founder-institutional-note p {
+            color: var(--color-text-light);
+            font-size: 0.9rem;
+        }
+
+        /* FOOTER */
         .footer {
-            background: rgba(255, 255, 255, 0.95);
+            background: var(--color-primary);
+            color: white;
             padding: 4rem 2rem 2rem;
             text-align: center;
             border-top: 1px solid rgba(212, 175, 55, 0.2);
@@ -857,13 +896,17 @@
         }
 
         .footer p {
-            color: var(--color-text);
+            color: rgba(255, 255, 255, 0.8);
             margin-bottom: 1rem;
             font-size: 0.9rem;
             font-family: 'Marcellus', serif;
         }
 
-        /* POPUP DE CONTATO LUXO */
+        .footer p:last-child {
+            color: var(--gold-secondary);
+        }
+
+        /* POPUP DE CONTATO */
         .popup-overlay {
             position: fixed;
             top: 0;
@@ -945,7 +988,7 @@
         
         .popup-subtitle {
             font-family: 'Marcellus', serif;
-            color: var(--color-text);
+            color: var(--color-text-light);
             margin-bottom: 2rem;
             font-size: 1rem;
             border-bottom: 1px solid rgba(212, 175, 55, 0.2);
@@ -995,8 +1038,8 @@
             border: 1px solid rgba(212, 175, 55, 0.3);
             border-radius: 8px;
             padding: 0.9rem 1.2rem;
-            font-family: 'Helvetica Neue', sans-serif;
-            color: var(--color-dark);
+            font-family: 'Inter', sans-serif;
+            color: var(--color-primary);
             transition: var(--transition);
             font-size: 0.95rem;
         }
@@ -1010,41 +1053,10 @@
             background: white;
         }
         
-        .popup-submit {
-            background: var(--gradient-gold);
-            border: none;
-            border-radius: 40px;
-            padding: 1.2rem 2rem;
-            font-family: 'Cinzel', serif;
-            font-weight: 600;
-            color: var(--color-dark);
-            cursor: pointer;
-            transition: var(--transition);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 1rem;
-            margin-top: 1.5rem;
-            border: 1px solid rgba(212, 175, 55, 0.6);
-            letter-spacing: 1px;
-            font-size: 1rem;
-            text-transform: uppercase;
-            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
-        }
-        
-        .popup-submit:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 30px rgba(212, 175, 55, 0.4);
-        }
-        
-        .popup-footer {
-            margin-top: 2rem;
-            text-align: center;
+        .form-group .form-hint {
             font-size: 0.8rem;
-            color: var(--color-text);
-            border-top: 1px dashed rgba(212, 175, 55, 0.3);
-            padding-top: 1.5rem;
-            font-family: 'Marcellus', serif;
+            color: var(--color-text-light);
+            margin-top: 0.25rem;
         }
 
         /* CONTENT MANAGER PARA IDIOMAS */
@@ -1078,7 +1090,7 @@
         
         body[dir="rtl"] .founder-purpose {
             border-left: none;
-            border-right: 2px solid rgba(123, 63, 0, 0.2);
+            border-right: 2px solid rgba(10, 49, 71, 0.2);
         }
         
         body[dir="rtl"] .lang-content[data-lang="ar"] {
@@ -1086,7 +1098,7 @@
             direction: rtl;
         }
 
-        /* RESPONSIVIDADE COM MENU HAMBÚRGUER */
+        /* RESPONSIVIDADE */
         @media (max-width: 1024px) {
             .nav-menu {
                 gap: 1.5rem;
@@ -1099,12 +1111,10 @@
         }
 
         @media (max-width: 768px) {
-            /* Mostrar hambúrguer */
             .hamburger {
                 display: flex;
             }
 
-            /* Esconder menu desktop */
             .nav-menu {
                 position: fixed;
                 top: 0;
@@ -1118,7 +1128,7 @@
                 align-items: center;
                 gap: 2rem;
                 transition: right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-                box-shadow: -10px 0 30px rgba(123, 63, 0, 0.1);
+                box-shadow: -10px 0 30px rgba(10, 49, 71, 0.1);
                 border-left: 1px solid rgba(212, 175, 55, 0.2);
                 z-index: 1001;
                 padding: 2rem;
@@ -1137,7 +1147,6 @@
                 bottom: 0;
             }
 
-            /* Overlay escuro quando menu está aberto */
             .menu-overlay {
                 position: fixed;
                 top: 0;
@@ -1203,7 +1212,7 @@
             
             .founder-purpose {
                 border-left: none;
-                border-top: 2px solid rgba(123, 63, 0, 0.2);
+                border-top: 2px solid rgba(10, 49, 71, 0.2);
                 padding: 1.5rem;
             }
             
@@ -1212,8 +1221,8 @@
             }
             
             .btn {
-                padding: 1rem 2rem;
-                font-size: 0.9rem;
+                padding: 0.9rem 2rem;
+                font-size: 0.85rem;
             }
             
             .cta-buttons {
@@ -1338,7 +1347,7 @@
                     <span class="lang-content" data-lang="en">Founder</span>
                     <span class="lang-content" data-lang="ar">المؤسسة</span>
                 </a></li>
-                <!-- NOVO BOTÃO PARA DESENVOLVEDORES -->
+                <!-- BOTÃO PARA DESENVOLVEDORES -->
                 <li><a href="https://avzinfra.info" target="_blank" style="color: var(--gold-primary); font-weight: 600;">
                     <i class="fas fa-code"></i> Dev
                 </a></li>
@@ -2130,7 +2139,7 @@
                 </div>
                 
                 <div class="specialty-tags" style="margin-top: 2rem; border-top: 1px solid rgba(212, 175, 55, 0.2); padding-top: 2rem;">
-                    <span class="specialty-tag" style="background: rgba(123, 63, 0, 0.1); color: var(--color-primary);">
+                    <span class="specialty-tag" style="background: rgba(10, 49, 71, 0.1); color: var(--color-primary);">
                         <i class="fas fa-quote-left"></i>
                         <span class="lang-content active" data-lang="pt">Infraestrutura é poder. Nosso trabalho é devolvê-lo ao usuário.</span>
                         <span class="lang-content" data-lang="en">Infrastructure is power. Our work is to return it to the user.</span>
@@ -2189,13 +2198,13 @@
                         </div>
 
                         <div class="founder-purpose">
-                            <p style="color: var(--color-dark); line-height: 1.7; font-size: 0.95rem; font-style: normal;">
+                            <p style="color: var(--color-primary); line-height: 1.7; font-size: 0.95rem; font-style: normal;">
                                 A infraestrutura soberana existe para garantir que a dignidade humana e a continuidade institucional 
                                 persistam no ambiente digital. Sua neutralidade é inegociável, sua confiança deve ser implícita, 
                                 e sua arquitetura deve ser projetada para durar — não para impressionar.
                             </p>
                             
-                            <p style="color: var(--color-dark); line-height: 1.7; font-size: 0.95rem; margin-top: 1rem; font-style: normal;">
+                            <p style="color: var(--color-primary); line-height: 1.7; font-size: 0.95rem; margin-top: 1rem; font-style: normal;">
                                 Independentemente de fronteiras, regimes ou pressões geopolíticas, o sistema deve permanecer 
                                 como uma camada de infraestrutura confiável. Essa é a premissa ética que orienta cada decisão técnica.
                             </p>
@@ -2217,13 +2226,13 @@
                         </div>
 
                         <div class="founder-purpose">
-                            <p style="color: var(--color-dark); line-height: 1.7; font-size: 0.95rem; font-style: normal;">
+                            <p style="color: var(--color-primary); line-height: 1.7; font-size: 0.95rem; font-style: normal;">
                                 Sovereign infrastructure exists to ensure that human dignity and institutional continuity 
                                 persist in the digital environment. Its neutrality is non-negotiable, its trust must be 
                                 implicit, and its architecture must be designed to last—not to impress.
                             </p>
                             
-                            <p style="color: var(--color-dark); line-height: 1.7; font-size: 0.95rem; margin-top: 1rem; font-style: normal;">
+                            <p style="color: var(--color-primary); line-height: 1.7; font-size: 0.95rem; margin-top: 1rem; font-style: normal;">
                                 Regardless of borders, regimes, or geopolitical pressures, the system must remain 
                                 as a reliable infrastructure layer. This is the ethical premise that guides every technical decision.
                             </p>
@@ -2245,13 +2254,13 @@
                         </div>
 
                         <div class="founder-purpose" style="text-align: right;">
-                            <p style="color: var(--color-dark); line-height: 1.7; font-size: 0.95rem; font-style: normal;">
+                            <p style="color: var(--color-primary); line-height: 1.7; font-size: 0.95rem; font-style: normal;">
                                 توجد البنية التحتية السيادية لضمان استمرار الكرامة الإنسانية والاستمرارية المؤسسية
                                 في البيئة الرقمية. حيادها غير قابل للتفاوض، ويجب أن تكون ثقتها ضمنية،
                                 ويجب تصميم هندستها لتستمر — لا لإبهار.
                             </p>
                             
-                            <p style="color: var(--color-dark); line-height: 1.7; font-size: 0.95rem; margin-top: 1rem; font-style: normal;">
+                            <p style="color: var(--color-primary); line-height: 1.7; font-size: 0.95rem; margin-top: 1rem; font-style: normal;">
                                 بغض النظر عن الحدود أو الأنظمة أو الضغوط الجيوسياسية، يجب أن يظل النظام
                                 طبقة بنية تحتية موثوقة. هذه هي المقدمة الأخلاقية التي توجه كل قرار تقني.
                             </p>
@@ -2261,7 +2270,7 @@
             </div>
 
             <div class="founder-institutional-note">
-                <p class="specialty-description" style="color: #4a4a4a; font-size: 0.9rem;">
+                <p class="specialty-description" style="color: var(--color-text-light); font-size: 0.9rem;">
                     <span class="lang-content active" data-lang="pt">
                         Viviane Baz atua na interseção entre tecnologia, soberania digital e infraestrutura crítica. 
                         Acredita que sistemas tecnológicos devem servir à humanidade, protegendo sua autonomia e integridade.
@@ -2280,7 +2289,7 @@
     </section>
 
     <!-- CTA Final -->
-    <section class="section" style="background: linear-gradient(135deg, rgba(123, 63, 0, 0.05) 0%, rgba(212, 175, 55, 0.05) 100%);">
+    <section class="section" style="background: linear-gradient(135deg, rgba(10, 49, 71, 0.05) 0%, rgba(212, 175, 55, 0.05) 100%);">
         <div class="container">
             <div class="specialty-card" style="text-align: center; padding: 4rem;">
                 <h2 class="section-title" style="font-size: 2.2rem; margin-bottom: 1.5rem;">
@@ -2304,7 +2313,7 @@
                     </span>
                 </p>
                 
-                <!-- Botão modificado para abrir popup -->
+                <!-- Botão para abrir popup -->
                 <a href="#" class="btn btn-primary" id="openPopupBtn">
                     <i class="fas fa-rocket"></i>
                     <span class="lang-content active" data-lang="pt">Conversar com Especialista</span>
@@ -2450,7 +2459,7 @@
                 
                 <div class="form-group" style="flex-direction: row; align-items: center; gap: 1rem;">
                     <input type="checkbox" name="termos" id="termos" required style="width: auto;">
-                    <label for="termos" style="font-size: 0.85rem; color: var(--color-text);">
+                    <label for="termos" style="font-size: 0.85rem; color: var(--color-text-light);">
                         <span class="lang-content active" data-lang="pt">Li e aceito a Política de Privacidade e os termos de confidencialidade.</span>
                         <span class="lang-content" data-lang="en">I have read and accept the Privacy Policy and confidentiality terms.</span>
                         <span class="lang-content" data-lang="ar">لقد قرأت وأوافق على سياسة الخصوصية وشروط السرية.</span>
@@ -2483,7 +2492,7 @@
                 <span class="lang-content" data-lang="ar">© 2026 AVZ Infra. جميع الحقوق محفوظة.</span>
             </p>
             
-            <p style="color: var(--color-primary); font-size: 0.9rem; margin-top: 1.5rem; font-weight: 500;">
+            <p style="color: var(--gold-secondary); font-size: 0.9rem; margin-top: 1.5rem; font-weight: 500;">
                 <span class="lang-content active" data-lang="pt">"Construindo a infraestrutura que conecta o presente ao futuro."</span>
                 <span class="lang-content" data-lang="en">"Building the infrastructure that connects the present to the future."</span>
                 <span class="lang-content" data-lang="ar">"نَبني البنيةَ التحتية التي تَربط الحاضرَ بالمستقبل."</span>
@@ -2655,12 +2664,12 @@
                 if (window.scrollY > 100) {
                     header.style.background = 'rgb(255 255 255 / .99)';
                     header.style.backdropFilter = 'blur(25px)';
-                    header.style.boxShadow = '0 8px 30px rgba(123, 63, 0, 0.1)';
+                    header.style.boxShadow = '0 8px 30px rgba(10, 49, 71, 0.1)';
                     header.style.borderBottomColor = 'rgba(212, 175, 55, 0.2)';
                 } else {
                     header.style.background = 'rgb(255 255 255 / .98)';
                     header.style.backdropFilter = 'blur(20px)';
-                    header.style.boxShadow = '0 5px 20px rgba(123, 63, 0, 0.05)';
+                    header.style.boxShadow = '0 5px 20px rgba(10, 49, 71, 0.05)';
                     header.style.borderBottomColor = 'rgba(212, 175, 55, 0.15)';
                 }
             });
