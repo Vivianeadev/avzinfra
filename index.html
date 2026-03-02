@@ -12,7 +12,6 @@
     <style>
         /* ===== VARIÁVEIS DE DESIGN ===== */
         :root {
-            /* Cores Principais - AZUL MARINHO + DOURADO LUXO */
             --color-primary: #0a3147;
             --color-primary-light: #1a4b6d;
             --gold-primary: #D4AF37;
@@ -23,7 +22,6 @@
             --color-text-light: #4a4a4a;
             --color-bg: linear-gradient(135deg, #f9f5f0 0%, #faf0f4 100%);
             
-            /* Transições e Efeitos */
             --transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
             --shadow-luxury: 0 25px 50px rgba(10, 49, 71, 0.1);
             --shadow-gold: 0 8px 25px rgba(212, 175, 55, 0.25);
@@ -49,7 +47,6 @@
             font-size: 15px;
         }
 
-        /* EFEITO DE PARTÍCULAS DOURADAS */
         .luxury-particles {
             position: fixed;
             top: 0;
@@ -85,7 +82,6 @@
             }
         }
 
-        /* HEADER PREMIUM */
         .header {
             position: fixed;
             top: 0;
@@ -139,7 +135,6 @@
             font-family: 'Marcellus', serif;
         }
 
-        /* HAMBÚRGUER MENU */
         .hamburger {
             display: none;
             flex-direction: column;
@@ -169,7 +164,6 @@
             transform: rotate(-45deg) translate(6px, -6px);
         }
 
-        /* MENU MOBILE */
         .nav-menu {
             display: flex;
             list-style: none;
@@ -206,7 +200,6 @@
             width: 100%;
         }
 
-        /* BOTÃO DE IDIOMA */
         .lang-toggle {
             position: fixed;
             top: 90px;
@@ -298,7 +291,6 @@
             font-weight: 500;
         }
 
-        /* HERO SECTION */
         .hero {
             min-height: calc(100vh - 80px);
             display: flex;
@@ -351,7 +343,6 @@
             line-height: 1.7;
         }
 
-        /* ===== BOTÕES SEM BORDAS - APENAS FUNDO NO HOVER ===== */
         .btn {
             padding: 1rem 2.5rem;
             border: none;
@@ -393,7 +384,6 @@
             z-index: 2;
         }
 
-        /* BOTÃO PRIMÁRIO - DOURADO SÓLIDO */
         .btn-primary {
             background: var(--gradient-gold);
             color: var(--color-primary);
@@ -406,7 +396,6 @@
             background: linear-gradient(135deg, #E5C55F 0%, #F9E9B8 50%, #C6992B 100%);
         }
 
-        /* BOTÃO SECUNDÁRIO - SEM BORDA, FUNDO TRANSLÚCIDO NO HOVER */
         .btn-secondary {
             background: transparent;
             color: var(--color-primary);
@@ -420,7 +409,6 @@
             box-shadow: 0 8px 20px rgba(212, 175, 55, 0.18);
         }
 
-        /* BOTÃO DO POPUP */
         .popup-submit {
             background: var(--gradient-gold);
             border: none;
@@ -448,7 +436,6 @@
             box-shadow: 0 12px 28px rgba(212, 175, 55, 0.35);
         }
 
-        /* SEÇÕES */
         .section {
             padding: 6rem 2rem;
             position: relative;
@@ -490,7 +477,6 @@
             box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
         }
 
-        /* CATEGORIAS ESPECIALIDADES */
         .categories-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -555,7 +541,6 @@
             line-height: 1.7;
         }
 
-        /* ESPECIALIDADES DETALHADAS */
         .specialties-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -653,7 +638,6 @@
             border: 1px solid rgba(212, 175, 55, 0.3);
         }
 
-        /* TECNOLOGIAS BLOCKCHAIN */
         .technologies-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -699,7 +683,6 @@
             color: var(--color-text-light);
         }
 
-        /* CASOS DE USO */
         .use-cases-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -750,7 +733,6 @@
             line-height: 1.7;
         }
 
-        /* PRESENÇA GLOBAL */
         .countries-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -787,7 +769,6 @@
             font-family: 'Cinzel', serif;
         }
 
-        /* SEÇÃO FUNDADORA */
         .founder-grid {
             display: grid;
             grid-template-columns: 1fr 2fr;
@@ -869,7 +850,6 @@
             font-size: 0.9rem;
         }
 
-        /* FOOTER */
         .footer {
             background: var(--color-primary);
             color: white;
@@ -906,7 +886,6 @@
             color: var(--gold-secondary);
         }
 
-        /* POPUP DE CONTATO */
         .popup-overlay {
             position: fixed;
             top: 0;
@@ -1059,7 +1038,41 @@
             margin-top: 0.25rem;
         }
 
-        /* CONTENT MANAGER PARA IDIOMAS */
+        .form-status {
+            margin-top: 1rem;
+            padding: 1rem;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        .form-status.success {
+            background: rgba(212, 175, 55, 0.15);
+            color: var(--color-primary);
+            border: 1px solid var(--gold-primary);
+        }
+
+        .form-status.error {
+            background: rgba(255, 99, 71, 0.1);
+            color: #d32f2f;
+            border: 1px solid #ffa07a;
+        }
+
+        .popup-footer {
+            margin-top: 1.5rem;
+            font-size: 0.85rem;
+            color: var(--color-text-light);
+            text-align: center;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .popup-footer i {
+            color: var(--gold-primary);
+            margin-right: 0.5rem;
+        }
+
         .lang-content {
             display: none;
         }
@@ -1076,7 +1089,6 @@
             display: inline-block;
         }
 
-        /* RTL SUPPORT */
         body[dir="rtl"] .logo::after {
             left: auto;
             right: 0;
@@ -1098,7 +1110,6 @@
             direction: rtl;
         }
 
-        /* RESPONSIVIDADE */
         @media (max-width: 1024px) {
             .nav-menu {
                 gap: 1.5rem;
@@ -1272,13 +1283,9 @@
     </style>
 </head>
 <body>
-    <!-- Efeito de Partículas de Luxo -->
     <div class="luxury-particles" id="luxuryParticles"></div>
-
-    <!-- Menu Overlay (fundo escuro) -->
     <div class="menu-overlay" id="menuOverlay"></div>
 
-    <!-- Botão de Idioma Unificado -->
     <div class="lang-toggle" id="langToggle">
         <div class="current-lang" id="currentLang">
             <span class="lang-flag">🇧🇷</span>
@@ -1301,7 +1308,6 @@
         </ul>
     </div>
 
-    <!-- Header -->
     <header class="header">
         <nav class="nav-container">
             <div>
@@ -1309,7 +1315,6 @@
                 <div class="logo-tagline">TECNOLOGIA E INFRAESTRUTURA</div>
             </div>
 
-            <!-- Hambúrguer Menu (visível apenas em mobile) -->
             <div class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
@@ -1347,15 +1352,10 @@
                     <span class="lang-content" data-lang="en">Founder</span>
                     <span class="lang-content" data-lang="ar">المؤسسة</span>
                 </a></li>
-                <!-- BOTÃO PARA DESENVOLVEDORES -->
-                <li><a href="https://avzinfra.com/invite.html" target="_blank" style="color: var(--gold-primary); font-weight: 600;">
-                    <i class="fas fa-code"></i> Dev
-                </a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
             <h1>
@@ -1391,7 +1391,6 @@
         </div>
     </section>
 
-    <!-- Especialidades (Categorias) -->
     <section id="especialidades" class="section section-light">
         <div class="container">
             <h2 class="section-title">
@@ -1401,7 +1400,6 @@
             </h2>
             
             <div class="categories-grid">
-                <!-- Infraestrutura Blockchain -->
                 <div class="category-card">
                     <div class="category-icon">
                         <i class="fas fa-layer-group"></i>
@@ -1418,7 +1416,6 @@
                     </p>
                 </div>
 
-                <!-- Sistemas Multi-Chain -->
                 <div class="category-card">
                     <div class="category-icon">
                         <i class="fas fa-network-wired"></i>
@@ -1435,7 +1432,6 @@
                     </p>
                 </div>
 
-                <!-- Soluções PropTech -->
                 <div class="category-card">
                     <div class="category-icon">
                         <i class="fas fa-city"></i>
@@ -1455,7 +1451,6 @@
         </div>
     </section>
 
-    <!-- Especialidades Detalhadas -->
     <section class="section">
         <div class="container">
             <h2 class="section-title">
@@ -1465,7 +1460,6 @@
             </h2>
             
             <div class="specialties-grid">
-                <!-- Blockchain Infrastructure -->
                 <div class="specialty-card">
                     <div class="specialty-header">
                         <div class="specialty-icon">
@@ -1511,7 +1505,6 @@
                     </div>
                 </div>
 
-                <!-- Multi-Chain Systems -->
                 <div class="specialty-card">
                     <div class="specialty-header">
                         <div class="specialty-icon">
@@ -1557,7 +1550,6 @@
                     </div>
                 </div>
 
-                <!-- PropTech Solutions -->
                 <div class="specialty-card">
                     <div class="specialty-header">
                         <div class="specialty-icon">
@@ -1603,7 +1595,6 @@
                     </div>
                 </div>
 
-                <!-- DeFi Infrastructure -->
                 <div class="specialty-card">
                     <div class="specialty-header">
                         <div class="specialty-icon">
@@ -1649,7 +1640,6 @@
                     </div>
                 </div>
 
-                <!-- Web3 Integration -->
                 <div class="specialty-card">
                     <div class="specialty-header">
                         <div class="specialty-icon">
@@ -1695,7 +1685,6 @@
                     </div>
                 </div>
 
-                <!-- Security & Compliance -->
                 <div class="specialty-card">
                     <div class="specialty-header">
                         <div class="specialty-icon">
@@ -1744,7 +1733,6 @@
         </div>
     </section>
 
-    <!-- Produtos -->
     <section id="produtos" class="section section-light">
         <div class="container">
             <h2 class="section-title">
@@ -1815,7 +1803,6 @@
         </div>
     </section>
 
-    <!-- Tecnologias -->
     <section id="tecnologias" class="section">
         <div class="container">
             <h2 class="section-title">
@@ -1900,7 +1887,6 @@
         </div>
     </section>
 
-    <!-- Casos de Uso -->
     <section class="section section-light">
         <div class="container">
             <h2 class="section-title">
@@ -1955,7 +1941,6 @@
         </div>
     </section>
 
-    <!-- Infraestrutura Descentralizada -->
     <section id="infraestrutura" class="section">
         <div class="container">
             <h2 class="section-title">
@@ -2016,7 +2001,6 @@
         </div>
     </section>
 
-    <!-- Presença Global -->
     <section id="presenca" class="section section-light">
         <div class="container">
             <h2 class="section-title">
@@ -2060,7 +2044,6 @@
         </div>
     </section>
 
-    <!-- Filosofia -->
     <section id="filosofia" class="section">
         <div class="container">
             <h2 class="section-title">
@@ -2150,7 +2133,6 @@
         </div>
     </section>
 
-    <!-- Fundadora -->
     <section id="fundadora" class="section section-light">
         <div class="container">
             <h2 class="section-title">
@@ -2168,8 +2150,6 @@
                                      alt="Viviane Baz - Fundadora e Arquiteta do Sistema AVZ Infra">
                             </div>
                         </div>
-                        
-                        <div class="founder-highlight"></div>
                         
                         <div class="founder-name">
                             Viviane Baz
@@ -2288,7 +2268,6 @@
         </div>
     </section>
 
-    <!-- CTA Final -->
     <section class="section" style="background: linear-gradient(135deg, rgba(10, 49, 71, 0.05) 0%, rgba(212, 175, 55, 0.05) 100%);">
         <div class="container">
             <div class="specialty-card" style="text-align: center; padding: 4rem;">
@@ -2313,7 +2292,6 @@
                     </span>
                 </p>
                 
-                <!-- Botão para abrir popup -->
                 <a href="#" class="btn btn-primary" id="openPopupBtn">
                     <i class="fas fa-rocket"></i>
                     <span class="lang-content active" data-lang="pt">Conversar com Especialista</span>
@@ -2324,7 +2302,7 @@
         </div>
     </section>
 
-    <!-- POPUP DE CONTATO LUXO -->
+    <!-- POPUP DE CONTATO - BOTÃO "ENVIAR MENSAGEM" (MAILTO) -->
     <div class="popup-overlay" id="contactPopup">
         <div class="popup-container">
             <div class="popup-close" id="closePopupBtn">&times;</div>
@@ -2336,9 +2314,9 @@
             </h2>
             
             <p class="popup-subtitle">
-                <span class="lang-content active" data-lang="pt">Formalize sua solicitação. Nossa equipe retornará em até 24 horas úteis.</span>
-                <span class="lang-content" data-lang="en">Formalize your request. Our team will respond within 24 business hours.</span>
-                <span class="lang-content" data-lang="ar">قم بتقديم طلبك رسميًا. سيرد فريقنا في غضون 24 ساعة عمل.</span>
+                <span class="lang-content active" data-lang="pt">Preencha os dados e clique em "Enviar Mensagem". Seu programa de email abrirá automaticamente.</span>
+                <span class="lang-content" data-lang="en">Fill in the data and click "Send Message". Your email program will open automatically.</span>
+                <span class="lang-content" data-lang="ar">املأ البيانات وانقر على "إرسال الرسالة". سيفتح برنامج البريد الإلكتروني الخاص بك تلقائيًا.</span>
             </p>
             
             <form class="popup-form" id="contactForm">
@@ -2349,34 +2327,34 @@
                         <span class="lang-content" data-lang="en">Contact Nature</span>
                         <span class="lang-content" data-lang="ar">طبيعة الاتصال</span>
                     </label>
-                    <select name="natureza" required>
+                    <select name="natureza" id="natureza" required>
                         <option value="" disabled selected>-- Selecione --</option>
-                        <option value="contratar_servicos">
+                        <option value="Contratar serviços">
                             <span class="lang-content active" data-lang="pt">Contratar nossos serviços</span>
                             <span class="lang-content" data-lang="en">Hire our services</span>
                             <span class="lang-content" data-lang="ar">توظيف خدماتنا</span>
                         </option>
-                        <option value="produto_especifico">
+                        <option value="Informações sobre produto">
                             <span class="lang-content active" data-lang="pt">Informações sobre produto específico</span>
                             <span class="lang-content" data-lang="en">Information about specific product</span>
                             <span class="lang-content" data-lang="ar">معلومات عن منتج معين</span>
                         </option>
-                        <option value="parceria">
+                        <option value="Parceria">
                             <span class="lang-content active" data-lang="pt">Oferecer parceria institucional</span>
                             <span class="lang-content" data-lang="en">Offer institutional partnership</span>
                             <span class="lang-content" data-lang="ar">تقديم شراكة مؤسسية</span>
                         </option>
-                        <option value="investidor">
+                        <option value="Investidor">
                             <span class="lang-content active" data-lang="pt">Sou investidor</span>
                             <span class="lang-content" data-lang="en">I am an investor</span>
                             <span class="lang-content" data-lang="ar">أنا مستثمر</span>
                         </option>
-                        <option value="imprensa">
+                        <option value="Imprensa">
                             <span class="lang-content active" data-lang="pt">Imprensa / Comunicação</span>
                             <span class="lang-content" data-lang="en">Press / Media</span>
                             <span class="lang-content" data-lang="ar">صحافة / إعلام</span>
                         </option>
-                        <option value="outros">
+                        <option value="Outros">
                             <span class="lang-content active" data-lang="pt">Outros assuntos</span>
                             <span class="lang-content" data-lang="en">Other matters</span>
                             <span class="lang-content" data-lang="ar">مواضيع أخرى</span>
@@ -2387,31 +2365,31 @@
                 <div class="form-group">
                     <label>
                         <i class="fas fa-user-tie"></i>
-                        <span class="lang-content active" data-lang="pt">Nome Completo (Representante Legal)</span>
-                        <span class="lang-content" data-lang="en">Full Name (Legal Representative)</span>
-                        <span class="lang-content" data-lang="ar">الاسم الكامل (الممثل القانوني)</span>
+                        <span class="lang-content active" data-lang="pt">Nome Completo</span>
+                        <span class="lang-content" data-lang="en">Full Name</span>
+                        <span class="lang-content" data-lang="ar">الاسم الكامل</span>
                     </label>
-                    <input type="text" name="nome" required placeholder="Ex: Dr. Roberto Silva">
+                    <input type="text" name="nome" id="nome" required placeholder="Ex: Dr. Roberto Silva">
                 </div>
                 
                 <div class="form-group">
                     <label>
                         <i class="fas fa-envelope"></i>
-                        <span class="lang-content active" data-lang="pt">E-mail Corporativo</span>
-                        <span class="lang-content" data-lang="en">Corporate Email</span>
-                        <span class="lang-content" data-lang="ar">البريد الإلكتروني للشركة</span>
+                        <span class="lang-content active" data-lang="pt">E-mail para retorno</span>
+                        <span class="lang-content" data-lang="en">Return Email</span>
+                        <span class="lang-content" data-lang="ar">البريد الإلكتروني للرد</span>
                     </label>
-                    <input type="email" name="email" required placeholder="contato@empresa.com">
+                    <input type="email" name="email" id="email" required placeholder="contato@empresa.com">
                 </div>
                 
                 <div class="form-group">
                     <label>
                         <i class="fas fa-phone-alt"></i>
-                        <span class="lang-content active" data-lang="pt">Telefone (com DDI/DDD)</span>
-                        <span class="lang-content" data-lang="en">Phone (with country/area code)</span>
-                        <span class="lang-content" data-lang="ar">الهاتف (مع رمز الدولة/المنطقة)</span>
+                        <span class="lang-content active" data-lang="pt">Telefone</span>
+                        <span class="lang-content" data-lang="en">Phone</span>
+                        <span class="lang-content" data-lang="ar">الهاتف</span>
                     </label>
-                    <input type="tel" name="telefone" required placeholder="+55 11 91234-5678">
+                    <input type="tel" name="telefone" id="telefone" required placeholder="+55 11 91234-5678">
                 </div>
                 
                 <div class="form-row">
@@ -2419,71 +2397,69 @@
                         <label>
                             <i class="fas fa-id-card"></i>
                             <span class="lang-content active" data-lang="pt">CPF / CNPJ</span>
-                            <span class="lang-content" data-lang="en">Tax ID / Company Registration</span>
-                            <span class="lang-content" data-lang="ar">الرقم الضريبي / تسجيل الشركة</span>
+                            <span class="lang-content" data-lang="en">Tax ID</span>
+                            <span class="lang-content" data-lang="ar">الرقم الضريبي</span>
                         </label>
-                        <input type="text" name="documento" required placeholder="12.345.678/0001-90">
-                        <div class="form-hint">Documento válido conforme legislação</div>
+                        <input type="text" name="documento" id="documento" required placeholder="12.345.678/0001-90">
                     </div>
                     
                     <div class="form-group">
                         <label>
                             <i class="fas fa-building"></i>
-                            <span class="lang-content active" data-lang="pt">Razão Social / Nome da Empresa</span>
-                            <span class="lang-content" data-lang="en">Company Name / Legal Entity</span>
-                            <span class="lang-content" data-lang="ar">الاسم القانوني / الكيان القانوني</span>
+                            <span class="lang-content active" data-lang="pt">Empresa</span>
+                            <span class="lang-content" data-lang="en">Company</span>
+                            <span class="lang-content" data-lang="ar">الشركة</span>
                         </label>
-                        <input type="text" name="empresa" placeholder="AVZ Infra Tecnologia Ltda" required>
+                        <input type="text" name="empresa" id="empresa" placeholder="AVZ Infra Tecnologia Ltda" required>
                     </div>
                 </div>
                 
                 <div class="form-group">
                     <label>
                         <i class="fas fa-chair"></i>
-                        <span class="lang-content active" data-lang="pt">Cargo / Função</span>
-                        <span class="lang-content" data-lang="en">Position / Role</span>
-                        <span class="lang-content" data-lang="ar">المنصب / الدور</span>
+                        <span class="lang-content active" data-lang="pt">Cargo</span>
+                        <span class="lang-content" data-lang="en">Position</span>
+                        <span class="lang-content" data-lang="ar">المنصب</span>
                     </label>
-                    <input type="text" name="cargo" placeholder="Ex: Diretor de Inovação, CEO">
+                    <input type="text" name="cargo" id="cargo" placeholder="Ex: Diretor de Inovação, CEO">
                 </div>
                 
                 <div class="form-group">
                     <label>
                         <i class="fas fa-file-alt"></i>
-                        <span class="lang-content active" data-lang="pt">Mensagem / Assunto</span>
-                        <span class="lang-content" data-lang="en">Message / Subject</span>
-                        <span class="lang-content" data-lang="ar">الرسالة / الموضوع</span>
+                        <span class="lang-content active" data-lang="pt">Mensagem</span>
+                        <span class="lang-content" data-lang="en">Message</span>
+                        <span class="lang-content" data-lang="ar">الرسالة</span>
                     </label>
-                    <textarea name="mensagem" rows="5" required placeholder="Descreva sua solicitação de forma clara e objetiva..."></textarea>
+                    <textarea name="mensagem" id="mensagem" rows="5" required placeholder="Descreva sua solicitação de forma clara e objetiva..."></textarea>
                 </div>
                 
                 <div class="form-group" style="flex-direction: row; align-items: center; gap: 1rem;">
                     <input type="checkbox" name="termos" id="termos" required style="width: auto;">
                     <label for="termos" style="font-size: 0.85rem; color: var(--color-text-light);">
-                        <span class="lang-content active" data-lang="pt">Li e aceito a Política de Privacidade e os termos de confidencialidade.</span>
-                        <span class="lang-content" data-lang="en">I have read and accept the Privacy Policy and confidentiality terms.</span>
-                        <span class="lang-content" data-lang="ar">لقد قرأت وأوافق على سياسة الخصوصية وشروط السرية.</span>
+                        <span class="lang-content active" data-lang="pt">Li e aceito os termos</span>
+                        <span class="lang-content" data-lang="en">I accept the terms</span>
+                        <span class="lang-content" data-lang="ar">أوافق على الشروط</span>
                     </label>
                 </div>
                 
-                <button type="submit" class="popup-submit">
+                <button type="submit" class="popup-submit" id="submitBtn">
                     <i class="fas fa-paper-plane"></i>
-                    <span class="lang-content active" data-lang="pt">Enviar Solicitação Formal</span>
-                    <span class="lang-content" data-lang="en">Submit Formal Request</span>
-                    <span class="lang-content" data-lang="ar">إرسال الطلب الرسمي</span>
+                    <span class="lang-content active" data-lang="pt">Enviar Mensagem</span>
+                    <span class="lang-content" data-lang="en">Send Message</span>
+                    <span class="lang-content" data-lang="ar">إرسال الرسالة</span>
                 </button>
             </form>
             
             <div class="popup-footer">
-                <i class="fas fa-lock" style="margin-right: 0.5rem;"></i>
-                <span class="lang-content active" data-lang="pt">Comunicação criptografada. Todas as informações são tratadas com sigilo absoluto.</span>
-                <span class="lang-content" data-lang="en">Encrypted communication. All information is treated with absolute confidentiality.</span>
-                <span class="lang-content" data-lang="ar">اتصال مشفر. جميع المعلومات تعامل بسرية تامة.</span>
+                <i class="fas fa-envelope"></i>
+                <span class="lang-content active" data-lang="pt">Seu programa de email será aberto para você concluir o envio.</span>
+                <span class="lang-content" data-lang="en">Your email program will open for you to complete sending.</span>
+                <span class="lang-content" data-lang="ar">سيتم فتح برنامج البريد الإلكتروني الخاص بك لإكمال الإرسال.</span>
             </div>
         </div>
     </div>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
             <p>
@@ -2501,7 +2477,6 @@
     </footer>
 
     <script>
-        // Efeito de partículas de luxo
         function createLuxuryParticles() {
             const particlesContainer = document.getElementById('luxuryParticles');
             const particlesCount = 25;
@@ -2523,7 +2498,6 @@
         
         createLuxuryParticles();
 
-        // Sistema de Idioma Unificado
         document.addEventListener('DOMContentLoaded', function() {
             const langToggle = document.getElementById('langToggle');
             const langDropdown = document.getElementById('langDropdown');
@@ -2532,19 +2506,16 @@
             const langOptions = document.querySelectorAll('.lang-dropdown li');
             const langContents = document.querySelectorAll('.lang-content');
 
-            // Menu Hambúrguer
             const hamburger = document.getElementById('hamburger');
             const navMenu = document.getElementById('navMenu');
             const menuOverlay = document.getElementById('menuOverlay');
             
-            // Toggle menu hambúrguer
             if (hamburger) {
                 hamburger.addEventListener('click', function() {
                     this.classList.toggle('active');
                     navMenu.classList.toggle('active');
                     menuOverlay.classList.toggle('active');
                     
-                    // Prevenir scroll do body quando menu está aberto
                     if (navMenu.classList.contains('active')) {
                         document.body.style.overflow = 'hidden';
                     } else {
@@ -2553,7 +2524,6 @@
                 });
             }
             
-            // Fechar menu ao clicar no overlay
             if (menuOverlay) {
                 menuOverlay.addEventListener('click', function() {
                     hamburger.classList.remove('active');
@@ -2563,7 +2533,6 @@
                 });
             }
             
-            // Fechar menu ao clicar em um link
             const navLinks = document.querySelectorAll('.nav-menu a');
             navLinks.forEach(link => {
                 link.addEventListener('click', function() {
@@ -2576,46 +2545,37 @@
                 });
             });
             
-            // Set initial language to Portuguese
             let currentLanguage = 'pt';
             
-            // Toggle dropdown
             langToggle.addEventListener('click', function(e) {
                 e.stopPropagation();
                 langDropdown.classList.toggle('show');
                 langArrow.style.transform = langDropdown.classList.contains('show') ? 'rotate(180deg)' : 'rotate(0)';
             });
             
-            // Close dropdown when clicking outside
             document.addEventListener('click', function() {
                 langDropdown.classList.remove('show');
                 langArrow.style.transform = 'rotate(0)';
             });
             
-            // Select language
             langOptions.forEach(option => {
                 option.addEventListener('click', function(e) {
                     e.stopPropagation();
                     const lang = this.getAttribute('data-lang');
                     
-                    // Update current language display
                     const flag = this.querySelector('.lang-flag').textContent;
                     const langName = this.querySelector('span:last-child').textContent;
                     currentLang.innerHTML = `<span class="lang-flag">${flag}</span><span>${langName}</span>`;
                     
-                    // Update active state in dropdown
                     langOptions.forEach(opt => opt.classList.remove('active'));
                     this.classList.add('active');
                     
-                    // Set language
                     setLanguage(lang);
                     currentLanguage = lang;
                     
-                    // Close dropdown
                     langDropdown.classList.remove('show');
                     langArrow.style.transform = 'rotate(0)';
                     
-                    // Update RTL for Arabic
                     if (lang === 'ar') {
                         document.body.setAttribute('dir', 'rtl');
                         document.documentElement.setAttribute('dir', 'rtl');
@@ -2629,22 +2589,18 @@
             });
             
             function setLanguage(lang) {
-                // Hide all language content
                 langContents.forEach(content => {
                     content.classList.remove('active');
                 });
                 
-                // Show content for selected language
                 const activeContents = document.querySelectorAll(`.lang-content[data-lang="${lang}"]`);
                 activeContents.forEach(content => {
                     content.classList.add('active');
                 });
                 
-                // Update HTML lang attribute
                 document.documentElement.setAttribute('lang', lang);
             }
             
-            // Smooth scrolling
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     e.preventDefault();
@@ -2658,7 +2614,6 @@
                 });
             });
             
-            // Header scroll effect
             window.addEventListener('scroll', () => {
                 const header = document.querySelector('.header');
                 if (window.scrollY > 100) {
@@ -2674,7 +2629,6 @@
                 }
             });
 
-            // Adjust hero height on resize
             function adjustHeroHeight() {
                 const header = document.querySelector('.header');
                 const hero = document.querySelector('.hero');
@@ -2687,7 +2641,6 @@
             adjustHeroHeight();
             window.addEventListener('resize', adjustHeroHeight);
             
-            // Parallax effect
             window.addEventListener('scroll', () => {
                 const scrolled = window.pageYOffset;
                 const hero = document.querySelector('.hero');
@@ -2695,10 +2648,8 @@
                     hero.style.transform = `translateY(${scrolled * 0.4}px)`;
                 }
             });
-        });
 
-        // POPUP DE CONTATO
-        document.addEventListener('DOMContentLoaded', function() {
+            // POPUP DE CONTATO - BOTÃO "ENVIAR MENSAGEM" (FUNCIONALIDADE MAILTO)
             const popup = document.getElementById('contactPopup');
             const openBtn = document.getElementById('openPopupBtn');
             const closeBtn = document.getElementById('closePopupBtn');
@@ -2729,7 +2680,36 @@
             if (contactForm) {
                 contactForm.addEventListener('submit', function(e) {
                     e.preventDefault();
-                    alert('Solicitação enviada com sucesso. Nossa equipe analisará e retornará em até 24 horas úteis.');
+                    
+                    const natureza = document.getElementById('natureza').value;
+                    const nome = document.getElementById('nome').value;
+                    const email = document.getElementById('email').value;
+                    const telefone = document.getElementById('telefone').value;
+                    const documento = document.getElementById('documento').value;
+                    const empresa = document.getElementById('empresa').value;
+                    const cargo = document.getElementById('cargo').value;
+                    const mensagem = document.getElementById('mensagem').value;
+                    
+                    const assunto = encodeURIComponent(`Contato de ${nome} - ${natureza}`);
+                    const corpo = encodeURIComponent(
+                        `NATUREZA DO CONTATO: ${natureza}\n` +
+                        `NOME: ${nome}\n` +
+                        `EMAIL: ${email}\n` +
+                        `TELEFONE: ${telefone}\n` +
+                        `DOCUMENTO: ${documento}\n` +
+                        `EMPRESA: ${empresa}\n` +
+                        `CARGO: ${cargo}\n\n` +
+                        `MENSAGEM:\n${mensagem}\n\n` +
+                        `---\n` +
+                        `Enviado via formulário AVZ Infra`
+                    );
+                    
+                    const mailtoLink = `mailto:avzproptech@outlook.com?subject=${assunto}&body=${corpo}`;
+                    
+                    window.location.href = mailtoLink;
+                    
+                    alert('Seu programa de email será aberto. Por favor, clique em "Enviar" para concluir.');
+                    
                     popup.classList.remove('active');
                     document.body.style.overflow = '';
                     contactForm.reset();
